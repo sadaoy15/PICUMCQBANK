@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { BookOpen, Bookmark, CircleCheckBig, ClipboardCheck, GraduationCap, HeartPulse, Stethoscope, TestTube2, Timer, type LucideIcon } from "lucide-react";
 import { questions as builtInQuestions } from "@/data/questions";
 import { inlineClinicalData } from "@/lib/inline-clinical-data";
 import { ClinicalDataBlock, Question } from "@/types/question";
@@ -94,15 +95,21 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function MedicalIcon({ name, className = "h-5 w-5" }: { name: "heart" | "clipboard" | "stethoscope" | "book" | "timer" | "vial" | "bookmark"; className?: string }) {
-  const c = { className, fill: "none", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, viewBox: "0 0 24 24", "aria-hidden": true };
-  if (name === "heart") return <svg {...c}><path d="M19 14c1.5-1.4 2-3.9.8-5.8-1.3-2.1-4.2-2.5-6-1L12 8.8l-1.8-1.6c-1.8-1.5-4.7-1.1-6 1C3 10.1 3.5 12.6 5 14l7 6 7-6Z" /><path d="M3 13h4l2-4 3 8 2-4h7" /></svg>;
-  if (name === "stethoscope") return <svg {...c}><path d="M6 3v5a4 4 0 0 0 8 0V3" /><path d="M6 3H4" /><path d="M14 3h2" /><path d="M10 12v2a5 5 0 0 0 10 0v-1" /><circle cx="20" cy="10" r="2" /></svg>;
-  if (name === "book") return <svg {...c}><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z" /><path d="M4 19a2.5 2.5 0 0 1 2.5-2H20" /><path d="M9 7h6" /></svg>;
-  if (name === "timer") return <svg {...c}><circle cx="12" cy="13" r="7" /><path d="M12 13V9" /><path d="M12 13h3" /><path d="M9 2h6" /></svg>;
-  if (name === "vial") return <svg {...c}><path d="M10 2h4" /><path d="M11 2v6l-5.5 9.5A3 3 0 0 0 8.1 22h7.8a3 3 0 0 0 2.6-4.5L13 8V2" /><path d="M8 16h8" /></svg>;
-  if (name === "bookmark") return <svg {...c}><path d="M7 4.5A2.5 2.5 0 0 1 9.5 2h5A2.5 2.5 0 0 1 17 4.5V22l-5-3-5 3V4.5Z" /></svg>;
-  return <svg {...c}><path d="M9 11h6" /><path d="M9 15h6" /><path d="M10 3h4" /><path d="M8 5h8" /><rect x="6" y="5" width="12" height="16" rx="2" /></svg>;
+type MedicalIconName = "heart" | "clipboard" | "stethoscope" | "book" | "timer" | "vial" | "bookmark";
+
+const medicalIcons: Record<MedicalIconName, LucideIcon> = {
+  heart: HeartPulse,
+  clipboard: ClipboardCheck,
+  stethoscope: Stethoscope,
+  book: BookOpen,
+  timer: Timer,
+  vial: TestTube2,
+  bookmark: Bookmark,
+};
+
+function MedicalIcon({ name, className = "h-5 w-5" }: { name: MedicalIconName; className?: string }) {
+  const Icon = medicalIcons[name];
+  return <Icon aria-hidden="true" className={className} strokeWidth={1.9} />;
 }
 
 function iconForExam(exam: ExamGroup): "heart" | "clipboard" | "book" | "stethoscope" {
@@ -160,23 +167,16 @@ function ClinicalData({ blocks }: { blocks?: ClinicalDataBlock[] }) {
 function ModeVisualIcon({ type, small = false }: { type: "practice" | "test"; small?: boolean }) {
   const sz = small ? "h-14 w-14" : "h-[72px] w-[72px]";
   if (type === "practice") return (
-    <svg viewBox="0 0 96 96" aria-hidden="true" className={`${sz} flex-shrink-0 drop-shadow-sm`}>
-      <circle cx="48" cy="48" r="43" fill="#d9f7f1" />
-      <rect x="22" y="19" width="52" height="58" rx="10" fill="#ffffff" stroke="#0f766e" strokeWidth="3" />
-      <path d="M32 33.5c5.5-3.5 10.5-3.5 16 0v24c-5.5-3.5-10.5-3.5-16 0v-24Zm32 0c-5.5-3.5-10.5-3.5-16 0v24c5.5-3.5 10.5-3.5 16 0v-24Z" fill="#e6fffa" stroke="#0f766e" strokeWidth="2.5" strokeLinejoin="round" />
-      <path d="M48 37v14M41 44h14" stroke="#0f766e" strokeWidth="3.5" strokeLinecap="round" />
-      <path d="M30 66h36" stroke="#99f6e4" strokeWidth="3" strokeLinecap="round" />
-    </svg>
+    <span aria-hidden="true" className={`relative grid ${sz} place-items-center rounded-2xl border border-teal-200/90 bg-white/85 text-teal-800 shadow-lg shadow-teal-950/10`}>
+      <GraduationCap className="h-[48%] w-[48%]" strokeWidth={1.8} />
+      <span className="absolute -bottom-1 -right-1 grid h-6 w-6 place-items-center rounded-lg border border-white bg-teal-700 text-white shadow-sm"><CircleCheckBig className="h-3.5 w-3.5" strokeWidth={2.3} /></span>
+    </span>
   );
   return (
-    <svg viewBox="0 0 96 96" aria-hidden="true" className={`${sz} flex-shrink-0 drop-shadow-sm`}>
-      <circle cx="48" cy="48" r="43" fill="#ffeadf" />
-      <rect x="25" y="18" width="42" height="58" rx="8" fill="#ffffff" stroke="#c2412d" strokeWidth="3" />
-      <rect x="37" y="14" width="18" height="10" rx="4" fill="#fed7cc" stroke="#c2412d" strokeWidth="3" />
-      <path d="m34 38 4 4 7-8M34 52h16M34 61h10" stroke="#c2412d" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-      <circle cx="66" cy="65" r="15" fill="#fff7f3" stroke="#c2412d" strokeWidth="3" />
-      <path d="M66 56v9l6 3M60 49l-3-4M72 49l3-4" stroke="#c2412d" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
+    <span aria-hidden="true" className={`relative grid ${sz} place-items-center rounded-2xl border border-orange-200/90 bg-white/85 text-[#c2412d] shadow-lg shadow-orange-950/10`}>
+      <ClipboardCheck className="h-[48%] w-[48%]" strokeWidth={1.8} />
+      <span className="absolute -bottom-1 -right-1 grid h-6 w-6 place-items-center rounded-lg border border-white bg-[#c2412d] text-white shadow-sm"><Timer className="h-3.5 w-3.5" strokeWidth={2.3} /></span>
+    </span>
   );
 }
 
@@ -623,7 +623,7 @@ export default function QuizPage() {
                 High-yield MCQs for pediatric critical care. Build knowledge, track progress, and prepare with confidence.
               </p>
               <div className="mt-7 flex items-center gap-3 text-sm text-slate-700">
-                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-teal-200 bg-white/85 text-teal-700 shadow-sm"><MedicalIcon name="stethoscope" className="h-6 w-6" /></span>
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-teal-200 bg-[#effbf9] text-teal-700 shadow-sm"><MedicalIcon name="stethoscope" className="h-6 w-6" /></span>
                 <span><span className="block font-bold text-slate-900">Pediatric critical care review</span><span className="block text-xs text-slate-500">Structured PREP learning sessions</span></span>
               </div>
             </div>
@@ -709,7 +709,7 @@ export default function QuizPage() {
                 { icon: "stethoscope" as const, title: "Flexible sessions", text: "Pause and continue when you are ready." },
               ].map((item, index) => (
                 <div key={item.title} className={`flex items-start gap-3 px-5 py-5 ${index > 0 ? "border-t border-slate-100 sm:border-t-0 lg:border-l" : ""} ${index === 2 ? "sm:border-t lg:border-t-0" : ""}`}>
-                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-teal-50 text-teal-700"><MedicalIcon name={item.icon} className="h-5 w-5" /></span>
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl border border-teal-100 bg-[#effbf9] text-teal-700"><MedicalIcon name={item.icon} className="h-5 w-5" /></span>
                   <span><span className="block text-sm font-black text-slate-800">{item.title}</span><span className="mt-0.5 block text-xs leading-relaxed text-slate-500">{item.text}</span></span>
                 </div>
               ))}
@@ -717,7 +717,7 @@ export default function QuizPage() {
 
             <footer className="flex flex-col gap-4 rounded-[24px] bg-[#075d69] px-5 py-5 text-white shadow-lg shadow-teal-950/20 sm:flex-row sm:items-center sm:justify-between sm:px-7">
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/10"><MedicalIcon name="heart" className="h-5 w-5" /></span>
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/25 bg-white/10"><MedicalIcon name="heart" className="h-5 w-5" /></span>
                 <span><span className="block text-sm font-black">PICU MCQ Bank</span><span className="block text-xs text-teal-100">Pediatric critical care review</span></span>
               </div>
               <p className="text-sm font-semibold text-teal-50">Knowledge. Compassion. Excellence.</p>
