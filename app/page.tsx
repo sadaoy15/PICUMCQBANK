@@ -29,6 +29,7 @@ interface QuizSession {
   questionIds: number[];
   currentIndex: number;
   progress: Progress;
+  markedQuestionIds?: number[];
   status: "active" | "paused" | "completed";
   createdAt: string;
   updatedAt: string;
@@ -93,13 +94,14 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function MedicalIcon({ name, className = "h-5 w-5" }: { name: "heart" | "clipboard" | "stethoscope" | "book" | "timer" | "vial"; className?: string }) {
+function MedicalIcon({ name, className = "h-5 w-5" }: { name: "heart" | "clipboard" | "stethoscope" | "book" | "timer" | "vial" | "bookmark"; className?: string }) {
   const c = { className, fill: "none", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, viewBox: "0 0 24 24", "aria-hidden": true };
   if (name === "heart") return <svg {...c}><path d="M19 14c1.5-1.4 2-3.9.8-5.8-1.3-2.1-4.2-2.5-6-1L12 8.8l-1.8-1.6c-1.8-1.5-4.7-1.1-6 1C3 10.1 3.5 12.6 5 14l7 6 7-6Z" /><path d="M3 13h4l2-4 3 8 2-4h7" /></svg>;
   if (name === "stethoscope") return <svg {...c}><path d="M6 3v5a4 4 0 0 0 8 0V3" /><path d="M6 3H4" /><path d="M14 3h2" /><path d="M10 12v2a5 5 0 0 0 10 0v-1" /><circle cx="20" cy="10" r="2" /></svg>;
   if (name === "book") return <svg {...c}><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z" /><path d="M4 19a2.5 2.5 0 0 1 2.5-2H20" /><path d="M9 7h6" /></svg>;
   if (name === "timer") return <svg {...c}><circle cx="12" cy="13" r="7" /><path d="M12 13V9" /><path d="M12 13h3" /><path d="M9 2h6" /></svg>;
   if (name === "vial") return <svg {...c}><path d="M10 2h4" /><path d="M11 2v6l-5.5 9.5A3 3 0 0 0 8.1 22h7.8a3 3 0 0 0 2.6-4.5L13 8V2" /><path d="M8 16h8" /></svg>;
+  if (name === "bookmark") return <svg {...c}><path d="M7 4.5A2.5 2.5 0 0 1 9.5 2h5A2.5 2.5 0 0 1 17 4.5V22l-5-3-5 3V4.5Z" /></svg>;
   return <svg {...c}><path d="M9 11h6" /><path d="M9 15h6" /><path d="M10 3h4" /><path d="M8 5h8" /><rect x="6" y="5" width="12" height="16" rx="2" /></svg>;
 }
 
@@ -197,8 +199,8 @@ function makeStyles(isPhone: boolean) {
     tabBtn: isPhone ? "py-3.5 text-base" : "py-3 text-base",
     questionBodyPad: isPhone ? "px-5 py-6" : "relative px-7 py-7",
     questionText: isPhone
-      ? "mb-6 text-xl font-bold leading-relaxed text-slate-950"
-      : "mb-6 text-xl font-bold leading-relaxed text-slate-950",
+      ? "mb-6 max-w-[850px] text-xl font-bold leading-relaxed text-slate-950"
+      : "mb-6 max-w-[850px] text-[19px] font-bold leading-relaxed text-slate-950",
     choiceSpace: isPhone ? "space-y-3" : "space-y-3",
     choiceBase: isPhone
       ? "w-full text-left rounded-xl border px-4 py-4 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/60 transition-all cursor-pointer flex items-center gap-3 "
@@ -254,6 +256,7 @@ export default function QuizPage() {
   const [progress, setProgress] = useState<Progress>({});
   const [sessions, setSessions] = useState<QuizSession[]>([]);
   const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
+  const [markedQuestionIds, setMarkedQuestionIds] = useState<number[]>([]);
   const [selected, setSelected] = useState<string | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [quizMode, setQuizMode] = useState<QuizMode>("sequential");
@@ -313,7 +316,11 @@ export default function QuizPage() {
     saveSessions(sessions.map((s) => s.id === activeSessionId ? { ...s, ...patch, updatedAt: new Date().toISOString() } : s));
   };
 
-  const handleSelect = (letter: string) => { if (revealed) return; setSelected(letter); };
+  const handleSelect = (letter: string) => {
+    if (revealed) return;
+    setActiveTab("question");
+    setSelected(letter);
+  };
 
   const handleSubmit = () => {
     if (!selected || !quizQuestions[current]) return;
@@ -336,6 +343,16 @@ export default function QuizPage() {
     updateActiveSession({ progress: updatedProgress });
     setRevealed(true);
     setActiveTab("explanation");
+  };
+
+  const toggleQuestionMark = () => {
+    const questionId = quizQuestions[current]?.id;
+    if (!questionId) return;
+    const updatedMarks = markedQuestionIds.includes(questionId)
+      ? markedQuestionIds.filter((id) => id !== questionId)
+      : [...markedQuestionIds, questionId];
+    setMarkedQuestionIds(updatedMarks);
+    updateActiveSession({ markedQuestionIds: updatedMarks });
   };
 
   const handleNext = () => {
@@ -379,7 +396,8 @@ export default function QuizPage() {
 
   const resetProgress = () => {
     setProgress({});
-    updateActiveSession({ progress: {}, currentIndex: 0, status: "active" });
+    setMarkedQuestionIds([]);
+    updateActiveSession({ progress: {}, markedQuestionIds: [], currentIndex: 0, status: "active" });
     if (selectedExam) {
       const ordered = quizMode === "random"
         ? shuffle(getExamQuestions(selectedExam, activeSubCat, allQuestions))
@@ -420,6 +438,7 @@ export default function QuizPage() {
       examId: exam.id, examLabel: exam.label, subCat: "all",
       quizMode: preferredQuizMode, viewMode: preferredViewMode,
       questionIds: ordered.map((q) => q.id), currentIndex: 0, progress: {},
+      markedQuestionIds: [],
       status: "active", createdAt: now, updatedAt: now,
     };
     saveSessions([session, ...sessions]);
@@ -431,6 +450,7 @@ export default function QuizPage() {
     setQuizQuestions(ordered);
     setCurrent(0);
     setProgress({});
+    setMarkedQuestionIds([]);
     setSelected(null);
     setRevealed(false);
     setShowSummary(false);
@@ -456,6 +476,7 @@ export default function QuizPage() {
     setQuizQuestions(ordered);
     setCurrent(safeIndex);
     setProgress(session.progress);
+    setMarkedQuestionIds(session.markedQuestionIds ?? []);
     setSelected(saved?.selected ?? null);
     setRevealed(!!saved);
     setShowSummary(session.status === "completed");
@@ -470,6 +491,7 @@ export default function QuizPage() {
     setPendingMode(null);
     setSelected(null);
     setRevealed(false);
+    setMarkedQuestionIds([]);
     setShowSummary(false);
     setActiveTab("question");
   };
@@ -490,6 +512,39 @@ export default function QuizPage() {
     setActiveTab("question");
     updateActiveSession({ subCat, questionIds: ordered.map((q) => q.id), currentIndex: 0, status: "active" });
   };
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (!selectedExam || showSummary || event.metaKey || event.ctrlKey || event.altKey) return;
+      const target = event.target as HTMLElement | null;
+      if (target?.matches("input, textarea, select, [contenteditable='true']")) return;
+
+      const activeQuestion = quizQuestions[current];
+      if (!activeQuestion) return;
+
+      if (/^[1-9]$/.test(event.key) && !revealed) {
+        const letter = Object.keys(activeQuestion.choices).sort()[Number(event.key) - 1];
+        if (letter) {
+          event.preventDefault();
+          handleSelect(letter);
+        }
+      }
+      if (event.key === "Enter" && !revealed && selected) {
+        event.preventDefault();
+        handleSubmit();
+      }
+      if (event.key === "ArrowRight" && revealed) {
+        event.preventDefault();
+        handleNext();
+      }
+      if (event.key === "ArrowLeft" && revealed && current > 0) {
+        event.preventDefault();
+        handlePrev();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [current, quizQuestions, revealed, selected, selectedExam, showSummary, progress, sessions]); // Session updates keep shortcuts aligned with saved state.
 
   // ── Selection screen ───────────────────────────────────────────────────────
   if (!selectedExam) {
@@ -750,6 +805,8 @@ export default function QuizPage() {
   const totalCount = quizQuestions.length;
   const answeredInView = quizQuestions.filter((q) => progress[q.id]).length;
   const correctInView = quizQuestions.filter((q) => progress[q.id]?.state === "correct").length;
+  const remainingInView = totalCount - answeredInView;
+  const isCurrentQuestionMarked = markedQuestionIds.includes(quizQuestions[current]?.id);
   const subCats = selectedExam.subCategoryPrefix
     ? Array.from(new Set(allQuestions.filter(selectedExam.match).map((q) => q.category))).sort()
     : [];
@@ -784,10 +841,10 @@ export default function QuizPage() {
   const clinicalPresentation = inlineClinicalData(q);
   const questionText = clinicalPresentation.text;
 
-  const tabs: { id: ActiveTab; icon: "clipboard" | "book" | "timer"; label: string }[] = [
+  const tabs: { id: ActiveTab; icon: "clipboard" | "book" | "bookmark"; label: string }[] = [
     { id: "question",    icon: "clipboard", label: "Question" },
     { id: "explanation", icon: "book", label: "Explanation" },
-    { id: "notes",       icon: "timer", label: "Navigator" },
+    { id: "notes",       icon: "bookmark", label: "Review" },
   ];
 
   return (
@@ -813,6 +870,25 @@ export default function QuizPage() {
         </div>
         <div className="mt-5 h-2 w-full rounded-full bg-slate-100">
           <div className="h-2 rounded-full bg-teal-600 transition-all" style={{ width: `${((current + 1) / totalCount) * 100}%` }} />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 divide-x divide-y divide-slate-200 border-b border-slate-200 bg-slate-50 sm:grid-cols-4 sm:divide-y-0">
+        <div className="px-5 py-3 sm:px-6">
+          <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Answered</p>
+          <p className="mt-0.5 text-sm font-black text-slate-800">{answeredInView} <span className="font-semibold text-slate-400">/ {totalCount}</span></p>
+        </div>
+        <div className="px-5 py-3 sm:px-6">
+          <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Accuracy</p>
+          <p className="mt-0.5 text-sm font-black text-teal-700">{answeredInView ? `${Math.round((correctInView / answeredInView) * 100)}%` : "--"}</p>
+        </div>
+        <div className="px-5 py-3 sm:px-6">
+          <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Marked</p>
+          <p className="mt-0.5 text-sm font-black text-amber-700">{markedQuestionIds.length}</p>
+        </div>
+        <div className="px-5 py-3 sm:px-6">
+          <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Remaining</p>
+          <p className="mt-0.5 text-sm font-black text-slate-700">{remainingInView}</p>
         </div>
       </div>
 
@@ -870,7 +946,15 @@ export default function QuizPage() {
             <span className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-black ${ac.badge}`}>
               <MedicalIcon name="clipboard" className="h-3 w-3" />{q.category}
             </span>
-            <div className="flex gap-1.5">
+            <div className="flex items-center gap-1.5">
+              <button
+                onClick={toggleQuestionMark}
+                aria-pressed={isCurrentQuestionMarked}
+                title={isCurrentQuestionMarked ? "Remove from review" : "Mark for review"}
+                className={`flex h-8 w-8 items-center justify-center rounded-lg border transition-colors ${isCurrentQuestionMarked ? "border-amber-300 bg-amber-50 text-amber-700" : "border-slate-200 bg-white text-slate-500 hover:border-amber-300 hover:text-amber-700"}`}
+              >
+                <MedicalIcon name="bookmark" className="h-4 w-4" />
+              </button>
               <button onClick={toggleQuizMode} className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-600 hover:border-teal-200 hover:text-teal-700 transition-colors">
                 {quizMode === "sequential" ? "Sequential" : "Random"}
               </button>
@@ -1047,7 +1131,7 @@ export default function QuizPage() {
       {/* ── Tab: Notes ───────────────────────────────────────────────── */}
       {activeTab === "notes" && (
         <div className="p-4">
-          <QuestionGrid questions={quizQuestions} progress={progress} onJump={(idx) => { handleJump(idx); setActiveTab("question"); }} currentIdx={current} />
+          <QuestionGrid questions={quizQuestions} progress={progress} markedQuestionIds={markedQuestionIds} onJump={(idx) => { handleJump(idx); setActiveTab("question"); }} currentIdx={current} />
         </div>
       )}
     </div>
@@ -1055,13 +1139,21 @@ export default function QuizPage() {
 }
 
 // ── Question grid ─────────────────────────────────────────────────────────────
-function QuestionGrid({ questions, progress, onJump, currentIdx }: {
-  questions: Question[]; progress: Progress; onJump: (idx: number) => void; currentIdx?: number;
+function QuestionGrid({ questions, progress, markedQuestionIds = [], onJump, currentIdx }: {
+  questions: Question[]; progress: Progress; markedQuestionIds?: number[]; onJump: (idx: number) => void; currentIdx?: number;
 }) {
   const [openGroups, setOpenGroups] = useState<Set<string>>(new Set());
+  const [filter, setFilter] = useState<"all" | "marked" | "incorrect" | "unanswered">("all");
   const groups: { category: string; items: { q: Question; idx: number }[] }[] = [];
   const seen = new Map<string, { q: Question; idx: number }[]>();
   questions.forEach((q, idx) => {
+    const state = progress[q.id]?.state;
+    const isMarked = markedQuestionIds.includes(q.id);
+    const matchesFilter = filter === "all"
+      || (filter === "marked" && isMarked)
+      || (filter === "incorrect" && state === "incorrect")
+      || (filter === "unanswered" && !state);
+    if (!matchesFilter) return;
     if (!seen.has(q.category)) { seen.set(q.category, []); groups.push({ category: q.category, items: seen.get(q.category)! }); }
     seen.get(q.category)!.push({ q, idx });
   });
@@ -1070,17 +1162,27 @@ function QuestionGrid({ questions, progress, onJump, currentIdx }: {
   const isOpen = (cat: string) => openGroups.has(cat) || cat === currentCategory;
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-white bg-white shadow-lg shadow-slate-200/60">
-      <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3">
-        <p className="text-xs font-black uppercase tracking-wider text-teal-700">Questions ({questions.length})</p>
-        <div className="hidden gap-3 text-xs font-semibold text-slate-400 sm:flex">
-          <span className="flex items-center gap-1"><span className="w-2 h-2 bg-green-500 rounded-full" /> Correct</span>
-          <span className="flex items-center gap-1"><span className="w-2 h-2 bg-red-400 rounded-full" /> Incorrect</span>
-          <span className="flex items-center gap-1"><span className="w-2 h-2 bg-amber-400 rounded-full" /> Revealed</span>
-          <span className="flex items-center gap-1"><span className="w-2 h-2 bg-slate-200 rounded-full" /> Unanswered</span>
+    <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+      <div className="border-b border-slate-100 px-4 py-3">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <p className="text-xs font-black uppercase tracking-wider text-teal-700">Review questions ({groups.reduce((count, group) => count + group.items.length, 0)})</p>
+          <div className="hidden gap-3 text-xs font-semibold text-slate-400 sm:flex">
+            <span className="flex items-center gap-1"><span className="w-2 h-2 bg-green-500 rounded-full" /> Correct</span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 bg-red-400 rounded-full" /> Incorrect</span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 bg-amber-400 rounded-full" /> Revealed</span>
+            <span className="flex items-center gap-1"><span className="w-2 h-2 bg-slate-200 rounded-full" /> Unanswered</span>
+          </div>
+        </div>
+        <div className="mt-3 flex gap-2 overflow-x-auto pb-0.5">
+          {(["all", "marked", "incorrect", "unanswered"] as const).map((item) => (
+            <button key={item} onClick={() => setFilter(item)} className={`whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-bold capitalize transition-colors ${filter === item ? "border-teal-700 bg-teal-700 text-white" : "border-slate-200 bg-white text-slate-500 hover:border-teal-200 hover:text-teal-700"}`}>
+              {item}
+            </button>
+          ))}
         </div>
       </div>
       <div className="divide-y divide-slate-100">
+        {groups.length === 0 && <p className="px-4 py-10 text-center text-sm font-medium text-slate-400">No questions match this review filter.</p>}
         {groups.map(({ category, items }) => {
           const correct = items.filter(({ q }) => progress[q.id]?.state === "correct").length;
           const incorrect = items.filter(({ q }) => progress[q.id]?.state === "incorrect").length;
@@ -1113,11 +1215,13 @@ function QuestionGrid({ questions, progress, onJump, currentIdx }: {
                   {items.map(({ q, idx }) => {
                     const state = progress[q.id]?.state;
                     const isCurrent = idx === currentIdx;
+                    const isMarked = markedQuestionIds.includes(q.id);
                     return (
                       <button key={q.id} onClick={() => onJump(idx)} className={`w-full text-left px-4 py-2.5 flex items-center gap-3 text-sm transition-colors hover:bg-slate-50 ${isCurrent ? "bg-teal-50 border-l-2 border-teal-600" : "border-l-2 border-transparent"}`}>
                         <span className={`flex-shrink-0 w-2 h-2 rounded-full ${state === "correct" ? "bg-teal-600" : state === "incorrect" ? "bg-red-400" : state === "revealed" ? "bg-amber-400" : "bg-slate-200"}`} />
                         <span className="text-xs font-mono text-slate-400 flex-shrink-0 w-6">{idx + 1}</span>
                         <span className={`truncate ${isCurrent ? "text-teal-900 font-bold" : "text-slate-600"}`}>{q.title}</span>
+                        {isMarked && <MedicalIcon name="bookmark" className="ml-auto h-3.5 w-3.5 flex-shrink-0 text-amber-600" />}
                       </button>
                     );
                   })}
