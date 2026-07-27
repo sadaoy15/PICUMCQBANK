@@ -182,44 +182,44 @@ function ModeVisualIcon({ type, small = false }: { type: "books" | "stopwatch"; 
 function makeStyles(isPhone: boolean) {
   return {
     quizWrap: isPhone
-      ? "-mx-4 overflow-hidden bg-white shadow-2xl shadow-slate-200/70 ring-1 ring-white/80 sm:mx-0 sm:rounded-[28px]"
-      : "overflow-hidden rounded-2xl border border-white/80 bg-white shadow-xl shadow-slate-200/70",
-    headerPad: isPhone ? "bg-gradient-to-br from-white to-slate-50 border-b border-slate-100 px-5 py-5" : "bg-gradient-to-br from-white to-slate-50 px-5 py-4",
+      ? "-mx-4 overflow-hidden bg-white shadow-xl shadow-slate-200/60 ring-1 ring-white/80 sm:mx-0 sm:rounded-2xl"
+      : "mx-auto max-w-[1080px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/50",
+    headerPad: isPhone ? "border-b border-slate-200 bg-white px-5 py-5" : "border-b border-slate-200 bg-white px-7 py-5",
     backBtn: isPhone
-      ? "mb-4 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2.5 text-sm font-extrabold text-slate-700 shadow-xl shadow-slate-200 hover:text-slate-950 transition-colors"
-      : "mb-4 inline-flex items-center gap-2 rounded-full border border-slate-100 bg-white px-4 py-2.5 text-sm font-extrabold text-slate-700 shadow-xl shadow-slate-200/80 hover:text-slate-950",
-    examTitle: isPhone ? "text-xl font-black tracking-tight text-slate-950" : "text-lg font-black tracking-tight text-slate-950",
-    questionMeta: isPhone ? "mt-2 text-sm font-bold text-slate-500" : "mt-1.5 text-sm font-bold text-slate-500",
+      ? "mb-5 inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3.5 py-2.5 text-sm font-bold text-slate-600 shadow-sm transition-colors hover:border-teal-300 hover:text-teal-800"
+      : "mb-5 inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3.5 py-2 text-sm font-bold text-slate-600 shadow-sm transition-colors hover:border-teal-300 hover:text-teal-800",
+    examTitle: isPhone ? "text-xl font-black tracking-tight text-slate-950" : "text-xl font-black tracking-tight text-slate-950",
+    questionMeta: isPhone ? "mt-2 text-sm font-medium text-slate-500" : "mt-1.5 text-sm font-medium text-slate-500",
     questionBadge: isPhone
-      ? "rounded-full border border-blue-100 bg-blue-100 px-3 py-1.5 text-base font-black text-blue-600"
-      : "rounded-full bg-blue-100 px-3.5 py-1.5 text-base font-black text-blue-600",
-    tabBtn: isPhone ? "py-3 text-base" : "py-2.5 text-base",
-    questionBodyPad: isPhone ? "px-5 py-5" : "relative px-5 py-5 sm:px-6",
+      ? "rounded-lg border border-teal-100 bg-teal-50 px-3 py-1.5 text-sm font-black text-teal-800"
+      : "rounded-lg border border-teal-100 bg-teal-50 px-3 py-1.5 text-sm font-black text-teal-800",
+    tabBtn: isPhone ? "py-3.5 text-base" : "py-3 text-base",
+    questionBodyPad: isPhone ? "px-5 py-6" : "relative px-7 py-7",
     questionText: isPhone
-      ? "mb-5 text-lg font-extrabold leading-snug text-slate-950"
-      : "mb-4 text-base font-semibold leading-relaxed text-slate-900",
+      ? "mb-6 text-xl font-bold leading-relaxed text-slate-950"
+      : "mb-6 text-xl font-bold leading-relaxed text-slate-950",
     choiceSpace: isPhone ? "space-y-3" : "space-y-3",
     choiceBase: isPhone
-      ? "w-full text-left rounded-2xl border-2 px-4 py-3.5 text-[15px] font-bold leading-snug text-slate-700 shadow-md shadow-slate-200/70 transition-all cursor-pointer flex items-center gap-3 "
-      : "w-full text-left rounded-xl border-2 px-4 py-2.5 text-sm font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/70 transition-all cursor-pointer flex items-center gap-3 ",
+      ? "w-full text-left rounded-xl border px-4 py-4 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/60 transition-all cursor-pointer flex items-center gap-3 "
+      : "w-full text-left rounded-xl border px-5 py-3.5 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/60 transition-all cursor-pointer flex items-center gap-3 ",
     choiceLetterBase: isPhone
-      ? "flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full text-sm font-black "
-      : "flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full text-xs font-black ",
+      ? "flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-sm font-black "
+      : "flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-xs font-black ",
     submitBtn: isPhone
-      ? "mt-5 w-full rounded-2xl bg-gradient-to-r from-blue-600 to-violet-600 py-3.5 text-base font-black text-white shadow-lg shadow-blue-200 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-      : "mt-4 w-full rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 py-3 text-sm font-black text-white shadow-lg shadow-blue-200 transition-colors disabled:opacity-40 disabled:cursor-not-allowed",
+      ? "mt-6 w-full rounded-xl bg-teal-700 py-3.5 text-base font-black text-white shadow-md shadow-teal-200 transition-colors hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-40"
+      : "mt-5 w-full rounded-xl bg-teal-700 py-3.5 text-sm font-black text-white shadow-md shadow-teal-200 transition-colors hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-40",
     navGrid: isPhone ? "mt-5 grid grid-cols-2 gap-3" : "mt-4 grid grid-cols-2 gap-2.5",
     prevBtn: isPhone
-      ? "rounded-2xl bg-slate-100 py-3.5 text-sm font-black text-slate-500 hover:bg-slate-200 transition-colors"
-      : "rounded-xl bg-slate-100 py-3 text-sm font-black text-slate-500 hover:bg-slate-200 transition-colors",
+      ? "rounded-xl border border-slate-200 bg-white py-3.5 text-sm font-black text-slate-600 hover:bg-slate-50 transition-colors"
+      : "rounded-xl border border-slate-200 bg-white py-3 text-sm font-black text-slate-600 hover:bg-slate-50 transition-colors",
     nextBtn: isPhone
-      ? "rounded-2xl bg-gradient-to-r from-blue-600 to-violet-600 py-3.5 text-sm font-black text-white transition-colors"
-      : "rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 py-3 text-sm font-black text-white transition-colors",
+      ? "rounded-xl bg-teal-700 py-3.5 text-sm font-black text-white transition-colors hover:bg-teal-800"
+      : "rounded-xl bg-teal-700 py-3 text-sm font-black text-white transition-colors hover:bg-teal-800",
     progressWrap: isPhone ? "mt-6 flex items-center justify-center" : "mt-4 flex items-center justify-center",
     progressPill: isPhone
       ? "rounded-full bg-white px-5 py-2.5 text-sm font-black text-slate-700 shadow-xl shadow-slate-200"
       : "rounded-full bg-white px-5 py-2 text-sm font-black text-slate-700 shadow-lg shadow-slate-200",
-    progressDot: "mr-2 inline-block h-2 w-2 rounded-full bg-blue-500",
+    progressDot: "mr-2 inline-block h-2 w-2 rounded-full bg-teal-500",
     scoreBubble: isPhone
       ? "absolute bottom-20 right-4 hidden h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-center text-xs font-bold text-white shadow-xl sm:flex"
       : "absolute bottom-16 right-3 hidden h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-center text-xs font-bold text-white shadow-lg sm:flex",
@@ -497,6 +497,10 @@ export default function QuizPage() {
     const prepTotal = allQuestions.filter((q) => q.category.startsWith("PREP")).length;
     const totalQuestionCount = allQuestions.length;
     const sourceCount = examGroups.length;
+    const latestSession = [...sessions].sort((a, b) => Date.parse(b.updatedAt) - Date.parse(a.updatedAt))[0];
+    const latestAnswered = latestSession ? Object.keys(latestSession.progress).length : 0;
+    const latestTotal = latestSession?.questionIds.length ?? 0;
+    const latestProgress = latestTotal > 0 ? Math.round((latestAnswered / latestTotal) * 100) : 0;
 
     const progressFor = (exam: ExamGroup) => {
       const total = allQuestions.filter(exam.match).length;
@@ -547,66 +551,79 @@ export default function QuizPage() {
     };
 
     return (
-      <div className="space-y-8">
-        <section className="overflow-hidden rounded-[28px] border border-white/80 bg-white/80 p-5 shadow-2xl shadow-slate-200/70 backdrop-blur sm:p-7">
-          <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.22em] text-teal-700">PICU MCQ Bank</p>
-              <h1 className="mt-2 max-w-3xl text-2xl font-black tracking-tight text-slate-950 sm:text-2xl">
-                Focused pediatric critical care practice.
-              </h1>
-              <p className="mt-3 max-w-2xl text-sm font-semibold leading-relaxed text-slate-600 sm:text-base">
-                Choose study mode for explanations, or test mode for a cleaner exam simulation.
+      <div className="space-y-4 lg:space-y-5">
+        <section className="relative isolate overflow-hidden rounded-[30px] border border-white/80 bg-[#f6fcfc] shadow-xl shadow-slate-200/70">
+          <img src="/PICUMCQBANK/images/picu-hero-illustration.png" alt="Pediatric critical care monitor and bedside learning tools" className="absolute inset-0 -z-20 h-full w-full object-cover object-[67%_center]" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-white via-white/95 to-white/25 lg:via-white/78" />
+          <div className="grid min-h-[460px] gap-8 p-6 sm:p-8 lg:grid-cols-[minmax(0,1fr)_430px] lg:items-center lg:p-10">
+            <div className="max-w-xl">
+              <p className="inline-flex items-center gap-2 rounded-full bg-teal-100/85 px-3 py-1.5 text-[11px] font-black tracking-wide text-teal-800">
+                <span className="text-base leading-none">✦</span> WELCOME TO PICU MCQ BANK
               </p>
-            </div>
-            <div className="grid grid-cols-3 gap-2 sm:min-w-[360px]">
-              <div className="rounded-2xl bg-slate-950 px-4 py-3 text-white shadow-lg shadow-slate-300/50">
-                <p className="text-xl font-black">{prepTotal}</p>
-                <p className="text-[11px] font-bold uppercase tracking-wider text-slate-300">PREP</p>
-              </div>
-              <div className="rounded-2xl bg-white px-4 py-3 shadow-md shadow-slate-200">
-                <p className="text-xl font-black text-slate-950">{totalQuestionCount}</p>
-                <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">Questions</p>
-              </div>
-              <div className="rounded-2xl bg-white px-4 py-3 shadow-md shadow-slate-200">
-                <p className="text-xl font-black text-slate-950">{sourceCount}</p>
-                <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">Sets</p>
+              <h1 className="mt-4 text-3xl font-black leading-[1.08] tracking-tight text-slate-950 sm:text-4xl lg:text-[48px]">
+                Focused practice.<br />
+                Stronger <span className="text-teal-700">critical care.</span>
+              </h1>
+              <p className="mt-5 max-w-lg text-sm font-medium leading-relaxed text-slate-600 sm:text-base">
+                High-yield MCQs for pediatric critical care. Build knowledge, track progress, and prepare with confidence.
+              </p>
+              <div className="mt-7 flex items-center gap-3 text-sm text-slate-700">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-teal-200 bg-white/85 text-teal-700 shadow-sm"><MedicalIcon name="stethoscope" className="h-6 w-6" /></span>
+                <span><span className="block font-bold text-slate-900">Pediatric critical care review</span><span className="block text-xs text-slate-500">Structured PREP learning sessions</span></span>
               </div>
             </div>
+
+            <aside className="w-full rounded-[24px] border border-white/90 bg-white/90 p-5 shadow-xl shadow-slate-300/30 backdrop-blur-md sm:p-6">
+              <div className="grid grid-cols-3 divide-x divide-slate-200">
+                <div className="pr-3 text-center sm:pr-4">
+                  <span className="mx-auto flex h-9 w-9 items-center justify-center rounded-xl bg-teal-100 text-teal-700"><MedicalIcon name="book" className="h-5 w-5" /></span>
+                  <p className="mt-2 text-2xl font-black text-teal-800 sm:text-3xl">{prepTotal}</p>
+                  <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">PREP MCQs</p>
+                </div>
+                <div className="px-3 text-center sm:px-4">
+                  <span className="mx-auto flex h-9 w-9 items-center justify-center rounded-xl bg-blue-100 text-blue-700"><MedicalIcon name="clipboard" className="h-5 w-5" /></span>
+                  <p className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">{totalQuestionCount}</p>
+                  <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">Questions</p>
+                </div>
+                <div className="pl-3 text-center sm:pl-4">
+                  <span className="mx-auto flex h-9 w-9 items-center justify-center rounded-xl bg-sky-100 text-sky-700"><MedicalIcon name="vial" className="h-5 w-5" /></span>
+                  <p className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">{sourceCount}</p>
+                  <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">Sets</p>
+                </div>
+              </div>
+              <div className="mt-6 border-t border-slate-200 pt-5">
+                <div className="flex items-center justify-between gap-3 text-sm font-semibold text-slate-700"><span>Continue your journey</span><span className="font-black text-teal-700">{latestProgress}%</span></div>
+                <div className="mt-3 h-2 overflow-hidden rounded-full bg-slate-100"><div className="h-full rounded-full bg-teal-500 transition-all" style={{ width: `${latestProgress}%` }} /></div>
+                <p className="mt-3 text-xs leading-relaxed text-slate-500">{latestSession ? `${latestAnswered} of ${latestTotal} questions answered in your latest session.` : "Start a practice or test session to track your progress."}</p>
+              </div>
+              <div className="mt-5 border-t border-slate-100 pt-4 text-sm leading-relaxed text-slate-600"><span className="mr-2 text-xl font-black text-teal-700">“</span>Continuous learning is the key to better care.</div>
+            </aside>
           </div>
         </section>
 
-        {/* Practice / Test hero cards */}
+        {/* Practice / Test mode choices */}
         {pendingMode === null ? (
-          <div className={s.homeModeGrid}>
-            <section className={`relative overflow-hidden rounded-[28px] bg-white ${s.modeCardPad} shadow-2xl shadow-slate-200/80 border border-white ${s.modeCardMinH}`}>
-              <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-blue-50/70" />
-              <div className="relative flex items-start justify-between gap-4">
-                <ModeVisualIcon type="books" small={deviceMode === "computer"} />
-                <span className={s.modeAvailBadge}>Available</span>
+          <div className="grid gap-4 lg:grid-cols-2">
+            <section className="relative min-h-[260px] overflow-hidden rounded-[26px] border border-white bg-[#eefcf9] p-6 shadow-lg shadow-slate-200/60 sm:p-7">
+              <div className="absolute -right-7 -bottom-9 h-48 w-48 rounded-full border-[22px] border-teal-100/80" />
+              <div className="absolute right-8 top-8 opacity-95"><ModeVisualIcon type="books" small={deviceMode === "computer"} /></div>
+              <div className="relative max-w-[62%] sm:max-w-[65%]">
+                <span className="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-black text-emerald-700">Available</span>
+                <h2 className="mt-5 text-2xl font-black tracking-tight text-teal-800 sm:text-3xl">Practice Mode</h2>
+                <p className="mt-2 text-sm font-medium leading-relaxed text-slate-600">Study at your own pace with explanations, PREP pearls, and progress tracking.</p>
+                <button onClick={() => handleStartAllPrep("study")} className="mt-5 inline-flex items-center gap-2 rounded-xl bg-teal-600 px-5 py-3 text-sm font-black text-white shadow-md shadow-teal-200 transition-colors hover:bg-teal-700">Start Practicing <span className="text-xl leading-none">→</span></button>
               </div>
-              <div className="relative mt-4">
-                <h1 className={s.modeHeading}>Practice Mode</h1>
-                <p className={s.modeDesc}>Study at your own pace with explanations, PREP pearls, and progress tracking.</p>
-              </div>
-              <button onClick={() => handleStartAllPrep("study")} className={s.modeStartPractice}>
-                Start Practicing <span className={s.modeArrow}>→</span>
-              </button>
             </section>
 
-            <section className={`relative overflow-hidden rounded-[28px] bg-white ${s.modeCardPad} shadow-2xl shadow-slate-200/80 border border-white ${s.modeCardMinH}`}>
-              <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-red-50/60" />
-              <div className="relative flex items-start justify-between gap-4">
-                <ModeVisualIcon type="stopwatch" small={deviceMode === "computer"} />
-                <span className={s.modeAvailBadge}>Available</span>
+            <section className="relative min-h-[260px] overflow-hidden rounded-[26px] border border-white bg-[#fff6f0] p-6 shadow-lg shadow-slate-200/60 sm:p-7">
+              <div className="absolute -right-7 -bottom-9 h-48 w-48 rounded-full border-[22px] border-orange-100/90" />
+              <div className="absolute right-8 top-8 opacity-95"><ModeVisualIcon type="stopwatch" small={deviceMode === "computer"} /></div>
+              <div className="relative max-w-[62%] sm:max-w-[65%]">
+                <span className="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-black text-emerald-700">Available</span>
+                <h2 className="mt-5 text-2xl font-black tracking-tight text-[#d73a2c] sm:text-3xl">Test Mode</h2>
+                <p className="mt-2 text-sm font-medium leading-relaxed text-slate-600">Simulated exam with scoring and no explanations during the test.</p>
+                <button onClick={() => handleStartAllPrep("test")} className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#dc3b2d] px-5 py-3 text-sm font-black text-white shadow-md shadow-orange-200 transition-colors hover:bg-[#bd3025]">Start Test <span className="text-xl leading-none">→</span></button>
               </div>
-              <div className="relative mt-4">
-                <h2 className={s.modeHeading}>Test Mode</h2>
-                <p className={s.modeDesc}>Simulated exam with scoring and no explanations shown during the test.</p>
-              </div>
-              <button onClick={() => handleStartAllPrep("test")} className={s.modeStartTest}>
-                Start Test <span className={s.modeArrow}>→</span>
-              </button>
             </section>
           </div>
         ) : (
@@ -625,6 +642,32 @@ export default function QuizPage() {
               </span>
             </div>
           </div>
+        )}
+
+        {pendingMode === null && (
+          <>
+            <section className="grid overflow-hidden rounded-[24px] border border-white bg-white shadow-lg shadow-slate-200/50 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { icon: "heart" as const, title: "High-yield content", text: "Focused on what matters in PICU exams." },
+                { icon: "book" as const, title: "Detailed explanations", text: "Understand the why, not only the answer." },
+                { icon: "timer" as const, title: "Track progress", text: "Monitor performance across each session." },
+                { icon: "stethoscope" as const, title: "Flexible sessions", text: "Pause and continue when you are ready." },
+              ].map((item, index) => (
+                <div key={item.title} className={`flex items-start gap-3 px-5 py-5 ${index > 0 ? "border-t border-slate-100 sm:border-t-0 lg:border-l" : ""} ${index === 2 ? "sm:border-t lg:border-t-0" : ""}`}>
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-teal-50 text-teal-700"><MedicalIcon name={item.icon} className="h-5 w-5" /></span>
+                  <span><span className="block text-sm font-black text-slate-800">{item.title}</span><span className="mt-0.5 block text-xs leading-relaxed text-slate-500">{item.text}</span></span>
+                </div>
+              ))}
+            </section>
+
+            <footer className="flex flex-col gap-4 rounded-[24px] bg-[#075d69] px-5 py-5 text-white shadow-lg shadow-teal-950/20 sm:flex-row sm:items-center sm:justify-between sm:px-7">
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/10"><MedicalIcon name="heart" className="h-5 w-5" /></span>
+                <span><span className="block text-sm font-black">PICU MCQ Bank</span><span className="block text-xs text-teal-100">Pediatric critical care review</span></span>
+              </div>
+              <p className="text-sm font-semibold text-teal-50">Knowledge. Compassion. Excellence.</p>
+            </footer>
+          </>
         )}
 
         {/* Paused sessions — shown prominently above exam picker */}
@@ -739,10 +782,10 @@ export default function QuizPage() {
   const choiceLetters = Object.keys(q.choices).sort();
   const questionText = q.displayScenario || q.scenario || q.title;
 
-  const tabs: { id: ActiveTab; emoji: string; label: string }[] = [
-    { id: "question",    emoji: "?",  label: "Question" },
-    { id: "explanation", emoji: "💡", label: "Explanation" },
-    { id: "notes",       emoji: "📝", label: "Questions" },
+  const tabs: { id: ActiveTab; icon: "clipboard" | "book" | "timer"; label: string }[] = [
+    { id: "question",    icon: "clipboard", label: "Question" },
+    { id: "explanation", icon: "book", label: "Explanation" },
+    { id: "notes",       icon: "timer", label: "Navigator" },
   ];
 
   return (
@@ -750,12 +793,12 @@ export default function QuizPage() {
       {/* ── Header ─────────────────────────────────────────────────── */}
       <div className={s.headerPad}>
         <button onClick={handleBackToSelection} className={s.backBtn}>
-          ← Back
+          ← Back to sessions
         </button>
         <div className="flex items-start justify-between gap-3 mt-1">
           <div>
             <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-600 to-blue-600 text-white shadow-lg shadow-teal-100">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-700 text-white shadow-sm shadow-teal-200">
                 <MedicalIcon name={iconForExam(selectedExam)} className="h-5 w-5" />
               </span>
               <h1 className={s.examTitle}>{selectedExam.label}</h1>
@@ -767,7 +810,7 @@ export default function QuizPage() {
           <span className={s.questionBadge}>Q{current + 1}</span>
         </div>
         <div className="mt-5 h-2 w-full rounded-full bg-slate-100">
-          <div className="h-2 rounded-full bg-gradient-to-r from-teal-500 to-blue-600 transition-all" style={{ width: `${((current + 1) / totalCount) * 100}%` }} />
+          <div className="h-2 rounded-full bg-teal-600 transition-all" style={{ width: `${((current + 1) / totalCount) * 100}%` }} />
         </div>
       </div>
 
@@ -782,12 +825,12 @@ export default function QuizPage() {
               onClick={() => setActiveTab(tab.id)}
               className={`flex flex-col items-center justify-center gap-0.5 ${s.tabBtn} border-b-2 transition-colors ${
                 isActive
-                  ? "border-blue-500 text-blue-600 bg-blue-50/70"
-                  : "border-transparent text-slate-400 hover:text-slate-600 hover:bg-slate-50"
+                  ? "border-teal-600 text-teal-800 bg-teal-50/70"
+                  : "border-transparent text-slate-400 hover:text-slate-700 hover:bg-slate-50"
               } ${isLocked ? "opacity-40" : ""}`}
             >
-              <span className={tab.id === "question" ? "text-base font-bold leading-none" : "leading-none"}>{tab.emoji}</span>
-              <span className="text-[10px] font-semibold tracking-wide">{tab.label}</span>
+              <MedicalIcon name={tab.icon} className="h-4 w-4" />
+              <span className="text-[10px] font-bold tracking-wide">{tab.label}</span>
             </button>
           );
         })}
@@ -803,13 +846,13 @@ export default function QuizPage() {
           <details className="border-b border-slate-100 bg-white">
             <summary className="cursor-pointer list-none px-5 py-3 text-sm font-semibold text-slate-500 marker:hidden">
               <span className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1.5">
-                <span className="h-2 w-2 rounded-full bg-blue-500" />{filterLabel}
+                <span className="h-2 w-2 rounded-full bg-teal-500" />{filterLabel}
               </span>
             </summary>
             <div className="flex gap-2 overflow-x-auto px-5 pb-3">
-              <button onClick={() => handleChangeSubCat("all")} className={`whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors ${activeSubCat === "all" ? "border-blue-500 bg-blue-600 text-white" : "border-slate-200 bg-white text-slate-500"}`}>{allLabel}</button>
+              <button onClick={() => handleChangeSubCat("all")} className={`whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors ${activeSubCat === "all" ? "border-teal-700 bg-teal-700 text-white" : "border-slate-200 bg-white text-slate-500"}`}>{allLabel}</button>
               {subCats.map((cat) => (
-                <button key={cat} onClick={() => handleChangeSubCat(cat)} className={`whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors ${activeSubCat === cat ? "border-blue-500 bg-blue-600 text-white" : "border-slate-200 bg-white text-slate-500"}`}>
+                <button key={cat} onClick={() => handleChangeSubCat(cat)} className={`whitespace-nowrap rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors ${activeSubCat === cat ? "border-teal-700 bg-teal-700 text-white" : "border-slate-200 bg-white text-slate-500"}`}>
                   {cat.replace(selectedExam.subCategoryPrefix! + " - ", "")}
                 </button>
               ))}
@@ -826,10 +869,10 @@ export default function QuizPage() {
               <MedicalIcon name="clipboard" className="h-3 w-3" />{q.category}
             </span>
             <div className="flex gap-1.5">
-              <button onClick={toggleQuizMode} className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-black text-slate-500 hover:bg-slate-200 transition-colors">
+              <button onClick={toggleQuizMode} className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-600 hover:border-teal-200 hover:text-teal-700 transition-colors">
                 {quizMode === "sequential" ? "Sequential" : "Random"}
               </button>
-              <button onClick={resetProgress} className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-black text-slate-500 hover:bg-slate-200 transition-colors">Reset</button>
+              <button onClick={resetProgress} className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-600 hover:border-red-200 hover:text-red-600 transition-colors">Reset</button>
             </div>
           </div>
 
@@ -851,6 +894,7 @@ export default function QuizPage() {
             </div>
           )}
 
+          <p className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-400">Select one answer</p>
           <div className={s.choiceSpace}>
             {choiceLetters.map((letter) => {
               const isSelected = selected === letter;
@@ -858,7 +902,7 @@ export default function QuizPage() {
               let style = s.choiceBase;
               const isRevealedState = savedState?.state === "revealed";
               if (!revealed) {
-                style += isSelected ? "border-blue-500 bg-blue-50 text-blue-900" : "border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50/40";
+                style += isSelected ? "border-teal-600 bg-teal-50 text-teal-950" : "border-slate-200 bg-white hover:border-teal-300 hover:bg-teal-50/40";
               } else if (isRevealedState) {
                 if (isCorrect) style += "border-amber-400 bg-amber-50 text-amber-900";
                 else style += "border-slate-200 bg-white text-slate-400";
@@ -871,7 +915,7 @@ export default function QuizPage() {
                 <button key={letter} className={style} onClick={() => handleSelect(letter)}>
                   <span className={`${s.choiceLetterBase}${
                     !revealed
-                      ? isSelected ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-500"
+                      ? isSelected ? "bg-teal-700 text-white" : "bg-slate-100 text-slate-500"
                       : isRevealedState
                       ? isCorrect ? "bg-amber-400 text-white" : "bg-slate-100 text-slate-400"
                       : isCorrect ? "bg-green-500 text-white"
@@ -886,14 +930,14 @@ export default function QuizPage() {
 
           {!revealed ? (
             <>
-              <button onClick={handleSubmit} disabled={!selected} className={s.submitBtn}>Submit</button>
+              <button onClick={handleSubmit} disabled={!selected} className={s.submitBtn}>Check answer</button>
               {viewMode === "study" && <button onClick={handleReveal} className={s.revealBtn}>Show Answer</button>}
             </>
           ) : (
             <div className={s.navGrid}>
               {current > 0 && <button onClick={handlePrev} className={s.prevBtn}>⬅ Previous</button>}
               <button onClick={handleNext} className={`${s.nextBtn} ${current === 0 ? "col-span-2" : ""}`}>
-                {current + 1 >= totalCount ? "See Results" : "Next ➡"}
+                {current + 1 >= totalCount ? "See results" : "Next question →"}
               </button>
             </div>
           )}
@@ -913,11 +957,11 @@ export default function QuizPage() {
         <div className={s.questionBodyPad}>
           {!revealed ? (
             <div className="flex flex-col items-center justify-center py-14 text-center gap-4">
-              <span className="text-5xl">💡</span>
+              <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50 text-teal-700"><MedicalIcon name="book" className="h-7 w-7" /></span>
               <p className="text-base font-semibold text-slate-500">Answer the question first</p>
               <p className="text-sm text-slate-400">Select an answer and tap Submit to see the explanation.</p>
-              <button onClick={() => setActiveTab("question")} className="mt-2 rounded-xl bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 transition-colors">
-                Go to Question →
+              <button onClick={() => setActiveTab("question")} className="mt-2 rounded-xl bg-teal-700 px-6 py-2.5 text-sm font-semibold text-white hover:bg-teal-800 transition-colors">
+                Go to question →
               </button>
             </div>
           ) : (
@@ -976,7 +1020,7 @@ export default function QuizPage() {
               <div className={s.navGrid}>
                 {current > 0 && <button onClick={handlePrev} className={s.prevBtn}>⬅ Previous</button>}
                 <button onClick={handleNext} className={`${s.nextBtn} ${current === 0 ? "col-span-2" : ""}`}>
-                  {current + 1 >= totalCount ? "See Results" : "Next ➡"}
+                  {current + 1 >= totalCount ? "See results" : "Next question →"}
                 </button>
               </div>
 
