@@ -27994,6 +27994,14 @@ const cleanImportedText = (value: string | null | undefined) => (value ?? "")
   .replace(/\s{2,}/g, " ")
   .trim();
 
+const visualReference = /\b(?:figure|fig\.|image|pictured|picture|shown|showing|demonstrated|demonstrates|displayed|tracing|waveform|radiograph|x-?ray|ecg|electrocardiogram|echocardiogram|ultraso(?:und|nography)|ct\s*(?:scan|image)?|mri|histolog(?:y|ical)|biopsy|smear|fundoscop|bronchoscop)\b/i;
+
+const hasVisualReference = (question: Question) => visualReference.test([
+  question.title,
+  question.displayScenario || question.scenario,
+  question.explanation || "",
+].join(" "));
+
 const normalizedQuestions = importedQuestions.map((question) => {
   const enrichment = questionEnrichments[question.id];
   const merged = enrichment ? { ...question, ...enrichment } : question;
@@ -28012,6 +28020,7 @@ const normalizedQuestions = importedQuestions.map((question) => {
     source: cleanImportedText(merged.source) || null,
     category: cleanImportedText(merged.category),
     displayScenario: merged.displayScenario ? cleanImportedText(merged.displayScenario) : undefined,
+    images: hasVisualReference(merged) ? merged.images : undefined,
   };
 });
 

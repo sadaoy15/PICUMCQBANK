@@ -1,10 +1,17 @@
 import { Question } from "@/types/question";
 
-type QuestionEnrichment = Partial<Pick<Question, "displayScenario" | "clinicalData" | "choices" | "correctAnswer" | "correctAnswerText">>;
+type QuestionEnrichment = Partial<Pick<Question, "displayScenario" | "clinicalData" | "choices" | "correctAnswer" | "correctAnswerText" | "images">>;
 
 // These tables reproduce values already present in the source question stems.
 // They keep dense clinical data readable without changing the question content.
 export const questionEnrichments: Record<number, QuestionEnrichment> = {
+  // Verified against the original Zimmerman and PICU MCQ Review PDFs. These figures
+  // belong to the preceding item on the source page, not to the question below it.
+  2260: { images: [] },
+  2411: { images: [] },
+  2540: { images: [] },
+  3412: { images: [] },
+  3413: { images: ["/PICUMCQBANK/images/picumcq/picumcq-pg20-img1.jpeg"] },
   1024: {
     displayScenario: "A 15-year-old high school cheerleader presents to the pediatric intensive care unit with hypotension, fever, tachycardia, and severe lower back pain. She denies trauma, although cheerleading practice has been intense. Three days ago she was diagnosed with a muscle strain and prescribed rest and meloxicam. The pain became severe enough that she did not want to get out of bed; she then developed fever and decreased urine output. After fluids and ceftriaxone for presumed sepsis, her blood pressure improves and she produces some urine. Overnight her urine output falls, a bladder scan shows 800 mL, and a urinary catheter drains a large volume. Several hours later, she reports that she cannot move her legs normally. Magnetic resonance imaging with gadolinium contrast is obtained (Figure). Of the following, the MOST likely diagnosis is",
     clinicalData: [{
