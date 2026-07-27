@@ -157,26 +157,25 @@ function ClinicalData({ blocks }: { blocks?: ClinicalDataBlock[] }) {
   );
 }
 
-function ModeVisualIcon({ type, small = false }: { type: "books" | "stopwatch"; small?: boolean }) {
-  const sz = small ? "h-12 w-12" : "h-16 w-16";
-  if (type === "books") return (
-    <svg viewBox="0 0 96 96" aria-hidden="true" className={`${sz} drop-shadow-md flex-shrink-0`}>
-      <path d="M20 58 67 45l10 8-47 13-10-8Z" fill="#1d4ed8" /><path d="M30 66 77 53v12L30 78V66Z" fill="#ffffff" /><path d="M20 58v12l10 8V66l-10-8Z" fill="#1e3a8a" />
-      <path d="M24 42 71 29l10 8-47 13-10-8Z" fill="#ef4444" /><path d="M34 50 81 37v12L34 62V50Z" fill="#fff7ed" /><path d="M24 42v12l10 8V50l-10-8Z" fill="#b91c1c" />
-      <path d="M18 28 65 15l13 9-47 13-13-9Z" fill="#65c75a" /><path d="M31 37 78 24v14L31 51V37Z" fill="#3fa13a" /><path d="M18 28v13l13 10V37L18 28Z" fill="#16803a" />
+function ModeVisualIcon({ type, small = false }: { type: "practice" | "test"; small?: boolean }) {
+  const sz = small ? "h-14 w-14" : "h-[72px] w-[72px]";
+  if (type === "practice") return (
+    <svg viewBox="0 0 96 96" aria-hidden="true" className={`${sz} flex-shrink-0 drop-shadow-sm`}>
+      <circle cx="48" cy="48" r="43" fill="#d9f7f1" />
+      <rect x="22" y="19" width="52" height="58" rx="10" fill="#ffffff" stroke="#0f766e" strokeWidth="3" />
+      <path d="M32 33.5c5.5-3.5 10.5-3.5 16 0v24c-5.5-3.5-10.5-3.5-16 0v-24Zm32 0c-5.5-3.5-10.5-3.5-16 0v24c5.5-3.5 10.5-3.5 16 0v-24Z" fill="#e6fffa" stroke="#0f766e" strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M48 37v14M41 44h14" stroke="#0f766e" strokeWidth="3.5" strokeLinecap="round" />
+      <path d="M30 66h36" stroke="#99f6e4" strokeWidth="3" strokeLinecap="round" />
     </svg>
   );
   return (
-    <svg viewBox="0 0 96 96" aria-hidden="true" className={`${sz} drop-shadow-md flex-shrink-0`}>
-      <circle cx="48" cy="52" r="31" fill="#f8fafc" stroke="#64748b" strokeWidth="5" />
-      <circle cx="48" cy="52" r="24" fill="#ffffff" stroke="#cbd5e1" strokeWidth="2" />
-      <path d="M39 9h18v10H39z" fill="#94a3b8" stroke="#475569" strokeWidth="3" />
-      <path d="M63 18 75 30" stroke="#475569" strokeWidth="6" strokeLinecap="round" /><path d="M33 18 21 30" stroke="#475569" strokeWidth="6" strokeLinecap="round" />
-      <path d="M48 52V30" stroke="#ef4444" strokeWidth="5" strokeLinecap="round" /><path d="M48 52h17" stroke="#0f766e" strokeWidth="5" strokeLinecap="round" />
-      <circle cx="48" cy="52" r="4" fill="#1e293b" />
-      {[0,30,60,90,120,150,180,210,240,270,300,330].map((a) => (
-        <line key={a} x1={48+Math.sin(a*Math.PI/180)*19} y1={52-Math.cos(a*Math.PI/180)*19} x2={48+Math.sin(a*Math.PI/180)*22} y2={52-Math.cos(a*Math.PI/180)*22} stroke="#64748b" strokeWidth="2" strokeLinecap="round" />
-      ))}
+    <svg viewBox="0 0 96 96" aria-hidden="true" className={`${sz} flex-shrink-0 drop-shadow-sm`}>
+      <circle cx="48" cy="48" r="43" fill="#ffeadf" />
+      <rect x="25" y="18" width="42" height="58" rx="8" fill="#ffffff" stroke="#c2412d" strokeWidth="3" />
+      <rect x="37" y="14" width="18" height="10" rx="4" fill="#fed7cc" stroke="#c2412d" strokeWidth="3" />
+      <path d="m34 38 4 4 7-8M34 52h16M34 61h10" stroke="#c2412d" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="66" cy="65" r="15" fill="#fff7f3" stroke="#c2412d" strokeWidth="3" />
+      <path d="M66 56v9l6 3M60 49l-3-4M72 49l3-4" stroke="#c2412d" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -662,7 +661,7 @@ export default function QuizPage() {
           <div className="grid gap-4 lg:grid-cols-2">
             <section className="relative min-h-[260px] overflow-hidden rounded-[26px] border border-white bg-[#eefcf9] p-6 shadow-lg shadow-slate-200/60 sm:p-7">
               <div className="absolute -right-7 -bottom-9 h-48 w-48 rounded-full border-[22px] border-teal-100/80" />
-              <div className="absolute right-8 top-8 opacity-95"><ModeVisualIcon type="books" small={deviceMode === "computer"} /></div>
+              <div className="absolute right-8 top-7"><ModeVisualIcon type="practice" small={deviceMode === "computer"} /></div>
               <div className="relative max-w-[62%] sm:max-w-[65%]">
                 <span className="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-black text-emerald-700">Available</span>
                 <h2 className="mt-5 text-2xl font-black tracking-tight text-teal-800 sm:text-3xl">Practice Mode</h2>
@@ -673,7 +672,7 @@ export default function QuizPage() {
 
             <section className="relative min-h-[260px] overflow-hidden rounded-[26px] border border-white bg-[#fff6f0] p-6 shadow-lg shadow-slate-200/60 sm:p-7">
               <div className="absolute -right-7 -bottom-9 h-48 w-48 rounded-full border-[22px] border-orange-100/90" />
-              <div className="absolute right-8 top-8 opacity-95"><ModeVisualIcon type="stopwatch" small={deviceMode === "computer"} /></div>
+              <div className="absolute right-8 top-7"><ModeVisualIcon type="test" small={deviceMode === "computer"} /></div>
               <div className="relative max-w-[62%] sm:max-w-[65%]">
                 <span className="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-black text-emerald-700">Available</span>
                 <h2 className="mt-5 text-2xl font-black tracking-tight text-[#d73a2c] sm:text-3xl">Test Mode</h2>
