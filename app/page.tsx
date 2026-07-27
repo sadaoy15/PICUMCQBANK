@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { questions as builtInQuestions } from "@/data/questions";
-import { Question } from "@/types/question";
+import { ClinicalDataBlock, Question } from "@/types/question";
 
 const STORAGE_KEY = "picu_custom_questions";
 const SESSIONS_KEY = "picu_sessions";
@@ -108,6 +108,50 @@ function iconForExam(exam: ExamGroup): "heart" | "clipboard" | "book" | "stethos
   if (exam.id.includes("prep")) return "book";
   if (exam.id.includes("sccm") || exam.id.includes("zimmerman")) return "stethoscope";
   return "clipboard";
+}
+
+function ClinicalData({ blocks }: { blocks?: ClinicalDataBlock[] }) {
+  if (!blocks?.length) return null;
+
+  return (
+    <div className="my-5 space-y-4">
+      {blocks.map((block, blockIndex) => (
+        <section key={`${block.title}-${blockIndex}`} className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50/70">
+          <p className="border-b border-slate-200 bg-slate-100 px-3 py-2 text-[11px] font-bold uppercase tracking-wide text-slate-500">
+            {block.title}
+          </p>
+          <div className="overflow-x-auto">
+            <table className="min-w-full border-collapse text-left text-xs leading-relaxed text-slate-700 sm:text-sm">
+              {block.columns && (
+                <thead className="bg-white text-slate-500">
+                  <tr>
+                    {block.columns.map((column) => (
+                      <th key={column} scope="col" className="border-b border-slate-200 px-3 py-2 font-bold">
+                        {column}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+              )}
+              <tbody className="divide-y divide-slate-200/80 bg-white">
+                {block.rows.map((row, rowIndex) => (
+                  <tr key={`${block.title}-${rowIndex}`}>
+                    {row.map((cell, cellIndex) => cellIndex === 0 ? (
+                      <th key={cellIndex} scope="row" className="whitespace-nowrap px-3 py-2 font-semibold text-slate-800">
+                        {cell}
+                      </th>
+                    ) : (
+                      <td key={cellIndex} className="px-3 py-2 text-slate-600">{cell}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ))}
+    </div>
+  );
 }
 
 function ModeVisualIcon({ type, small = false }: { type: "books" | "stopwatch"; small?: boolean }) {
@@ -693,7 +737,7 @@ export default function QuizPage() {
   const q = quizQuestions[current];
   const savedState = progress[q.id];
   const choiceLetters = Object.keys(q.choices).sort();
-  const questionText = q.scenario || q.title;
+  const questionText = q.displayScenario || q.scenario || q.title;
 
   const tabs: { id: ActiveTab; emoji: string; label: string }[] = [
     { id: "question",    emoji: "?",  label: "Question" },
@@ -789,7 +833,9 @@ export default function QuizPage() {
             </div>
           </div>
 
-          <h2 className={s.questionText}>{questionText}</h2>
+          <h2 className={`${s.questionText} whitespace-pre-line`}>{questionText}</h2>
+
+          <ClinicalData blocks={q.clinicalData} />
 
           {q.images && q.images.length > 0 && (
             <div className="my-4 flex flex-col gap-3">

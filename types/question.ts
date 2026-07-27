@@ -1,3 +1,9 @@
+export interface ClinicalDataBlock {
+  title: string;
+  columns?: string[];
+  rows: string[][];
+}
+
 export interface Question {
   id: number;
   title: string;
@@ -9,4 +15,6 @@ export interface Question {
   source: string | null;
   category: string;
   images?: string[];
+  displayScenario?: string;
+  clinicalData?: ClinicalDataBlock[];
 }
