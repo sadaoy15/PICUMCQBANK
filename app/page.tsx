@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { questions as builtInQuestions } from "@/data/questions";
+import { inlineClinicalData } from "@/lib/inline-clinical-data";
 import { ClinicalDataBlock, Question } from "@/types/question";
 
 const STORAGE_KEY = "picu_custom_questions";
@@ -137,11 +138,11 @@ function ClinicalData({ blocks }: { blocks?: ClinicalDataBlock[] }) {
                 {block.rows.map((row, rowIndex) => (
                   <tr key={`${block.title}-${rowIndex}`}>
                     {row.map((cell, cellIndex) => cellIndex === 0 ? (
-                      <th key={cellIndex} scope="row" className="whitespace-nowrap px-3 py-2 font-semibold text-slate-800">
+                      <th key={cellIndex} scope="row" className="break-words px-3 py-2 font-semibold text-slate-800">
                         {cell}
                       </th>
                     ) : (
-                      <td key={cellIndex} className="px-3 py-2 text-slate-600">{cell}</td>
+                      <td key={cellIndex} className="break-words px-3 py-2 text-slate-600">{cell}</td>
                     ))}
                   </tr>
                 ))}
@@ -780,7 +781,8 @@ export default function QuizPage() {
   const q = quizQuestions[current];
   const savedState = progress[q.id];
   const choiceLetters = Object.keys(q.choices).sort();
-  const questionText = q.displayScenario || q.scenario || q.title;
+  const clinicalPresentation = inlineClinicalData(q);
+  const questionText = clinicalPresentation.text;
 
   const tabs: { id: ActiveTab; icon: "clipboard" | "book" | "timer"; label: string }[] = [
     { id: "question",    icon: "clipboard", label: "Question" },
@@ -878,7 +880,7 @@ export default function QuizPage() {
 
           <h2 className={`${s.questionText} whitespace-pre-line`}>{questionText}</h2>
 
-          <ClinicalData blocks={q.clinicalData} />
+          <ClinicalData blocks={clinicalPresentation.blocks} />
 
           {q.images && q.images.length > 0 && (
             <div className="my-4 flex flex-col gap-3">
@@ -988,9 +990,10 @@ export default function QuizPage() {
                 {viewMode === "study" && (
                   <>
                     {q.explanation && (() => {
-                      const pearlIdx = q.explanation!.indexOf("PREP Pearls:");
+                      const pearlMatch = /\bPREP\s+Pearls?\s*:/i.exec(q.explanation!);
+                      const pearlIdx = pearlMatch?.index ?? -1;
                       const mainText = pearlIdx >= 0 ? q.explanation!.slice(0, pearlIdx).trim() : q.explanation;
-                      const pearlText = pearlIdx >= 0 ? q.explanation!.slice(pearlIdx + 12).trim() : null;
+                      const pearlText = pearlMatch ? q.explanation!.slice(pearlIdx + pearlMatch[0].length).trim() : null;
                       return (
                         <>
                           {mainText && <p className="text-slate-700 leading-relaxed mt-2">{mainText}</p>}
@@ -998,7 +1001,7 @@ export default function QuizPage() {
                             <div className="mt-3 bg-amber-50 border border-amber-200 rounded-lg p-3">
                               <p className="text-xs font-bold text-amber-800 uppercase tracking-wide mb-2">PREP Pearls</p>
                               <ul className="space-y-1">
-                                {pearlText.split(" | ").map((pearl, i) => (
+                                {pearlText.split(/\s*(?:\||•|¢)\s*/).filter(Boolean).map((pearl, i) => (
                                   <li key={i} className="text-sm text-amber-900 flex gap-2">
                                     <span className="text-amber-500 flex-shrink-0">•</span><span>{pearl}</span>
                                   </li>
@@ -1009,6 +1012,11 @@ export default function QuizPage() {
                         </>
                       );
                     })()}
+                    {!q.explanation && (
+                      <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                        The imported source does not include an explanation for this question.
+                      </p>
+                    )}
                     {q.source && <p className="text-xs text-slate-400 italic border-t border-slate-200 pt-2 mt-2">Source: {q.source}</p>}
                   </>
                 )}
