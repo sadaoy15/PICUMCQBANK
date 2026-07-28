@@ -24,7 +24,10 @@ function loadQuestions() {
     require: (module) => module === "./question-enrichments" ? enrichmentContext.exports : require(module),
   };
   vm.runInNewContext(questionJavaScript, questionContext, { filename: "questions.ts" });
-  return questionContext.exports.questions;
+  return {
+    questions: questionContext.exports.questions,
+    importedQuestions: questionContext.exports.importedQuestions,
+  };
 }
 
 function loadInlineClinicalData() {
@@ -45,7 +48,8 @@ const normalize = (value = "") => value
 
 const sourceLabelledLab = /\b(?:laboratory|lab)\s+(?:test\s+)?(?:data|result|results|values)\b|\b(?:arterial|venous)\s+blood\s+gas(?:\s+(?:analysis|values?))?\b/i;
 const textFields = ["title", "scenario", "explanation", "source", "category"];
-const questions = loadQuestions();
+const { questions, importedQuestions } = loadQuestions();
+const importedById = new Map(importedQuestions.map((question) => [question.id, question]));
 const presentationFor = loadInlineClinicalData();
 const exactDuplicates = new Map();
 const scenarioDuplicates = new Map();
@@ -53,8 +57,13 @@ const report = {
   generatedAt: new Date().toISOString(),
   totalQuestions: questions.length,
   invalidAnswers: [],
+  invalidChoiceCounts: [],
   missingRequiredFields: [],
   answerTextMismatches: [],
+  importedAnswerKeyMismatches: [],
+  answerKeyChoiceConflicts: [],
+  truncatedCorrectChoices: [],
+  suspiciousChoiceEndings: [],
   controlCharacters: [],
   hyphenatedLineWraps: [],
   sourceLabelledLabsWithoutTables: [],
@@ -64,6 +73,7 @@ const report = {
 };
 
 for (const question of questions) {
+  const imported = importedById.get(question.id);
   const choiceText = Object.entries(question.choices ?? {}).map(([key, value]) => `${key}:${value}`).join("|");
   const exactKey = `${normalize(question.scenario)}|${normalize(choiceText)}`;
   const scenarioKey = normalize(question.scenario);
@@ -83,6 +93,11 @@ for (const question of questions) {
     }
   }
 
+  const choiceEntries = Object.entries(question.choices ?? {});
+  if (choiceEntries.length < 2 || choiceEntries.some(([letter, text]) => !/^[A-Z]$/.test(letter) || !String(text ?? "").trim())) {
+    report.invalidChoiceCounts.push({ id: question.id, category: question.category, choices: choiceEntries.map(([letter]) => letter) });
+  }
+
   if (!question.correctAnswer || !question.choices?.[question.correctAnswer]) {
     report.invalidAnswers.push({ id: question.id, category: question.category, correctAnswer: question.correctAnswer });
   } else if (question.correctAnswerText && normalize(question.correctAnswerText) !== normalize(question.choices[question.correctAnswer])) {
@@ -93,6 +108,47 @@ for (const question of questions) {
       answerText: question.correctAnswerText,
       choiceText: question.choices[question.correctAnswer],
     });
+  }
+
+  if (imported?.correctAnswer && imported.choices?.[imported.correctAnswer] && imported.correctAnswerText
+    && normalize(imported.correctAnswerText) !== normalize(imported.choices[imported.correctAnswer])) {
+    report.importedAnswerKeyMismatches.push({
+      id: question.id,
+      category: question.category,
+      correctAnswer: imported.correctAnswer,
+      answerText: imported.correctAnswerText,
+      choiceText: imported.choices[imported.correctAnswer],
+    });
+
+    const matchingChoice = Object.entries(imported.choices).find(([letter, choice]) => (
+      letter !== imported.correctAnswer && normalize(choice) === normalize(imported.correctAnswerText)
+    ));
+    if (matchingChoice) {
+      report.answerKeyChoiceConflicts.push({
+        id: question.id,
+        category: question.category,
+        correctAnswer: imported.correctAnswer,
+        matchingChoice: matchingChoice[0],
+        answerText: imported.correctAnswerText,
+      });
+    }
+  }
+
+  for (const [letter, choice] of choiceEntries) {
+    const normalizedChoice = normalize(choice);
+    const normalizedAnswerText = letter === question.correctAnswer ? normalize(question.correctAnswerText) : "";
+    if (normalizedAnswerText && normalizedAnswerText.startsWith(normalizedChoice) && normalizedAnswerText.length > normalizedChoice.length) {
+      report.truncatedCorrectChoices.push({
+        id: question.id,
+        category: question.category,
+        letter,
+        choice,
+        answerText: question.correctAnswerText,
+      });
+    }
+    if (/\b(?:a|an|and|at|by|for|from|in|of|on|or|the|to|with)$/i.test(String(choice).trim())) {
+      report.suspiciousChoiceEndings.push({ id: question.id, category: question.category, letter, choice });
+    }
   }
 
   if (sourceLabelledLab.test(question.scenario) && !presentationFor(question).blocks?.length) {

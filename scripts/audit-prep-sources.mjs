@@ -85,11 +85,24 @@ function extractSourceQuestions(source) {
       const questionNumber = block.style === "Heading2" ? block.text.match(/^Question\s+(\d+)/i)?.[1] : undefined;
       if (questionNumber) {
         if (current) questions.push(current);
-        current = { month, number: Number(questionNumber), stem: "", tables: [], media: [] };
+        current = { month, number: Number(questionNumber), stem: "", choices: {}, activeChoice: null, tables: [], media: [] };
         continue;
       }
       if (!current) continue;
-      if (block.style === "QuestionStem") current.stem = `${current.stem} ${block.text}`.trim();
+      const choiceMatch = block.text.match(/^([A-E])[.)]\s*(.+)$/i);
+      if (choiceMatch) {
+        const letter = choiceMatch[1].toUpperCase();
+        current.choices[letter] = choiceMatch[2].trim();
+        current.activeChoice = letter;
+      } else if (/^correct answer\s*:/i.test(block.text) || /^explanation\b/i.test(block.text)) {
+        current.activeChoice = null;
+      } else if (current.activeChoice && block.style === "QuestionText" && /^[a-z]/.test(block.text) && !/^[a-e]\./i.test(block.text)) {
+        // The DOCX source sometimes wraps one answer option into a following lower-case QuestionText paragraph.
+        // Captions and explanations are separate paragraphs and must not become answer text.
+        current.choices[current.activeChoice] = `${current.choices[current.activeChoice]} ${block.text}`.trim();
+      } else if (block.style === "QuestionStem" || block.style === "QuestionText") {
+        current.stem = `${current.stem} ${block.text}`.trim();
+      }
       current.media.push(...block.refs.map((id) => refs[id]).filter(Boolean));
     } else if (current) {
       if (isClinicalTable(block.rows)) current.tables.push(block.rows);
@@ -144,6 +157,10 @@ for (const source of sourceDocs) {
       : extracted.slice(0, index).filter((previous) => previous.month === item.month).length;
     const question = candidates[sourcePosition];
     const bankStem = question?.displayScenario || question?.scenario || "";
+    const sourceChoices = item.choices;
+    const choiceMismatches = question ? Object.entries(sourceChoices)
+      .filter(([letter, choice]) => normalize(question.choices?.[letter] ?? "") !== normalize(choice))
+      .map(([letter, sourceChoice]) => ({ letter, sourceChoice, bankChoice: question.choices?.[letter] ?? null })) : [];
     return {
       month: item.month,
       number: item.number,
@@ -151,6 +168,8 @@ for (const source of sourceDocs) {
       category: question?.category ?? expectedCategory,
       matchScore: question ? Number(scoreMatch(item.stem, bankStem).toFixed(3)) : 0,
       sourceTables: item.tables,
+      sourceChoices,
+      choiceMismatches,
       sourceMedia: [...new Set(item.media)],
       existingTables: question?.clinicalData?.length ?? 0,
       existingImages: question?.images ?? [],
@@ -184,5 +203,6 @@ const summaries = report.sources.map((source) => ({
   missingTables: source.mapped.filter((question) => question.sourceTables.length > 0 && question.existingTables === 0).length,
   missingMedia: source.mapped.filter((question) => question.sourceMedia.length > 0 && question.existingImages.length === 0).length,
   missingImageAssets: source.mapped.reduce((sum, question) => sum + question.missingImageAssets.length, 0),
+  choiceMismatches: source.mapped.reduce((sum, question) => sum + question.choiceMismatches.length, 0),
 }));
 console.log(JSON.stringify({ outputPath, summaries }, null, 2));
