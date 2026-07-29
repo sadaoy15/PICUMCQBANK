@@ -1108,6 +1108,8 @@ export default function QuizPage() {
                 )}
               </div>
 
+              {viewMode === "study" && <ClinicalData blocks={q.explanationData} />}
+
               <div className={s.navGrid}>
                 {current > 0 && <button onClick={handlePrev} className={s.prevBtn}>⬅ Previous</button>}
                 <button onClick={handleNext} className={`${s.nextBtn} ${current === 0 ? "col-span-2" : ""}`}>

@@ -17,4 +17,5 @@ export interface Question {
   images?: string[];
   displayScenario?: string;
   clinicalData?: ClinicalDataBlock[];
+  explanationData?: ClinicalDataBlock[];
 }
