@@ -8,6 +8,13 @@ const projectRoot = resolve(import.meta.dirname, "..");
 const require = createRequire(import.meta.url);
 
 function loadQuestions() {
+  const passMachineSource = readFileSync(resolve(projectRoot, "data/pass-machine-questions.ts"), "utf8");
+  const passMachineJavaScript = ts.transpileModule(passMachineSource, {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText;
+  const passMachineContext = { exports: {}, require };
+  vm.runInNewContext(passMachineJavaScript, passMachineContext, { filename: "pass-machine-questions.ts" });
+
   const enrichmentSource = readFileSync(resolve(projectRoot, "data/question-enrichments.ts"), "utf8");
   const enrichmentJavaScript = ts.transpileModule(enrichmentSource, {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
@@ -21,7 +28,11 @@ function loadQuestions() {
   }).outputText;
   const questionContext = {
     exports: {},
-    require: (module) => module === "./question-enrichments" ? enrichmentContext.exports : require(module),
+    require: (module) => {
+      if (module === "./question-enrichments") return enrichmentContext.exports;
+      if (module === "./pass-machine-questions") return passMachineContext.exports;
+      return require(module);
+    },
   };
   vm.runInNewContext(questionJavaScript, questionContext, { filename: "questions.ts" });
   return {
@@ -68,6 +79,7 @@ const report = {
   hyphenatedLineWraps: [],
   sourceLabelledLabsWithoutTables: [],
   missingImageAssets: [],
+  questionsWithoutSourceAnswerKey: [],
   questionsWithoutExplanation: [],
   questionsWithoutSource: [],
 };
@@ -98,7 +110,9 @@ for (const question of questions) {
     report.invalidChoiceCounts.push({ id: question.id, category: question.category, choices: choiceEntries.map(([letter]) => letter) });
   }
 
-  if (!question.correctAnswer || !question.choices?.[question.correctAnswer]) {
+  if (!question.correctAnswer) {
+    report.questionsWithoutSourceAnswerKey.push({ id: question.id, category: question.category });
+  } else if (!question.choices?.[question.correctAnswer]) {
     report.invalidAnswers.push({ id: question.id, category: question.category, correctAnswer: question.correctAnswer });
   } else if (question.correctAnswerText && normalize(question.correctAnswerText) !== normalize(question.choices[question.correctAnswer])) {
     report.answerTextMismatches.push({

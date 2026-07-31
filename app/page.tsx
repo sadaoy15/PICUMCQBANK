@@ -9,7 +9,7 @@ import { ClinicalDataBlock, Question } from "@/types/question";
 const STORAGE_KEY = "picu_custom_questions";
 const SESSIONS_KEY = "picu_sessions";
 
-type AnswerState = "unanswered" | "correct" | "incorrect" | "revealed";
+type AnswerState = "unanswered" | "correct" | "incorrect" | "revealed" | "unkeyed";
 type QuizMode = "sequential" | "random";
 type ViewMode = "study" | "test";
 type DeviceMode = "phone" | "computer";
@@ -71,12 +71,16 @@ const picumcqExamGroups: ExamGroup[] = [
   { id: "picumcq-book", label: "PICU MCQ Review", description: "279 questions with explanations and figures (PICU MCQ Review)", accent: "indigo", match: (q) => q.category === "PICU MCQ Review" },
 ];
 
+const passMachineExamGroups: ExamGroup[] = [
+  { id: "passmachine-pediatrics", label: "American Physician Institute 2012-2020", description: "Clinical review questions arranged by source chapter", accent: "blue", match: (q) => q.category.startsWith("American Physician Institute 2012-2020"), subCategoryPrefix: "American Physician Institute 2012-2020" },
+];
+
 const specialExamGroups: ExamGroup[] = [
   { id: "study-prep", label: "Study All PREP",   description: "All PREP questions combined (2019–2025)", accent: "violet", match: (q) => q.category.startsWith("PREP") },
   { id: "study-all",  label: "Study Everything", description: "All questions from all sources combined", accent: "slate",  match: () => true },
 ];
 
-const examGroups: ExamGroup[] = [...prepExamGroups, ...sccmExamGroups, ...zimmermanExamGroups, ...studyGuideExamGroups, ...picumcqExamGroups, ...specialExamGroups];
+const examGroups: ExamGroup[] = [...prepExamGroups, ...sccmExamGroups, ...zimmermanExamGroups, ...studyGuideExamGroups, ...picumcqExamGroups, ...passMachineExamGroups, ...specialExamGroups];
 
 const accentClasses: Record<string, { card: string; badge: string; btn: string }> = {
   blue:    { card: "border-slate-200 hover:border-teal-300 hover:bg-teal-50/60",       badge: "bg-teal-50 text-teal-700 border border-teal-100",       btn: "bg-teal-700 hover:bg-teal-800" },
@@ -227,7 +231,7 @@ function makeStyles(isPhone: boolean) {
       : "absolute bottom-16 right-3 hidden h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-center text-xs font-bold text-white shadow-lg sm:flex",
     explanationBox: (state: AnswerState) =>
       (isPhone ? "rounded-xl border-2 p-4 text-[15px] space-y-2 " : "rounded-xl border p-4 text-sm space-y-2 ") +
-      (state === "correct" ? "bg-green-50 border-green-200" : state === "revealed" ? "bg-amber-50 border-amber-200" : "bg-red-50 border-red-200"),
+      (state === "correct" ? "bg-green-50 border-green-200" : state === "revealed" ? "bg-amber-50 border-amber-200" : state === "unkeyed" ? "bg-sky-50 border-sky-200" : "bg-red-50 border-red-200"),
     revealBtn: isPhone
       ? "mt-3 w-full rounded-2xl border-2 border-amber-300 bg-amber-50 py-3.5 text-base font-black text-amber-700 transition-colors hover:bg-amber-100"
       : "mt-3 w-full rounded-xl border-2 border-amber-300 bg-amber-50 py-3 text-sm font-black text-amber-700 transition-colors hover:bg-amber-100",
@@ -324,7 +328,7 @@ export default function QuizPage() {
   const handleSubmit = () => {
     if (!selected || !quizQuestions[current]) return;
     const q = quizQuestions[current];
-    const state: AnswerState = selected === q.correctAnswer ? "correct" : "incorrect";
+    const state: AnswerState = q.correctAnswer ? (selected === q.correctAnswer ? "correct" : "incorrect") : "unkeyed";
     const updatedProgress = { ...progress, [q.id]: { selected, state } };
     setProgress(updatedProgress);
     updateActiveSession({ progress: updatedProgress });
@@ -335,6 +339,14 @@ export default function QuizPage() {
   const handleReveal = () => {
     const q = quizQuestions[current];
     if (!q || revealed) return;
+    if (!q.correctAnswer) {
+      const updatedProgress = { ...progress, [q.id]: { selected: selected ?? "", state: "unkeyed" as AnswerState } };
+      setProgress(updatedProgress);
+      updateActiveSession({ progress: updatedProgress });
+      setRevealed(true);
+      setActiveTab("explanation");
+      return;
+    }
     const correctLetter = q.correctAnswer ?? "";
     const updatedProgress = { ...progress, [q.id]: { selected: correctLetter, state: "revealed" as AnswerState } };
     setProgress(updatedProgress);
@@ -787,6 +799,7 @@ export default function QuizPage() {
                 {zimmermanExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
                 {studyGuideExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
                 {picumcqExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
+                {passMachineExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
               </div>
             </section>
             <section>
@@ -804,11 +817,16 @@ export default function QuizPage() {
   const totalCount = quizQuestions.length;
   const answeredInView = quizQuestions.filter((q) => progress[q.id]).length;
   const correctInView = quizQuestions.filter((q) => progress[q.id]?.state === "correct").length;
+  const scoredAnsweredInView = quizQuestions.filter((q) => {
+    const state = progress[q.id]?.state;
+    return state === "correct" || state === "incorrect" || state === "revealed";
+  }).length;
   const remainingInView = totalCount - answeredInView;
   const isCurrentQuestionMarked = markedQuestionIds.includes(quizQuestions[current]?.id);
-  const subCats = selectedExam.subCategoryPrefix
-    ? Array.from(new Set(allQuestions.filter(selectedExam.match).map((q) => q.category))).sort()
+  const unsortedSubCats = selectedExam.subCategoryPrefix
+    ? Array.from(new Set(allQuestions.filter(selectedExam.match).map((q) => q.category)))
     : [];
+  const subCats = selectedExam.id.startsWith("passmachine") ? unsortedSubCats : [...unsortedSubCats].sort();
 
   if (showSummary) {
     return (
@@ -839,6 +857,9 @@ export default function QuizPage() {
   const choiceLetters = Object.keys(q.choices).sort();
   const clinicalPresentation = inlineClinicalData(q);
   const questionText = clinicalPresentation.text;
+  const questionCategoryLabel = selectedExam.subCategoryPrefix
+    ? q.category.replace(selectedExam.subCategoryPrefix + " - ", "")
+    : q.category;
 
   const tabs: { id: ActiveTab; icon: "clipboard" | "book" | "bookmark"; label: string }[] = [
     { id: "question",    icon: "clipboard", label: "Question" },
@@ -879,7 +900,7 @@ export default function QuizPage() {
         </div>
         <div className="px-5 py-3 sm:px-6">
           <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Accuracy</p>
-          <p className="mt-0.5 text-sm font-black text-teal-700">{answeredInView ? `${Math.round((correctInView / answeredInView) * 100)}%` : "--"}</p>
+          <p className="mt-0.5 text-sm font-black text-teal-700">{scoredAnsweredInView ? `${Math.round((correctInView / scoredAnsweredInView) * 100)}%` : "--"}</p>
         </div>
         <div className="px-5 py-3 sm:px-6">
           <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Marked</p>
@@ -917,8 +938,34 @@ export default function QuizPage() {
       {activeTab === "question" && subCats.length > 0 && (() => {
         const isSccm = selectedExam.id.startsWith("sccm");
         const isZimm = selectedExam.id.startsWith("zimmerman");
+        const isPassMachine = selectedExam.id.startsWith("passmachine");
         const filterLabel = isSccm ? "Filter chapters" : isZimm ? "Filter parts" : "Filter months";
         const allLabel    = isSccm ? "All chapters"   : isZimm ? "All parts"    : "All months";
+        if (isPassMachine) {
+          const chapterCount = (chapter: string) => allQuestions.filter((question) => question.category === chapter).length;
+          return (
+            <section className="border-b border-slate-100 bg-white px-5 py-3">
+              <label className="flex items-center gap-3 text-sm font-semibold text-slate-600">
+                <span className="inline-flex items-center gap-2 whitespace-nowrap text-teal-800">
+                  <span className="h-2 w-2 rounded-full bg-teal-500" /> Navigate by chapter
+                </span>
+                <select
+                  aria-label="Navigate by chapter"
+                  value={activeSubCat}
+                  onChange={(event) => handleChangeSubCat(event.target.value)}
+                  className="min-w-0 flex-1 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700 outline-none transition-colors focus:border-teal-500"
+                >
+                  <option value="all">All chapters</option>
+                  {subCats.map((cat) => (
+                    <option key={cat} value={cat}>
+                      {cat.replace(selectedExam.subCategoryPrefix! + " - ", "")} ({chapterCount(cat)})
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </section>
+          );
+        }
         return (
           <details className="border-b border-slate-100 bg-white">
             <summary className="cursor-pointer list-none px-5 py-3 text-sm font-semibold text-slate-500 marker:hidden">
@@ -943,7 +990,7 @@ export default function QuizPage() {
         <div className={s.questionBodyPad}>
           <div className="mb-5 flex flex-wrap items-center justify-between gap-2">
             <span className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-black ${ac.badge}`}>
-              <MedicalIcon name="clipboard" className="h-3 w-3" />{q.category}
+              <MedicalIcon name="clipboard" className="h-3 w-3" />{questionCategoryLabel}
             </span>
             <div className="flex items-center gap-1.5">
               <button
@@ -984,10 +1031,13 @@ export default function QuizPage() {
             {choiceLetters.map((letter) => {
               const isSelected = selected === letter;
               const isCorrect = letter === q.correctAnswer;
+              const isUnkeyedState = savedState?.state === "unkeyed";
               let style = s.choiceBase;
               const isRevealedState = savedState?.state === "revealed";
               if (!revealed) {
                 style += isSelected ? "border-teal-600 bg-teal-50 text-teal-950" : "border-slate-200 bg-white hover:border-teal-300 hover:bg-teal-50/40";
+              } else if (isUnkeyedState) {
+                style += isSelected ? "border-sky-400 bg-sky-50 text-sky-950" : "border-slate-200 bg-white text-slate-500";
               } else if (isRevealedState) {
                 if (isCorrect) style += "border-amber-400 bg-amber-50 text-amber-900";
                 else style += "border-slate-200 bg-white text-slate-400";
@@ -1001,6 +1051,8 @@ export default function QuizPage() {
                   <span className={`${s.choiceLetterBase}${
                     !revealed
                       ? isSelected ? "bg-teal-700 text-white" : "bg-slate-100 text-slate-500"
+                      : isUnkeyedState
+                      ? isSelected ? "bg-sky-500 text-white" : "bg-slate-100 text-slate-400"
                       : isRevealedState
                       ? isCorrect ? "bg-amber-400 text-white" : "bg-slate-100 text-slate-400"
                       : isCorrect ? "bg-green-500 text-white"
@@ -1016,7 +1068,7 @@ export default function QuizPage() {
           {!revealed ? (
             <>
               <button onClick={handleSubmit} disabled={!selected} className={s.submitBtn}>Check answer</button>
-              {viewMode === "study" && <button onClick={handleReveal} className={s.revealBtn}>Show Answer</button>}
+              {viewMode === "study" && <button onClick={handleReveal} className={s.revealBtn}>{q.correctAnswer ? "Show Answer" : "Review Course Notes"}</button>}
             </>
           ) : (
             <div className={s.navGrid}>
@@ -1031,7 +1083,7 @@ export default function QuizPage() {
             <span className={s.progressPill}>
               <span className={s.progressDot} />
               {current + 1} of {totalCount}
-              {answeredInView > 0 && <span className="ml-2 text-teal-600 font-semibold">· {Math.round((correctInView / answeredInView) * 100)}% correct</span>}
+              {scoredAnsweredInView > 0 && <span className="ml-2 text-teal-600 font-semibold">· {Math.round((correctInView / scoredAnsweredInView) * 100)}% correct</span>}
             </span>
           </div>
         </div>
@@ -1066,9 +1118,11 @@ export default function QuizPage() {
               )}
 
               <div className={s.explanationBox(savedState?.state ?? "incorrect")}>
-                <div className={`font-semibold flex items-start gap-2 ${savedState?.state === "correct" ? "text-green-800" : savedState?.state === "revealed" ? "text-amber-800" : "text-red-800"}`}>
-                  <MedicalIcon name={savedState?.state === "correct" ? "heart" : savedState?.state === "revealed" ? "book" : "vial"} className="mt-0.5 h-4 w-4 flex-shrink-0" />
-                  <span>{savedState?.state === "correct" ? "Correct!" : savedState?.state === "revealed" ? "Answer Revealed" : "Incorrect"} — Correct answer: {q.correctAnswer}. {q.correctAnswerText}</span>
+                <div className={`font-semibold flex items-start gap-2 ${savedState?.state === "correct" ? "text-green-800" : savedState?.state === "revealed" ? "text-amber-800" : savedState?.state === "unkeyed" ? "text-sky-800" : "text-red-800"}`}>
+                  <MedicalIcon name={savedState?.state === "correct" ? "heart" : savedState?.state === "revealed" || savedState?.state === "unkeyed" ? "book" : "vial"} className="mt-0.5 h-4 w-4 flex-shrink-0" />
+                  {q.correctAnswer
+                    ? <span>{savedState?.state === "correct" ? "Correct!" : savedState?.state === "revealed" ? "Answer Revealed" : "Incorrect"} — Correct answer: {q.correctAnswer}. {q.correctAnswerText}</span>
+                    : <span>No answer key is available for this question. Your response is saved for review and excluded from scoring.</span>}
                 </div>
                 {viewMode === "study" && (
                   <>
@@ -1079,7 +1133,25 @@ export default function QuizPage() {
                       const pearlText = pearlMatch ? q.explanation!.slice(pearlIdx + pearlMatch[0].length).trim() : null;
                       return (
                         <>
-                          {mainText && <p className="text-slate-700 leading-relaxed mt-2">{mainText}</p>}
+                          {mainText && (() => {
+                            const noteLines = mainText.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+                            return (
+                              <section className="mt-3 rounded-lg border border-sky-100 bg-white/70 p-3.5">
+                                <p className="text-[11px] font-bold uppercase tracking-wide text-sky-700">Course Notes</p>
+                                <div className="mt-2.5 space-y-2 text-sm leading-relaxed text-slate-700">
+                                  {noteLines.map((line, index) => {
+                                    const bullet = line.match(/^[•◦]\s*(.*)$/);
+                                    return bullet ? (
+                                      <div key={`${index}-${bullet[1]}`} className="flex gap-2.5">
+                                        <span className={`mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full ${line.startsWith("◦") ? "bg-sky-300" : "bg-sky-600"}`} />
+                                        <span>{bullet[1]}</span>
+                                      </div>
+                                    ) : <p key={`${index}-${line}`} className="font-semibold text-slate-800">{line}</p>;
+                                  })}
+                                </div>
+                              </section>
+                            );
+                          })()}
                           {pearlText && (
                             <div className="mt-3 bg-amber-50 border border-amber-200 rounded-lg p-3">
                               <p className="text-xs font-bold text-amber-800 uppercase tracking-wide mb-2">PREP Pearls</p>
@@ -1097,14 +1169,17 @@ export default function QuizPage() {
                     })()}
                     {!q.explanation && (
                       <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                        The imported source does not include an explanation for this question.
+                        {q.correctAnswer ? "No explanatory note is available for this item." : "No course notes are available for this item."}
                       </p>
                     )}
-                    {q.source && <p className="text-xs text-slate-400 italic border-t border-slate-200 pt-2 mt-2">Source: {q.source}</p>}
+                    {q.source && <p className="text-xs text-slate-400 italic border-t border-slate-200 pt-2 mt-3">Reference: {q.source}</p>}
                   </>
                 )}
                 {viewMode === "test" && savedState?.state === "incorrect" && (
                   <p className="text-xs text-slate-500 mt-1">Switch to Study mode to see the explanation.</p>
+                )}
+                {viewMode === "test" && savedState?.state === "unkeyed" && (
+                  <p className="text-xs text-sky-700 mt-1">This item has no answer key and is excluded from scoring.</p>
                 )}
               </div>
 
@@ -1121,7 +1196,7 @@ export default function QuizPage() {
                 <span className={s.progressPill}>
                   <span className={s.progressDot} />
                   {current + 1} of {totalCount}
-                  {answeredInView > 0 && <span className="ml-2 text-teal-600 font-semibold">· {Math.round((correctInView / answeredInView) * 100)}% correct</span>}
+                  {scoredAnsweredInView > 0 && <span className="ml-2 text-teal-600 font-semibold">· {Math.round((correctInView / scoredAnsweredInView) * 100)}% correct</span>}
                 </span>
               </div>
             </>

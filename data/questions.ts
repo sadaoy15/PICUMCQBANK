@@ -1,6 +1,7 @@
 // @ts-nocheck
 import { Question } from "@/types/question";
 import { questionEnrichments } from "./question-enrichments";
+import { passMachineQuestions } from "./pass-machine-questions";
 
 export const importedQuestions: Question[] = [
   {
@@ -27986,7 +27987,10 @@ export const importedQuestions: Question[] = [
       "/PICUMCQBANK/images/picumcq/picumcq-pg326-img1.jpeg"
     ],
     source: "PICU MCQ Review",
-  }
+  },
+  // Only publish items whose answer appears explicitly in the course answer key.
+  // The remaining extracted prompts are retained in the source data for later review.
+  ...passMachineQuestions.filter((question) => Boolean(question.correctAnswer)),
 ];
 
 const cleanImportedText = (value: string | null | undefined) => (value ?? "")
