@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { BookOpen, Bookmark, CircleCheckBig, ClipboardCheck, GraduationCap, HeartPulse, Stethoscope, TestTube2, Timer, type LucideIcon } from "lucide-react";
 import { questions as builtInQuestions } from "@/data/questions";
 import { inlineClinicalData } from "@/lib/inline-clinical-data";
-import { ClinicalDataBlock, Question } from "@/types/question";
+import { ClinicalDataBlock, Question, QuestionFigure } from "@/types/question";
 
 const STORAGE_KEY = "picu_custom_questions";
 const SESSIONS_KEY = "picu_sessions";
@@ -168,6 +168,38 @@ function ClinicalData({ blocks }: { blocks?: ClinicalDataBlock[] }) {
   );
 }
 
+function FigureGallery({ figures, title }: { figures?: QuestionFigure[]; title: string }) {
+  if (!figures?.length) return null;
+
+  return (
+    <section className="my-5" aria-label={title}>
+      <div className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-slate-500">
+        <MedicalIcon name="stethoscope" className="h-4 w-4 text-teal-700" />
+        <span>{title}</span>
+      </div>
+      <div className={`grid gap-4 ${figures.length > 1 ? "md:grid-cols-2" : ""}`}>
+        {figures.map((figure) => (
+          <figure key={figure.src} className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+            <div className="border-b border-slate-200 bg-slate-50 px-3 py-2 text-xs font-bold text-slate-700">
+              {figure.label}
+            </div>
+            <div className="flex min-h-32 items-center justify-center bg-white p-3">
+              <img
+                src={`/PICUMCQBANK${figure.src}`}
+                alt={`${figure.label}: ${figure.caption}`}
+                className="max-h-[460px] max-w-full object-contain"
+              />
+            </div>
+            <figcaption className="border-t border-slate-100 px-3 py-2 text-xs leading-relaxed text-slate-600">
+              {figure.caption}
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function ModeVisualIcon({ type, small = false }: { type: "practice" | "test"; small?: boolean }) {
   const sz = small ? "h-14 w-14" : "h-[72px] w-[72px]";
   if (type === "practice") return (
@@ -206,8 +238,8 @@ function makeStyles(isPhone: boolean) {
       : "mb-6 max-w-[850px] text-[19px] font-bold leading-relaxed text-slate-950",
     choiceSpace: isPhone ? "space-y-3" : "space-y-3",
     choiceBase: isPhone
-      ? "w-full text-left rounded-xl border px-4 py-4 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/60 transition-all cursor-pointer flex items-center gap-3 "
-      : "w-full text-left rounded-xl border px-5 py-3.5 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/60 transition-all cursor-pointer flex items-center gap-3 ",
+      ? "w-full text-left rounded-xl border px-4 py-4 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/60 transition-all cursor-pointer flex items-start gap-3 "
+      : "w-full text-left rounded-xl border px-5 py-3.5 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/60 transition-all cursor-pointer flex items-start gap-3 ",
     choiceLetterBase: isPhone
       ? "flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-sm font-black "
       : "flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-xs font-black ",
@@ -1012,6 +1044,8 @@ export default function QuizPage() {
 
           <ClinicalData blocks={clinicalPresentation.blocks} />
 
+          <FigureGallery figures={q.visuals?.question} title="Question figures" />
+
           {q.images && q.images.length > 0 && (
             <div className="my-4 flex flex-col gap-3">
               {q.images.map((img, i) => (
@@ -1059,7 +1093,21 @@ export default function QuizPage() {
                       : isSelected ? "bg-red-400 text-white"
                       : "bg-slate-100 text-slate-400"
                   }`}>{letter}</span>
-                  <span>{q.choices[letter]}</span>
+                  <span className="min-w-0 flex-1">
+                    <span>{q.choices[letter]}</span>
+                    {q.visuals?.choices?.[letter]?.map((figure) => (
+                      <span key={figure.src} className="mt-3 block overflow-hidden rounded-lg border border-slate-200 bg-white">
+                        <img
+                          src={`/PICUMCQBANK${figure.src}`}
+                          alt={`${figure.label}: ${figure.caption}`}
+                          className="mx-auto max-h-72 max-w-full object-contain p-2"
+                        />
+                        <span className="block border-t border-slate-100 bg-slate-50 px-3 py-2 text-xs font-medium text-slate-600">
+                          {figure.caption}
+                        </span>
+                      </span>
+                    ))}
+                  </span>
                 </button>
               );
             })}
@@ -1103,6 +1151,8 @@ export default function QuizPage() {
             </div>
           ) : (
             <>
+              <FigureGallery figures={q.visuals?.explanation} title="Explanation figures" />
+
               {q.images && q.images.length > 0 && (
                 <div className="mb-4 flex flex-col gap-3">
                   {q.images.map((img, i) => (

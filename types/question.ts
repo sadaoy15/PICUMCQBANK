@@ -4,6 +4,18 @@ export interface ClinicalDataBlock {
   rows: string[][];
 }
 
+export interface QuestionFigure {
+  src: string;
+  label: string;
+  caption: string;
+}
+
+export interface QuestionVisuals {
+  question?: QuestionFigure[];
+  choices?: Partial<Record<string, QuestionFigure[]>>;
+  explanation?: QuestionFigure[];
+}
+
 export interface Question {
   id: number;
   title: string;
@@ -15,6 +27,7 @@ export interface Question {
   source: string | null;
   category: string;
   images?: string[];
+  visuals?: QuestionVisuals;
   displayScenario?: string;
   clinicalData?: ClinicalDataBlock[];
   explanationData?: ClinicalDataBlock[];

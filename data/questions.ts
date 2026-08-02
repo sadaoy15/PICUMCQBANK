@@ -2,6 +2,7 @@
 import { Question } from "@/types/question";
 import { questionEnrichments } from "./question-enrichments";
 import { passMachineQuestions } from "./pass-machine-questions";
+import { prep2022VisualAssets } from "./prep-2022-figures";
 
 export const importedQuestions: Question[] = [
   {
@@ -28008,7 +28009,13 @@ const hasVisualReference = (question: Question) => visualReference.test([
 
 const normalizedQuestions = importedQuestions.map((question) => {
   const enrichment = questionEnrichments[question.id];
-  const merged = enrichment ? { ...question, ...enrichment } : question;
+  const prep2022Visuals = prep2022VisualAssets[question.id];
+  const merged = {
+    ...question,
+    ...enrichment,
+    visuals: prep2022Visuals ?? question.visuals,
+    images: enrichment?.images ?? question.images,
+  };
   const choices = Object.fromEntries(Object.entries(merged.choices ?? {}).map(([key, value]) => [key, cleanImportedText(value)]));
   const correctAnswerText = merged.correctAnswer && choices[merged.correctAnswer]
     ? choices[merged.correctAnswer]
@@ -28024,7 +28031,8 @@ const normalizedQuestions = importedQuestions.map((question) => {
     source: cleanImportedText(merged.source) || null,
     category: cleanImportedText(merged.category),
     displayScenario: merged.displayScenario ? cleanImportedText(merged.displayScenario) : undefined,
-    images: hasVisualReference(merged) ? merged.images : undefined,
+    // PREP 2022 uses semantic question/choice/explanation visual groups.
+    images: prep2022Visuals ? undefined : (hasVisualReference(merged) ? merged.images : undefined),
   };
 });
 
