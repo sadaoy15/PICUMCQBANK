@@ -15,6 +15,13 @@ function loadQuestions() {
   const passMachineContext = { exports: {}, require };
   vm.runInNewContext(passMachineJavaScript, passMachineContext, { filename: "pass-machine-questions.ts" });
 
+  const prep2022VisualSource = readFileSync(resolve(projectRoot, "data/prep-2022-figures.ts"), "utf8");
+  const prep2022VisualJavaScript = ts.transpileModule(prep2022VisualSource, {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText;
+  const prep2022VisualContext = { exports: {}, require };
+  vm.runInNewContext(prep2022VisualJavaScript, prep2022VisualContext, { filename: "prep-2022-figures.ts" });
+
   const enrichmentSource = readFileSync(resolve(projectRoot, "data/question-enrichments.ts"), "utf8");
   const enrichmentJavaScript = ts.transpileModule(enrichmentSource, {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
@@ -31,6 +38,7 @@ function loadQuestions() {
     require: (module) => {
       if (module === "./question-enrichments") return enrichmentContext.exports;
       if (module === "./pass-machine-questions") return passMachineContext.exports;
+      if (module === "./prep-2022-figures") return prep2022VisualContext.exports;
       return require(module);
     },
   };

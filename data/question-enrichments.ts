@@ -159,7 +159,7 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
     }],
   },
   1098: {
-    displayScenario: "This item refers to a figure or video in the original PDF. A 15-year-old boy recently returned from the Ivory Coast after a church mission trip. He has a 1-week history of periodic fever, lethargy, malaise, and worsening headaches. On admission he develops seizure activity and remains unresponsive. Brain computed tomography shows no obvious intracranial masses or areas of contrast enhancement. Microscopic evaluation of a thin blood smear is shown in the Figure. Of the following, the medications and routes for initial treatment of this disease SHOULD include",
+    displayScenario: "A 15-year-old boy recently returned from the Ivory Coast after a church mission trip. He has a 1-week history of periodic fever, lethargy, malaise, and worsening headaches. On admission he develops seizure activity and remains unresponsive. Brain computed tomography shows no obvious intracranial masses or areas of contrast enhancement. Microscopic evaluation of a thin blood smear is shown in the Figure. Of the following, the medications and routes for initial treatment of this disease SHOULD include",
     clinicalData: [{
       title: "Laboratory data",
       columns: ["Test", "Result"],
@@ -179,6 +179,14 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
         ["Gastrointestinal medications", "Ondansetron"],
         ["Narcotics", "Methadone"],
       ],
+    }],
+  },
+  1112: {
+    displayScenario: "A 12-year-old boy is admitted to the pediatric intensive care unit with tachypnea, increased work of breathing, abdominal pain, and severe acidosis. Arterial blood gas results are summarized below. Further evaluation reveals new-onset type I diabetes mellitus with diabetic ketoacidosis. He is treated with intravenous fluids and an insulin infusion; his symptoms resolve and his anion gap and pH improve. After 2 days of recovery, he begins intermittent subcutaneous insulin therapy. Overnight, he transitions to self-administered injections using an insulin pen and is scheduled for transfer to the general pediatric floor for continued diabetes education. The physician is then called emergently because the patient's 10-year-old brother, who has been visiting unsupervised, develops generalized tonic-clonic seizure activity. His mother denies significant medical history, prior seizures, recent ingestions, or trauma. After ensuring that the airway is protected and applying a facemask with 100% oxygen, the MOST appropriate next step is to",
+    clinicalData: [{
+      title: "Initial arterial blood gas",
+      columns: ["Test", "Result"],
+      rows: [["pH", "6.97"], ["PCO2", "19 mm Hg"], ["PO2", "100 mm Hg"]],
     }],
   },
   1120: {

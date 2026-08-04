@@ -89,14 +89,18 @@ function extractSourceQuestions(source) {
         continue;
       }
       if (!current) continue;
-      const choiceMatch = block.text.match(/^([A-E])[.)]\s*(.+)$/i);
+      const choiceMatch = block.text.match(/^([A-E])[.)]\s*(.*)$/i);
       if (choiceMatch) {
         const letter = choiceMatch[1].toUpperCase();
         current.choices[letter] = choiceMatch[2].trim();
         current.activeChoice = letter;
       } else if (/^correct answer\s*:/i.test(block.text) || /^explanation\b/i.test(block.text)) {
         current.activeChoice = null;
-      } else if (current.activeChoice && block.style === "QuestionText" && /^[a-z]/.test(block.text) && !/^[a-e]\./i.test(block.text)) {
+      } else if (current.activeChoice && !current.choices[current.activeChoice] && block.text) {
+        current.choices[current.activeChoice] = block.text.trim();
+      } else if (current.activeChoice && block.style === "QuestionText"
+        && (!current.choices[current.activeChoice] || /^[a-z]/.test(block.text))
+        && !/^[a-e]\./i.test(block.text)) {
         // The DOCX source sometimes wraps one answer option into a following lower-case QuestionText paragraph.
         // Captions and explanations are separate paragraphs and must not become answer text.
         current.choices[current.activeChoice] = `${current.choices[current.activeChoice]} ${block.text}`.trim();
@@ -105,7 +109,11 @@ function extractSourceQuestions(source) {
       }
       current.media.push(...block.refs.map((id) => refs[id]).filter(Boolean));
     } else if (current) {
-      if (isClinicalTable(block.rows)) current.tables.push(block.rows);
+      const choiceRows = block.rows.filter((row) => row.length >= 2 && /^[A-E][.)]?$/i.test(row[0].trim()));
+      if (choiceRows.length >= 2) {
+        for (const row of choiceRows) current.choices[row[0].trim()[0].toUpperCase()] = row.slice(1).join(" ").trim();
+        current.activeChoice = null;
+      } else if (isClinicalTable(block.rows)) current.tables.push(block.rows);
       current.media.push(...block.refs.map((id) => refs[id]).filter(Boolean));
     }
   }
@@ -114,6 +122,16 @@ function extractSourceQuestions(source) {
 }
 
 function loadQuestions() {
+  const passMachineSource = readFileSync(resolve(projectRoot, "data/pass-machine-questions.ts"), "utf8");
+  const passMachineJavascript = ts.transpileModule(passMachineSource, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
+  const passMachineContext = { exports: {}, require };
+  vm.runInNewContext(passMachineJavascript, passMachineContext, { filename: "pass-machine-questions.ts" });
+
+  const prep2022VisualSource = readFileSync(resolve(projectRoot, "data/prep-2022-figures.ts"), "utf8");
+  const prep2022VisualJavascript = ts.transpileModule(prep2022VisualSource, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
+  const prep2022VisualContext = { exports: {}, require };
+  vm.runInNewContext(prep2022VisualJavascript, prep2022VisualContext, { filename: "prep-2022-figures.ts" });
+
   const source = readFileSync(resolve(projectRoot, "data/questions.ts"), "utf8");
   const enrichmentSource = readFileSync(resolve(projectRoot, "data/question-enrichments.ts"), "utf8");
   const enrichmentJavascript = ts.transpileModule(enrichmentSource, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
@@ -122,7 +140,12 @@ function loadQuestions() {
   const javascript = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
   const context = {
     exports: {},
-    require: (module) => module === "./question-enrichments" ? enrichmentContext.exports : require(module),
+    require: (module) => {
+      if (module === "./question-enrichments") return enrichmentContext.exports;
+      if (module === "./pass-machine-questions") return passMachineContext.exports;
+      if (module === "./prep-2022-figures") return prep2022VisualContext.exports;
+      return require(module);
+    },
   };
   vm.runInNewContext(javascript, context, { filename: "questions.ts" });
   return context.exports.importedQuestions.map((question) => ({
