@@ -75,12 +75,16 @@ const passMachineExamGroups: ExamGroup[] = [
   { id: "passmachine-pediatrics", label: "American Physician Institute 2012-2020", description: "Clinical review questions arranged by source chapter", accent: "blue", match: (q) => q.category.startsWith("American Physician Institute 2012-2020"), subCategoryPrefix: "American Physician Institute 2012-2020" },
 ];
 
+const mcckapExamGroups: ExamGroup[] = [
+  { id: "mcckap-2023", label: "MCCKAP 2023", description: "191 multidisciplinary pediatric critical care questions with source commentaries and figures", accent: "emerald", match: (q) => q.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023" },
+];
+
 const specialExamGroups: ExamGroup[] = [
   { id: "study-prep", label: "Study All PREP",   description: "All PREP questions combined (2019–2025)", accent: "violet", match: (q) => q.category.startsWith("PREP") },
   { id: "study-all",  label: "Study Everything", description: "All questions from all sources combined", accent: "slate",  match: () => true },
 ];
 
-const examGroups: ExamGroup[] = [...prepExamGroups, ...sccmExamGroups, ...zimmermanExamGroups, ...studyGuideExamGroups, ...picumcqExamGroups, ...passMachineExamGroups, ...specialExamGroups];
+const examGroups: ExamGroup[] = [...prepExamGroups, ...mcckapExamGroups, ...sccmExamGroups, ...zimmermanExamGroups, ...studyGuideExamGroups, ...picumcqExamGroups, ...passMachineExamGroups, ...specialExamGroups];
 
 const accentClasses: Record<string, { card: string; badge: string; btn: string }> = {
   blue:    { card: "border-slate-200 hover:border-teal-300 hover:bg-teal-50/60",       badge: "bg-teal-50 text-teal-700 border border-teal-100",       btn: "bg-teal-700 hover:bg-teal-800" },
@@ -823,6 +827,10 @@ export default function QuizPage() {
             <section>
               <h2 className={s.sectionHeading}>PREP Exams</h2>
               <div className={`grid ${s.examGridCols} gap-3`}>{prepExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}</div>
+            </section>
+            <section>
+              <h2 className={s.sectionHeading}>Knowledge Assessment</h2>
+              <div className={`grid ${s.examGridCols} gap-3`}>{mcckapExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}</div>
             </section>
             <section>
               <h2 className={s.sectionHeading}>Self-Assessment Books</h2>

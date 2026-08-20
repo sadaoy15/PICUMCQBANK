@@ -1,6 +1,7 @@
 // @ts-nocheck
 import { Question } from "@/types/question";
 import { questionEnrichments } from "./question-enrichments";
+import { mcckap2023Questions } from "./mcckap-2023-questions";
 import { passMachineQuestions } from "./pass-machine-questions";
 import { prep2022VisualAssets } from "./prep-2022-figures";
 
@@ -27992,6 +27993,7 @@ export const importedQuestions: Question[] = [
   // Only publish items whose answer appears explicitly in the course answer key.
   // The remaining extracted prompts are retained in the source data for later review.
   ...passMachineQuestions.filter((question) => Boolean(question.correctAnswer)),
+  ...mcckap2023Questions,
 ];
 
 const cleanImportedText = (value: string | null | undefined) => (value ?? "")
@@ -28039,7 +28041,10 @@ const normalizedQuestions = importedQuestions.map((question) => {
 const seenQuestionFingerprints = new Set<string>();
 
 export const questions: Question[] = normalizedQuestions.filter((question) => {
-  const fingerprint = `${question.scenario.toLowerCase()}|${Object.entries(question.choices).map(([key, value]) => `${key}:${value}`).join("|")}`;
+  const sourceScope = question.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023"
+    ? `${question.source}|`
+    : "";
+  const fingerprint = `${sourceScope}${question.scenario.toLowerCase()}|${Object.entries(question.choices).map(([key, value]) => `${key}:${value}`).join("|")}`;
   if (seenQuestionFingerprints.has(fingerprint)) return false;
   seenQuestionFingerprints.add(fingerprint);
   return true;
