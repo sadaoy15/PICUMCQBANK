@@ -1052,7 +1052,7 @@ export default function QuizPage() {
 
           <ClinicalData blocks={clinicalPresentation.blocks} />
 
-          <FigureGallery figures={q.visuals?.question} title="Question figures" />
+          <FigureGallery figures={q.visuals?.question} title="Question figures and tables" />
 
           {q.images && q.images.length > 0 && (
             <div className="my-4 flex flex-col gap-3">
@@ -1159,7 +1159,7 @@ export default function QuizPage() {
             </div>
           ) : (
             <>
-              <FigureGallery figures={q.visuals?.explanation} title="Explanation figures" />
+              <FigureGallery figures={q.visuals?.explanation} title="Explanation figures and tables" />
 
               {q.images && q.images.length > 0 && (
                 <div className="mb-4 flex flex-col gap-3">
