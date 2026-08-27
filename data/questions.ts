@@ -3,6 +3,7 @@ import { Question } from "@/types/question";
 import { questionEnrichments } from "./question-enrichments";
 import { mcckap2023Questions } from "./mcckap-2023-questions";
 import { passMachineQuestions } from "./pass-machine-questions";
+import { prep2021VisualAssets } from "./prep-2021-figures";
 import { prep2022VisualAssets } from "./prep-2022-figures";
 
 export const importedQuestions: Question[] = [
@@ -28011,11 +28012,12 @@ const hasVisualReference = (question: Question) => visualReference.test([
 
 const normalizedQuestions = importedQuestions.map((question) => {
   const enrichment = questionEnrichments[question.id];
+  const prep2021Visuals = prep2021VisualAssets[question.id];
   const prep2022Visuals = prep2022VisualAssets[question.id];
   const merged = {
     ...question,
     ...enrichment,
-    visuals: prep2022Visuals ?? question.visuals,
+    visuals: prep2021Visuals ?? prep2022Visuals ?? question.visuals,
     images: enrichment?.images ?? question.images,
   };
   const choices = Object.fromEntries(Object.entries(merged.choices ?? {}).map(([key, value]) => [key, cleanImportedText(value)]));
@@ -28033,8 +28035,8 @@ const normalizedQuestions = importedQuestions.map((question) => {
     source: cleanImportedText(merged.source) || null,
     category: cleanImportedText(merged.category),
     displayScenario: merged.displayScenario ? cleanImportedText(merged.displayScenario) : undefined,
-    // PREP 2022 uses semantic question/choice/explanation visual groups.
-    images: prep2022Visuals ? undefined : (hasVisualReference(merged) ? merged.images : undefined),
+    // PREP 2021 and 2022 use semantic question/choice/explanation visual groups.
+    images: prep2021Visuals || prep2022Visuals ? undefined : (hasVisualReference(merged) ? merged.images : undefined),
   };
 });
 
