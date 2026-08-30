@@ -28017,7 +28017,7 @@ const normalizedQuestions = importedQuestions.map((question) => {
   const merged = {
     ...question,
     ...enrichment,
-    visuals: prep2021Visuals ?? prep2022Visuals ?? question.visuals,
+    visuals: prep2021Visuals ?? prep2022Visuals ?? enrichment?.visuals ?? question.visuals,
     images: enrichment?.images ?? question.images,
   };
   const choices = Object.fromEntries(Object.entries(merged.choices ?? {}).map(([key, value]) => [key, cleanImportedText(value)]));

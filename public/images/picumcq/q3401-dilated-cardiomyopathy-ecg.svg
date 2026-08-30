@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">Schematic ECG demonstrating dilated cardiomyopathy findings</title><desc id="desc">Sinus tachycardia with left atrial enlargement, poor R-wave progression, and lateral T-wave inversion.</desc>
+  <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#e2e8f0" stroke-width="1"/></pattern></defs>
+  <rect width="1000" height="420" fill="#fff"/><rect x="28" y="54" width="944" height="250" rx="8" fill="url(#grid)" stroke="#cbd5e1"/>
+  <text x="34" y="34" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a">ECG schematic: dilated cardiomyopathy pattern</text>
+  <text x="42" y="88" font-family="Arial" font-size="16" fill="#475569">I</text><text x="42" y="166" font-family="Arial" font-size="16" fill="#475569">V1-V3</text><text x="42" y="244" font-family="Arial" font-size="16" fill="#475569">V4-V5</text>
+  <g fill="none" stroke="#0f766e" stroke-width="4" stroke-linejoin="round"><path d="M70 108 h30 l10-12 10 12 h22 l10-22 10 52 10-30 h28 l10-9 10 9 h30 l10-22 10 52 10-30 h28 l10-9 10 9 h30 l10-22 10 52 10-30 h28 l10-9 10 9 h30 l10-22 10 52 10-30 h28 l10-9 10 9 h30 l10-22 10 52 10-30 h28"/>
+  <path d="M70 186 h44 l8-10 8 10 h25 l7-15 7 34 7-19 h33 l8-10 8 10 h25 l7-15 7 34 7-19 h33 l8-10 8 10 h25 l7-15 7 34 7-19 h33 l8-10 8 10 h25 l7-15 7 34 7-19 h33 l8-10 8 10 h25 l7-15 7 34 7-19 h33"/>
+  <path d="M70 264 h35 l10-10 10 10 h24 l10-28 10 50 10-22 h24 l18-16 18 16 h24 l10-28 10 50 10-22 h24 l18-16 18 16 h24 l10-28 10 50 10-22 h24 l18-16 18 16 h24 l10-28 10 50 10-22 h24 l18-16 18 16 h24"/></g>
+  <g font-family="Arial, sans-serif" font-size="16" fill="#334155"><text x="58" y="342">Sinus tachycardia (~124/min)</text><text x="330" y="342">Biphasic P in V1 (left atrial enlargement)</text><text x="690" y="342">Poor R-wave progression</text></g><text x="315" y="382" font-family="Arial" font-size="16" fill="#9f1239">Lateral T-wave inversion / LV strain pattern</text>
+</svg>

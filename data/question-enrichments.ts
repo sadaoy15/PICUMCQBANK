@@ -1,6 +1,6 @@
 import { Question } from "@/types/question";
 
-type QuestionEnrichment = Partial<Pick<Question, "displayScenario" | "clinicalData" | "explanationData" | "choices" | "correctAnswer" | "correctAnswerText" | "images">>;
+type QuestionEnrichment = Partial<Pick<Question, "displayScenario" | "clinicalData" | "explanationData" | "visuals" | "choices" | "correctAnswer" | "correctAnswerText" | "images">>;
 
 // These tables reproduce values already present in the source question stems.
 // They keep dense clinical data readable without changing the question content.
@@ -12,6 +12,103 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
   2540: { images: [] },
   3412: { images: [] },
   3413: { images: ["/PICUMCQBANK/images/picumcq/picumcq-pg20-img1.jpeg"] },
+  // The source PDF names these figures but does not embed them. The following
+  // self-contained diagrams faithfully reflect the findings stated in its stems
+  // and explanations, so the questions remain answerable in the web review.
+  3401: {
+    visuals: { question: [{ src: "/images/picumcq/q3401-dilated-cardiomyopathy-ecg.svg", label: "ECG schematic", caption: "Sinus tachycardia, left atrial enlargement, poor R-wave progression, and lateral T-wave inversion as described in the source explanation." }] },
+  },
+  3402: {
+    visuals: { question: [{ src: "/images/picumcq/q3402-pompe-ecg.svg", label: "ECG schematic", caption: "Short PR interval with biventricular hypertrophy and strain changes characteristic of infantile Pompe disease." }] },
+  },
+  3407: {
+    visuals: { question: [{ src: "/images/picumcq/q3407-pressure-volume-loop.svg", label: "Pressure-volume loop", caption: "A normal saline bolus increases preload, shifting the loop rightward and increasing stroke volume." }] },
+  },
+  3408: {
+    visuals: { question: [{ src: "/images/picumcq/q3408-tamponade-hemodynamics.svg", label: "Hemodynamic data", caption: "Cardiac tamponade produces near-equal elevated diastolic filling pressures with low output." }] },
+    choices: {
+      A: "Elevated right atrial pressure with low right ventricular diastolic and pulmonary capillary wedge pressures.",
+      B: "High pulmonary capillary wedge pressure with normal right atrial and right ventricular diastolic pressures.",
+      C: "Near-equal elevated right atrial, right ventricular end-diastolic, and pulmonary capillary wedge pressures with low cardiac output.",
+      D: "Isolated elevation of right ventricular systolic pressure with normal diastolic filling pressures.",
+      E: "Low cardiac filling pressures with a hyperdynamic cardiac output.",
+    },
+    correctAnswer: "C",
+    correctAnswerText: "Near-equal elevated right atrial, right ventricular end-diastolic, and pulmonary capillary wedge pressures with low cardiac output.",
+  },
+  3410: {
+    visuals: { question: [{ src: "/images/picumcq/q3410-oxygen-dissociation-shunt.svg", label: "Oxygen-content curve", caption: "The source values give CcO2 20 mL/dL, CaO2 17 mL/dL, and CvO2 10 mL/dL; shunt fraction is 30%." }] },
+  },
+  3459: {
+    visuals: { explanation: [{ src: "/images/picumcq/q3459-peep-afterload.svg", label: "PEEP and afterload", caption: "In left ventricular failure, positive pleural pressure can reduce left ventricular transmural pressure and afterload." }] },
+  },
+  3496: {
+    visuals: { explanation: [{ src: "/images/picumcq/q3496-paco2-cerebral-blood-flow.svg", label: "PaCO2 and cerebral blood flow", caption: "Both hypocapnia and hypercapnia can be harmful after severe traumatic brain injury; target normoventilation unless otherwise directed." }] },
+  },
+  3385: {
+    displayScenario: "A 9-year-old, 30-kg boy is admitted to the PICU for status asthmaticus despite continuous albuterol and oral prednisone. He remains tachypneic with diffuse bilateral wheeze, poor air movement, and marked accessory-muscle use. Laboratory data are summarized below. Which of the following is the most appropriate next step in treatment?",
+    clinicalData: [{ title: "Laboratory data", columns: ["Test", "Result"], rows: [["Sodium", "141 mEq/L"], ["Potassium", "4.3 mEq/L"], ["Chloride", "104 mEq/L"], ["Bicarbonate", "19 mEq/L"], ["Blood urea nitrogen / creatinine", "17 / 0.2 mg/dL"], ["Glucose", "104 mg/dL"], ["Calcium / phosphorus / magnesium", "10.1 / 3.3 / 1.9"]] }],
+  },
+  3396: {
+    displayScenario: "A 1-month-old with hypoplastic left heart syndrome after a Norwood stage I procedure presents with poor intake, irritability, cyanosis, mottling, and respiratory distress. After a 10-mL/kg normal saline bolus and intubation, the child does not improve. Blood-gas data are summarized below. You are called from this community emergency department. Which advice is most appropriate?",
+    clinicalData: [{ title: "Arterial blood gas", columns: ["Test", "Result"], rows: [["pH", "7.33"], ["PaCO2", "68 mm Hg"], ["PaO2", "24 mm Hg"], ["Base excess", "-2 mEq/L"]] }],
+  },
+  3414: {
+    displayScenario: "A 12-year-old with ARDS is ventilated with synchronized intermittent mandatory ventilation in pressure-control/pressure-support mode (PIP 28 cm H2O, PEEP 12 cm H2O, FiO2 0.60, rate 15/min). Arterial blood-gas and environmental data are summarized below. What is this patient’s PAO2-PaO2 difference?",
+    clinicalData: [{ title: "Gas-exchange data", columns: ["Parameter", "Value"], rows: [["PaCO2 / PaO2", "60 / 60 mm Hg"], ["Respiratory quotient", "0.8"], ["Core temperature", "37 C"], ["Barometric pressure", "747 mm Hg"]] }],
+  },
+  3432: {
+    displayScenario: "A 10-year-old with fever, vomiting, hypotension, severe hypoxemia, and respiratory distress is intubated. Oxygenation improves after intubation, but the acid-base status is unchanged. Blood gases before and after intubation are summarized below. Which condition has also occurred as a result of endotracheal intubation?",
+    clinicalData: [{ title: "Arterial blood gases", columns: ["Test", "Before intubation", "After intubation"], rows: [["pH", "7.15", "7.15"], ["PaCO2", "35 mm Hg", "35 mm Hg"], ["PaO2", "46 mm Hg", "75 mm Hg"]] }],
+  },
+  3462: {
+    displayScenario: "A 10-year-old with scoliosis and aspiration pneumonia is on assist-control ventilation. Ventilator and arterial blood-gas data are summarized below. What (if anything) should be done?",
+    clinicalData: [{ title: "Ventilator and blood-gas data", columns: ["Parameter", "Value"], rows: [["FiO2 / PEEP", "1.0 / 5 cm H2O"], ["Tidal volume / rate", "6 mL/kg / 16 per min"], ["PaO2 / PaCO2", "48 / 57 mm Hg"], ["pH", "7.20"], ["Plateau pressure", "29 cm H2O"], ["Expiratory time", "Adequate for emptying"]] }],
+  },
+  3491: {
+    displayScenario: "A 6-year-old with sickle beta-thalassemia develops acute hypoxemia and increased work of breathing. Chest radiography shows new right-upper-lobe and left-lower-lobe infiltrates. Blood-gas data on 100% oxygen are summarized below. What is the most likely initiating mechanism for this acute deterioration?",
+    clinicalData: [{ title: "Arterial blood gas", columns: ["Test", "Result"], rows: [["FiO2", "1.0 via nonrebreathing mask"], ["pH", "7.27"], ["PaCO2", "60 mm Hg"], ["PaO2", "50 mm Hg"]] }],
+  },
+  3548: {
+    displayScenario: "A previously healthy 6-year-old boy presents with respiratory distress, abdominal and chest pain, icterus, hepatosplenomegaly, and hypoxemia. Chest radiography shows cardiomegaly and a right-middle-lobe opacity. Key blood-gas and hemoglobin data are summarized below. Which therapy should be ordered immediately?",
+    clinicalData: [{ title: "Arterial blood gas and hemoglobin", columns: ["Test", "Result"], rows: [["pH", "7.34"], ["PaCO2", "56 mm Hg"], ["PaO2", "62 mm Hg"], ["Bicarbonate", "24 mmol/L"], ["Hemoglobin", "6.4 g/dL"]] }],
+  },
+  3614: {
+    displayScenario: "An 8-year-old with smoke-inhalation injury is intubated and resuscitated. Bronchoscopy shows soot throughout the airway. After empirical treatment with an older cyanide antidote kit, perfusion and acid-base status worsen. Serial data are summarized below. What therapy should now be considered?",
+    clinicalData: [{ title: "Serial blood-gas and toxin data", columns: ["Test", "Initial", "Two hours later"], rows: [["pH", "7.37", "7.20"], ["PaCO2 / PaO2", "25 / 450 mm Hg", "39 / 95 mm Hg"], ["Bicarbonate", "14.3 mEq/L", "18 mEq/L"], ["Lactate", "4.2 mmol/L", "8 mmol/L"], ["Carboxyhemoglobin", "2.5%", "2.2%"]] }],
+  },
+  3626: {
+    displayScenario: "A 9-year-old with acute myelogenous leukemia and hyperleukocytosis receives rasburicase for tumor-lysis prophylaxis. Pulse-oximetry saturation falls to 85% without improvement on 100% oxygen, although the arterial oxygen tension is very high. Arterial blood-gas data are summarized below. Which cation is directly involved in this process?",
+    clinicalData: [{ title: "Arterial blood gas", columns: ["Test", "Result"], rows: [["pH", "7.42"], ["PaCO2", "30 mm Hg"], ["PaO2", "480 mm Hg"], ["Bicarbonate", "20 mEq/L"], ["Pulse oximetry", "85%"]] }],
+  },
+  3645: {
+    displayScenario: "A 5-month-old with repaired obstructed total anomalous pulmonary venous connection and pulmonary hypertension develops respiratory failure and is transitioned to HFOV. Serum chemistry and arterial blood-gas data are summarized below. Which continuous medication most likely caused the laboratory discrepancy?",
+    clinicalData: [{ title: "Chemistry and blood-gas data", columns: ["Test", "Result"], rows: [["Sodium / potassium / chloride", "152 / 3.6 / 107 mmol/L"], ["CO2", "23 mmol/L"], ["BUN / creatinine", "34 mg/dL / 1.26 mg/dL"], ["Glucose", "132 mg/dL"], ["Serum osmolality", "348 mOsm/kg"], ["pH / PaCO2 / PaO2", "7.25 / 51 / 43 mm Hg"], ["Base deficit / lactate", "-4.7 / 1.2 mg/dL"]] }],
+  },
+  3651: {
+    displayScenario: "A 2-year-old with MRSA pneumonia has fluid-refractory septic shock despite epinephrine and dopamine. Examination suggests myocardial depression and the central venous pressure is 10-12 mm Hg. Blood-gas and perfusion data are summarized below. What is the next best intervention?",
+    clinicalData: [{ title: "Perfusion and blood-gas data", columns: ["Parameter", "Value"], rows: [["Epinephrine / dopamine", "0.15 / 15 mcg/kg/min"], ["Fluid received", "100 mL/kg normal saline"], ["pH / PaCO2 / PaO2", "7.25 / 30 / 85 mm Hg"], ["Bicarbonate / base deficit", "16 mEq/L / -8"], ["Lactate", "5 mg/dL"], ["Central venous pressure", "10-12 mm Hg"]] }],
+  },
+  3652: {
+    displayScenario: "A 12-year-old with severe status asthmaticus is intubated and receiving continuous albuterol and IV methylprednisolone. He has good peripheral perfusion, no marked air trapping, and a mixed venous saturation of 75%. Ventilator and blood-gas data are summarized below. Which intervention is most likely to improve his lactic acidosis?",
+    clinicalData: [{ title: "Ventilator, perfusion, and blood-gas data", columns: ["Parameter", "Value"], rows: [["Ventilator rate / PEEP / FiO2", "10 per min / 5 cm H2O / 0.50"], ["Tidal volume", "6 mL/kg"], ["Mixed venous oxygen saturation", "75%"], ["pH / PaCO2 / PaO2", "7.20 / 55 / 95 mm Hg"], ["Arterial lactate", "7.3 mmol/L"]] }],
+  },
+  3658: {
+    displayScenario: "A 5-day-old infant with hypoplastic left heart syndrome after a Norwood procedure and Blalock-Taussig shunt has low cardiac output. Hemodynamic, blood-gas, and laboratory data are summarized below. What is the most appropriate next management step?",
+    clinicalData: [{ title: "Hemodynamic and perfusion data", columns: ["Parameter", "Value"], rows: [["Heart rate / blood pressure / CVP", "180/min / 90/45 mm Hg / 12 mm Hg"], ["SaO2 / mixed venous saturation", "85% / 30%"], ["Urine output", "0.5 mL/kg/h"], ["Dopamine / milrinone", "7.5 / 0.25 mcg/kg/min"], ["pH / PaCO2 / PaO2", "7.31 / 50 / 38 mm Hg"], ["Base deficit / hematocrit / lactate", "-6 / 41% / 6.0 mmol/L"]] }],
+  },
+  3593: {
+    displayScenario: "While rounding in the PICU, a resident notes an ETCO2 of 45 mm Hg while a simultaneous arterial blood gas has a PaCO2 of 60 mm Hg and suggests ignoring the ETCO2. Despite this difference, there is useful information in capnography. Which is the best reason to continue monitoring ETCO2?",
+    choices: {
+      A: "An end-tidal waveform without a true plateau indicates restrictive lung disease.",
+      B: "Dead-space fraction is estimated as Vd/Vt = (PaCO2 - PECO2) / PECO2.",
+      C: "Early ARDS is marked by a normal dead-space fraction.",
+      D: "Sudden loss of the end-tidal CO2 waveform most likely indicates ventilator malfunction.",
+      E: "Dead-space fraction is an independent risk factor for death.",
+    },
+    correctAnswer: "E",
+    correctAnswerText: "Dead-space fraction is an independent risk factor for death.",
+  },
   1024: {
     displayScenario: "A 15-year-old high school cheerleader presents to the pediatric intensive care unit with hypotension, fever, tachycardia, and severe lower back pain. She denies trauma, although cheerleading practice has been intense. Three days ago she was diagnosed with a muscle strain and prescribed rest and meloxicam. The pain became severe enough that she did not want to get out of bed; she then developed fever and decreased urine output. After fluids and ceftriaxone for presumed sepsis, her blood pressure improves and she produces some urine. Overnight her urine output falls, a bladder scan shows 800 mL, and a urinary catheter drains a large volume. Several hours later, she reports that she cannot move her legs normally. Magnetic resonance imaging with gadolinium contrast is obtained (Figure). Of the following, the MOST likely diagnosis is",
     clinicalData: [{
