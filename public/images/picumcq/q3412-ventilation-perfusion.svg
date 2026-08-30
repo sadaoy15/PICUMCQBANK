@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 540" role="img" aria-labelledby="title desc">
+  <title id="title">Ventilation, perfusion, and V/Q from lung base to apex</title>
+  <desc id="desc">Blood flow and ventilation are greatest at the lung base, but blood flow decreases more rapidly toward the apex, increasing the ventilation-perfusion ratio.</desc>
+  <rect width="920" height="540" fill="#fff"/>
+  <text x="38" y="40" font-family="Arial" font-size="22" font-weight="700" fill="#0f172a">Ventilation, perfusion, and V/Q in an upright lung</text>
+  <path d="M110 438V90M110 438H830" stroke="#334155" stroke-width="3"/>
+  <text x="330" y="488" font-family="Arial" font-size="17" fill="#334155">Lung position: base to apex</text>
+  <text x="40" y="282" transform="rotate(-90 40 282)" font-family="Arial" font-size="17" fill="#334155">Relative value</text>
+  <path d="M145 125 C290 175 430 250 790 392" fill="none" stroke="#0f766e" stroke-width="6"/>
+  <path d="M145 156 C300 202 460 286 790 407" fill="none" stroke="#2563eb" stroke-width="6"/>
+  <path d="M145 395 C320 360 500 285 790 125" fill="none" stroke="#d97706" stroke-width="6"/>
+  <g font-family="Arial" font-size="18" font-weight="700"><text x="616" y="350" fill="#0f766e">A: blood flow</text><text x="606" y="426" fill="#2563eb">B: ventilation</text><text x="622" y="150" fill="#d97706">C: V/Q ratio</text></g>
+  <text x="125" y="462" font-family="Arial" font-size="16" fill="#475569">Base: perfusion and ventilation are both high; V/Q ≈ 0.6</text>
+  <text x="530" y="462" font-family="Arial" font-size="16" fill="#475569">Apex: V/Q ≈ 3</text>
+  <text x="150" y="520" font-family="Arial" font-size="16" fill="#475569">Perfusion falls more than ventilation from base to apex, so the V/Q ratio rises.</text>
+</svg>

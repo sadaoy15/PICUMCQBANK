@@ -24794,6 +24794,18 @@ export const importedQuestions: Question[] = [
     source: "PICU MCQ Review",
   },
   {
+    id: 3664,
+    category: "PICU MCQ Review",
+    title: "Regarding the venous return-cardiac output curves shown in the Figure, a shift from curve A to curve C occurs with which condition?",
+    scenario: "For questions 30 and 31, refer to the venous return-cardiac output curves in the Figure (Pms = mean systemic filling pressure). Regarding the curves shown, a shift from curve A to curve C occurs with which of the following conditions?",
+    choices: {"A": "Polycythemia or use of a vasodilator", "B": "Anemia or use of a vasodilator", "C": "Polycythemia or use of a vasoconstrictor", "D": "Anemia or use of a vasoconstrictor", "E": "Use of a pure inotrope"},
+    correctAnswer: "B",
+    correctAnswerText: "Anemia or use of a vasodilator",
+    explanation: "On the venous-return curve, a shift from A to C represents increased venous return at a given right atrial pressure with no change in mean systemic filling pressure. This is caused by lower resistance to venous return. Anemia lowers blood viscosity, and vasodilators reduce vascular resistance; either increases the slope of the venous-return curve. Polycythemia and vasoconstriction have the opposite effect. A pure inotrope shifts the cardiac-function curve rather than the venous-return curve.",
+    images: ["/PICUMCQBANK/images/picumcq/picumcq-pg21-img1.jpeg"],
+    source: "PICU MCQ Review",
+  },
+  {
     id: 3414,
     category: "PICU MCQ Review",
     title: "A 12-year-old boy with acute respiratory distress syndrome is being mechanically ventilated in a syn...",

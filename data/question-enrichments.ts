@@ -10,7 +10,10 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
   2260: { images: [] },
   2411: { images: [] },
   2540: { images: [] },
-  3412: { images: [] },
+  3412: {
+    images: [],
+    visuals: { question: [{ src: "/images/picumcq/q3412-ventilation-perfusion.svg", label: "Ventilation-perfusion figure", caption: "In an upright lung, blood flow and ventilation are both greatest at the base, but blood flow declines more steeply toward the apex; V/Q therefore rises from base to apex." }] },
+  },
   3413: { images: ["/PICUMCQBANK/images/picumcq/picumcq-pg20-img1.jpeg"] },
   // The source PDF names these figures but does not embed them. The following
   // self-contained diagrams faithfully reflect the findings stated in its stems
@@ -54,6 +57,9 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
     clinicalData: [{ title: "Arterial blood gas", columns: ["Test", "Result"], rows: [["pH", "7.33"], ["PaCO2", "68 mm Hg"], ["PaO2", "24 mm Hg"], ["Base excess", "-2 mEq/L"]] }],
   },
   3414: {
+    // The source page for question 30 contains the venous-return figure. It was
+    // previously (and incorrectly) displayed with question 32.
+    images: [],
     displayScenario: "A 12-year-old with ARDS is ventilated with synchronized intermittent mandatory ventilation in pressure-control/pressure-support mode (PIP 28 cm H2O, PEEP 12 cm H2O, FiO2 0.60, rate 15/min). Arterial blood-gas and environmental data are summarized below. What is this patient’s PAO2-PaO2 difference?",
     clinicalData: [{ title: "Gas-exchange data", columns: ["Parameter", "Value"], rows: [["PaCO2 / PaO2", "60 / 60 mm Hg"], ["Respiratory quotient", "0.8"], ["Core temperature", "37 C"], ["Barometric pressure", "747 mm Hg"]] }],
   },

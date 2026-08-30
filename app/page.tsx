@@ -68,7 +68,7 @@ const studyGuideExamGroups: ExamGroup[] = [
 ];
 
 const picumcqExamGroups: ExamGroup[] = [
-  { id: "picumcq-book", label: "PICU MCQ Review", description: "279 questions with explanations and figures (PICU MCQ Review)", accent: "indigo", match: (q) => q.category === "PICU MCQ Review" },
+  { id: "picumcq-book", label: "PICU MCQ Review", description: "280 questions with explanations and figures (PICU MCQ Review)", accent: "indigo", match: (q) => q.category === "PICU MCQ Review" },
 ];
 
 const passMachineExamGroups: ExamGroup[] = [
