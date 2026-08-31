@@ -172,6 +172,12 @@ function ClinicalData({ blocks }: { blocks?: ClinicalDataBlock[] }) {
   );
 }
 
+function assetUrl(src: string) {
+  return src.startsWith("/PICUMCQBANK/")
+    ? src
+    : `/PICUMCQBANK${src.startsWith("/") ? src : `/${src}`}`;
+}
+
 function FigureGallery({ figures, title }: { figures?: QuestionFigure[]; title: string }) {
   if (!figures?.length) return null;
 
@@ -189,7 +195,7 @@ function FigureGallery({ figures, title }: { figures?: QuestionFigure[]; title: 
             </div>
             <div className="flex min-h-32 items-center justify-center bg-white p-3">
               <img
-                src={`/PICUMCQBANK${figure.src}`}
+                src={assetUrl(figure.src)}
                 alt={`${figure.label}: ${figure.caption}`}
                 className="max-h-[460px] max-w-full object-contain"
               />
@@ -1059,7 +1065,7 @@ export default function QuizPage() {
               {q.images.map((img, i) => (
                 <img
                   key={i}
-                  src={`/PICUMCQBANK${img}`}
+                  src={assetUrl(img)}
                   alt={`Figure ${i + 1}`}
                   className="max-w-full rounded-xl border border-slate-200 shadow-sm object-contain mx-auto"
                   style={{ maxHeight: "400px" }}
@@ -1106,7 +1112,7 @@ export default function QuizPage() {
                     {q.visuals?.choices?.[letter]?.map((figure) => (
                       <span key={figure.src} className="mt-3 block overflow-hidden rounded-lg border border-slate-200 bg-white">
                         <img
-                          src={`/PICUMCQBANK${figure.src}`}
+                          src={assetUrl(figure.src)}
                           alt={`${figure.label}: ${figure.caption}`}
                           className="mx-auto max-h-72 max-w-full object-contain p-2"
                         />
@@ -1166,7 +1172,7 @@ export default function QuizPage() {
                   {q.images.map((img, i) => (
                     <img
                       key={i}
-                      src={`/PICUMCQBANK${img}`}
+                      src={assetUrl(img)}
                       alt={`Figure ${i + 1}`}
                       className="max-w-full rounded-xl border border-slate-200 shadow-sm object-contain mx-auto"
                       style={{ maxHeight: "400px" }}
