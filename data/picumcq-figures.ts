@@ -68,7 +68,7 @@ export const picuMcqVisualAssets: Record<number, QuestionVisuals> = {
     ],
   },
   3553: {
-    question: [{ src: "/images/picumcq/picumcq-pg198-img1.jpeg", label: "Electrocardiogram", caption: "Admission ECG after the recent tick bite and systemic symptoms." }],
+    question: [{ src: "/images/picumcq/picumcq-pg198-img1.jpeg", label: "Electrocardiogram", caption: "Admission ECG demonstrating atrioventricular dissociation consistent with complete (third-degree) heart block." }],
   },
   3562: {
     question: [{ src: "/images/picumcq/picumcq-pg202-img1.jpeg", label: "Electrocardiogram", caption: "ECG obtained in the patient with altered mental status." }],

@@ -26581,12 +26581,12 @@ export const importedQuestions: Question[] = [
   {
     id: 3553,
     category: "PICU MCQ Review",
-    title: "A 12-year-old with a history of epilepsy had a recent viral illness that included fever, rash, and d...",
-    scenario: "A 12-year-old with a history of epilepsy had a recent viral illness that included fever, rash, and diarrhea 4 weeks ago while camping in Vermont. The child now presents with dizziness, lethargy, polyarticular arthralgia, and swelling. His admission ECG is shown in the Figure Based on his symptoms, which of the following is indicated for the treatment for his diagnosis?",
+    title: "Lyme carditis with complete heart block",
+    scenario: "A 12-year-old child with a history of epilepsy had fever, rash, and diarrhea 4 weeks ago while camping in Vermont. The child now presents with dizziness, lethargy, polyarticular arthralgia, and joint swelling. The admission ECG shown in the figure demonstrates complete (third-degree) atrioventricular block with atrioventricular dissociation. Based on the exposure history, systemic symptoms, and ECG finding, which treatment is indicated for the most likely diagnosis?",
     choices: {"A": "Methylprednisolone", "B": "Ceftriaxone", "C": "Hydroxychloroquine", "D": "IV immunoglobulin", "E": "Cyclosporin A"},
     correctAnswer: "B",
     correctAnswerText: "Ceftriaxone",
-    explanation: "The rhythm is third-degree heart block. The patient’s symptoms and history of camping in an endemic area are consistent with the cardiac manifestations of Lyme disease. Lyme-specific immunoglobulin M (IgM) and IgG assays should be performed, using the same serum specimen for tier 1 and tier 2 testing. Antibiotics are the only agent proven to promote resolution of symptoms and therefore should be started immediately. If the patient has carditis associated with Lyme disease, such as higher-grade atrioventricular block, IV ceftriaxone is the drug of choice.",
+    explanation: "The ECG demonstrates complete (third-degree) atrioventricular block. The patient's symptoms and recent outdoor exposure in Vermont, an endemic area, are consistent with Lyme carditis due to early disseminated Lyme disease. Lyme-specific immunoglobulin M (IgM) and IgG testing should be performed using the same serum specimen for tier 1 and tier 2 testing, but treatment should not be delayed while results are pending. Symptomatic high-grade atrioventricular block requires hospitalization, continuous cardiac monitoring, and immediate IV antibiotic therapy. IV ceftriaxone is the indicated choice among the options.",
     images: [
       "/PICUMCQBANK/images/picumcq/picumcq-pg198-img1.jpeg",
       "/PICUMCQBANK/images/picumcq/picumcq-pg223-img1.jpeg"
