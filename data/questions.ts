@@ -3,6 +3,7 @@ import { Question } from "@/types/question";
 import { questionEnrichments } from "./question-enrichments";
 import { mcckap2023Questions } from "./mcckap-2023-questions";
 import { passMachineQuestions } from "./pass-machine-questions";
+import { picuMcqVisualAssets } from "./picumcq-figures";
 import { prep2021VisualAssets } from "./prep-2021-figures";
 import { prep2022VisualAssets } from "./prep-2022-figures";
 
@@ -26473,9 +26474,9 @@ export const importedQuestions: Question[] = [
   {
     id: 3546,
     category: "PICU MCQ Review",
-    title: "A 18-year-old woman is admitted to the pediatric ICU with a history of being kicked in the upper abd...",
-    scenario: "A 18-year-old woman is admitted to the pediatric ICU with a history of being kicked in the upper abdomen by a horse. She underwent diagnostic peritoneal lavage in the emergency department; however, only 100 mL of the 1,000 mL of fluid was recovered for evaluation. The lavage, however, was negative for significant red blood cells, white blood cells, bacteria, particulate matter, or amylase. Her radiograph is shown in the Figure below. Which of the following assessments is most accurate? B) This condition is rarely associated with cardiorespiratory embarrassment and can be treated conservatively. B) Facilitated diuresis for the pulmonary edema is indicated. C) The condition warrants immediate surgical intervention. D) Insertion of a chest tube to drain a hemopneumothorax is indicated. E) Lung recruitment strategies to open the left lower lobe atelectasis are indicated.",
-    choices: {"B": "Facilitated diuresis for the pulmonary edema is indicated.", "C": "The condition warrants immediate surgical intervention.", "D": "Insertion of a chest tube to drain a hemopneumothorax is indicated.", "E": "Lung recruitment strategies to open the left lower lobe atelectasis are indicated."},
+    title: "An 18-year-old woman has blunt upper-abdominal trauma after being kicked by a horse",
+    scenario: "An 18-year-old woman is admitted to the pediatric ICU after being kicked in the upper abdomen by a horse. She underwent diagnostic peritoneal lavage in the emergency department; however, only 100 mL of the 1,000 mL of fluid was recovered for evaluation. The lavage was negative for significant red blood cells, white blood cells, bacteria, particulate matter, and amylase. Her radiograph is shown in the figure below. Which of the following assessments is most accurate?",
+    choices: {"A": "This condition is rarely associated with cardiorespiratory compromise and can be treated conservatively.", "B": "Facilitated diuresis for pulmonary edema is indicated.", "C": "The condition warrants immediate surgical intervention.", "D": "Insertion of a chest tube to drain a hemopneumothorax is indicated.", "E": "Lung recruitment strategies to open left lower lobe atelectasis are indicated."},
     correctAnswer: "C",
     correctAnswerText: "The condition warrants immediate surgical intervention.",
     explanation: "The radiograph in the Figure is consistent with traumatic rupture of the left diaphragm secondary to blunt trauma to the abdomen. This subject has been extensively reviewed by Harmon and Root.1 The classic mechanism related to blunt trauma is rapid deceleration against a waist seat belt in a crashing automobile. Other mechanisms of injury include falls, kicks, and crush injuries. Disruption of the left hemidiaphragm represents 85% of the injuries. The liver appears to buffer the impact to the right hemidiaphragm and the incidence of injury on this side is less. Although bleeding is infrequently severe in this injury, cardiopulmonary embarrassment is the norm. Uninvited visceral contents in the chest cavity will reduce ventricular filling (a mechanism similar to cardiac tamponade), and respiratory function may be impaired as a result of parenchymal compression and/or contusion. Occasionally, a large gas- or fluid-filled stomach may freely rupture into the chest cavity, resulting in chemical injury and sepsis. It is not uncommon to find the stomach, colon, small bowel, and spleen in the hemithorax upon surgical exploration. Radiographic diagnosis may be subtle. Occasionally, only a small amount of abnormal gas is noted in the hemithorax. Coiling of the nasogastric tube and/or large amounts of gas-filled viscera present on the chest radiograph make the diagnosis more obvious. Immediate surgical repair of the injury is recommended. This is particularly necessary for those individuals suffering from cardiorespiratory embarrassment. The natural history of unrecognized rents in the diaphragm that escape initial surgical correction appear to predispose to subsequent bowel obstruction and/or strangulation, although the exact incidence is not known. However, 90% of strangulated diaphragmatic hernias are demonstrated to be posttraumatic.",
@@ -27268,11 +27269,11 @@ export const importedQuestions: Question[] = [
   {
     id: 3605,
     category: "PICU MCQ Review",
-    title: "A 3-year old male sustained a scald injury that resulted in 35% total body surface area partial and...",
-    scenario: "A 3-year old male sustained a scald injury that resulted in 35% total body surface area partial and full-thickness burns to the lower extremities, genitalia, and trunk. He has been appropriately fluid-resuscitated and has stable hemodynamics. Additional therapies have been directed towards pain management, decreasing metabolic demand, and promoting skin healing. Oxandrolone 0.1mg/kg PO twice daily and oral propranolol 0.1mg/kg PO three times daily was initiated to improve muscle protein metabolism. The following morning, the patient remains persistently tachycardic to 160-170 beats/minute, despite good urine output and good peripheral perfusion on exam. He has received one dose of propranolol, and is due for his second dose. The nurse reports no change in heart rate after administration of pain medications. What would be the most appropriate action based on the pharmacokinetic properties of propranolol?",
-    choices: {"A": "Guillain-Barre syndrome", "B": "Myasthenia gravis", "C": "Aminogylcosides", "D": "Botulism", "E": "Tick paralysis"},
+    title: "Peripheral nerve site of predominant pathologic injury",
+    scenario: "Which of the following entities exerts its predominant pathologic effects at the site marked by the arrow in the figure?",
+    choices: {"A": "Guillain-Barré syndrome", "B": "Myasthenia gravis", "C": "Aminoglycosides", "D": "Botulism", "E": "Tick paralysis"},
     correctAnswer: "A",
-    correctAnswerText: "Guillain-Barre syndrome",
+    correctAnswerText: "Guillain-Barré syndrome",
     explanation: "",
     images: [
       "/PICUMCQBANK/images/picumcq/picumcq-pg304-img1.jpeg",
@@ -28026,10 +28027,11 @@ const normalizedQuestions = importedQuestions.map((question) => {
   const enrichment = questionEnrichments[question.id];
   const prep2021Visuals = prep2021VisualAssets[question.id];
   const prep2022Visuals = prep2022VisualAssets[question.id];
+  const picuMcqVisuals = picuMcqVisualAssets[question.id];
   const merged = {
     ...question,
     ...enrichment,
-    visuals: prep2021Visuals ?? prep2022Visuals ?? enrichment?.visuals ?? question.visuals,
+    visuals: prep2021Visuals ?? prep2022Visuals ?? picuMcqVisuals ?? enrichment?.visuals ?? question.visuals,
     images: enrichment?.images ?? question.images,
   };
   const choices = Object.fromEntries(Object.entries(merged.choices ?? {}).map(([key, value]) => [key, cleanImportedText(value)]));
@@ -28047,8 +28049,10 @@ const normalizedQuestions = importedQuestions.map((question) => {
     source: cleanImportedText(merged.source) || null,
     category: cleanImportedText(merged.category),
     displayScenario: merged.displayScenario ? cleanImportedText(merged.displayScenario) : undefined,
-    // PREP 2021 and 2022 use semantic question/choice/explanation visual groups.
-    images: prep2021Visuals || prep2022Visuals ? undefined : (hasVisualReference(merged) ? merged.images : undefined),
+    // PREP 2021/2022 and PICU MCQ Review use verified semantic visual groups.
+    images: prep2021Visuals || prep2022Visuals || question.category === "PICU MCQ Review"
+      ? undefined
+      : (hasVisualReference(merged) ? merged.images : undefined),
   };
 });
 

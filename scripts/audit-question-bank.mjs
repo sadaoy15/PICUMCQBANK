@@ -15,12 +15,33 @@ function loadQuestions() {
   const passMachineContext = { exports: {}, require };
   vm.runInNewContext(passMachineJavaScript, passMachineContext, { filename: "pass-machine-questions.ts" });
 
+  const mcckap2023Source = readFileSync(resolve(projectRoot, "data/mcckap-2023-questions.ts"), "utf8");
+  const mcckap2023JavaScript = ts.transpileModule(mcckap2023Source, {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText;
+  const mcckap2023Context = { exports: {}, require };
+  vm.runInNewContext(mcckap2023JavaScript, mcckap2023Context, { filename: "mcckap-2023-questions.ts" });
+
+  const prep2021VisualSource = readFileSync(resolve(projectRoot, "data/prep-2021-figures.ts"), "utf8");
+  const prep2021VisualJavaScript = ts.transpileModule(prep2021VisualSource, {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText;
+  const prep2021VisualContext = { exports: {}, require };
+  vm.runInNewContext(prep2021VisualJavaScript, prep2021VisualContext, { filename: "prep-2021-figures.ts" });
+
   const prep2022VisualSource = readFileSync(resolve(projectRoot, "data/prep-2022-figures.ts"), "utf8");
   const prep2022VisualJavaScript = ts.transpileModule(prep2022VisualSource, {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
   }).outputText;
   const prep2022VisualContext = { exports: {}, require };
   vm.runInNewContext(prep2022VisualJavaScript, prep2022VisualContext, { filename: "prep-2022-figures.ts" });
+
+  const picuMcqVisualSource = readFileSync(resolve(projectRoot, "data/picumcq-figures.ts"), "utf8");
+  const picuMcqVisualJavaScript = ts.transpileModule(picuMcqVisualSource, {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText;
+  const picuMcqVisualContext = { exports: {}, require };
+  vm.runInNewContext(picuMcqVisualJavaScript, picuMcqVisualContext, { filename: "picumcq-figures.ts" });
 
   const enrichmentSource = readFileSync(resolve(projectRoot, "data/question-enrichments.ts"), "utf8");
   const enrichmentJavaScript = ts.transpileModule(enrichmentSource, {
@@ -37,7 +58,10 @@ function loadQuestions() {
     exports: {},
     require: (module) => {
       if (module === "./question-enrichments") return enrichmentContext.exports;
+      if (module === "./mcckap-2023-questions") return mcckap2023Context.exports;
       if (module === "./pass-machine-questions") return passMachineContext.exports;
+      if (module === "./picumcq-figures") return picuMcqVisualContext.exports;
+      if (module === "./prep-2021-figures") return prep2021VisualContext.exports;
       if (module === "./prep-2022-figures") return prep2022VisualContext.exports;
       return require(module);
     },
