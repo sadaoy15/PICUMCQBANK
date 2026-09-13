@@ -516,10 +516,11 @@ select {
 .db-choice-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 26px 0 11px; }
 .db-choice-heading p { color: #53656e; font-size: 10px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
 .db-choice-heading span { border-radius: 99px; background: #eff4f5; padding: 5px 8px; color: #819198; font-size: 9px; font-weight: 760; }
-.db-choice-grid { display: grid; gap: 11px; }
+.db-choice-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 9px; }
 .db-choice {
   position: relative;
-  min-height: 66px;
+  min-height: 62px;
+  overflow: hidden;
   align-items: center !important;
   border-color: rgba(205,215,220,.8) !important;
   background: rgba(255,255,255,.78) !important;
@@ -527,6 +528,24 @@ select {
   will-change: transform;
   transition: transform 190ms cubic-bezier(.2,.8,.2,1), border-color 190ms ease, background 190ms ease, box-shadow 190ms ease !important;
 }
+.db-choice::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  bottom: 13px;
+  width: 3px;
+  border-radius: 0 999px 999px 0;
+  background: transparent;
+  transform: scaleY(.55);
+  transition: background-color 180ms ease, transform 220ms cubic-bezier(.22,1,.36,1);
+}
+.db-choice[data-state="idle"]:hover::before,
+.db-choice[data-state="selected"]::before { background: #15998d; transform: scaleY(1); }
+.db-choice[data-state="correct"]::before { background: #39a86b; transform: scaleY(1); }
+.db-choice[data-state="incorrect"]::before { background: #e0655c; transform: scaleY(1); }
+.db-choice[data-state="revealed"]::before { background: #e4ae28; transform: scaleY(1); }
+.db-choice[data-state="unkeyed"]::before { background: #45a7c4; transform: scaleY(1); }
 .db-choice[data-state="idle"]:hover {
   z-index: 1;
   transform: translateY(-2px) !important;
@@ -566,10 +585,6 @@ select {
 .db-answer-actions > button:disabled { background: #e3e8ea !important; color: #8b989e !important; box-shadow: none !important; }
 .db-reveal-action { border: 1px solid rgba(228,174,40,.36) !important; background: #fffaf0 !important; color: #a56f00 !important; }
 .db-reveal-action:hover { background: #fff5dc !important; border-color: rgba(228,174,40,.6) !important; }
-
-@media (min-width: 900px) {
-  .db-choice-grid.is-compact { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
 
 @media (max-width: 1050px) {
   .db-overview { grid-template-columns: 1fr; }

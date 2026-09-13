@@ -872,9 +872,6 @@ export default function QuizPage() {
   const q = quizQuestions[current];
   const savedState = progress[q.id];
   const choiceLetters = Object.keys(q.choices).sort();
-  const useCompactChoiceGrid = choiceLetters.length <= 6
-    && choiceLetters.every((letter) => q.choices[letter].length <= 90)
-    && !choiceLetters.some((letter) => q.visuals?.choices?.[letter]?.length);
   const clinicalPresentation = inlineClinicalData(q);
   const questionText = clinicalPresentation.text;
   const questionCategoryLabel = selectedExam.subCategoryPrefix
@@ -1051,7 +1048,7 @@ export default function QuizPage() {
           )}
 
           <div className="db-choice-heading"><p>Select one answer</p><span>{choiceLetters.length} options</span></div>
-          <div className={`${s.choiceSpace} db-choice-grid ${useCompactChoiceGrid ? "is-compact" : ""}`}>
+                  <div className={`${s.choiceSpace} db-choice-grid`}>
             {choiceLetters.map((letter) => {
               const isSelected = selected === letter;
               const isCorrect = letter === q.correctAnswer;
