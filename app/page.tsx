@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { BookOpen, Bookmark, CircleCheckBig, ClipboardCheck, GraduationCap, HeartPulse, Stethoscope, TestTube2, Timer, type LucideIcon } from "lucide-react";
+import { BookOpen, Bookmark, ClipboardCheck, HeartPulse, Stethoscope, TestTube2, Timer, type LucideIcon } from "lucide-react";
 import { questions as builtInQuestions } from "@/data/questions";
 import { inlineClinicalData } from "@/lib/inline-clinical-data";
 import { ClinicalDataBlock, Question, QuestionFigure } from "@/types/question";
@@ -210,59 +210,43 @@ function FigureGallery({ figures, title }: { figures?: QuestionFigure[]; title: 
   );
 }
 
-function ModeVisualIcon({ type, small = false }: { type: "practice" | "test"; small?: boolean }) {
-  const sz = small ? "h-14 w-14" : "h-[72px] w-[72px]";
-  if (type === "practice") return (
-    <span aria-hidden="true" className={`relative grid ${sz} place-items-center rounded-2xl border border-teal-200/90 bg-white/85 text-teal-800 shadow-lg shadow-teal-950/10`}>
-      <GraduationCap className="h-[48%] w-[48%]" strokeWidth={1.8} />
-      <span className="absolute -bottom-1 -right-1 grid h-6 w-6 place-items-center rounded-lg border border-white bg-teal-700 text-white shadow-sm"><CircleCheckBig className="h-3.5 w-3.5" strokeWidth={2.3} /></span>
-    </span>
-  );
-  return (
-    <span aria-hidden="true" className={`relative grid ${sz} place-items-center rounded-2xl border border-orange-200/90 bg-white/85 text-[#c2412d] shadow-lg shadow-orange-950/10`}>
-      <ClipboardCheck className="h-[48%] w-[48%]" strokeWidth={1.8} />
-      <span className="absolute -bottom-1 -right-1 grid h-6 w-6 place-items-center rounded-lg border border-white bg-[#c2412d] text-white shadow-sm"><Timer className="h-3.5 w-3.5" strokeWidth={2.3} /></span>
-    </span>
-  );
-}
-
 // ── Style tokens (auto-applied based on detected screen size) ─────────────────
 function makeStyles(isPhone: boolean) {
   return {
     quizWrap: isPhone
-      ? "-mx-4 overflow-hidden bg-white shadow-xl shadow-slate-200/60 ring-1 ring-white/80 sm:mx-0 sm:rounded-2xl"
-      : "mx-auto max-w-[1080px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/50",
-    headerPad: isPhone ? "border-b border-slate-200 bg-white px-5 py-5" : "border-b border-slate-200 bg-white px-7 py-5",
+      ? "db-quiz-shell -mx-4 overflow-hidden bg-white shadow-xl ring-1 ring-white/80 sm:mx-0 sm:rounded-[32px]"
+      : "db-quiz-shell mx-auto max-w-[1160px] overflow-hidden rounded-[32px] border border-white bg-white shadow-xl",
+    headerPad: isPhone ? "db-quiz-head border-b border-slate-200/70 bg-white px-5 py-5" : "db-quiz-head border-b border-slate-200/70 bg-white px-8 py-7",
     backBtn: isPhone
-      ? "mb-5 inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3.5 py-2.5 text-sm font-bold text-slate-600 shadow-sm transition-colors hover:border-teal-300 hover:text-teal-800"
-      : "mb-5 inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3.5 py-2 text-sm font-bold text-slate-600 shadow-sm transition-colors hover:border-teal-300 hover:text-teal-800",
-    examTitle: isPhone ? "text-xl font-black tracking-tight text-slate-950" : "text-xl font-black tracking-tight text-slate-950",
+      ? "mb-5 inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/80 px-4 py-2.5 text-sm font-bold text-slate-600 shadow-sm transition-all hover:border-teal-300 hover:text-teal-800"
+      : "mb-5 inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/80 px-4 py-2 text-sm font-bold text-slate-600 shadow-sm transition-all hover:border-teal-300 hover:text-teal-800",
+    examTitle: isPhone ? "text-xl font-black tracking-[-0.035em] text-slate-950" : "text-2xl font-black tracking-[-0.04em] text-slate-950",
     questionMeta: isPhone ? "mt-2 text-sm font-medium text-slate-500" : "mt-1.5 text-sm font-medium text-slate-500",
     questionBadge: isPhone
-      ? "rounded-lg border border-teal-100 bg-teal-50 px-3 py-1.5 text-sm font-black text-teal-800"
-      : "rounded-lg border border-teal-100 bg-teal-50 px-3 py-1.5 text-sm font-black text-teal-800",
+      ? "rounded-full border border-teal-100 bg-teal-50 px-3.5 py-1.5 text-sm font-black text-teal-800"
+      : "rounded-full border border-teal-100 bg-teal-50 px-3.5 py-1.5 text-sm font-black text-teal-800",
     tabBtn: isPhone ? "py-3.5 text-base" : "py-3 text-base",
-    questionBodyPad: isPhone ? "px-5 py-6" : "relative px-7 py-7",
+    questionBodyPad: isPhone ? "px-5 py-7" : "relative px-8 py-9",
     questionText: isPhone
       ? "mb-6 max-w-[850px] text-xl font-bold leading-relaxed text-slate-950"
-      : "mb-6 max-w-[850px] text-[19px] font-bold leading-relaxed text-slate-950",
+      : "mb-7 max-w-[900px] text-[20px] font-bold leading-[1.65] tracking-[-0.012em] text-slate-950",
     choiceSpace: isPhone ? "space-y-3" : "space-y-3",
     choiceBase: isPhone
-      ? "w-full text-left rounded-xl border px-4 py-4 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/60 transition-all cursor-pointer flex items-start gap-3 "
-      : "w-full text-left rounded-xl border px-5 py-3.5 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/60 transition-all cursor-pointer flex items-start gap-3 ",
+      ? "w-full text-left rounded-2xl border px-4 py-4 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/40 transition-all cursor-pointer flex items-start gap-3 "
+      : "w-full text-left rounded-2xl border px-5 py-4 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/40 transition-all cursor-pointer flex items-start gap-3 ",
     choiceLetterBase: isPhone
       ? "flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-sm font-black "
       : "flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg text-xs font-black ",
     submitBtn: isPhone
-      ? "mt-6 w-full rounded-xl bg-teal-700 py-3.5 text-base font-black text-white shadow-md shadow-teal-200 transition-colors hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-40"
-      : "mt-5 w-full rounded-xl bg-teal-700 py-3.5 text-sm font-black text-white shadow-md shadow-teal-200 transition-colors hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-40",
+      ? "mt-6 w-full rounded-2xl bg-[#182126] py-3.5 text-base font-black text-white shadow-lg shadow-slate-300 transition-all hover:bg-[#26363e] disabled:cursor-not-allowed disabled:opacity-40"
+      : "mt-6 w-full rounded-2xl bg-[#182126] py-4 text-sm font-black text-white shadow-lg shadow-slate-300 transition-all hover:bg-[#26363e] disabled:cursor-not-allowed disabled:opacity-40",
     navGrid: isPhone ? "mt-5 grid grid-cols-2 gap-3" : "mt-4 grid grid-cols-2 gap-2.5",
     prevBtn: isPhone
       ? "rounded-xl border border-slate-200 bg-white py-3.5 text-sm font-black text-slate-600 hover:bg-slate-50 transition-colors"
       : "rounded-xl border border-slate-200 bg-white py-3 text-sm font-black text-slate-600 hover:bg-slate-50 transition-colors",
     nextBtn: isPhone
-      ? "rounded-xl bg-teal-700 py-3.5 text-sm font-black text-white transition-colors hover:bg-teal-800"
-      : "rounded-xl bg-teal-700 py-3 text-sm font-black text-white transition-colors hover:bg-teal-800",
+      ? "rounded-xl bg-[#182126] py-3.5 text-sm font-black text-white transition-colors hover:bg-[#26363e]"
+      : "rounded-xl bg-[#182126] py-3 text-sm font-black text-white transition-colors hover:bg-[#26363e]",
     progressWrap: isPhone ? "mt-6 flex items-center justify-center" : "mt-4 flex items-center justify-center",
     progressPill: isPhone
       ? "rounded-full bg-white px-5 py-2.5 text-sm font-black text-slate-700 shadow-xl shadow-slate-200"
@@ -287,7 +271,7 @@ function makeStyles(isPhone: boolean) {
     modeStartTest: isPhone ? "relative mt-6 inline-flex items-center gap-2 text-lg font-black text-red-600 hover:text-red-700 transition-colors" : "relative mt-5 inline-flex items-center gap-2 text-base font-black text-red-600 hover:text-red-700 transition-colors",
     modeArrow: isPhone ? "text-2xl leading-none" : "text-2xl leading-none",
     examGridCols: isPhone ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-2 lg:grid-cols-3",
-    sectionHeading: "text-xs font-black text-slate-500 uppercase tracking-wider mb-3",
+    sectionHeading: "mb-3 text-[11px] font-black uppercase tracking-[0.16em] text-slate-500",
   };
 }
 
@@ -625,118 +609,125 @@ export default function QuizPage() {
       const pct = total > 0 ? (correct / total) * 100 : 0;
       const isTest = pendingMode === "test";
       return (
-        <button onClick={() => handleSelectExam(exam)} className={`group w-full rounded-2xl border border-white/80 bg-white p-4 text-left shadow-lg shadow-slate-200/60 transition-all hover:-translate-y-0.5 hover:shadow-xl ${ac.card}`}>
-          <div className="flex items-start gap-3">
-            <span className={`flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-2xl ${ac.badge}`}>
+        <button onClick={() => handleSelectExam(exam)} className={`db-exam-card group w-full rounded-2xl border border-white/80 bg-white p-4 text-left shadow-lg shadow-slate-200/60 transition-all hover:-translate-y-0.5 hover:shadow-xl ${ac.card}`}>
+          <div className="db-exam-card-top">
+            <span className={`db-exam-card-icon ${isTest ? "is-test" : ""}`}>
               <MedicalIcon name={iconForExam(exam)} className="h-5 w-5" />
             </span>
-            <div className="min-w-0 flex-1">
-              <div className="flex items-start justify-between gap-3">
-                <h3 className="text-sm font-black text-slate-900 group-hover:text-slate-950 sm:text-base">{exam.label}</h3>
-                <span className="whitespace-nowrap rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-black text-slate-500 sm:text-xs">{total} Qs</span>
-              </div>
-              <p className="mt-1 text-[11px] font-medium leading-relaxed text-slate-500 sm:text-xs">{exam.description}</p>
-            </div>
+            <span className="db-exam-count">{total} questions</span>
           </div>
-          <div className="mt-4 flex items-center justify-between gap-3">
-            <span className={`inline-flex items-center rounded-full px-3 py-1.5 text-xs font-black ${isTest ? "bg-red-50 text-red-600" : "bg-blue-50 text-blue-600"}`}>
-              {isTest ? "Start Test" : "Start Practice"}
-            </span>
-            <span className="text-xl font-black text-slate-300 transition-colors group-hover:text-slate-500">→</span>
+          <div className="db-exam-card-copy">
+            <span className="db-exam-overline">{exam.id.includes("prep") ? "PREP collection" : exam.id.includes("sccm") ? "Critical care" : "Question bank"}</span>
+            <h3>{exam.label}</h3>
+            <p>{exam.description}</p>
           </div>
-          {answered > 0 && (
-            <div className="mt-4 rounded-xl bg-slate-50 p-3">
-              <div className="mb-2 flex justify-between text-xs font-bold text-slate-400">
-                <span>Latest: {answered}/{total} answered</span>
-                <span className="text-teal-700 font-medium">{correct} correct</span>
-              </div>
-              <div className="h-1.5 w-full rounded-full bg-slate-200">
-                <div className="h-1.5 rounded-full bg-teal-600 transition-all" style={{ width: `${pct}%` }} />
-              </div>
-            </div>
-          )}
+          <div className="db-exam-card-footer">
+            <span className={`db-exam-action ${isTest ? "is-test" : ""}`}>{isTest ? "Start test" : "Start practice"}</span>
+            <span className="db-exam-arrow" aria-hidden="true">→</span>
+          </div>
+          <div className={`db-exam-card-progress ${answered > 0 ? "has-progress" : ""}`}>
+            {answered > 0 ? (
+              <>
+                <div className="db-exam-progress-copy"><span>{answered}/{total} answered</span><strong>{correct} correct</strong></div>
+                <div className="db-exam-progress-track"><div style={{ width: `${pct}%` }} /></div>
+              </>
+            ) : (
+              <span className="db-exam-new">Ready when you are</span>
+            )}
+          </div>
         </button>
       );
     };
 
-    return (
-      <div className="space-y-4 lg:space-y-5">
-        <section className="relative isolate overflow-hidden rounded-[30px] border border-white/80 bg-[#f6fcfc] shadow-xl shadow-slate-200/70">
-          <img src="/PICUMCQBANK/images/picu-hero-illustration.png" alt="Pediatric critical care monitor and bedside learning tools" className="absolute inset-0 -z-20 h-full w-full object-cover object-[67%_center]" />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-white via-white/95 to-white/25 lg:via-white/78" />
-          <div className="grid min-h-[460px] gap-8 p-6 sm:p-8 lg:grid-cols-[minmax(0,1fr)_430px] lg:items-center lg:p-10">
-            <div className="max-w-xl">
-              <p className="inline-flex items-center gap-2 rounded-full bg-teal-100/85 px-3 py-1.5 text-[11px] font-black tracking-wide text-teal-800">
-                <span className="text-base leading-none">✦</span> WELCOME TO PICU MCQ BANK
-              </p>
-              <h1 className="mt-4 text-3xl font-black leading-[1.08] tracking-tight text-slate-950 sm:text-4xl lg:text-[48px]">
-                Focused practice.<br />
-                Stronger <span className="text-teal-700">critical care.</span>
-              </h1>
-              <p className="mt-5 max-w-lg text-sm font-medium leading-relaxed text-slate-600 sm:text-base">
-                High-yield MCQs for pediatric critical care. Build knowledge, track progress, and prepare with confidence.
-              </p>
-              <div className="mt-7 flex items-center gap-3 text-sm text-slate-700">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-teal-200 bg-[#effbf9] text-teal-700 shadow-sm"><MedicalIcon name="stethoscope" className="h-6 w-6" /></span>
-                <span><span className="block font-bold text-slate-900">Pediatric critical care review</span><span className="block text-xs text-slate-500">Structured PREP learning sessions</span></span>
-              </div>
+    const SessionRow = ({ ses, compact = false }: { ses: QuizSession; compact?: boolean }) => {
+      const answered = Object.keys(ses.progress).length;
+      const correct = Object.values(ses.progress).filter((p) => p.state === "correct").length;
+      const pct = ses.questionIds.length > 0 ? (answered / ses.questionIds.length) * 100 : 0;
+      return (
+        <article className={`db-saved-session ${compact ? "is-compact" : "is-primary"}`}>
+          <span className="db-session-signal"><MedicalIcon name="timer" className="h-5 w-5" /></span>
+          <div className="db-session-copy">
+            <div className="db-session-title-line">
+              <h3>{ses.examLabel}</h3>
+              <span>{ses.viewMode === "study" ? "Practice" : "Test"} · {ses.quizMode}</span>
             </div>
-
-            <aside className="w-full rounded-[24px] border border-white/90 bg-white/90 p-5 shadow-xl shadow-slate-300/30 backdrop-blur-md sm:p-6">
-              <div className="grid grid-cols-3 divide-x divide-slate-200">
-                <div className="pr-3 text-center sm:pr-4">
-                  <span className="mx-auto flex h-9 w-9 items-center justify-center rounded-xl bg-teal-100 text-teal-700"><MedicalIcon name="book" className="h-5 w-5" /></span>
-                  <p className="mt-2 text-2xl font-black text-teal-800 sm:text-3xl">{prepTotal}</p>
-                  <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">PREP MCQs</p>
-                </div>
-                <div className="px-3 text-center sm:px-4">
-                  <span className="mx-auto flex h-9 w-9 items-center justify-center rounded-xl bg-blue-100 text-blue-700"><MedicalIcon name="clipboard" className="h-5 w-5" /></span>
-                  <p className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">{totalQuestionCount}</p>
-                  <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">Questions</p>
-                </div>
-                <div className="pl-3 text-center sm:pl-4">
-                  <span className="mx-auto flex h-9 w-9 items-center justify-center rounded-xl bg-sky-100 text-sky-700"><MedicalIcon name="vial" className="h-5 w-5" /></span>
-                  <p className="mt-2 text-2xl font-black text-slate-900 sm:text-3xl">{sourceCount}</p>
-                  <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-500">Sets</p>
-                </div>
-              </div>
-              <div className="mt-6 border-t border-slate-200 pt-5">
-                <div className="flex items-center justify-between gap-3 text-sm font-semibold text-slate-700"><span>Continue your journey</span><span className="font-black text-teal-700">{latestProgress}%</span></div>
-                <div className="mt-3 h-2 overflow-hidden rounded-full bg-slate-100"><div className="h-full rounded-full bg-teal-500 transition-all" style={{ width: `${latestProgress}%` }} /></div>
-                <p className="mt-3 text-xs leading-relaxed text-slate-500">{latestSession ? `${latestAnswered} of ${latestTotal} questions answered in your latest session.` : "Start a practice or test session to track your progress."}</p>
-              </div>
-              <div className="mt-5 border-t border-slate-100 pt-4 text-sm leading-relaxed text-slate-600"><span className="mr-2 text-xl font-black text-teal-700">“</span>Continuous learning is the key to better care.</div>
-            </aside>
+            <div className="db-session-meta"><span>Question {Math.min(ses.currentIndex + 1, ses.questionIds.length)} of {ses.questionIds.length}</span><span>{answered} answered · {correct} correct</span></div>
+            <div className="db-session-progress"><div style={{ width: `${pct}%` }} /></div>
           </div>
+          <div className="db-session-actions">
+            <button onClick={() => handleResumeSession(ses)} className="db-session-resume"><MedicalIcon name="clipboard" className="h-4 w-4" /> Resume</button>
+            <button onClick={() => handleDeleteSession(ses.id)} className="db-session-delete" aria-label={`Delete ${ses.examLabel} session`}>×</button>
+          </div>
+        </article>
+      );
+    };
+
+    return (
+      <div className="db-home">
+        <section className="db-overview">
+          <div className="db-hero">
+            <p className="db-eyebrow">Your board review, in motion</p>
+            <h1 className="db-title">Know what<br />comes next.</h1>
+            <p className="db-hero-copy">Practice high-stakes pediatric critical care questions with clear explanations and focused review.</p>
+            <div className="db-resume-row">
+              {latestSession ? (
+                <>
+                  <button onClick={() => handleResumeSession(latestSession)} className="db-primary">Continue question {Math.min(latestSession.currentIndex + 1, latestTotal)} <span aria-hidden="true">→</span></button>
+                  <span className="db-resume-note"><strong>{latestSession.examLabel}</strong>{latestAnswered} of {latestTotal} questions completed</span>
+                </>
+              ) : (
+                <>
+                  <button onClick={() => handleStartAllPrep("study")} className="db-primary">Start practicing <span aria-hidden="true">→</span></button>
+                  <button onClick={() => handleStartAllPrep("test")} className="db-secondary">Explore test mode</button>
+                </>
+              )}
+            </div>
+          </div>
+
+          <aside className="db-progress-card" aria-label="Question bank overview">
+            <div className="db-stats">
+              <div className="db-stat"><strong>{totalQuestionCount.toLocaleString()}</strong><span>Questions</span></div>
+              <div className="db-stat"><strong>{sourceCount}</strong><span>Study sets</span></div>
+            </div>
+            <div className="db-progress-main">
+              <p>Latest progress</p>
+              <div className="db-progress-value"><strong>{latestProgress}%</strong><span>{latestSession ? latestSession.examLabel : `${prepTotal.toLocaleString()} PREP questions ready`}</span></div>
+              <div className="db-progress-track"><div className="db-progress-fill transition-all" style={{ width: `${latestProgress}%` }} /></div>
+            </div>
+          </aside>
         </section>
 
         {/* Practice / Test mode choices */}
         {pendingMode === null ? (
-          <div className="grid gap-4 lg:grid-cols-2">
-            <section className="relative min-h-[260px] overflow-hidden rounded-[26px] border border-white bg-[#eefcf9] p-6 shadow-lg shadow-slate-200/60 sm:p-7">
-              <div className="absolute -right-7 -bottom-9 h-48 w-48 rounded-full border-[22px] border-teal-100/80" />
-              <div className="absolute right-8 top-7"><ModeVisualIcon type="practice" small={deviceMode === "computer"} /></div>
-              <div className="relative max-w-[62%] sm:max-w-[65%]">
-                <span className="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-black text-emerald-700">Available</span>
-                <h2 className="mt-5 text-2xl font-black tracking-tight text-teal-800 sm:text-3xl">Practice Mode</h2>
-                <p className="mt-2 text-sm font-medium leading-relaxed text-slate-600">Study at your own pace with explanations, PREP pearls, and progress tracking.</p>
-                <button onClick={() => handleStartAllPrep("study")} className="mt-5 inline-flex items-center gap-2 rounded-xl bg-teal-600 px-5 py-3 text-sm font-black text-white shadow-md shadow-teal-200 transition-colors hover:bg-teal-700">Start Practicing <span className="text-xl leading-none">→</span></button>
-              </div>
-            </section>
+          <>
+            <div className="db-section-line"><h2>Choose how you review.</h2><p>Two focused paths. One clear goal.</p></div>
+            <div className="db-mode-layout">
+              <button onClick={() => handleStartAllPrep("study")} className="db-mode-card">
+                <span className="db-lens teal" aria-hidden="true" />
+                <span className="db-card-arrow" aria-hidden="true">→</span>
+                <span className="db-mode-kicker">01 / Learn</span>
+                <h3>Practice Mode</h3>
+                <p>Learn as you go with instant explanations, PREP pearls, and progress tracking.</p>
+              </button>
 
-            <section className="relative min-h-[260px] overflow-hidden rounded-[26px] border border-white bg-[#fff6f0] p-6 shadow-lg shadow-slate-200/60 sm:p-7">
-              <div className="absolute -right-7 -bottom-9 h-48 w-48 rounded-full border-[22px] border-orange-100/90" />
-              <div className="absolute right-8 top-7"><ModeVisualIcon type="test" small={deviceMode === "computer"} /></div>
-              <div className="relative max-w-[62%] sm:max-w-[65%]">
-                <span className="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-black text-emerald-700">Available</span>
-                <h2 className="mt-5 text-2xl font-black tracking-tight text-[#d73a2c] sm:text-3xl">Test Mode</h2>
-                <p className="mt-2 text-sm font-medium leading-relaxed text-slate-600">Simulated exam with scoring and no explanations during the test.</p>
-                <button onClick={() => handleStartAllPrep("test")} className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#dc3b2d] px-5 py-3 text-sm font-black text-white shadow-md shadow-orange-200 transition-colors hover:bg-[#bd3025]">Start Test <span className="text-xl leading-none">→</span></button>
-              </div>
-            </section>
-          </div>
+              <button onClick={() => handleStartAllPrep("test")} className="db-mode-card test">
+                <span className="db-lens red" aria-hidden="true" />
+                <span className="db-card-arrow" aria-hidden="true">→</span>
+                <span className="db-mode-kicker">02 / Assess</span>
+                <h3>Test Mode</h3>
+                <p>Simulate exam conditions with scoring and explanations held until the end.</p>
+              </button>
+
+              <button onClick={latestSession ? () => handleResumeSession(latestSession) : () => handleStartAllPrep("study")} className="db-mode-card db-session-card">
+                <span className="db-card-arrow" aria-hidden="true">→</span>
+                <span className="db-mode-kicker">Recent session</span>
+                <h3>{latestSession ? latestSession.examLabel : "Build your streak"}</h3>
+                <p>{latestSession ? `Question ${Math.min(latestSession.currentIndex + 1, latestTotal)} · ${latestAnswered} completed` : "Your current question and progress will be saved automatically."}</p>
+              </button>
+            </div>
+          </>
         ) : (
-          <div className="rounded-[28px] border border-white bg-white/90 p-5 shadow-2xl shadow-slate-200/70 sm:p-6">
+          <div className="db-picker-head rounded-[28px] border border-white bg-white/90 p-5 shadow-2xl shadow-slate-200/70 sm:p-6">
             <button onClick={() => setPendingMode(null)} className="mb-5 inline-flex items-center gap-2 rounded-full bg-slate-100 px-5 py-3 text-sm font-black text-slate-700 hover:bg-slate-200 transition-colors">
               ← Back
             </button>
@@ -754,91 +745,57 @@ export default function QuizPage() {
         )}
 
         {pendingMode === null && (
-          <>
-            <section className="grid overflow-hidden rounded-[24px] border border-white bg-white shadow-lg shadow-slate-200/50 sm:grid-cols-2 lg:grid-cols-4">
-              {[
-                { icon: "heart" as const, title: "High-yield content", text: "Focused on what matters in PICU exams." },
-                { icon: "book" as const, title: "Detailed explanations", text: "Understand the why, not only the answer." },
-                { icon: "timer" as const, title: "Track progress", text: "Monitor performance across each session." },
-                { icon: "stethoscope" as const, title: "Flexible sessions", text: "Pause and continue when you are ready." },
-              ].map((item, index) => (
-                <div key={item.title} className={`flex items-start gap-3 px-5 py-5 ${index > 0 ? "border-t border-slate-100 sm:border-t-0 lg:border-l" : ""} ${index === 2 ? "sm:border-t lg:border-t-0" : ""}`}>
-                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl border border-teal-100 bg-[#effbf9] text-teal-700"><MedicalIcon name={item.icon} className="h-5 w-5" /></span>
-                  <span><span className="block text-sm font-black text-slate-800">{item.title}</span><span className="mt-0.5 block text-xs leading-relaxed text-slate-500">{item.text}</span></span>
-                </div>
-              ))}
-            </section>
-
-            <footer className="flex flex-col gap-4 rounded-[24px] bg-[#075d69] px-5 py-5 text-white shadow-lg shadow-teal-950/20 sm:flex-row sm:items-center sm:justify-between sm:px-7">
-              <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/25 bg-white/10"><MedicalIcon name="heart" className="h-5 w-5" /></span>
-                <span><span className="block text-sm font-black">PICU MCQ Bank</span><span className="block text-xs text-teal-100">Pediatric critical care review</span></span>
-              </div>
-              <p className="text-sm font-semibold text-teal-50">Knowledge. Compassion. Excellence.</p>
-            </footer>
-          </>
+          <section aria-label="Popular question sources">
+            <div className="db-section-line"><h2>Continue by source.</h2><p>Start in Practice Mode. Switch anytime.</p></div>
+            <div className="db-source-shelf">
+              {[prepExamGroups[prepExamGroups.length - 1], mcckapExamGroups[0], sccmExamGroups[0]].map((exam, index) => {
+                const count = allQuestions.filter(exam.match).length;
+                return (
+                  <button key={exam.id} onClick={() => handleSelectExam(exam, "study")} className="db-source-card">
+                    <span>{index === 0 ? "AAP · Current" : index === 1 ? "Knowledge assessment" : "Critical care"}</span>
+                    <strong>{exam.label}</strong>
+                    <small>{count.toLocaleString()} questions</small>
+                  </button>
+                );
+              })}
+              <button onClick={() => handleStartAllPrep("study")} className="db-source-card all">
+                <span>Full library</span><strong>Browse all sources →</strong><small>{sourceCount} focused study sets</small>
+              </button>
+            </div>
+          </section>
         )}
 
         {/* Paused sessions — shown prominently above exam picker */}
         {pendingMode !== null && visibleSessions.length > 0 && (
-          <section className="rounded-2xl border border-amber-200 bg-amber-50/60 p-4 shadow-sm sm:p-5">
-            <h2 className="mb-3 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-amber-700">
-              <MedicalIcon name="timer" className="h-4 w-4" />
-              Paused Sessions
-              <span className="ml-1 rounded-full bg-amber-200 px-2 py-0.5 text-[11px] font-bold text-amber-800">{visibleSessions.length}</span>
-            </h2>
-            <div className="flex flex-col gap-2">
-              {visibleSessions.map((ses) => {
-                const answered = Object.keys(ses.progress).length;
-                const correct = Object.values(ses.progress).filter((p) => p.state === "correct").length;
-                const pct = ses.questionIds.length > 0 ? (answered / ses.questionIds.length) * 100 : 0;
-                return (
-                  <div key={ses.id} className="flex flex-col gap-3 rounded-xl border border-amber-100 bg-white px-4 py-3 shadow-sm sm:flex-row sm:items-center">
-                    <span className="hidden sm:flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
-                      <MedicalIcon name="timer" className="h-5 w-5" />
-                    </span>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex flex-wrap items-center gap-2 mb-1">
-                        <h3 className="font-bold text-sm text-slate-800 truncate">{ses.examLabel}</h3>
-                        <span className="text-[11px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-500 font-semibold">
-                          {ses.viewMode === "study" ? "Study" : "Test"} · {ses.quizMode}
-                        </span>
-                      </div>
-                      <div className="flex flex-wrap justify-between gap-x-3 gap-y-0.5 text-xs text-slate-400 mb-2">
-                        <span>Q {Math.min(ses.currentIndex + 1, ses.questionIds.length)} of {ses.questionIds.length}</span>
-                        <span>{answered} answered · {correct} correct</span>
-                      </div>
-                      <div className="w-full bg-slate-100 rounded-full h-1.5">
-                        <div className="bg-amber-500 h-1.5 rounded-full transition-all" style={{ width: `${pct}%` }} />
-                      </div>
-                    </div>
-                    <div className="flex gap-2 sm:flex-shrink-0">
-                      <button onClick={() => handleResumeSession(ses)} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-amber-600 text-white text-sm font-bold hover:bg-amber-700 transition-colors shadow-sm">
-                        <MedicalIcon name="clipboard" className="h-4 w-4" /> Resume
-                      </button>
-                      <button onClick={() => handleDeleteSession(ses.id)} className="px-3 py-2 rounded-lg bg-slate-100 text-slate-500 text-sm hover:bg-red-50 hover:text-red-600 transition-colors">
-                        ✕
-                      </button>
-                    </div>
-                  </div>
-                );
-              })}
+          <section className="db-paused-panel rounded-2xl border border-amber-200 bg-amber-50/60 p-4 shadow-sm sm:p-5">
+            <div className="db-sessions-heading">
+              <div><span>Continue learning</span><h2>Resume your latest session.</h2><p>Your place, answers, and review marks are saved automatically.</p></div>
+              <strong>{visibleSessions.length} saved</strong>
             </div>
+            <SessionRow ses={visibleSessions[0]} />
+            {visibleSessions.length > 1 && (
+              <details className="db-session-older">
+                <summary><span>Older sessions</span><span>Show {visibleSessions.length - 1} more <b aria-hidden="true">↓</b></span></summary>
+                <div className="db-session-older-list">
+                  {visibleSessions.slice(1).map((ses) => <SessionRow key={ses.id} ses={ses} compact />)}
+                </div>
+              </details>
+            )}
           </section>
         )}
 
         {/* Exam grid */}
         {pendingMode !== null && (
-          <div className="space-y-5">
-            <section>
+          <div className="db-exam-library space-y-7">
+            <section className="db-exam-section">
               <h2 className={s.sectionHeading}>PREP Exams</h2>
               <div className={`grid ${s.examGridCols} gap-3`}>{prepExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}</div>
             </section>
-            <section>
+            <section className="db-exam-section">
               <h2 className={s.sectionHeading}>Knowledge Assessment</h2>
               <div className={`grid ${s.examGridCols} gap-3`}>{mcckapExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}</div>
             </section>
-            <section>
+            <section className="db-exam-section">
               <h2 className={s.sectionHeading}>Self-Assessment Books</h2>
               <div className={`grid ${s.examGridCols} gap-3`}>
                 {sccmExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
@@ -848,7 +805,7 @@ export default function QuizPage() {
                 {passMachineExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
               </div>
             </section>
-            <section>
+            <section className="db-exam-section">
               <h2 className={s.sectionHeading}>Combined Study</h2>
               <div className={`grid ${s.examGridCols} gap-3`}>{specialExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}</div>
             </section>
@@ -876,9 +833,9 @@ export default function QuizPage() {
 
   if (showSummary) {
     return (
-      <div className="space-y-6">
+      <div className="db-summary space-y-6">
         <button onClick={handleBackToSelection} className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-black text-slate-600 shadow-lg shadow-slate-200 hover:text-slate-950">← Back to exams</button>
-        <div className="rounded-[28px] border border-white bg-white p-8 text-center shadow-2xl shadow-slate-200/70">
+        <div className="db-summary-card rounded-[32px] border border-white bg-white p-8 text-center shadow-2xl shadow-slate-200/70">
           <p className="mb-1 text-sm font-black uppercase tracking-[0.18em] text-slate-400">{selectedExam.label}</p>
           <div className="mb-2 text-6xl font-black tracking-tight text-slate-950">{correctInView} / {totalCount}</div>
           <div className="mb-6 font-semibold text-slate-500">Questions correct</div>
@@ -916,50 +873,52 @@ export default function QuizPage() {
   return (
     <div className={s.quizWrap}>
       {/* ── Header ─────────────────────────────────────────────────── */}
-      <div className={s.headerPad}>
-        <button onClick={handleBackToSelection} className={s.backBtn}>
-          ← Back to sessions
-        </button>
-        <div className="flex items-start justify-between gap-3 mt-1">
-          <div>
-            <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-700 text-white shadow-sm shadow-teal-200">
-                <MedicalIcon name={iconForExam(selectedExam)} className="h-5 w-5" />
-              </span>
-              <h1 className={s.examTitle}>{selectedExam.label}</h1>
+      <div className={`${s.headerPad} db-command-head`}>
+        <div className="db-command-row">
+          <button onClick={handleBackToSelection} className="db-back-control" aria-label="Back to sessions">
+            <span aria-hidden="true">←</span><span>Sessions</span>
+          </button>
+          <div className="db-exam-identity">
+            <span className="db-exam-icon">
+              <MedicalIcon name={iconForExam(selectedExam)} className="h-5 w-5" />
+            </span>
+            <div className="min-w-0">
+              <h1 className={`${s.examTitle} truncate`}>{selectedExam.label}</h1>
+              <p className="db-question-position">Question <strong>{current + 1}</strong> of {totalCount}</p>
             </div>
-            <p className={s.questionMeta}>
-              Question <span className="font-semibold text-slate-700">{current + 1}</span> of {totalCount}
-            </p>
           </div>
-          <span className={s.questionBadge}>Q{current + 1}</span>
+          <span className={`${s.questionBadge} db-question-badge`}>Q{current + 1}</span>
         </div>
-        <div className="mt-5 h-2 w-full rounded-full bg-slate-100">
-          <div className="h-2 rounded-full bg-teal-600 transition-all" style={{ width: `${((current + 1) / totalCount) * 100}%` }} />
+        <div className="db-progress-copy">
+          <span>Session progress</span>
+          <strong>{Math.round(((current + 1) / totalCount) * 100)}%</strong>
+        </div>
+        <div className="db-question-track">
+          <div className="db-question-fill transition-all" style={{ width: `${((current + 1) / totalCount) * 100}%` }} />
         </div>
       </div>
 
-      <div className="grid grid-cols-2 divide-x divide-y divide-slate-200 border-b border-slate-200 bg-slate-50 sm:grid-cols-4 sm:divide-y-0">
-        <div className="px-5 py-3 sm:px-6">
-          <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Answered</p>
-          <p className="mt-0.5 text-sm font-black text-slate-800">{answeredInView} <span className="font-semibold text-slate-400">/ {totalCount}</span></p>
+      <div className="db-metric-strip grid grid-cols-2 divide-x divide-y divide-slate-200 border-b border-slate-200 bg-slate-50 sm:grid-cols-4 sm:divide-y-0">
+        <div className="db-metric-cell">
+          <span className="db-metric-signal teal" aria-hidden="true" />
+          <div><p>Answered</p><strong>{answeredInView}<small> / {totalCount}</small></strong></div>
         </div>
-        <div className="px-5 py-3 sm:px-6">
-          <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Accuracy</p>
-          <p className="mt-0.5 text-sm font-black text-teal-700">{scoredAnsweredInView ? `${Math.round((correctInView / scoredAnsweredInView) * 100)}%` : "--"}</p>
+        <div className="db-metric-cell">
+          <span className="db-metric-signal cyan" aria-hidden="true" />
+          <div><p>Accuracy</p><strong className="text-teal-700">{scoredAnsweredInView ? `${Math.round((correctInView / scoredAnsweredInView) * 100)}%` : "—"}</strong></div>
         </div>
-        <div className="px-5 py-3 sm:px-6">
-          <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Marked</p>
-          <p className="mt-0.5 text-sm font-black text-amber-700">{markedQuestionIds.length}</p>
+        <div className="db-metric-cell">
+          <span className="db-metric-signal yellow" aria-hidden="true" />
+          <div><p>Marked</p><strong className="text-amber-700">{markedQuestionIds.length}</strong></div>
         </div>
-        <div className="px-5 py-3 sm:px-6">
-          <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Remaining</p>
-          <p className="mt-0.5 text-sm font-black text-slate-700">{remainingInView}</p>
+        <div className="db-metric-cell">
+          <span className="db-metric-signal muted" aria-hidden="true" />
+          <div><p>Remaining</p><strong>{remainingInView}</strong></div>
         </div>
       </div>
 
       {/* ── Tab bar ─────────────────────────────────────────────────── */}
-      <div className="grid grid-cols-3 border-b border-slate-200 bg-white/95">
+      <div className="db-tabbar grid grid-cols-3 border-b border-slate-200 bg-white/95">
         {tabs.map((tab) => {
           const isActive = activeTab === tab.id;
           const isLocked = tab.id === "explanation" && !revealed;
@@ -967,14 +926,14 @@ export default function QuizPage() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex flex-col items-center justify-center gap-0.5 ${s.tabBtn} border-b-2 transition-colors ${
+              className={`db-tab-button flex items-center justify-center gap-2 ${s.tabBtn} border-b-2 transition-colors ${
                 isActive
                   ? "border-teal-600 text-teal-800 bg-teal-50/70"
                   : "border-transparent text-slate-400 hover:text-slate-700 hover:bg-slate-50"
               } ${isLocked ? "opacity-40" : ""}`}
             >
               <MedicalIcon name={tab.icon} className="h-4 w-4" />
-              <span className="text-[10px] font-bold tracking-wide">{tab.label}</span>
+              <span>{tab.label}</span>
             </button>
           );
         })}
