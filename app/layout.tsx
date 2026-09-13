@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ClipboardList } from "lucide-react";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -38,11 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </a>
             <div className="flex items-center gap-3">
               <span className="hidden text-xs font-semibold text-[#718089] lg:block">Focused review. Clear progress.</span>
-              <a href="/PICUMCQBANK" className="nav-session hidden items-center gap-2 sm:flex">
-              <ClipboardList aria-hidden="true" className="h-4 w-4" strokeWidth={1.9} />
-              Sessions
-              </a>
-              <span className="avatar-chip hidden sm:flex">SA</span>
+              <a href="/PICUMCQBANK" className="nav-session hidden items-center sm:flex">Sessions</a>
             </div>
           </div>
         </nav>
