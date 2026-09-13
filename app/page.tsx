@@ -1198,7 +1198,7 @@ export default function QuizPage() {
                                     <span>Course notes</span>
                                   </div>
                                 </header>
-                                <div className={`db-course-note-body ${mainText.length >= 900 ? "is-long" : ""}`}>
+                                <div className="db-course-note-body">
                                   {noteLines.map((line, index) => {
                                     const bullet = line.match(/^[•◦]\s*(.*)$/);
                                     return bullet ? (
