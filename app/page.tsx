@@ -144,34 +144,35 @@ function ClinicalData({ blocks }: { blocks?: ClinicalDataBlock[] }) {
   if (!blocks?.length) return null;
 
   return (
-    <div className="my-5 space-y-4">
+    <div className="db-clinical-stack my-6 space-y-4">
       {blocks.map((block, blockIndex) => (
-        <section key={`${block.title}-${blockIndex}`} className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50/70">
-          <p className="border-b border-slate-200 bg-slate-100 px-3 py-2 text-[11px] font-bold uppercase tracking-wide text-slate-500">
-            {block.title}
-          </p>
-          <div className="overflow-x-auto">
-            <table className="min-w-full border-collapse text-left text-xs leading-relaxed text-slate-700 sm:text-sm">
+        <section key={`${block.title}-${blockIndex}`} className="db-clinical-table">
+          <div className="db-table-caption">
+            <span><i aria-hidden="true" />{block.title}</span>
+            <small>{block.rows.length} {block.rows.length === 1 ? "item" : "items"}</small>
+          </div>
+          <div className="db-table-scroll">
+            <table className="db-data-table min-w-full border-collapse text-left">
               {block.columns && (
-                <thead className="bg-white text-slate-500">
+                <thead>
                   <tr>
                     {block.columns.map((column) => (
-                      <th key={column} scope="col" className="border-b border-slate-200 px-3 py-2 font-bold">
+                      <th key={column} scope="col">
                         {column}
                       </th>
                     ))}
                   </tr>
                 </thead>
               )}
-              <tbody className="divide-y divide-slate-200/80 bg-white">
+              <tbody>
                 {block.rows.map((row, rowIndex) => (
                   <tr key={`${block.title}-${rowIndex}`}>
                     {row.map((cell, cellIndex) => cellIndex === 0 ? (
-                      <th key={cellIndex} scope="row" className="break-words px-3 py-2 font-semibold text-slate-800">
+                      <th key={cellIndex} scope="row">
                         {cell}
                       </th>
                     ) : (
-                      <td key={cellIndex} className="break-words px-3 py-2 text-slate-600">{cell}</td>
+                      <td key={cellIndex}>{cell}</td>
                     ))}
                   </tr>
                 ))}
@@ -194,14 +195,14 @@ function FigureGallery({ figures, title }: { figures?: QuestionFigure[]; title: 
   if (!figures?.length) return null;
 
   return (
-    <section className="my-5" aria-label={title}>
-      <div className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-slate-500">
+    <section className="db-figure-gallery my-6" aria-label={title}>
+      <div className="db-figure-heading mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-slate-500">
         <MedicalIcon name="stethoscope" className="h-4 w-4 text-teal-700" />
         <span>{title}</span>
       </div>
       <div className={`grid gap-4 ${figures.length > 1 ? "md:grid-cols-2" : ""}`}>
         {figures.map((figure) => (
-          <figure key={figure.src} className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+          <figure key={figure.src} className="db-figure-card overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-slate-200 bg-slate-50 px-3 py-2 text-xs font-bold text-slate-700">
               {figure.label}
             </div>
@@ -242,7 +243,7 @@ function makeStyles(isPhone: boolean) {
     questionText: isPhone
       ? "mb-6 max-w-[850px] text-xl font-bold leading-relaxed text-slate-950"
       : "mb-7 max-w-[900px] text-[20px] font-bold leading-[1.65] tracking-[-0.012em] text-slate-950",
-    choiceSpace: isPhone ? "space-y-3" : "space-y-3",
+    choiceSpace: "",
     choiceBase: isPhone
       ? "w-full text-left rounded-2xl border px-4 py-4 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/40 transition-all cursor-pointer flex items-start gap-3 "
       : "w-full text-left rounded-2xl border px-5 py-4 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/40 transition-all cursor-pointer flex items-start gap-3 ",
@@ -871,6 +872,9 @@ export default function QuizPage() {
   const q = quizQuestions[current];
   const savedState = progress[q.id];
   const choiceLetters = Object.keys(q.choices).sort();
+  const useCompactChoiceGrid = choiceLetters.length <= 6
+    && choiceLetters.every((letter) => q.choices[letter].length <= 90)
+    && !choiceLetters.some((letter) => q.visuals?.choices?.[letter]?.length);
   const clinicalPresentation = inlineClinicalData(q);
   const questionText = clinicalPresentation.text;
   const questionCategoryLabel = selectedExam.subCategoryPrefix
@@ -1005,7 +1009,7 @@ export default function QuizPage() {
 
       {/* ── Tab: Question ────────────────────────────────────────────── */}
       {activeTab === "question" && (
-        <div className={s.questionBodyPad}>
+        <div key={`question-${q.id}`} className={`${s.questionBodyPad} db-question-enter`}>
           <div className="mb-5 flex flex-wrap items-center justify-between gap-2">
             <span className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-black ${ac.badge}`}>
               <MedicalIcon name="clipboard" className="h-3 w-3" />{questionCategoryLabel}
@@ -1046,28 +1050,34 @@ export default function QuizPage() {
             </div>
           )}
 
-          <p className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-400">Select one answer</p>
-          <div className={s.choiceSpace}>
+          <div className="db-choice-heading"><p>Select one answer</p><span>{choiceLetters.length} options</span></div>
+          <div className={`${s.choiceSpace} db-choice-grid ${useCompactChoiceGrid ? "is-compact" : ""}`}>
             {choiceLetters.map((letter) => {
               const isSelected = selected === letter;
               const isCorrect = letter === q.correctAnswer;
               const isUnkeyedState = savedState?.state === "unkeyed";
               let style = s.choiceBase;
+              let visualState = "idle";
               const isRevealedState = savedState?.state === "revealed";
               if (!revealed) {
                 style += isSelected ? "border-teal-600 bg-teal-50 text-teal-950" : "border-slate-200 bg-white hover:border-teal-300 hover:bg-teal-50/40";
+                visualState = isSelected ? "selected" : "idle";
               } else if (isUnkeyedState) {
                 style += isSelected ? "border-sky-400 bg-sky-50 text-sky-950" : "border-slate-200 bg-white text-slate-500";
+                visualState = isSelected ? "unkeyed" : "muted";
               } else if (isRevealedState) {
                 if (isCorrect) style += "border-amber-400 bg-amber-50 text-amber-900";
                 else style += "border-slate-200 bg-white text-slate-400";
+                visualState = isCorrect ? "revealed" : "muted";
               } else {
                 if (isCorrect) style += "border-green-500 bg-green-50 text-green-900";
                 else if (isSelected) style += "border-red-400 bg-red-50 text-red-800";
                 else style += "border-slate-200 bg-white text-slate-400";
+                visualState = isCorrect ? "correct" : isSelected ? "incorrect" : "muted";
               }
+              const statusSymbol = revealed ? (isCorrect ? "✓" : isSelected ? "×" : "") : isSelected ? "✓" : "";
               return (
-                <button key={letter} className={style} onClick={() => handleSelect(letter)}>
+                <button key={letter} className={`db-choice ${style}`} onClick={() => handleSelect(letter)} aria-pressed={isSelected} data-state={visualState}>
                   <span className={`${s.choiceLetterBase}${
                     !revealed
                       ? isSelected ? "bg-teal-700 text-white" : "bg-slate-100 text-slate-500"
@@ -1094,16 +1104,17 @@ export default function QuizPage() {
                       </span>
                     ))}
                   </span>
+                  <span className="db-choice-state" aria-hidden="true">{statusSymbol}</span>
                 </button>
               );
             })}
           </div>
 
           {!revealed ? (
-            <>
+            <div className="db-answer-actions">
               <button onClick={handleSubmit} disabled={!selected} className={s.submitBtn}>Check answer</button>
-              {viewMode === "study" && <button onClick={handleReveal} className={s.revealBtn}>{q.correctAnswer ? "Show Answer" : "Review Course Notes"}</button>}
-            </>
+              {viewMode === "study" && <button onClick={handleReveal} className={`${s.revealBtn} db-reveal-action`}>{q.correctAnswer ? "Show answer" : "Review course notes"}</button>}
+            </div>
           ) : (
             <div className={s.navGrid}>
               {current > 0 && <button onClick={handlePrev} className={s.prevBtn}>⬅ Previous</button>}
@@ -1125,7 +1136,7 @@ export default function QuizPage() {
 
       {/* ── Tab: Explanation ─────────────────────────────────────────── */}
       {activeTab === "explanation" && (
-        <div className={s.questionBodyPad}>
+        <div key={`explanation-${q.id}`} className={`${s.questionBodyPad} db-question-enter`}>
           {!revealed ? (
             <div className="flex flex-col items-center justify-center py-14 text-center gap-4">
               <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50 text-teal-700"><MedicalIcon name="book" className="h-7 w-7" /></span>
