@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { BookOpen, Bookmark, ClipboardCheck, HeartPulse, Stethoscope, TestTube2, Timer, type LucideIcon } from "lucide-react";
+import { BookOpen, Bookmark, Check, ClipboardCheck, Eye, FileText, HeartPulse, Minus, Stethoscope, TestTube2, Timer, X, type LucideIcon } from "lucide-react";
 import { questions as builtInQuestions } from "@/data/questions";
 import { inlineClinicalData } from "@/lib/inline-clinical-data";
 import { ClinicalDataBlock, Question, QuestionFigure } from "@/types/question";
@@ -1162,7 +1162,7 @@ export default function QuizPage() {
               <div className={s.explanationBox(savedState?.state ?? "incorrect")} data-state={savedState?.state ?? "incorrect"}>
                 <header className="db-feedback-banner">
                   <span className="db-feedback-icon">
-                    <MedicalIcon name={savedState?.state === "correct" ? "heart" : savedState?.state === "revealed" || savedState?.state === "unkeyed" ? "book" : "vial"} className="h-5 w-5" />
+                    {savedState?.state === "correct" ? <Check aria-hidden="true" /> : savedState?.state === "revealed" ? <Eye aria-hidden="true" /> : savedState?.state === "unkeyed" ? <Minus aria-hidden="true" /> : <X aria-hidden="true" />}
                   </span>
                   <div className="db-feedback-copy">
                     <p className="db-feedback-eyebrow">
@@ -1192,7 +1192,7 @@ export default function QuizPage() {
                             return (
                               <section className="db-course-notes">
                                 <header className="db-course-notes-head">
-                                  <span className="db-course-notes-mark"><MedicalIcon name="book" className="h-5 w-5" /></span>
+                                  <span className="db-course-notes-mark"><FileText aria-hidden="true" /></span>
                                   <div>
                                     <p>Clinical rationale</p>
                                     <span>Course notes</span>
