@@ -242,7 +242,7 @@ function makeStyles(isPhone: boolean) {
     questionBodyPad: isPhone ? "px-5 py-7" : "relative px-8 py-9",
     questionText: isPhone
       ? "mb-6 max-w-[850px] text-xl font-bold leading-relaxed text-slate-950"
-      : "mb-7 max-w-[900px] text-[20px] font-bold leading-[1.65] tracking-[-0.012em] text-slate-950",
+      : "mb-7 max-w-[1040px] text-[20px] font-bold leading-[1.65] tracking-[-0.012em] text-slate-950",
     choiceSpace: "",
     choiceBase: isPhone
       ? "w-full text-left rounded-2xl border px-4 py-4 text-[15px] font-semibold leading-relaxed text-slate-700 shadow-sm shadow-slate-200/40 transition-all cursor-pointer flex items-start gap-3 "
@@ -1198,7 +1198,7 @@ export default function QuizPage() {
                                     <span>Course notes</span>
                                   </div>
                                 </header>
-                                <div className="db-course-note-body">
+                                <div className={`db-course-note-body ${mainText.length >= 900 ? "is-long" : ""}`}>
                                   {noteLines.map((line, index) => {
                                     const bullet = line.match(/^[•◦]\s*(.*)$/);
                                     return bullet ? (

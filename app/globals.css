@@ -547,7 +547,7 @@ select {
 .db-course-notes-mark svg { width: 15px; height: 15px; stroke-width: 2.15; }
 .db-course-notes-head p { color: #26373f; font-size: 13px; font-weight: 820; line-height: 1.2; }
 .db-course-notes-head span:not(.db-course-notes-mark) { display: block; margin-top: 3px; color: #89979d; font-size: 9px; font-weight: 780; letter-spacing: .12em; text-transform: uppercase; }
-.db-course-note-body { max-width: 86ch; padding: 20px 20px 22px; color: #44545d; font-size: 14px; line-height: 1.75; }
+.db-course-note-body { width: 100%; padding: 22px 24px 25px; color: #44545d; font-size: 14px; line-height: 1.75; }
 .db-course-note-body > * + * { margin-top: 11px; }
 .db-course-note-body > p { color: #34444d; font-weight: 560; }
 .db-course-note-bullet { display: grid; grid-template-columns: 8px minmax(0, 1fr); gap: 10px; align-items: start; }
@@ -560,6 +560,18 @@ select {
 .db-prep-pearls li > span:first-child { color: #d29a13; font-weight: 900; }
 .db-explanation-reference { display: flex; flex-wrap: wrap; gap: 6px; border-top: 1px solid #e5ebed; padding: 12px 2px 0; color: #839198; font-size: 11px; line-height: 1.5; }
 .db-explanation-reference span { color: #60717a; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+
+@media (min-width: 1100px) {
+  .db-course-note-body.is-long {
+    columns: 2;
+    column-gap: 48px;
+    column-rule: 1px solid rgba(215,224,227,.76);
+    padding: 26px 28px 30px;
+    text-align: left;
+  }
+  .db-course-note-body.is-long > * { break-inside: avoid; }
+  .db-course-note-body.is-long > p { break-inside: auto; }
+}
 .db-clinical-table {
   overflow: hidden;
   border: 1px solid rgba(200,211,216,.72);
