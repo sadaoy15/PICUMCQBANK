@@ -128,6 +128,18 @@ function iconForExam(exam: ExamGroup): "heart" | "clipboard" | "book" | "stethos
   return "clipboard";
 }
 
+function markerForExam(exam: ExamGroup) {
+  const year = exam.label.match(/\b(20\d{2})\b/)?.[1];
+  if (year) return year.slice(-2);
+  if (exam.id.startsWith("sccm")) return "SC";
+  if (exam.id.startsWith("zimmerman")) return "ZM";
+  if (exam.id.startsWith("studyguide")) return "SG";
+  if (exam.id.startsWith("picumcq")) return "MC";
+  if (exam.id.startsWith("passmachine")) return "AP";
+  if (exam.id.startsWith("study-")) return "ALL";
+  return "QB";
+}
+
 function ClinicalData({ blocks }: { blocks?: ClinicalDataBlock[] }) {
   if (!blocks?.length) return null;
 
@@ -611,8 +623,9 @@ export default function QuizPage() {
       return (
         <button onClick={() => handleSelectExam(exam)} className={`db-exam-card group w-full rounded-2xl border border-white/80 bg-white p-4 text-left shadow-lg shadow-slate-200/60 transition-all hover:-translate-y-0.5 hover:shadow-xl ${ac.card}`}>
           <div className="db-exam-card-top">
-            <span className={`db-exam-card-icon ${isTest ? "is-test" : ""}`}>
-              <MedicalIcon name={iconForExam(exam)} className="h-5 w-5" />
+            <span className={`db-source-beacon ${isTest ? "is-test" : ""}`} aria-hidden="true">
+              <span className="db-source-lens" />
+              <span className="db-source-code">{markerForExam(exam)}</span>
             </span>
             <span className="db-exam-count">{total} questions</span>
           </div>
