@@ -268,9 +268,7 @@ function makeStyles(isPhone: boolean) {
     scoreBubble: isPhone
       ? "absolute bottom-20 right-4 hidden h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-center text-xs font-bold text-white shadow-xl sm:flex"
       : "absolute bottom-16 right-3 hidden h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 text-center text-xs font-bold text-white shadow-lg sm:flex",
-    explanationBox: (state: AnswerState) =>
-      (isPhone ? "rounded-xl border-2 p-4 text-[15px] space-y-2 " : "rounded-xl border p-4 text-sm space-y-2 ") +
-      (state === "correct" ? "bg-green-50 border-green-200" : state === "revealed" ? "bg-amber-50 border-amber-200" : state === "unkeyed" ? "bg-sky-50 border-sky-200" : "bg-red-50 border-red-200"),
+    explanationBox: (_state: AnswerState) => "db-explanation-workspace",
     revealBtn: isPhone
       ? "mt-3 w-full rounded-2xl border-2 border-amber-300 bg-amber-50 py-3.5 text-base font-black text-amber-700 transition-colors hover:bg-amber-100"
       : "mt-3 w-full rounded-xl border-2 border-amber-300 bg-amber-50 py-3 text-sm font-black text-amber-700 transition-colors hover:bg-amber-100",
@@ -1161,13 +1159,25 @@ export default function QuizPage() {
                 </div>
               )}
 
-              <div className={s.explanationBox(savedState?.state ?? "incorrect")}>
-                <div className={`font-semibold flex items-start gap-2 ${savedState?.state === "correct" ? "text-green-800" : savedState?.state === "revealed" ? "text-amber-800" : savedState?.state === "unkeyed" ? "text-sky-800" : "text-red-800"}`}>
-                  <MedicalIcon name={savedState?.state === "correct" ? "heart" : savedState?.state === "revealed" || savedState?.state === "unkeyed" ? "book" : "vial"} className="mt-0.5 h-4 w-4 flex-shrink-0" />
-                  {q.correctAnswer
-                    ? <span>{savedState?.state === "correct" ? "Correct!" : savedState?.state === "revealed" ? "Answer Revealed" : "Incorrect"} — Correct answer: {q.correctAnswer}. {q.correctAnswerText}</span>
-                    : <span>No answer key is available for this question. Your response is saved for review and excluded from scoring.</span>}
-                </div>
+              <div className={s.explanationBox(savedState?.state ?? "incorrect")} data-state={savedState?.state ?? "incorrect"}>
+                <header className="db-feedback-banner">
+                  <span className="db-feedback-icon">
+                    <MedicalIcon name={savedState?.state === "correct" ? "heart" : savedState?.state === "revealed" || savedState?.state === "unkeyed" ? "book" : "vial"} className="h-5 w-5" />
+                  </span>
+                  <div className="db-feedback-copy">
+                    <p className="db-feedback-eyebrow">
+                      {savedState?.state === "correct" ? "Correct response" : savedState?.state === "revealed" ? "Answer revealed" : savedState?.state === "unkeyed" ? "Unscored question" : "Review your response"}
+                    </p>
+                    {q.correctAnswer ? (
+                      <p className="db-feedback-answer">
+                        <span className="db-feedback-key">{q.correctAnswer}</span>
+                        <span>{q.correctAnswerText}</span>
+                      </p>
+                    ) : (
+                      <p className="db-feedback-answer">No answer key is available. Your response is saved for review and excluded from scoring.</p>
+                    )}
+                  </div>
+                </header>
                 {viewMode === "study" && (
                   <>
                     {q.explanation && (() => {
@@ -1180,33 +1190,39 @@ export default function QuizPage() {
                           {mainText && (() => {
                             const noteLines = mainText.split(/\n+/).map((line) => line.trim()).filter(Boolean);
                             return (
-                              <section className="mt-3 rounded-lg border border-sky-100 bg-white/70 p-3.5">
-                                <p className="text-[11px] font-bold uppercase tracking-wide text-sky-700">Course Notes</p>
-                                <div className="mt-2.5 space-y-2 text-sm leading-relaxed text-slate-700">
+                              <section className="db-course-notes">
+                                <header className="db-course-notes-head">
+                                  <span className="db-course-notes-mark"><MedicalIcon name="book" className="h-5 w-5" /></span>
+                                  <div>
+                                    <p>Clinical rationale</p>
+                                    <span>Course notes</span>
+                                  </div>
+                                </header>
+                                <div className="db-course-note-body">
                                   {noteLines.map((line, index) => {
                                     const bullet = line.match(/^[•◦]\s*(.*)$/);
                                     return bullet ? (
-                                      <div key={`${index}-${bullet[1]}`} className="flex gap-2.5">
-                                        <span className={`mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full ${line.startsWith("◦") ? "bg-sky-300" : "bg-sky-600"}`} />
+                                      <div key={`${index}-${bullet[1]}`} className="db-course-note-bullet">
+                                        <span className={line.startsWith("◦") ? "is-secondary" : ""} />
                                         <span>{bullet[1]}</span>
                                       </div>
-                                    ) : <p key={`${index}-${line}`} className="font-semibold text-slate-800">{line}</p>;
+                                    ) : <p key={`${index}-${line}`}>{line}</p>;
                                   })}
                                 </div>
                               </section>
                             );
                           })()}
                           {pearlText && (
-                            <div className="mt-3 bg-amber-50 border border-amber-200 rounded-lg p-3">
-                              <p className="text-xs font-bold text-amber-800 uppercase tracking-wide mb-2">PREP Pearls</p>
-                              <ul className="space-y-1">
+                            <aside className="db-prep-pearls">
+                              <p>PREP pearls</p>
+                              <ul>
                                 {pearlText.split(/\s*(?:\||•|¢)\s*/).filter(Boolean).map((pearl, i) => (
-                                  <li key={i} className="text-sm text-amber-900 flex gap-2">
-                                    <span className="text-amber-500 flex-shrink-0">•</span><span>{pearl}</span>
+                                  <li key={i}>
+                                    <span>•</span><span>{pearl}</span>
                                   </li>
                                 ))}
                               </ul>
-                            </div>
+                            </aside>
                           )}
                         </>
                       );
@@ -1216,7 +1232,7 @@ export default function QuizPage() {
                         {q.correctAnswer ? "No explanatory note is available for this item." : "No course notes are available for this item."}
                       </p>
                     )}
-                    {q.source && <p className="text-xs text-slate-400 italic border-t border-slate-200 pt-2 mt-3">Reference: {q.source}</p>}
+                    {q.source && <p className="db-explanation-reference"><span>Reference</span>{q.source}</p>}
                   </>
                 )}
                 {viewMode === "test" && savedState?.state === "incorrect" && (
