@@ -11,6 +11,33 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
     explanation: "Severe anaphylactic or anaphylactoid reactions associated with transfusion may occur in individuals who have severe immunoglobulin A (IgA) deficiency. However, less than 5% of IgA-deficient individuals are at risk for these reactions. Late allergic reactions (for example, hives) can occur as a result of exposure to plasma proteins or proteins adsorbed onto the erythrocyte membrane. These rarely result in severe reactions, but may benefit from short-term treatment with antihistamines and/or corticosteroids.",
     images: [],
   },
+  // Restore the comparison table that was flattened into the stem during PDF extraction.
+  // The keyed pairing reflects the historical goal-directed framework used by this source.
+  3606: {
+    displayScenario: "An otherwise healthy adolescent with septic shock has a central venous oxygen saturation (ScvO₂) of 50% after 40 mL/kg of normal saline boluses and intubation. According to the goal-directed resuscitation framework used in this source, which pair of transfusion thresholds is correct for initial septic shock resuscitation and for subsequent treatment after stabilization in the pediatric ICU?",
+    clinicalData: [{
+      title: "Transfusion threshold options",
+      columns: ["Option", "Initial goal-directed resuscitation", "After stabilization in the PICU"],
+      rows: [
+        ["A", "Hb ≈ 7 g/dL / Hct ≈ 20%", "Hb ≈ 7 g/dL / Hct ≈ 20%"],
+        ["B", "Hb ≈ 10 g/dL / Hct ≈ 30%", "Hb ≈ 10 g/dL / Hct ≈ 30%"],
+        ["C", "Hb ≈ 7 g/dL / Hct ≈ 20%", "Hb ≈ 10 g/dL / Hct ≈ 30%"],
+        ["D", "Hb ≈ 10 g/dL / Hct ≈ 30%", "Hb ≈ 7 g/dL / Hct ≈ 20%"],
+        ["E", "Hb ≈ 10 g/dL / Hct ≈ 30%", "Erythropoietin at Hb ≈ 10 g/dL / Hct ≈ 30%"],
+      ],
+    }],
+    choices: {
+      A: "Initial Hb ≈ 7/Hct ≈ 20; subsequent Hb ≈ 7/Hct ≈ 20",
+      B: "Initial Hb ≈ 10/Hct ≈ 30; subsequent Hb ≈ 10/Hct ≈ 30",
+      C: "Initial Hb ≈ 7/Hct ≈ 20; subsequent Hb ≈ 10/Hct ≈ 30",
+      D: "Initial Hb ≈ 10/Hct ≈ 30; subsequent Hb ≈ 7/Hct ≈ 20",
+      E: "Initial Hb ≈ 10/Hct ≈ 30; subsequently prescribe erythropoietin at Hb ≈ 10/Hct ≈ 30",
+    },
+    correctAnswer: "D",
+    correctAnswerText: "Initial Hb ≈ 10 g/dL/Hct ≈ 30%; subsequent Hb ≈ 7 g/dL/Hct ≈ 20%",
+    explanation: "This is a historical-source question. In the goal-directed septic shock framework used by the source, persistent ScvO₂ below 70% after initial resuscitation prompted packed red blood cell transfusion to a hemoglobin target of approximately 10 g/dL (hematocrit approximately 30%) to improve oxygen delivery. After hemodynamic stabilization, a restrictive threshold of approximately 7 g/dL (hematocrit approximately 20%) was recommended; therefore, option D is the keyed answer. Evidence update: contemporary pediatric sepsis guidance suggests against red blood cell transfusion when hemoglobin is at least 7 g/dL in hemodynamically stabilized children, but does not define a single hemoglobin transfusion threshold for unstable septic shock. Current clinical guidance and the individual patient's physiology should take precedence over this historical educational threshold.",
+    images: [],
+  },
   // Verified against the original Zimmerman and PICU MCQ Review PDFs. These figures
   // belong to the preceding item on the source page, not to the question below it.
   2260: { images: [] },
