@@ -10,6 +10,12 @@ export const picuMcqVisualAssets: Record<number, QuestionVisuals> = {
   3664: {
     question: [{ src: "/images/picumcq/picumcq-pg21-img1.jpeg", label: "Venous return and cardiac output curves", caption: "Venous return curves A, B, and C plotted against right atrial pressure, with the cardiac output curve shown." }],
   },
+  3666: {
+    question: [{ src: "/images/picumcq/picumcq-pg21-img1.jpeg", label: "Venous return and cardiac output curves", caption: "Venous return curves A, B, and C plotted against right atrial pressure, with the cardiac output curve shown." }],
+  },
+  3668: {
+    question: [{ src: "/images/picumcq/picumcq-pg101-img1.jpeg", label: "Electrocardiogram", caption: "Wide-complex polymorphic ventricular tachycardia with waxing and waning QRS amplitude." }],
+  },
   3421: {
     question: [
       { src: "/images/picumcq/picumcq-pg36-img1.jpeg", label: "Electrocardiogram", caption: "Postoperative rhythm tracing obtained during the patient's hemodynamic deterioration." },

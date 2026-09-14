@@ -5,6 +5,17 @@ type QuestionEnrichment = Partial<Pick<Question, "displayScenario" | "clinicalDa
 // These tables reproduce values already present in the source question stems.
 // They keep dense clinical data readable without changing the question content.
 export const questionEnrichments: Record<number, QuestionEnrichment> = {
+  // Remove text from adjacent questions that was merged into these explanations
+  // by the source PDF's page layout.
+  3391: {
+    explanation: "Ventilator-associated pneumonia (VAP) is a pneumonia that occurs 48-72 hours after intubation. Hospital-acquired pneumonia is a term that is used interchangeably but represents an infection that was unrecognized at the time of intubation. Both infections have been a major focus of prevention efforts. Semirecumbent positioning with the head of bed at 30°-45° reduces VAP, while scheduled ventilator-circuit changes are discouraged unless the circuit is malfunctioning or visibly soiled. Routine H2 blockers or proton-pump inhibitors may increase pneumonia risk. Daily oral care with chlorhexidine or a similar preparation decreases the relative risk of VAP, although it has not been shown to improve mortality. Daily extubation-readiness assessments and sedation interruptions also reduce VAP. Systemic antibiotic prophylaxis does not prevent VAP and may promote resistant organisms.",
+  },
+  3417: {
+    explanation: "The child has junctional ectopic tachycardia (JET), an incessant narrow-complex tachycardia that commonly follows surgery near the atrioventricular junction, including ventricular septal defect repair. Edema, stretch, or direct tissue trauma can produce abnormal automaticity, with rates commonly between 170 and 300/min. Treatment includes correction of electrolytes—especially magnesium—and fever, with surface cooling to 33°C-35°C. A continuous amiodarone infusion may be useful, but a bolus can worsen hypotension. Cardioversion is ineffective for JET.",
+  },
+  3456: {
+    explanation: "Flecainide is a Vaughan Williams class Ic drug that slows intracardiac conduction through sodium-channel blockade. Lidocaine is a class Ib sodium-channel blocker, and procainamide is a class Ia drug with intermediate sodium-channel antagonism plus potassium-channel effects from its active metabolite. Verapamil has no sodium-channel-blocking activity; it slows atrioventricular-node conduction through calcium-channel blockade and is classified as a Vaughan Williams class IV antiarrhythmic.",
+  },
   // The PDF extractor merged the following CD18 question into this answer.
   // Keep this transfusion-reaction item limited to its own IgA explanation.
   3597: {
@@ -37,6 +48,18 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
     correctAnswerText: "Initial Hb ≈ 10 g/dL/Hct ≈ 30%; subsequent Hb ≈ 7 g/dL/Hct ≈ 20%",
     explanation: "This is a historical-source question. In the goal-directed septic shock framework used by the source, persistent ScvO₂ below 70% after initial resuscitation prompted packed red blood cell transfusion to a hemoglobin target of approximately 10 g/dL (hematocrit approximately 30%) to improve oxygen delivery. After hemodynamic stabilization, a restrictive threshold of approximately 7 g/dL (hematocrit approximately 20%) was recommended; therefore, option D is the keyed answer. Evidence update: contemporary pediatric sepsis guidance suggests against red blood cell transfusion when hemoglobin is at least 7 g/dL in hemodynamically stabilized children, but does not define a single hemoglobin transfusion threshold for unstable septic shock. Current clinical guidance and the individual patient's physiology should take precedence over this historical educational threshold.",
     images: [],
+  },
+  3605: {
+    explanation: "Guillain-Barré syndrome is an autoimmune disorder that causes demyelination and motor dysfunction of peripheral nerves, the site marked by the arrow. It is often preceded by a viral-type illness, and its earliest manifestation is commonly lower-extremity weakness followed by ascending paralysis. Myasthenia gravis, aminoglycosides, botulism, and tick paralysis primarily impair transmission at the neuromuscular junction rather than injuring peripheral myelin.",
+  },
+  3607: {
+    explanation: "The transplanted heart is denervated because direct autonomic connections are severed during transplantation. Although this does not directly impair myocardial contractility or compliance, recipients may have a relatively low heart rate because sympathetic nerve terminals no longer provide normal local norepinephrine release. Circulating adrenal catecholamines are usually increased, parasympathetic innervation is also absent, and reinnervation—when it occurs—is variable. Hypertension or rejection can cause bradycardia, but they are less likely in this asymptomatic patient.",
+  },
+  3608: {
+    explanation: "Pre-Fontan catheterization showed an abnormally high pulmonary vascular resistance of 5 Wood units. A nonfenestrated Fontan provides no ventricle to propel blood through the pulmonary circuit, so this elevated resistance markedly limits passive pulmonary blood flow and ventricular preload. The high central venous pressure, hepatomegaly, hypotension, and poor response to fluid are evidence of Fontan pathway failure. Creating a fenestration permits systemic venous blood to reach the atrium and restore preload and cardiac output, at the cost of some arterial desaturation. More epinephrine would increase systemic resistance, intubation would further impede pulmonary blood flow, and nitroprusside could worsen the already low systemic pressure.",
+  },
+  3609: {
+    explanation: "This is surveillance bias: performing four-extremity ultrasonography every day makes asymptomatic deep venous thromboses much more likely to be detected. Selection bias would occur if only a selected subgroup—such as patients whose central line remained longer than one week—were scanned. Recall bias depends on unequal remembering of prior exposure, reporting bias on unequal disclosure, and nonresponse bias on systematic differences between respondents and nonrespondents.",
   },
   // Verified against the original Zimmerman and PICU MCQ Review PDFs. These figures
   // belong to the preceding item on the source page, not to the question below it.
@@ -96,6 +119,10 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
     displayScenario: "A 12-year-old with ARDS is ventilated with synchronized intermittent mandatory ventilation in pressure-control/pressure-support mode (PIP 28 cm H2O, PEEP 12 cm H2O, FiO2 0.60, rate 15/min). Arterial blood-gas and environmental data are summarized below. What is this patient’s PAO2-PaO2 difference?",
     clinicalData: [{ title: "Gas-exchange data", columns: ["Parameter", "Value"], rows: [["PaCO2 / PaO2", "60 / 60 mm Hg"], ["Respiratory quotient", "0.8"], ["Core temperature", "37 C"], ["Barometric pressure", "747 mm Hg"]] }],
   },
+  3426: {
+    displayScenario: "A 6-year-old with acute lymphoblastic leukemia develops ARDS during treatment for septic shock and remains severely hypoxemic. He is transitioned to airway pressure release ventilation (APRV) with the settings below. Which measure should be assessed to confirm an open-lung strategy?",
+    clinicalData: [{ title: "Initial APRV settings", columns: ["Parameter", "Value"], rows: [["Rate", "16/min"], ["PHigh / PLow", "28 / 0 cm H2O"], ["THigh / TLow", "3 / 0.75 seconds"], ["Pressure support", "0 cm H2O"], ["FiO2", "1.00"], ["Arterial oxygen saturation", "80%-85%"]] }],
+  },
   3432: {
     displayScenario: "A 10-year-old with fever, vomiting, hypotension, severe hypoxemia, and respiratory distress is intubated. Oxygenation improves after intubation, but the acid-base status is unchanged. Blood gases before and after intubation are summarized below. Which condition has also occurred as a result of endotracheal intubation?",
     clinicalData: [{ title: "Arterial blood gases", columns: ["Test", "Before intubation", "After intubation"], rows: [["pH", "7.15", "7.15"], ["PaCO2", "35 mm Hg", "35 mm Hg"], ["PaO2", "46 mm Hg", "75 mm Hg"]] }],
@@ -111,6 +138,14 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
   3548: {
     displayScenario: "A previously healthy 6-year-old boy presents with respiratory distress, abdominal and chest pain, icterus, hepatosplenomegaly, and hypoxemia. Chest radiography shows cardiomegaly and a right-middle-lobe opacity. Key blood-gas and hemoglobin data are summarized below. Which therapy should be ordered immediately?",
     clinicalData: [{ title: "Arterial blood gas and hemoglobin", columns: ["Test", "Result"], rows: [["pH", "7.34"], ["PaCO2", "56 mm Hg"], ["PaO2", "62 mm Hg"], ["Bicarbonate", "24 mmol/L"], ["Hemoglobin", "6.4 g/dL"]] }],
+  },
+  3551: {
+    displayScenario: "A previously healthy 3-year-old has a 4-week nonproductive cough, progressive tachypnea, diffuse wheezing, and the chest radiograph and CT shown below. After CT, respiratory distress worsens and the blood gas demonstrates severe hypercarbic respiratory failure. Which drugs are the best choice to facilitate airway management?",
+    clinicalData: [{ title: "Clinical and blood-gas data", columns: ["Parameter", "Value"], rows: [["Temperature", "37 C"], ["Heart rate / blood pressure", "131/min / 137/85 mm Hg"], ["Respiratory rate", "40/min"], ["SpO2", "100% on 3 L/min nasal cannula"], ["pH / PaCO2", "7.12 / 86 mm Hg"]] }],
+  },
+  3595: {
+    displayScenario: "A 4-month-old with a new 17-mm mechanical mitral valve becomes abruptly tachypneic, tachycardic, hypotensive, and hypoxemic while receiving heparin and milrinone. The current chest radiograph (B) is shown beside the morning radiograph (A), and urgent echocardiography is on the way. What is the next best intervention?",
+    clinicalData: [{ title: "Acute deterioration", columns: ["Parameter", "Value"], rows: [["Heart rate / blood pressure", "169/min / 49/28 mm Hg"], ["Respiratory rate", "65/min"], ["SpO2 / FiO2", "79% / 0.80"], ["pH / PaCO2 / PaO2", "7.09 / 53 / 49 mm Hg"], ["Base deficit / lactate", "-13 / 8 mmol/L"]] }],
   },
   3614: {
     displayScenario: "An 8-year-old with smoke-inhalation injury is intubated and resuscitated. Bronchoscopy shows soot throughout the airway. After empirical treatment with an older cyanide antidote kit, perfusion and acid-base status worsen. Serial data are summarized below. What therapy should now be considered?",
@@ -136,8 +171,17 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
     displayScenario: "A 5-day-old infant with hypoplastic left heart syndrome after a Norwood procedure and Blalock-Taussig shunt has low cardiac output. Hemodynamic, blood-gas, and laboratory data are summarized below. What is the most appropriate next management step?",
     clinicalData: [{ title: "Hemodynamic and perfusion data", columns: ["Parameter", "Value"], rows: [["Heart rate / blood pressure / CVP", "180/min / 90/45 mm Hg / 12 mm Hg"], ["SaO2 / mixed venous saturation", "85% / 30%"], ["Urine output", "0.5 mL/kg/h"], ["Dopamine / milrinone", "7.5 / 0.25 mcg/kg/min"], ["pH / PaCO2 / PaO2", "7.31 / 50 / 38 mm Hg"], ["Base deficit / hematocrit / lactate", "-6 / 41% / 6.0 mmol/L"]] }],
   },
+  3634: {
+    displayScenario: "A 6-year-old with bacterial sepsis develops progressive respiratory distress, frothy secretions, worsening hypoxemia, and mild respiratory acidosis. She is intubated, and the post-intubation radiograph is shown below. Which mechanism and ventilatory strategy best fit the likely disease process?",
+    clinicalData: [{ title: "Respiratory data", columns: ["Parameter", "Value"], rows: [["Pulse oximetry", "85% with increasing oxygen requirement"], ["PaO2/FiO2 ratio", "155"], ["Acid-base status", "Mild respiratory acidosis"]] }],
+  },
+  3662: {
+    displayScenario: "A 5-year-old with pneumonia-associated ARDS is receiving HFOV. After mean airway pressure is increased from 25 to 30 cm H2O, oxygenation improves modestly, but heart rate rises and blood pressure falls. The ventilator and blood-gas data are summarized below. What most likely caused the hemodynamic change?",
+    clinicalData: [{ title: "HFOV response", columns: ["Parameter", "Before MAP increase", "After MAP increase"], rows: [["Mean airway pressure", "25 cm H2O", "30 cm H2O"], ["Amplitude / frequency / FiO2", "54 cm H2O / 7 Hz / 0.65", "Unchanged"], ["PaCO2", "58 mm Hg", "Not reported"], ["PaO2", "54 mm Hg", "60 mm Hg"], ["SaO2", "86%", "90%"], ["Hemodynamics", "Stable", "Tachycardia and hypotension"]] }],
+  },
   3593: {
     displayScenario: "While rounding in the PICU, a resident notes an ETCO2 of 45 mm Hg while a simultaneous arterial blood gas has a PaCO2 of 60 mm Hg and suggests ignoring the ETCO2. Despite this difference, there is useful information in capnography. Which is the best reason to continue monitoring ETCO2?",
+    clinicalData: [{ title: "Simultaneous carbon-dioxide measurements", columns: ["Measurement", "Value"], rows: [["End-tidal CO2", "45 mm Hg"], ["Arterial PaCO2", "60 mm Hg"], ["PaCO2 - ETCO2 gradient", "15 mm Hg"]] }],
     choices: {
       A: "An end-tidal waveform without a true plateau indicates restrictive lung disease.",
       B: "Dead-space fraction is estimated as Vd/Vt = (PaCO2 - PECO2) / PECO2.",
@@ -147,6 +191,14 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
     },
     correctAnswer: "E",
     correctAnswerText: "Dead-space fraction is an independent risk factor for death.",
+  },
+  3576: {
+    displayScenario: "Which combination of laboratory values and volume status is most consistent with syndrome of inappropriate antidiuretic hormone secretion (SIADH)?",
+    clinicalData: [{
+      title: "Answer-option comparison",
+      columns: ["Option", "Serum sodium", "Serum osmolality", "Urine sodium", "CVP"],
+      rows: [["A", "130 mEq/L", "275 mOsm/kg", "20 mEq/L", "7 mm Hg"], ["B", "130 mEq/L", "275 mOsm/kg", "80 mEq/L", "7 mm Hg"], ["C", "130 mEq/L", "300 mOsm/kg", "80 mEq/L", "7 mm Hg"], ["D", "130 mEq/L", "275 mOsm/kg", "100 mEq/L", "3 mm Hg"], ["E", "155 mEq/L", "320 mOsm/kg", "10 mEq/L", "3 mm Hg"]],
+    }],
   },
   1024: {
     displayScenario: "A 15-year-old high school cheerleader presents to the pediatric intensive care unit with hypotension, fever, tachycardia, and severe lower back pain. She denies trauma, although cheerleading practice has been intense. Three days ago she was diagnosed with a muscle strain and prescribed rest and meloxicam. The pain became severe enough that she did not want to get out of bed; she then developed fever and decreased urine output. After fluids and ceftriaxone for presumed sepsis, her blood pressure improves and she produces some urine. Overnight her urine output falls, a bladder scan shows 800 mL, and a urinary catheter drains a large volume. Several hours later, she reports that she cannot move her legs normally. Magnetic resonance imaging with gadolinium contrast is obtained (Figure). Of the following, the MOST likely diagnosis is",
@@ -714,6 +766,11 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
   },
   3636: {
     displayScenario: "A 3-month-old infant hospitalized with croup is emergently intubated for acute respiratory failure. The ventilator alarms for low volumes and high pressures. Chest rise is poor and breath sounds are symmetric but diminished. Chest radiography confirms that the endotracheal tube is in good position, with no hyperinflation or pneumothorax. An arterial blood gas shows respiratory acidosis (pH 7.16, PaCO2 75 mm Hg) and PaO2 220 mm Hg while receiving FiO2 0.50. When removed from the ventilator for bag ventilation, high pressures are needed to move the chest. The best course of action is to:",
+    clinicalData: [{
+      title: "Ventilator and respiratory data",
+      columns: ["Parameter", "Value"],
+      rows: [["Mode / tidal volume / rate", "PRVC / 8 mL/kg / 20 per min"], ["PEEP / FiO2", "5 cm H2O / 0.50"], ["pH / PaCO2 / PaO2", "7.16 / 75 / 220 mm Hg"], ["Ventilator alarms", "Low volume and high pressure"], ["Manual ventilation", "High pressure required"], ["Chest radiograph", "Tube well positioned; no hyperinflation or pneumothorax"]],
+    }],
     choices: {
       A: "Increase the ventilator respiratory rate to compensate for respiratory acidosis.",
       B: "Switch the ventilator to pressure-control mode to overcome airway resistance.",

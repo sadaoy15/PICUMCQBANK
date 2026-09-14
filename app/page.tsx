@@ -511,9 +511,22 @@ export default function QuizPage() {
     const exam = examGroups.find((g) => g.id === session.examId);
     if (!exam) return;
     const byId = new Map(allQuestions.map((q) => [q.id, q]));
-    let ordered = session.questionIds.map((id) => byId.get(id)).filter(Boolean) as Question[];
-    if (ordered.length === 0) ordered = getExamQuestions(exam, session.subCat, allQuestions);
-    const safeIndex = Math.min(session.currentIndex, Math.max(ordered.length - 1, 0));
+    const latestQuestions = getExamQuestions(exam, session.subCat, allQuestions);
+    const latestIds = new Set(latestQuestions.map((question) => question.id));
+    const savedQuestions = session.questionIds
+      .filter((id) => latestIds.has(id))
+      .map((id) => byId.get(id))
+      .filter(Boolean) as Question[];
+    const savedIds = new Set(savedQuestions.map((question) => question.id));
+    const newlyAdded = latestQuestions.filter((question) => !savedIds.has(question.id));
+    const ordered = session.quizMode === "sequential"
+      ? latestQuestions
+      : [...savedQuestions, ...shuffle(newlyAdded)];
+    const previousQuestionId = session.questionIds[session.currentIndex];
+    const refreshedIndex = ordered.findIndex((question) => question.id === previousQuestionId);
+    const safeIndex = refreshedIndex >= 0
+      ? refreshedIndex
+      : Math.min(session.currentIndex, Math.max(ordered.length - 1, 0));
     const q = ordered[safeIndex];
     const saved = q ? session.progress[q.id] : undefined;
     setActiveSessionId(session.id);
@@ -529,7 +542,13 @@ export default function QuizPage() {
     setRevealed(!!saved);
     setShowSummary(session.status === "completed");
     setActiveTab(saved ? "explanation" : "question");
-    saveSessions(sessions.map((item) => item.id === session.id ? { ...item, status: "active" as const, updatedAt: new Date().toISOString() } : item));
+    saveSessions(sessions.map((item) => item.id === session.id ? {
+      ...item,
+      questionIds: ordered.map((question) => question.id),
+      currentIndex: safeIndex,
+      status: "active" as const,
+      updatedAt: new Date().toISOString(),
+    } : item));
   };
 
   const handleBackToSelection = () => {

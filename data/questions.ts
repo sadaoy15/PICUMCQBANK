@@ -24807,6 +24807,18 @@ export const importedQuestions: Question[] = [
     source: "PICU MCQ Review",
   },
   {
+    id: 3666,
+    category: "PICU MCQ Review",
+    title: "A shift from venous-return curve A to curve B",
+    scenario: "For questions 30 and 31, refer to the venous return-cardiac output curves in the Figure (Pms = mean systemic filling pressure). A shift from curve A to curve B can be seen in which of the following conditions?",
+    choices: {"A": "Polycythemia or use of a vasodilator", "B": "Anemia or use of a vasodilator", "C": "Polycythemia or use of a vasoconstrictor", "D": "Anemia or use of a vasoconstrictor", "E": "Use of a pure inotrope"},
+    correctAnswer: "C",
+    correctAnswerText: "Polycythemia or use of a vasoconstrictor",
+    explanation: "A shift from curve A to curve B reduces the slope of the venous-return curve without changing mean systemic filling pressure. This reflects increased resistance to venous return. Polycythemia increases blood viscosity, and vasoconstriction increases vascular resistance; either can produce this downward rotation. Anemia and vasodilation have the opposite effect, while a pure inotrope shifts the cardiac-function curve rather than the venous-return curve.",
+    images: ["/PICUMCQBANK/images/picumcq/picumcq-pg21-img1.jpeg"],
+    source: "PICU MCQ Review",
+  },
+  {
     id: 3414,
     category: "PICU MCQ Review",
     title: "A 12-year-old boy with acute respiratory distress syndrome is being mechanically ventilated in a syn...",
@@ -25354,6 +25366,18 @@ export const importedQuestions: Question[] = [
     source: "PICU MCQ Review",
   },
   {
+    id: 3667,
+    category: "PICU MCQ Review",
+    title: "Electrolyte abnormality that reduces digoxin binding",
+    scenario: "Which of the following electrolyte abnormalities negatively affects the binding of digoxin?",
+    choices: {"A": "Hypercalcemia", "B": "Hyperkalemia", "C": "Hypernatremia", "D": "Hyperphosphatemia", "E": "Hypermagnesemia"},
+    correctAnswer: "B",
+    correctAnswerText: "Hyperkalemia",
+    explanation: "Cardiac glycosides such as digoxin bind to and inhibit phosphorylated myocardial sodium-potassium ATPase. Elevated extracellular potassium promotes dephosphorylation of the ATPase subunit, altering the digoxin-binding site and reducing drug binding and myocardial effect. Although sodium and calcium help establish the transmembrane gradient, elevated concentrations of the other listed electrolytes do not directly impair digoxin binding in this way.",
+    images: [],
+    source: "PICU MCQ Review",
+  },
+  {
     id: 3457,
     category: "PICU MCQ Review",
     title: "An 8-month-old girl had Ebstein anomaly of the tricuspid valve with severe tricuspid insufficiency a...",
@@ -25592,6 +25616,18 @@ export const importedQuestions: Question[] = [
       "/PICUMCQBANK/images/picumcq/picumcq-pg101-img1.jpeg",
       "/PICUMCQBANK/images/picumcq/picumcq-pg110-img1.jpeg"
     ],
+    source: "PICU MCQ Review",
+  },
+  {
+    id: 3668,
+    category: "PICU MCQ Review",
+    title: "Initial medication for the rhythm shown",
+    scenario: "What is the most appropriate initial medication for the rhythm shown in the Figure?",
+    choices: {"A": "Amiodarone", "B": "Verapamil", "C": "Quinidine", "D": "Magnesium sulfate", "E": "Calcium chloride"},
+    correctAnswer: "D",
+    correctAnswerText: "Magnesium sulfate",
+    explanation: "The tracing shows polymorphic ventricular tachycardia with the waxing and waning QRS amplitude of torsades de pointes. Intravenous magnesium sulfate is the preferred initial medication, including when the serum magnesium concentration is normal. The QT-prolonging trigger should also be removed and electrolyte abnormalities corrected; unstable or pulseless patients require immediate defibrillation according to resuscitation protocols.",
+    images: ["/PICUMCQBANK/images/picumcq/picumcq-pg101-img1.jpeg"],
     source: "PICU MCQ Review",
   },
   {
@@ -27539,6 +27575,18 @@ export const importedQuestions: Question[] = [
     source: "PICU MCQ Review",
   },
   {
+    id: 3669,
+    category: "PICU MCQ Review",
+    title: "Propranolol dose adjustment after major pediatric burns",
+    scenario: "A 3-year-old boy has 35% total body surface area partial- and full-thickness burns involving the lower extremities, genitalia, and trunk. After appropriate fluid resuscitation, oxandrolone 0.1 mg/kg orally twice daily and propranolol 0.1 mg/kg orally three times daily are started to improve muscle protein metabolism. The next morning he remains tachycardic at 160-170/min despite good urine output, good peripheral perfusion, and adequate analgesia. He has received one propranolol dose and is due for the second. What is the most appropriate action based on propranolol pharmacokinetics?",
+    choices: {"A": "Discontinue propranolol therapy", "B": "Switch to intravenous propranolol", "C": "Increase the dose now", "D": "Increase the dosing frequency now", "E": "Consider increasing the dose after the third dose"},
+    correctAnswer: "E",
+    correctAnswerText: "Consider increasing the dose after the third dose",
+    explanation: "Oral propranolol begins to act within approximately 1-2 hours, lasts about 6 hours, and has a pediatric half-life of roughly 3.9-6.4 hours. Steady state generally requires 4-5 half-lives, or about 15-25 hours. After only one dose, this child has not reached steady state; changing therapy immediately could cause toxicity or lead to a premature judgment of treatment failure. Reassessment after approximately three doses on an every-8-hour schedule is therefore most appropriate.",
+    images: [],
+    source: "PICU MCQ Review",
+  },
+  {
     id: 3626,
     category: "PICU MCQ Review",
     title: "A 9-year-old boy is in the pediatric ICU with a recent diagnosis of acute myelogenous leukemia with...",
@@ -28022,9 +28070,21 @@ export const importedQuestions: Question[] = [
   ...mcckap2023Questions,
 ];
 
-const cleanImportedText = (value: string | null | undefined) => (value ?? "")
-  .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F]/g, "")
-  .replace(/\s{2,}/g, " ")
+const cleanImportedText = (value: string | null | undefined, repairPdfWrapping = false) => {
+  const clean = (value ?? "")
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F]/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+  if (!repairPdfWrapping) return clean;
+  // Rejoin terms and sentences split by the PICU source PDF's line wrapping.
+  return clean
+    .replace(/([\p{L}\p{N}])-\s+(?=[\p{L}\p{N}])/gu, "$1-")
+    .replace(/([a-z0-9%)])\.([A-Z])/g, "$1. $2");
+};
+
+const cleanExplanation = (value: string | null | undefined, repairPdfWrapping = false) => cleanImportedText(value, repairPdfWrapping)
+  .replace(/^Rationale:?\s*/i, "")
+  .replace(/^R(?=[A-Z])/, "")
   .trim();
 
 const visualReference = /\b(?:figure|fig\.|image|pictured|picture|shown|showing|demonstrated|demonstrates|displayed|tracing|waveform|radiograph|x-?ray|ecg|electrocardiogram|echocardiogram|ultraso(?:und|nography)|ct\s*(?:scan|image)?|mri|histolog(?:y|ical)|biopsy|smear|fundoscop|bronchoscop)\b/i;
@@ -28036,6 +28096,7 @@ const hasVisualReference = (question: Question) => visualReference.test([
 ].join(" "));
 
 const normalizedQuestions = importedQuestions.map((question) => {
+  const repairPicuPdfWrapping = cleanImportedText(question.category) === "PICU MCQ Review";
   const enrichment = questionEnrichments[question.id];
   const prep2021Visuals = prep2021VisualAssets[question.id];
   const prep2022Visuals = prep2022VisualAssets[question.id];
@@ -28046,21 +28107,21 @@ const normalizedQuestions = importedQuestions.map((question) => {
     visuals: prep2021Visuals ?? prep2022Visuals ?? picuMcqVisuals ?? enrichment?.visuals ?? question.visuals,
     images: enrichment?.images ?? question.images,
   };
-  const choices = Object.fromEntries(Object.entries(merged.choices ?? {}).map(([key, value]) => [key, cleanImportedText(value)]));
+  const choices = Object.fromEntries(Object.entries(merged.choices ?? {}).map(([key, value]) => [key, cleanImportedText(value, repairPicuPdfWrapping)]));
   const correctAnswerText = merged.correctAnswer && choices[merged.correctAnswer]
     ? choices[merged.correctAnswer]
-    : cleanImportedText(merged.correctAnswerText);
+    : cleanImportedText(merged.correctAnswerText, repairPicuPdfWrapping);
 
   return {
     ...merged,
-    title: cleanImportedText(merged.title),
-    scenario: cleanImportedText(merged.scenario) || cleanImportedText(merged.title),
+    title: cleanImportedText(merged.title, repairPicuPdfWrapping),
+    scenario: cleanImportedText(merged.scenario, repairPicuPdfWrapping) || cleanImportedText(merged.title, repairPicuPdfWrapping),
     choices,
     correctAnswerText,
-    explanation: cleanImportedText(merged.explanation) || null,
+    explanation: cleanExplanation(merged.explanation, repairPicuPdfWrapping) || null,
     source: cleanImportedText(merged.source) || null,
     category: cleanImportedText(merged.category),
-    displayScenario: merged.displayScenario ? cleanImportedText(merged.displayScenario) : undefined,
+    displayScenario: merged.displayScenario ? cleanImportedText(merged.displayScenario, repairPicuPdfWrapping) : undefined,
     // PREP 2021/2022 and PICU MCQ Review use verified semantic visual groups.
     images: prep2021Visuals || prep2022Visuals || question.category === "PICU MCQ Review"
       ? undefined
@@ -28070,7 +28131,7 @@ const normalizedQuestions = importedQuestions.map((question) => {
 
 const seenQuestionFingerprints = new Set<string>();
 
-export const questions: Question[] = normalizedQuestions.filter((question) => {
+const deduplicatedQuestions = normalizedQuestions.filter((question) => {
   const sourceScope = question.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023"
     ? `${question.source}|`
     : "";
@@ -28079,3 +28140,28 @@ export const questions: Question[] = normalizedQuestions.filter((question) => {
   seenQuestionFingerprints.add(fingerprint);
   return true;
 });
+
+const range = (start: number, end: number) => Array.from({ length: end - start + 1 }, (_, index) => start + index);
+
+// The source PDF stores answered and question-only copies in a non-linear order.
+// Keep the review session in the actual source-question sequence while retaining
+// stable IDs for saved progress. Numbering gaps here are also gaps in the PDF.
+const picuMcqQuestionOrder = [
+  ...range(3385, 3413), 3664, 3666, ...range(3414, 3456), 3667, ...range(3457, 3474), 3668,
+  ...range(3508, 3536), ...range(3475, 3507), ...range(3537, 3570),
+  ...range(3571, 3597), 3665, ...range(3598, 3604),
+  ...range(3610, 3614), ...range(3615, 3621), ...range(3622, 3625), 3669,
+  ...range(3605, 3607), 3626, 3608, ...range(3627, 3649), 3609,
+  ...range(3650, 3651), ...range(3652, 3659), ...range(3660, 3663),
+];
+const picuOrderIndex = new Map(picuMcqQuestionOrder.map((id, index) => [id, index]));
+const orderedPicuQuestions = deduplicatedQuestions
+  .filter((question) => question.category === "PICU MCQ Review")
+  .sort((left, right) => (picuOrderIndex.get(left.id) ?? Number.MAX_SAFE_INTEGER) - (picuOrderIndex.get(right.id) ?? Number.MAX_SAFE_INTEGER));
+let nextPicuQuestion = 0;
+
+export const questions: Question[] = deduplicatedQuestions.map((question) => (
+  question.category === "PICU MCQ Review"
+    ? orderedPicuQuestions[nextPicuQuestion++]
+    : question
+));
