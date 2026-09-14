@@ -91,6 +91,9 @@ export const picuMcqVisualAssets: Record<number, QuestionVisuals> = {
   3595: {
     question: [{ src: "/images/picumcq/picumcq-pg249-img1.jpeg", label: "Serial chest radiographs", caption: "Morning radiograph (A) and radiograph obtained during acute deterioration (B)." }],
   },
+  3665: {
+    question: [{ src: "/images/picumcq/picumcq-pg251-img1.jpeg", label: "Scalp lesions", caption: "Erythematous, indurated scalp lesions with minimal pus in an infant with leukocytosis and a retained umbilical stump." }],
+  },
   3598: {
     question: [{ src: "/images/picumcq/picumcq-pg252-img1.jpeg", label: "Chest CT", caption: "Preliminary coronal CT image obtained before the child could tolerate supine positioning." }],
   },

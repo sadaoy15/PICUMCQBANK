@@ -1,10 +1,16 @@
 import { Question } from "@/types/question";
 
-type QuestionEnrichment = Partial<Pick<Question, "displayScenario" | "clinicalData" | "explanationData" | "visuals" | "choices" | "correctAnswer" | "correctAnswerText" | "images">>;
+type QuestionEnrichment = Partial<Pick<Question, "displayScenario" | "clinicalData" | "explanation" | "explanationData" | "visuals" | "choices" | "correctAnswer" | "correctAnswerText" | "images">>;
 
 // These tables reproduce values already present in the source question stems.
 // They keep dense clinical data readable without changing the question content.
 export const questionEnrichments: Record<number, QuestionEnrichment> = {
+  // The PDF extractor merged the following CD18 question into this answer.
+  // Keep this transfusion-reaction item limited to its own IgA explanation.
+  3597: {
+    explanation: "Severe anaphylactic or anaphylactoid reactions associated with transfusion may occur in individuals who have severe immunoglobulin A (IgA) deficiency. However, less than 5% of IgA-deficient individuals are at risk for these reactions. Late allergic reactions (for example, hives) can occur as a result of exposure to plasma proteins or proteins adsorbed onto the erythrocyte membrane. These rarely result in severe reactions, but may benefit from short-term treatment with antihistamines and/or corticosteroids.",
+    images: [],
+  },
   // Verified against the original Zimmerman and PICU MCQ Review PDFs. These figures
   // belong to the preceding item on the source page, not to the question below it.
   2260: { images: [] },

@@ -27170,6 +27170,18 @@ export const importedQuestions: Question[] = [
     source: "PICU MCQ Review",
   },
   {
+    id: 3665,
+    category: "PICU MCQ Review",
+    title: "A 36-day-old infant with hypotension, scalp lesions, and a retained umbilical stump",
+    scenario: "A 36-day-old infant is admitted to the pediatric ICU with hypotension and the lesions pictured above. History is significant for poor weight gain and severe diaper dermatitis. Physical examination reveals a retained umbilical stump. Examination of the scalp lesions demonstrates they are erythematous and indurated, but with surprisingly little pus. Cultures of the lesions demonstrate heavy growth of Staphylococcus aureus. Complete blood count shows a white blood cell count of 35,000/µL with a differential of 70% neutrophils and 20% band forms. Laboratory evaluation in this patient is likely to show loss of which of the following proteins?",
+    choices: {"A": "Adenosine deaminase", "B": "Integrin-beta2 (CD18)", "C": "Major histocompatibility complex (MHC)-1", "D": "Nuclear factor kappa-light-chain-enhancer of activated B cells (NF-kappa-B)", "E": "Toll-like receptor (TLR)-4"},
+    correctAnswer: "B",
+    correctAnswerText: "Integrin-beta2 (CD18)",
+    explanation: "The patient has leukocyte adhesion deficiency type 1, a neutrophil disorder caused by loss of beta2-integrin (CD18) expression. The retained umbilical stump, recurrent severe bacterial skin infection, marked circulating neutrophilia, and minimal pus are characteristic. Neutrophil production is intact, but affected neutrophils cannot adhere normally to activated endothelium or migrate through the extracellular matrix to infected tissue. This produces high circulating neutrophil counts with poor neutrophil accumulation and pus formation at sites of infection. CD18 is the common beta chain of the CD11/CD18 beta2-integrin adhesion complexes. Adenosine deaminase deficiency causes severe combined immunodeficiency; MHC class I is expressed on nucleated cells; NF-kappa-B is an intracellular inflammatory signaling protein; and TLR-4 recognizes bacterial lipopolysaccharide but does not explain this classic presentation.",
+    images: [],
+    source: "PICU MCQ Review",
+  },
+  {
     id: 3598,
     category: "PICU MCQ Review",
     title: "A 3-year-old patient in respiratory distress was undergoing chest computerized tomography, but every...",
