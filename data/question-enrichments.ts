@@ -724,6 +724,285 @@ export const questionEnrichments: Record<number, QuestionEnrichment> = {
       rows: [["pH", "7.28"], ["PCO2", "40 mm Hg"], ["PaO2", "62 mm Hg"]],
     }],
   },
+  // SCCM Self-Assessment: keep each source figure with the exact question or
+  // rationale where it appears in the book. Legacy `images` rendered every
+  // asset on both tabs and included several one-question page shifts.
+  2010: {
+    images: [],
+    visuals: {
+      explanation: [{
+        src: "/images/sccm/sccm-pg73-img1.jpeg",
+        label: "Mean airway pressure equation",
+        caption: "Mean airway pressure is determined by inspiratory pressure and time together with PEEP and expiratory time.",
+      }],
+    },
+  },
+  2025: { images: [] },
+  2026: {
+    images: [],
+    visuals: {
+      question: [{
+        src: "/images/sccm/sccm-pg14-img1.jpeg",
+        label: "Flow-time waveforms A and B",
+        caption: "Compare expiratory flow in waveform A with the incomplete return to baseline in waveform B.",
+      }],
+      explanation: [{
+        src: "/images/sccm/sccm-pg83-img1.jpeg",
+        label: "Auto-PEEP flow-time comparison",
+        caption: "In waveform B, expiratory flow does not return to baseline before the next breath, demonstrating air trapping and auto-PEEP.",
+      }],
+    },
+  },
+  2027: {
+    images: [],
+    visuals: {
+      question: [{
+        src: "/images/sccm/sccm-pg14-img2.jpeg",
+        label: "Flow-time waveform",
+        caption: "Inspiratory and expiratory flow return fully to baseline between breaths.",
+      }],
+      explanation: [{
+        src: "/images/sccm/sccm-pg84-img1.jpeg",
+        label: "Normal flow-time waveform",
+        caption: "Complete return of expiratory flow to baseline indicates adequate exhalation time without auto-PEEP.",
+      }],
+    },
+  },
+  2031: {
+    images: [],
+    visuals: {
+      explanation: [{
+        src: "/images/sccm/sccm-pg86-img1.jpeg",
+        label: "Compensated systolic failure pressure-volume loop",
+        caption: "The end-systolic pressure-volume relation has a reduced slope, with increased end-diastolic volume preserving stroke volume.",
+      }],
+    },
+  },
+  2032: {
+    images: [],
+    visuals: {
+      explanation: [{
+        src: "/images/sccm/sccm-pg87-img1.jpeg",
+        label: "Compensated diastolic failure pressure-volume loop",
+        caption: "The passive diastolic pressure-volume curve shifts upward and leftward as ventricular compliance worsens.",
+      }],
+    },
+  },
+  2051: {
+    images: [],
+    visuals: { question: [{ src: "/images/sccm/sccm-pg19-img1.jpeg", label: "Twelve-lead ECG", caption: "ECG supplied with the infant tachycardia vignette." }] },
+  },
+  2052: {
+    images: [],
+    visuals: { question: [{ src: "/images/sccm/sccm-pg20-img1.jpeg", label: "Postoperative rhythm tracing", caption: "Rhythm tracing obtained before the pulseless arrest intervention." }] },
+  },
+  2053: {
+    images: [],
+    visuals: { question: [{ src: "/images/sccm/sccm-pg21-img1.jpeg", label: "Atrial electrogram", caption: "Atrial-wire tracing obtained after tetralogy of Fallot repair." }] },
+  },
+  2054: {
+    images: [],
+    visuals: { question: [{ src: "/images/sccm/sccm-pg21-img1.jpeg", label: "Atrial electrogram", caption: "Atrial-wire tracing used to select the most beneficial intervention." }] },
+  },
+  2056: {
+    explanationData: [{
+      title: "Causes of low cardiac output syndrome or hypoxemia after Fontan procedure",
+      columns: ["Etiology", "Evaluation", "Therapy"],
+      rows: [
+        ["Hypovolemia", "CVP/PAP <15 mm Hg and LAP <5 mm Hg", "Volume expansion until LAP >8 mm Hg and CVP-LAP gradient <7 mm Hg"],
+        ["Obstruction of PA anastomosis (surgical or clot)", "CVP-PAP gradient >2 mm Hg", "Remove clot; surgical revision"],
+        ["Increased PVR", "Transpulmonary gradient >15 mm Hg; CVP/PAP >18 mm Hg and LAP <8 mm Hg", "PVR therapy; early extubation or negative-pressure ventilation; drain pleural effusions"],
+        ["Ventricular dysfunction", "Elevated CVP/PAP >18 mm Hg and elevated LAP about 12 mm Hg", "Vasoactive agents"],
+        ["AV valve regurgitation", "Elevated CVP/PAP and LAP", "Valve repair or replacement"],
+        ["Ventricular outflow obstruction", "Elevated CVP/PAP and LAP", "Surgical repair"],
+      ],
+    }],
+  },
+  2063: {
+    images: [],
+    visuals: {
+      question: [{ src: "/images/sccm/sccm-pg24-img1.jpeg", label: "Pressure-volume loop choices", caption: "Candidate left-ventricular pressure-volume loops A through D." }],
+      explanation: [{ src: "/images/sccm/sccm-pg102-img1.jpeg", label: "Normal pressure-volume loop", caption: "Reference loop showing filling, isovolumic contraction, ejection, and isovolumic relaxation." }],
+    },
+  },
+  2064: {
+    images: [],
+    visuals: {
+      question: [{ src: "/images/sccm/sccm-pg24-img1.jpeg", label: "Pressure-volume loop choices", caption: "Candidate left-ventricular pressure-volume loops A through D." }],
+      explanation: [{ src: "/images/sccm/sccm-pg102-img1.jpeg", label: "Normal pressure-volume loop", caption: "Reference loop showing filling, isovolumic contraction, ejection, and isovolumic relaxation." }],
+    },
+  },
+  2068: {
+    images: [],
+    visuals: { explanation: [{ src: "/images/sccm/sccm-pg103-img1.jpeg", label: "Atrial pressure waveform", caption: "Atrial a, c, and v waves with x and y descents." }] },
+  },
+  2077: {
+    explanationData: [{
+      title: "Causes of hypoxemia after bidirectional cavopulmonary shunt",
+      columns: ["Etiology", "Evaluation", "Therapy"],
+      rows: [
+        ["Obstruction of SVC-PA anastomosis", "SVC-PAP gradient >2 mm Hg; echocardiography", "Remove clot; surgical revision"],
+        ["Increased PVR", "SVC/PAP >18 mm Hg; transpulmonary gradient >7-10 mm Hg", "PVR therapy; early extubation or negative-pressure ventilation"],
+        ["Ventricular dysfunction", "Elevated SVC/PAP >18 mm Hg and LAP >12-15 mm Hg", "Vasodilators and inotropes"],
+        ["AV valve regurgitation", "Elevated SVC/PAP and LAP", "Valve repair"],
+        ["Anomalous venous connection", "Elevated SVC/PAP and LAP", "Surgical repair or catheter-based therapy"],
+      ],
+    }],
+  },
+  2081: {
+    images: [],
+    visuals: { question: [{ src: "/images/sccm/sccm-pg28-img1.jpeg", label: "Pericardial pressure-volume curves", caption: "Candidate relationships between pericardial volume and pericardial pressure." }] },
+  },
+  2084: {
+    images: [],
+    visuals: { question: [{ src: "/images/sccm/sccm-pg29-img1.jpeg", label: "Pulmonary vascular resistance curves", caption: "Candidate relationships between lung volume and pulmonary vascular resistance." }] },
+  },
+  2087: { images: [] },
+  2088: {
+    images: [],
+    visuals: {
+      question: [{ src: "/images/sccm/sccm-pg30-img1.jpeg", label: "Pressure-volume curves at times A and B", caption: "Stroke volume is greater at time B than at time A." }],
+      explanation: [{ src: "/images/sccm/sccm-pg112-img1.jpeg", label: "Improved lusitropy pressure-volume loop", caption: "A flatter end-diastolic pressure-volume relation at B permits a larger stroke volume." }],
+    },
+  },
+  2091: {
+    images: [],
+    visuals: { question: [{ src: "/images/sccm/sccm-pg31-img1.jpeg", label: "Twelve-lead ECG", caption: "ECG obtained during cardiac decompensation." }] },
+  },
+  2092: {
+    images: [],
+    visuals: {
+      question: [{ src: "/images/sccm/sccm-pg31-img2.jpeg", label: "Pressure-volume relationship", caption: "The source figure compares stroke volumes SV1 and SV2." }],
+      explanation: [{ src: "/images/sccm/sccm-pg114-img1.jpeg", label: "Reduced-afterload pressure-volume loop", caption: "Lower afterload increases stroke volume from SV1 to SV2." }],
+    },
+  },
+  2093: {
+    images: [],
+    visuals: {
+      question: [{ src: "/images/sccm/sccm-pg32-img1.jpeg", label: "Pressure-volume areas 1 and 2", caption: "The source figure shows the requested shift from shaded area 1 to area 2." }],
+      explanation: [{ src: "/images/sccm/sccm-pg115-img1.jpeg", label: "Combined inotropy, afterload, and lusitropy changes", caption: "The labeled relations show decreased afterload, increased contractility, and improved diastolic relaxation." }],
+    },
+  },
+  2109: {
+    explanationData: [{
+      title: "Classification and frequency of primary immune deficiency disorders",
+      columns: ["Immune deficiency", "Approximate percentage of total"],
+      rows: [
+        ["Predominantly antibody defects", "65%"],
+        ["Predominantly cellular defects", "5%"],
+        ["Combined antibody and cellular defects", "15%"],
+        ["Complement defects", "5%"],
+        ["Phagocytic defects", "10%"],
+      ],
+    }],
+  },
+  2122: {
+    explanationData: [{
+      title: "Predisposing conditions and organisms associated with pediatric brain abscess",
+      columns: ["Predisposing condition", "Associated organisms"],
+      rows: [
+        ["Chronic suppurative upper respiratory tract infection (sinusitis, middle ear infection, mastoiditis)", "Streptococci (anaerobic or aerobic); Bacteroides fragilis; Proteus spp; Pseudomonas; Haemophilus influenzae spp; polymicrobial in one third of patients"],
+        ["Cyanotic congenital heart disease", "Alpha-hemolytic streptococci"],
+        ["Subacute bacterial endocarditis", "Streptococci; Staphylococcus aureus"],
+        ["Posttraumatic", "S. aureus; skin flora"],
+        ["Young patient age (neonates)", "Gram-negative organisms; Citrobacter diversus; Enterobacter sakazakii; Proteus mirabilis"],
+        ["HIV/AIDS", "Toxoplasma gondii"],
+        ["Malignancy or hematopoietic stem-cell transplant", "Aspergillus spp"],
+      ],
+    }],
+  },
+  2127: {
+    explanationData: [{
+      title: "Normal adult and pediatric hemodynamic values",
+      columns: ["Variable", "Adult", "Pediatric"],
+      rows: [
+        ["Cardiac index (L/min/m2)", "2.8-4.2", "3.5-5.5"],
+        ["SVRI (dyn-sec/cm5/m2)", "1,600-2,400", "800-1,600"],
+        ["PVRI (dyn-sec/cm5/m2)", "250-400", "80-240"],
+        ["Right atrial pressure (mm Hg)", "5-10", "0-8"],
+        ["Pulmonary artery occlusion pressure (mm Hg)", "10-15", "6-12"],
+      ],
+    }],
+  },
+  2129: {
+    explanationData: [{
+      title: "Typical cerebrospinal fluid findings",
+      columns: ["Condition", "WBC (cells/µL)", "Neutrophils", "Glucose (mg/dL)", "Protein (mg/dL)", "Specific tests"],
+      rows: [
+        ["Normal (values vary with age)", "0-5", "0-15%", "45-65", "20-45", "-"],
+        ["Bacterial meningitis", "100 to >1,000", "90%", "<40", ">150", "Gram stain; culture"],
+        ["Viral meningitis", "25-500", "<50%", "45-65", "50-100", "PCR; viral culture"],
+        ["Tuberculous or fungal meningitis", "25-100", "Lymphocyte/monocyte predominance", "30-45", "100-500", "Acid-fast smear; fungal culture; cryptococcal antigen"],
+        ["Parameningeal infection", "10-1,000", "<50%", "45-65", "50-100", "Cultures negative; cerebral imaging"],
+      ],
+    }],
+  },
+  2131: {
+    images: [],
+    visuals: {
+      explanation: [
+        { src: "/images/sccm/sccm-pg142-img1.jpeg", label: "Fractional excretion of sodium", caption: "FENa equation and definitions of the simultaneous urine and plasma measurements." },
+        { src: "/images/sccm/sccm-pg143-img1.jpeg", label: "Fractional excretion of urea nitrogen", caption: "FEUN equation and definitions of the simultaneous urine and plasma measurements." },
+      ],
+    },
+  },
+  2148: {
+    explanationData: [{
+      title: "Drugs that can affect cortisol levels",
+      columns: ["Drug", "Total cortisol", "Free cortisol", "Mechanism"],
+      rows: [
+        ["Etomidate", "Decrease", "Not specified", "Decreased synthesis due to 11-beta-hydroxylase inhibition"],
+        ["Ketoconazole", "Decrease", "Decrease", "Decreases cortisol synthesis"],
+        ["Spironolactone", "Variable, generally increased", "Not specified", "Interferes with some cortisol assays, depending on antibody specificity"],
+        ["Estrogens", "Increase", "Decrease", "Increases transcortin"],
+        ["Aminoglutethimide", "Decrease", "Decrease", "Inhibits cortisol synthesis"],
+      ],
+    }],
+  },
+  2192: {
+    explanationData: [{
+      title: "Glasgow Coma Scale",
+      columns: ["Response", "Score", "Reaction"],
+      rows: [
+        ["Eyes", "1", "Does not open eyes"],
+        ["Eyes", "2", "Opens eyes in response to painful stimuli"],
+        ["Eyes", "3", "Opens eyes in response to voice"],
+        ["Eyes", "4", "Opens eyes spontaneously"],
+        ["Verbal", "1", "Makes no sounds"],
+        ["Verbal", "2", "Incomprehensible sounds"],
+        ["Verbal", "3", "Utters inappropriate words"],
+        ["Verbal", "4", "Confused, disoriented"],
+        ["Verbal", "5", "Oriented, converses normally"],
+        ["Motor", "1", "Makes no movements"],
+        ["Motor", "2", "Extension to painful stimuli (decerebrate response)"],
+        ["Motor", "3", "Abnormal flexion to painful stimuli (decorticate response)"],
+        ["Motor", "4", "Flexion/withdrawal to painful stimuli"],
+        ["Motor", "5", "Localizes painful stimuli"],
+        ["Motor", "6", "Obeys commands"],
+      ],
+    }],
+  },
+  2229: {
+    images: [],
+    visuals: { explanation: [
+      { src: "/images/sccm/sccm-pg194-img1.jpeg", label: "Generic two-by-two contingency table", caption: "Cell notation used to calculate sensitivity, specificity, and predictive values." },
+      { src: "/images/sccm/sccm-pg195-img1.jpeg", label: "H1N1 test contingency table", caption: "Observed test results: 9 true positives, 6 false positives, 1 false negative, and 4 true negatives." },
+    ] },
+  },
+  2230: {
+    images: [],
+    visuals: { explanation: [
+      { src: "/images/sccm/sccm-pg194-img1.jpeg", label: "Generic two-by-two contingency table", caption: "Cell notation used to calculate sensitivity, specificity, and predictive values." },
+      { src: "/images/sccm/sccm-pg195-img1.jpeg", label: "H1N1 test contingency table", caption: "Observed test results: 9 true positives, 6 false positives, 1 false negative, and 4 true negatives." },
+    ] },
+  },
+  2231: {
+    images: [],
+    visuals: { explanation: [
+      { src: "/images/sccm/sccm-pg194-img1.jpeg", label: "Generic two-by-two contingency table", caption: "Cell notation used to calculate sensitivity, specificity, and predictive values." },
+      { src: "/images/sccm/sccm-pg195-img1.jpeg", label: "H1N1 test contingency table", caption: "Observed test results: 9 true positives, 6 false positives, 1 false negative, and 4 true negatives." },
+    ] },
+  },
   3127: {
     choices: {
       A: "Increase FiO2 to 100% and hand ventilate.",
