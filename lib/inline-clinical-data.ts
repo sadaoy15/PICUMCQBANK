@@ -23,7 +23,7 @@ const formatLabel = (value: string) => {
 const trimTrailingNarrative = (value: string) => normalizeCell(value)
   .replace(/([A-Za-z%)])\.\s+[A-Z][\s\S]*$/, "$1");
 
-const hasNarrative = (value: string) => /\.\s+(?:The|This|A|An|Which|After|Before|While|When|On|At|In|Then|If|He|She|They)\b/i.test(value);
+const hasNarrative = (value: string) => /\.\s+(?:The|This|A|An|Which|After|Before|While|When|On|At|In|Then|If|He|She|They|His|Her|Their)\b/i.test(value);
 
 const validRows = (rows: string[][]) => rows.length >= 3
   && rows.every(([label, value]) => label.length > 0 && label.length <= 80 && value.length > 0 && value.length <= 120
@@ -77,13 +77,21 @@ export function inlineClinicalData(question: Question): { text: string; blocks?:
     if (!questionMatch?.index) return null;
     const end = afterMarker + questionMatch.index;
     const raw = normalizeCell(text.slice(afterMarker, end));
+    // Keep intervening clinical narrative in the stem instead of swallowing it
+    // into a laboratory table or silently dropping an overlong row.
+    if (hasNarrative(raw)) return null;
     return { start, end, raw, rows: parseRows(raw), measurements: measurementCount(raw) };
   }).filter(Boolean) as { start: number; end: number; raw: string; rows: string[][]; measurements: number }[];
 
   const candidate = candidates.sort((left, right) => right.rows.length - left.rows.length || right.measurements - left.measurements)[0];
   if (!candidate || candidate.rows.length < 3) return { text };
 
-  const before = text.slice(0, candidate.start).trimEnd();
+  const before = text.slice(0, candidate.start)
+    // The data marker begins after the article/possessive. Remove that fragment
+    // without removing clinical content before it (some imported lists omit the
+    // sentence-ending period between measurements and the data introduction).
+    .replace(/(?:^|\s+)(?:An?|His|Her|Their|The)(?:\s+(?:most recent|initial|repeat|current|admission|latest|only))?\s*$/i, "")
+    .trimEnd();
   const after = text.slice(candidate.end).trimStart();
   const narrative = `${before}${/[.:]$/.test(before) ? "" : "."} Laboratory data are summarized below. ${after}`.replace(/\s{2,}/g, " ").trim();
   return {
