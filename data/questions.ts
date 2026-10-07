@@ -6,6 +6,7 @@ import { passMachineQuestions } from "./pass-machine-questions";
 import { picuMcqVisualAssets } from "./picumcq-figures";
 import { prep2021VisualAssets } from "./prep-2021-figures";
 import { prep2022VisualAssets } from "./prep-2022-figures";
+import { studyGuideVisualAssets } from "./studyguide-figures";
 
 export const importedQuestions: Question[] = [
   {
@@ -28096,6 +28097,7 @@ const hasVisualReference = (question: Question) => visualReference.test([
 ].join(" "));
 
 const normalizedQuestions = importedQuestions.map((question) => {
+  const isStudyGuide = question.category.startsWith("Study Guide");
   const repairPicuPdfWrapping = cleanImportedText(question.category) === "PICU MCQ Review";
   const enrichment = questionEnrichments[question.id];
   const prep2021Visuals = prep2021VisualAssets[question.id];
@@ -28104,7 +28106,7 @@ const normalizedQuestions = importedQuestions.map((question) => {
   const merged = {
     ...question,
     ...enrichment,
-    visuals: prep2021Visuals ?? prep2022Visuals ?? picuMcqVisuals ?? enrichment?.visuals ?? question.visuals,
+    visuals: isStudyGuide ? studyGuideVisualAssets[question.id] : (prep2021Visuals ?? prep2022Visuals ?? picuMcqVisuals ?? enrichment?.visuals ?? question.visuals),
     images: enrichment?.images ?? question.images,
   };
   const choices = Object.fromEntries(Object.entries(merged.choices ?? {}).map(([key, value]) => [key, cleanImportedText(value, repairPicuPdfWrapping)]));
@@ -28122,8 +28124,8 @@ const normalizedQuestions = importedQuestions.map((question) => {
     source: cleanImportedText(merged.source) || null,
     category: cleanImportedText(merged.category),
     displayScenario: merged.displayScenario ? cleanImportedText(merged.displayScenario, repairPicuPdfWrapping) : undefined,
-    // PREP 2021/2022 and PICU MCQ Review use verified semantic visual groups.
-    images: prep2021Visuals || prep2022Visuals || question.category === "PICU MCQ Review"
+    // These banks use verified per-question figures instead of nearby-page images.
+    images: isStudyGuide || prep2021Visuals || prep2022Visuals || question.category === "PICU MCQ Review"
       ? undefined
       : (hasVisualReference(merged) ? merged.images : undefined),
   };
@@ -28135,7 +28137,11 @@ const deduplicatedQuestions = normalizedQuestions.filter((question) => {
   const sourceScope = question.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023"
     ? `${question.source}|`
     : "";
-  const fingerprint = `${sourceScope}${question.scenario.toLowerCase()}|${Object.entries(question.choices).map(([key, value]) => `${key}:${value}`).join("|")}`;
+  // Identical graph questions can have different answers because their figures differ.
+  const figureScope = question.category.startsWith("Study Guide")
+    ? `|${(question.visuals?.question ?? []).map(figure => figure.src).join("|")}`
+    : "";
+  const fingerprint = `${sourceScope}${question.scenario.toLowerCase()}|${Object.entries(question.choices).map(([key, value]) => `${key}:${value}`).join("|")}${figureScope}`;
   if (seenQuestionFingerprints.has(fingerprint)) return false;
   seenQuestionFingerprints.add(fingerprint);
   return true;

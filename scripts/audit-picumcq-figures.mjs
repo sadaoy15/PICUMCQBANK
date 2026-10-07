@@ -20,6 +20,7 @@ function loadModule(fileName) {
 const passMachine = loadModule("data/pass-machine-questions.ts");
 const prep2021 = loadModule("data/prep-2021-figures.ts");
 const prep2022 = loadModule("data/prep-2022-figures.ts");
+const studyGuide = loadModule("data/studyguide-figures.ts");
 const picuMcqVisuals = loadModule("data/picumcq-figures.ts");
 const enrichments = loadModule("data/question-enrichments.ts");
 const mcckap2023 = loadModule("data/mcckap-2023-questions.ts");
@@ -33,6 +34,7 @@ const questionContext = {
     if (moduleName === "./pass-machine-questions") return passMachine;
     if (moduleName === "./prep-2021-figures") return prep2021;
     if (moduleName === "./prep-2022-figures") return prep2022;
+    if (moduleName === "./studyguide-figures") return studyGuide;
     if (moduleName === "./picumcq-figures") return picuMcqVisuals;
     if (moduleName === "./question-enrichments") return enrichments;
     if (moduleName === "./mcckap-2023-questions") return mcckap2023;

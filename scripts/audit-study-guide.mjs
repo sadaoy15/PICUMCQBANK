@@ -71,6 +71,32 @@ assert(examplePresentation.blocks?.[0].rows.some(([label, value]) => label === '
 const narrativePresentation = inlineClinicalData(byId.get(3245));
 assert.equal(narrativePresentation.text, byId.get(3245).scenario, 'Keep the diagnosis and subsequent clinical course in the stem');
 
+// Source-verified figure assignments, including vector graphs lost by image extraction.
+const figureManifest = JSON.parse(readFileSync(resolve(root, 'data/studyguide-figure-manifest.json'), 'utf8'));
+const expectedFigures = new Map();
+for (const figure of figureManifest) {
+  const png = readFileSync(resolve(root, 'public', figure.src.slice(1)));
+  assert.equal(png.subarray(1, 4).toString(), 'PNG', `${figure.src}: missing PNG`);
+  assert(png.readUInt32BE(16) > 250 && png.readUInt32BE(20) > 200, `${figure.src}: unreadable figure size`);
+  for (const id of figure.ids) {
+    assert(!expectedFigures.has(id), `${id}: duplicate figure assignment`);
+    expectedFigures.set(id, figure.src);
+    assert(byId.has(id), `${id}: figure question lost during deduplication`);
+  }
+}
+assert.equal(expectedFigures.size, 24);
+for (const q of current.questions.filter(q => q.category.startsWith('Study Guide'))) {
+  assert(!q.images?.length, `${q.id}: unverified page images displayed`);
+  const figures = q.visuals?.question ?? [];
+  assert.equal(figures.length, expectedFigures.has(q.id) ? 1 : 0, `${q.id}: incorrect figure count`);
+  if (expectedFigures.has(q.id)) assert.equal(figures[0].src, expectedFigures.get(q.id), `${q.id}: wrong figure`);
+  assert(!q.visuals?.explanation?.length, `${q.id}: unrelated explanation figure`);
+}
+assert.equal(current.questions.filter(q => q.category.startsWith('Study Guide'))[133].id, 3098, 'Q134 must remain Chapter 16, Question 11');
+assert.notEqual(expectedFigures.get(3097), expectedFigures.get(3098), 'Q133 and Q134 require different paired tracings');
+assert.equal(new Set([3179, 3180, 3181, 3182].map(id => expectedFigures.get(id))).size, 4, 'Each cerebral graph question needs its own figure');
+console.log('Figure audit passed: 19 source figures correctly assigned to 24 questions.');
+
 // Optional baseline ref verifies the scope and saved-progress identifiers of a change.
 if (process.argv[2]) {
   const baselineSource = execFileSync('git', ['show', `${process.argv[2]}:data/questions.ts`], { cwd: root, encoding: 'utf8', maxBuffer: 20 * 1024 * 1024 });

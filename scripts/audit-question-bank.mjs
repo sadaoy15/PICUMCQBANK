@@ -43,6 +43,13 @@ function loadQuestions() {
   const picuMcqVisualContext = { exports: {}, require };
   vm.runInNewContext(picuMcqVisualJavaScript, picuMcqVisualContext, { filename: "picumcq-figures.ts" });
 
+  const studyGuideVisualSource = readFileSync(resolve(projectRoot, "data/studyguide-figures.ts"), "utf8");
+  const studyGuideVisualJavaScript = ts.transpileModule(studyGuideVisualSource, {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText;
+  const studyGuideVisualContext = { exports: {}, require };
+  vm.runInNewContext(studyGuideVisualJavaScript, studyGuideVisualContext, { filename: "studyguide-figures.ts" });
+
   const enrichmentSource = readFileSync(resolve(projectRoot, "data/question-enrichments.ts"), "utf8");
   const enrichmentJavaScript = ts.transpileModule(enrichmentSource, {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
@@ -60,6 +67,7 @@ function loadQuestions() {
       if (module === "./question-enrichments") return enrichmentContext.exports;
       if (module === "./mcckap-2023-questions") return mcckap2023Context.exports;
       if (module === "./pass-machine-questions") return passMachineContext.exports;
+      if (module === "./studyguide-figures") return studyGuideVisualContext.exports;
       if (module === "./picumcq-figures") return picuMcqVisualContext.exports;
       if (module === "./prep-2021-figures") return prep2021VisualContext.exports;
       if (module === "./prep-2022-figures") return prep2022VisualContext.exports;

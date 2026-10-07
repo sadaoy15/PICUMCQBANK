@@ -1,0 +1,292 @@
+[
+  {
+    "ids": [
+      2975
+    ],
+    "page": 70,
+    "sourceQuestion": "ch2-q12",
+    "label": "Oxygen delivery and consumption graph",
+    "rect": [
+      80,
+      402,
+      323,
+      583
+    ],
+    "src": "/images/studyguide/verified/sg-ch2-q12.png"
+  },
+  {
+    "ids": [
+      3089,
+      3090,
+      3091
+    ],
+    "page": 467,
+    "sourceQuestion": "ch16-q2-4",
+    "label": "Arterial pressure waveform",
+    "rect": [
+      115.3523,
+      226.5173,
+      326.8523,
+      620.8973
+    ],
+    "src": "/images/studyguide/verified/sg-ch16-q2-4.png"
+  },
+  {
+    "ids": [
+      3092,
+      3093,
+      3094,
+      3095
+    ],
+    "page": 468,
+    "sourceQuestion": "ch16-q5-8",
+    "label": "Central venous pressure waveform",
+    "rect": [
+      239.7729,
+      269.8453,
+      508.5729,
+      340.8853
+    ],
+    "src": "/images/studyguide/verified/sg-ch16-q5-8.png"
+  },
+  {
+    "ids": [
+      3097
+    ],
+    "page": 469,
+    "sourceQuestion": "ch16-q10",
+    "label": "Paired ECG and central venous pressure tracings",
+    "rect": [
+      56.693,
+      521.777,
+      384.159,
+      716.66
+    ],
+    "src": "/images/studyguide/verified/sg-ch16-q10.png"
+  },
+  {
+    "ids": [
+      3098
+    ],
+    "page": 470,
+    "sourceQuestion": "ch16-q11",
+    "label": "Paired ECG and central venous pressure tracings",
+    "rect": [
+      216.763,
+      167.854,
+      529.797,
+      251.284
+    ],
+    "src": "/images/studyguide/verified/sg-ch16-q11.png"
+  },
+  {
+    "ids": [
+      3152
+    ],
+    "page": 676,
+    "sourceQuestion": "ch22-q1",
+    "label": "MRI for Chapter 22, Question 1",
+    "rect": [
+      103.62236,
+      234.09308,
+      338.582,
+      523.77203
+    ],
+    "src": "/images/studyguide/verified/sg-ch22-q1.png"
+  },
+  {
+    "ids": [
+      3153
+    ],
+    "page": 677,
+    "sourceQuestion": "ch22-q2",
+    "label": "MRI for Chapter 22, Question 2",
+    "rect": [
+      223.93636,
+      63.59302,
+      423.616,
+      291.35233
+    ],
+    "src": "/images/studyguide/verified/sg-ch22-q2.png"
+  },
+  {
+    "ids": [
+      3155
+    ],
+    "page": 677,
+    "sourceQuestion": "ch22-q4",
+    "label": "MRI panels for Chapter 22, Question 4",
+    "rect": [
+      223.93634,
+      479.15234,
+      537.13635,
+      643.07233
+    ],
+    "src": "/images/studyguide/verified/sg-ch22-q4.png"
+  },
+  {
+    "ids": [
+      3156
+    ],
+    "page": 678,
+    "sourceQuestion": "ch22-q5",
+    "label": "Spinal cord diagram",
+    "rect": [
+      70.86592,
+      95.84528,
+      282.30591,
+      285.68527
+    ],
+    "src": "/images/studyguide/verified/sg-ch22-q5.png"
+  },
+  {
+    "ids": [
+      3157
+    ],
+    "page": 678,
+    "sourceQuestion": "ch22-q6",
+    "label": "MRI for Chapter 22, Question 6",
+    "rect": [
+      70.86594,
+      401.48529,
+      270.70972,
+      633.26392
+    ],
+    "src": "/images/studyguide/verified/sg-ch22-q6.png"
+  },
+  {
+    "ids": [
+      3158
+    ],
+    "page": 679,
+    "sourceQuestion": "ch22-q7",
+    "label": "Diffusion-weighted MRI",
+    "rect": [
+      223.93636,
+      63.59302,
+      411.88791,
+      322.84314
+    ],
+    "src": "/images/studyguide/verified/sg-ch22-q7.png"
+  },
+  {
+    "ids": [
+      3159
+    ],
+    "page": 679,
+    "sourceQuestion": "ch22-q8",
+    "label": "FLAIR MRI",
+    "rect": [
+      223.93636,
+      438.64313,
+      412.01202,
+      670.97192
+    ],
+    "src": "/images/studyguide/verified/sg-ch22-q8.png"
+  },
+  {
+    "ids": [
+      3160
+    ],
+    "page": 680,
+    "sourceQuestion": "ch22-q9",
+    "label": "MRI panels for Chapter 22, Question 9",
+    "rect": [
+      70.86592,
+      107.84528,
+      384.06592,
+      301.52527
+    ],
+    "src": "/images/studyguide/verified/sg-ch22-q9.png"
+  },
+  {
+    "ids": [
+      3179
+    ],
+    "page": 765,
+    "sourceQuestion": "ch25-q5",
+    "label": "Graph for Chapter 25, Question 5",
+    "rect": [
+      80,
+      403,
+      320,
+      564
+    ],
+    "src": "/images/studyguide/verified/sg-ch25-q5.png"
+  },
+  {
+    "ids": [
+      3180
+    ],
+    "page": 766,
+    "sourceQuestion": "ch25-q6",
+    "label": "Graph for Chapter 25, Question 6",
+    "rect": [
+      234,
+      76,
+      476,
+      234
+    ],
+    "src": "/images/studyguide/verified/sg-ch25-q6.png"
+  },
+  {
+    "ids": [
+      3181
+    ],
+    "page": 766,
+    "sourceQuestion": "ch25-q7",
+    "label": "Graph for Chapter 25, Question 7",
+    "rect": [
+      235,
+      374,
+      477,
+      562
+    ],
+    "src": "/images/studyguide/verified/sg-ch25-q7.png"
+  },
+  {
+    "ids": [
+      3182
+    ],
+    "page": 767,
+    "sourceQuestion": "ch25-q8",
+    "label": "Graph for Chapter 25, Question 8",
+    "rect": [
+      80,
+      76,
+      322,
+      275
+    ],
+    "src": "/images/studyguide/verified/sg-ch25-q8.png"
+  },
+  {
+    "ids": [
+      3234
+    ],
+    "page": 996,
+    "sourceQuestion": "ch32-q2",
+    "label": "Electrocardiogram",
+    "rect": [
+      234.92085,
+      191.84528,
+      469.91302,
+      299.53616
+    ],
+    "src": "/images/studyguide/verified/sg-ch32-q2.png"
+  },
+  {
+    "ids": [
+      3381
+    ],
+    "page": 1574,
+    "sourceQuestion": "ch51-q2",
+    "label": "Receiver operating characteristic graph",
+    "rect": [
+      70,
+      99,
+      389,
+      332
+    ],
+    "src": "/images/studyguide/verified/sg-ch51-q2.png"
+  }
+]
