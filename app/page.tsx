@@ -1162,6 +1162,9 @@ export default function QuizPage() {
             </div>
           ) : (
             <>
+              {q.category.startsWith("Study Guide") && (
+                <FigureGallery figures={q.visuals?.question} title="Question figures and tables" />
+              )}
               <FigureGallery figures={q.visuals?.explanation} title="Explanation figures and tables" />
 
               {q.images && q.images.length > 0 && (
