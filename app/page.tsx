@@ -1267,14 +1267,6 @@ export default function QuizPage() {
                         {q.correctAnswer ? "No explanatory note is available for this item." : "No course notes are available for this item."}
                       </p>
                     )}
-                    {!!q.references?.length && (
-                      <section className="mt-5 border-t border-slate-200 pt-4" aria-label="Source references">
-                        <h3 className="text-xs font-bold uppercase tracking-wide text-slate-500">Source references</h3>
-                        <ul className="mt-2 space-y-2 text-sm leading-relaxed text-slate-600">
-                          {q.references.map((reference, index) => <li key={index}>{reference}</li>)}
-                        </ul>
-                      </section>
-                    )}
                     {q.source && <p className="db-explanation-reference"><span>Reference</span>{q.source}</p>}
                   </>
                 )}
