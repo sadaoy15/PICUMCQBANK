@@ -53,6 +53,7 @@ const prepExamGroups: ExamGroup[] = [
   { id: "prep-icu-2023", label: "PREP ICU 2023", description: "Monthly cases Jan–Dec 2023", accent: "emerald", match: (q) => q.category.startsWith("PREP ICU 2023"), subCategoryPrefix: "PREP ICU 2023" },
   { id: "prep-icu-2024", label: "PREP ICU 2024", description: "Monthly cases Jan–Dec 2024", accent: "emerald", match: (q) => q.category.startsWith("PREP ICU 2024"), subCategoryPrefix: "PREP ICU 2024" },
   { id: "prep-2025", label: "PREP 2025", description: "Monthly cases Jan–Dec 2025", accent: "emerald", match: (q) => q.category === "PREP 2025" },
+  { id: "prep-2026", label: "PREP 2026", description: "40 questions in Blocks 1 and 2, with PREP pearls, critiques, figures and tables", accent: "emerald", match: (q) => q.category.startsWith("PREP 2026"), subCategoryPrefix: "PREP 2026" },
 ];
 
 const sccmExamGroups: ExamGroup[] = [
@@ -81,7 +82,7 @@ const mcckapExamGroups: ExamGroup[] = [
 ];
 
 const specialExamGroups: ExamGroup[] = [
-  { id: "study-prep", label: "Study All PREP",   description: "All PREP questions combined (2019–2025)", accent: "violet", match: (q) => q.category.startsWith("PREP") },
+  { id: "study-prep", label: "Study All PREP",   description: "All PREP questions combined (2019–2026)", accent: "violet", match: (q) => q.category.startsWith("PREP") },
   { id: "study-all",  label: "Study Everything", description: "All questions from all sources combined", accent: "slate",  match: () => true },
 ];
 
@@ -978,8 +979,9 @@ export default function QuizPage() {
         const isSccm = selectedExam.id.startsWith("sccm");
         const isZimm = selectedExam.id.startsWith("zimmerman");
         const isPassMachine = selectedExam.id.startsWith("passmachine");
-        const filterLabel = isSccm ? "Filter chapters" : isZimm ? "Filter parts" : "Filter months";
-        const allLabel    = isSccm ? "All chapters"   : isZimm ? "All parts"    : "All months";
+        const isPrepBlock = selectedExam?.id === "prep-2026";
+        const filterLabel = isSccm ? "Filter chapters" : isZimm ? "Filter parts" : isPrepBlock ? "Filter blocks" : "Filter months";
+        const allLabel    = isSccm ? "All chapters"   : isZimm ? "All parts"    : isPrepBlock ? "All blocks" : "All months";
         if (isPassMachine) {
           const chapterCount = (chapter: string) => allQuestions.filter((question) => question.category === chapter).length;
           return (
@@ -1169,7 +1171,7 @@ export default function QuizPage() {
             </div>
           ) : (
             <>
-              {(q.category.startsWith("Study Guide") || q.source === "American Physician Institute 2012-2020") && (
+              {(q.category.startsWith("Study Guide") || q.category.startsWith("PREP 2026") || q.source === "American Physician Institute 2012-2020") && (
                 <FigureGallery figures={q.visuals?.question} title="Question figures and tables" />
               )}
               <FigureGallery figures={q.visuals?.explanation} title="Explanation figures and tables" />

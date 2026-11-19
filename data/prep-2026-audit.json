@@ -1,0 +1,895 @@
+{
+  "questions": 40,
+  "blocks": 2,
+  "withExplanations": 40,
+  "withPrepPearls": 40,
+  "clinicalTables": 7,
+  "explanationDataBlocks": 2,
+  "questionFigures": 11,
+  "explanationFigures": 1,
+  "sourceNotes": 1,
+  "duplicateAnswerFiguresLinkedToQuestion": 7,
+  "sources": [
+    {
+      "block": 1,
+      "kind": "Questions",
+      "filename": "PREP_2026_Block01_Questions.pdf",
+      "sha256": "cf046819355dd4086807e3a336912fcadf896525857bb7029cb5ca6ffc32d091",
+      "pages": 20
+    },
+    {
+      "block": 1,
+      "kind": "Answers",
+      "filename": "PREP_2026_Block01_Answers 2.pdf",
+      "sha256": "d29829ad9659ce437402de5a0662205724e81f63ed1230f20ae143f4b346961c",
+      "pages": 21
+    },
+    {
+      "block": 2,
+      "kind": "Questions",
+      "filename": "PREP_2026_Block02_Questions.pdf",
+      "sha256": "dabed64dc26d9476fb2f3f4cdb0b40ca3b5046edec32ada6dbc3fd74dbdd6912",
+      "pages": 20
+    },
+    {
+      "block": 2,
+      "kind": "Answers",
+      "filename": "PREP_2026_Block02_Answers.pdf",
+      "sha256": "550bcb0aa94c1417872fe6ef4eac2609ef5543a6941c7c64a0b09ca91ff4ba98",
+      "pages": 22
+    }
+  ],
+  "items": [
+    {
+      "block": 1,
+      "questionNumber": 1,
+      "id": 9001,
+      "questionPage": 1,
+      "answerPages": [
+        2
+      ],
+      "answer": "A",
+      "sourceAnswerText": "Argatroban",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 1028,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 2,
+      "id": 9002,
+      "questionPage": 2,
+      "answerPages": [
+        3
+      ],
+      "answer": "B",
+      "sourceAnswerText": "Decrease dextrose concentration to 15% and maintain amino acid and",
+      "tableRows": 10,
+      "pearls": 2,
+      "critiqueCharacters": 830,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 3,
+      "id": 9003,
+      "questionPage": 3,
+      "answerPages": [
+        4
+      ],
+      "answer": "C",
+      "sourceAnswerText": "Dual-chamber sensing and pacing (DDD)",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 716,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 4,
+      "id": 9004,
+      "questionPage": 4,
+      "answerPages": [
+        5
+      ],
+      "answer": "B",
+      "sourceAnswerText": "Greater than minimal risk, without established direct benefit, but likely to",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 813,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 5,
+      "id": 9005,
+      "questionPage": 5,
+      "answerPages": [
+        6
+      ],
+      "answer": "C",
+      "sourceAnswerText": "Surgery can proceed as an emergency exception to informed consent",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 625,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 6,
+      "id": 9006,
+      "questionPage": 6,
+      "answerPages": [
+        7
+      ],
+      "answer": "B",
+      "sourceAnswerText": "Calcium blockade preventing excitation–contraction coupling",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 813,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 7,
+      "id": 9007,
+      "questionPage": 7,
+      "answerPages": [
+        8
+      ],
+      "answer": "D",
+      "sourceAnswerText": "Laryngoscopy and bronchoscopy",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 815,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 8,
+      "id": 9008,
+      "questionPage": 8,
+      "answerPages": [
+        9
+      ],
+      "answer": "D",
+      "sourceAnswerText": "Normal saline 20 mL/kg",
+      "tableRows": 13,
+      "pearls": 2,
+      "critiqueCharacters": 793,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 9,
+      "id": 9009,
+      "questionPage": 9,
+      "answerPages": [
+        10
+      ],
+      "answer": "B",
+      "sourceAnswerText": "Central venous catheter–associated bacteremia",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 826,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 10,
+      "id": 9010,
+      "questionPage": 10,
+      "answerPages": [
+        11
+      ],
+      "answer": "B",
+      "sourceAnswerText": "Hematologic malignancy",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 684,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 11,
+      "id": 9011,
+      "questionPage": 11,
+      "answerPages": [
+        12
+      ],
+      "answer": "A",
+      "sourceAnswerText": "Enoxaparin",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 762,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 12,
+      "id": 9012,
+      "questionPage": 12,
+      "answerPages": [
+        13
+      ],
+      "answer": "A",
+      "sourceAnswerText": "Begin enteral metolazone 0.2 mg/kg/day",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 725,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 13,
+      "id": 9013,
+      "questionPage": 13,
+      "answerPages": [
+        14
+      ],
+      "answer": "D",
+      "sourceAnswerText": "Trauma during right internal jugular catheterization",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 806,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 14,
+      "id": 9014,
+      "questionPage": 14,
+      "answerPages": [
+        15
+      ],
+      "answer": "C",
+      "sourceAnswerText": "Nicotinamide adenine dinucleotide phosphate oxidase (NADPH oxidase)",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 1082,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 15,
+      "id": 9015,
+      "questionPage": 15,
+      "answerPages": [
+        16
+      ],
+      "answer": "C",
+      "sourceAnswerText": "Initiate an inotrope infusion",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 727,
+      "sourceNotes": [
+        "The marked answer in the source is C, an inotrope infusion. Improving contractility may help restore aortic valve opening. However, the supplied critique repeatedly emphasizes afterload reduction with a vasodilator as the preferred immediate maneuver in a hypertensive, stunned left ventricle. This inconsistency between the marked option and the accompanying explanation should be recognized rather than hidden."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 16,
+      "id": 9016,
+      "questionPage": 16,
+      "answerPages": [
+        17
+      ],
+      "answer": "A",
+      "sourceAnswerText": "Area A (anterior horn motor neuron)",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 951,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 1
+    },
+    {
+      "block": 1,
+      "questionNumber": 17,
+      "id": 9017,
+      "questionPage": 17,
+      "answerPages": [
+        18
+      ],
+      "answer": "A",
+      "sourceAnswerText": "Decrease PEEP from 8 to 5 cm H₂O",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 837,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 18,
+      "id": 9018,
+      "questionPage": 18,
+      "answerPages": [
+        19
+      ],
+      "answer": "C",
+      "sourceAnswerText": "Total anomalous pulmonary venous drainage",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 1000,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 19,
+      "id": 9019,
+      "questionPage": 19,
+      "answerPages": [
+        20
+      ],
+      "answer": "B",
+      "sourceAnswerText": "Calcium gluconate",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 992,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0
+    },
+    {
+      "block": 1,
+      "questionNumber": 20,
+      "id": 9020,
+      "questionPage": 20,
+      "answerPages": [
+        21
+      ],
+      "answer": "D",
+      "sourceAnswerText": "Vecuronium",
+      "tableRows": 0,
+      "pearls": 2,
+      "critiqueCharacters": 1027,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 1,
+      "id": 9021,
+      "questionPage": 1,
+      "answerPages": [
+        1
+      ],
+      "answer": "A",
+      "sourceAnswerText": "andexanet alfa",
+      "tableRows": 0,
+      "pearls": 4,
+      "critiqueCharacters": 718,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 2,
+      "id": 9022,
+      "questionPage": 2,
+      "answerPages": [
+        2
+      ],
+      "answer": "A",
+      "sourceAnswerText": "bronchodilators",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 726,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 3,
+      "id": 9023,
+      "questionPage": 3,
+      "answerPages": [
+        3
+      ],
+      "answer": "A",
+      "sourceAnswerText": "desmopressin",
+      "tableRows": 4,
+      "pearls": 3,
+      "critiqueCharacters": 860,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 4,
+      "id": 9024,
+      "questionPage": 4,
+      "answerPages": [
+        4
+      ],
+      "answer": "A",
+      "sourceAnswerText": "administering an inotropic agent",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 807,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 5,
+      "id": 9025,
+      "questionPage": 5,
+      "answerPages": [
+        5
+      ],
+      "answer": "C",
+      "sourceAnswerText": "oscillometric pressure readings",
+      "tableRows": 0,
+      "pearls": 4,
+      "critiqueCharacters": 803,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 6,
+      "id": 9026,
+      "questionPage": 6,
+      "answerPages": [
+        6
+      ],
+      "answer": "A",
+      "sourceAnswerText": "bronchoscopy",
+      "tableRows": 0,
+      "pearls": 4,
+      "critiqueCharacters": 722,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 7,
+      "id": 9027,
+      "questionPage": 7,
+      "answerPages": [
+        7
+      ],
+      "answer": "D",
+      "sourceAnswerText": "obstruction of cerebrospinal fluid drainage at the foramina of Monro",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 695,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 8,
+      "id": 9028,
+      "questionPage": 8,
+      "answerPages": [
+        8
+      ],
+      "answer": "C",
+      "sourceAnswerText": "µ receptor",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 707,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 9,
+      "id": 9029,
+      "questionPage": 9,
+      "answerPages": [
+        9
+      ],
+      "answer": "D",
+      "sourceAnswerText": "discontinue nephrotoxic medications",
+      "tableRows": 0,
+      "pearls": 4,
+      "critiqueCharacters": 775,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 10,
+      "id": 9030,
+      "questionPage": 10,
+      "answerPages": [
+        10
+      ],
+      "answer": "C",
+      "sourceAnswerText": "magnetic resonance lymphangiogram",
+      "tableRows": 4,
+      "pearls": 3,
+      "critiqueCharacters": 730,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 11,
+      "id": 9031,
+      "questionPage": 11,
+      "answerPages": [
+        11
+      ],
+      "answer": "D",
+      "sourceAnswerText": "stop sevoflurane",
+      "tableRows": 11,
+      "pearls": 3,
+      "critiqueCharacters": 705,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 12,
+      "id": 9032,
+      "questionPage": 12,
+      "answerPages": [
+        12
+      ],
+      "answer": "B",
+      "sourceAnswerText": "creatine kinase",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 769,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 13,
+      "id": 9033,
+      "questionPage": 13,
+      "answerPages": [
+        13
+      ],
+      "answer": "C",
+      "sourceAnswerText": "rasburicase",
+      "tableRows": 11,
+      "pearls": 3,
+      "critiqueCharacters": 773,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 14,
+      "id": 9034,
+      "questionPage": 14,
+      "answerPages": [
+        14
+      ],
+      "answer": "D",
+      "sourceAnswerText": "increased alveolar dead space",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 649,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 15,
+      "id": 9035,
+      "questionPage": 15,
+      "answerPages": [
+        15
+      ],
+      "answer": "C",
+      "sourceAnswerText": "intravenous propofol bolus",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 751,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 16,
+      "id": 9036,
+      "questionPage": 16,
+      "answerPages": [
+        16
+      ],
+      "answer": "C",
+      "sourceAnswerText": "genetic analysis",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 721,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 17,
+      "id": 9037,
+      "questionPage": 17,
+      "answerPages": [
+        17,
+        18
+      ],
+      "answer": "D",
+      "sourceAnswerText": "targeted temperature management to maintain temperature of 36 to 37.5°C",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 783,
+      "sourceNotes": [],
+      "questionFigures": 2,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 18,
+      "id": 9038,
+      "questionPage": 18,
+      "answerPages": [
+        19
+      ],
+      "answer": "D",
+      "sourceAnswerText": "David",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 645,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 19,
+      "id": 9039,
+      "questionPage": 19,
+      "answerPages": [
+        20,
+        21
+      ],
+      "answer": "D",
+      "sourceAnswerText": "soluble interleukin-2 receptor level",
+      "tableRows": 28,
+      "pearls": 3,
+      "critiqueCharacters": 883,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    },
+    {
+      "block": 2,
+      "questionNumber": 20,
+      "id": 9040,
+      "questionPage": 20,
+      "answerPages": [
+        22
+      ],
+      "answer": "B",
+      "sourceAnswerText": "increased antidiuretic hormone secretion",
+      "tableRows": 0,
+      "pearls": 3,
+      "critiqueCharacters": 740,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0
+    }
+  ],
+  "media": [
+    {
+      "block": 1,
+      "question": 1,
+      "kind": "Questions",
+      "page": 1,
+      "filename": "block1-q01-question-1.png",
+      "sha256": "91eaf7caa4540d85d9289a4f76044826291c13b2a172d448013ac64c18d2133f",
+      "pixelSha256": "0be9a7dd72c7feee0345e03572aa396c17e4f1da954236ed244c45c5f7c11ed5"
+    },
+    {
+      "block": 1,
+      "question": 3,
+      "kind": "Questions",
+      "page": 3,
+      "filename": "block1-q03-question-1.png",
+      "sha256": "d7e812fe29582b5aedd577414dd440f53bce141cab0657e2dcc98ed5515fadaa",
+      "pixelSha256": "ac646b71bcde2f46f68c006eff4476625230130d27579051beebb7fcc0e41d47"
+    },
+    {
+      "block": 1,
+      "question": 3,
+      "kind": "Answers",
+      "page": 4,
+      "duplicateQuestionFigure": true,
+      "pixelSha256": "ac646b71bcde2f46f68c006eff4476625230130d27579051beebb7fcc0e41d47"
+    },
+    {
+      "block": 1,
+      "question": 16,
+      "kind": "Questions",
+      "page": 16,
+      "filename": "block1-q16-question-1.png",
+      "sha256": "2ddae36188436f8de2b19b5e8d585955eeee05d5f211d8a3d1ee528f85001115",
+      "pixelSha256": "44807fb607ad5a4afa9d70b2dc9d3000646cb08c0215fd185b8b31a7ea4bf3c2"
+    },
+    {
+      "block": 1,
+      "question": 16,
+      "kind": "Answers",
+      "page": 17,
+      "filename": "block1-q16-explanation-1.png",
+      "sha256": "dda39322177dd12706dee9bd78ffef4da5a909816b9f22fb3e352a8e918fcf8c",
+      "pixelSha256": "99cfa18c6f0419c091827c34040e652a260c740fd20fcd2578f0c3e7707df5fd"
+    },
+    {
+      "block": 1,
+      "question": 18,
+      "kind": "Questions",
+      "page": 18,
+      "filename": "block1-q18-question-1.png",
+      "sha256": "c9a7b918d9bcfecb52d8c9289abf8518fb0e212e40fdc3c46dc98423f692314b",
+      "pixelSha256": "bf327e8b4ecc7401e63cc7c21324b80eedad97f61222ca740752ddc3496f9729"
+    },
+    {
+      "block": 1,
+      "question": 19,
+      "kind": "Questions",
+      "page": 19,
+      "filename": "block1-q19-question-1.png",
+      "sha256": "3f339cc8a89ebd0810d9d0dcd153ef40b18cfd41d5bf4444bc88fc727f5341d0",
+      "pixelSha256": "077eb749c88315dbace1e891f5f7cd750a13f7342cba1958f125e9b46f085f5f"
+    },
+    {
+      "block": 2,
+      "question": 7,
+      "kind": "Questions",
+      "page": 7,
+      "filename": "block2-q07-question-1.png",
+      "sha256": "f6152b0b2cac80adf53f6f29584936b11ff18c70cfc0e8a6de61007c22ec2f56",
+      "pixelSha256": "52c1e21dd630892e28b9fe75566f4f035e53927f490a6abaf5c81d906de830a7"
+    },
+    {
+      "block": 2,
+      "question": 7,
+      "kind": "Answers",
+      "page": 7,
+      "duplicateQuestionFigure": true,
+      "pixelSha256": "52c1e21dd630892e28b9fe75566f4f035e53927f490a6abaf5c81d906de830a7"
+    },
+    {
+      "block": 2,
+      "question": 12,
+      "kind": "Questions",
+      "page": 12,
+      "filename": "block2-q12-question-1.png",
+      "sha256": "b40dd391ea659d0057d97c8d322f98f88e8684beaa2cd027061fb1511c95678e",
+      "pixelSha256": "f5ac41bba6b0234b4e93b36216db2b3bdd9500aae8247fa085c4b53f12cf36b5"
+    },
+    {
+      "block": 2,
+      "question": 12,
+      "kind": "Answers",
+      "page": 12,
+      "duplicateQuestionFigure": true,
+      "pixelSha256": "f5ac41bba6b0234b4e93b36216db2b3bdd9500aae8247fa085c4b53f12cf36b5"
+    },
+    {
+      "block": 2,
+      "question": 14,
+      "kind": "Questions",
+      "page": 14,
+      "filename": "block2-q14-question-1.png",
+      "sha256": "d9a1a4d7292d614221f1f2bf09b143ae9291c9594c778638fc2100d70a07d6b9",
+      "pixelSha256": "7a9596e135f691c1735ab8513306beb64ba23c48df0090c9bb7f775bcc4a5e28"
+    },
+    {
+      "block": 2,
+      "question": 14,
+      "kind": "Answers",
+      "page": 14,
+      "duplicateQuestionFigure": true,
+      "pixelSha256": "7a9596e135f691c1735ab8513306beb64ba23c48df0090c9bb7f775bcc4a5e28"
+    },
+    {
+      "block": 2,
+      "question": 16,
+      "kind": "Questions",
+      "page": 16,
+      "filename": "block2-q16-question-1.png",
+      "sha256": "b6623ba422ea59b013ca0aed4310d92561234121c72c4e5ea56e0a0d0e88b07a",
+      "pixelSha256": "1201b3c725d02fd43a579f1d5e2402b742e9690d51c3e1585be9c0180b18878c"
+    },
+    {
+      "block": 2,
+      "question": 16,
+      "kind": "Answers",
+      "page": 16,
+      "duplicateQuestionFigure": true,
+      "pixelSha256": "1201b3c725d02fd43a579f1d5e2402b742e9690d51c3e1585be9c0180b18878c"
+    },
+    {
+      "block": 2,
+      "question": 17,
+      "kind": "Questions",
+      "page": 17,
+      "filename": "block2-q17-question-1.png",
+      "sha256": "ceed42bbe1a020e9d0f56399781def9981efefeb83becda42ed84479f68b2578",
+      "pixelSha256": "03f35dcca2ccbdd05b8e435d15e6102fbb768fbf74014a27e120b5a10e83da4f"
+    },
+    {
+      "block": 2,
+      "question": 17,
+      "kind": "Questions",
+      "page": 17,
+      "filename": "block2-q17-question-2.png",
+      "sha256": "88d9bb43681d192878613c869d8e259094a25f293ed4cb4cbe535b3a5538d09b",
+      "pixelSha256": "84fbef533b9ef392edef675f8f0202b31fdb4ae9f94304b403d41b5ecec27492"
+    },
+    {
+      "block": 2,
+      "question": 17,
+      "kind": "Answers",
+      "page": 17,
+      "duplicateQuestionFigure": true,
+      "pixelSha256": "03f35dcca2ccbdd05b8e435d15e6102fbb768fbf74014a27e120b5a10e83da4f"
+    },
+    {
+      "block": 2,
+      "question": 17,
+      "kind": "Answers",
+      "page": 17,
+      "duplicateQuestionFigure": true,
+      "pixelSha256": "84fbef533b9ef392edef675f8f0202b31fdb4ae9f94304b403d41b5ecec27492"
+    }
+  ],
+  "provenance": "Question wording, answer markings, pearls, critiques, figures and table values are from the supplied typeset study editions. The supplied summaries are retained; no new clinical guidance or missing content is generated."
+}
