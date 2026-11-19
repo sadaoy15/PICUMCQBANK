@@ -2,6 +2,7 @@
 import { Question } from "@/types/question";
 import { questionEnrichments } from "./question-enrichments";
 import { mcckap2023Questions } from "./mcckap-2023-questions";
+import { mcckap2022Questions } from "./mcckap-2022-questions";
 import { passMachineQuestions } from "./pass-machine-questions";
 import { picuMcqVisualAssets } from "./picumcq-figures";
 import { prep2021VisualAssets } from "./prep-2021-figures";
@@ -28069,6 +28070,7 @@ export const importedQuestions: Question[] = [
   // The remaining extracted prompts are retained in the source data for later review.
   ...passMachineQuestions.filter((question) => Boolean(question.correctAnswer)),
   ...mcckap2023Questions,
+  ...mcckap2022Questions,
 ];
 
 const cleanImportedText = (value: string | null | undefined, repairPdfWrapping = false) => {
@@ -28134,7 +28136,7 @@ const normalizedQuestions = importedQuestions.map((question) => {
 const seenQuestionFingerprints = new Set<string>();
 
 const deduplicatedQuestions = normalizedQuestions.filter((question) => {
-  const sourceScope = question.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023"
+  const sourceScope = /^Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 202[23]$/.test(question.source ?? "")
     ? `${question.source}|`
     : "";
   // Identical graph questions can have different answers because their figures differ.

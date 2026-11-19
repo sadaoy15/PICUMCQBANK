@@ -76,6 +76,7 @@ const passMachineExamGroups: ExamGroup[] = [
 ];
 
 const mcckapExamGroups: ExamGroup[] = [
+  { id: "mcckap-2022", label: "PMCCKAP 2022", description: "Source questions with keyed answers, references, figures and tables", accent: "emerald", match: (q) => q.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2022" },
   { id: "mcckap-2023", label: "MCCKAP 2023", description: "191 multidisciplinary pediatric critical care questions with source commentaries and figures", accent: "emerald", match: (q) => q.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023" },
 ];
 
@@ -1253,6 +1254,14 @@ export default function QuizPage() {
                       <p className="mt-2 text-sm leading-relaxed text-slate-600">
                         {q.correctAnswer ? "No explanatory note is available for this item." : "No course notes are available for this item."}
                       </p>
+                    )}
+                    {!!q.references?.length && (
+                      <section className="mt-5 border-t border-slate-200 pt-4" aria-label="Source references">
+                        <h3 className="text-xs font-bold uppercase tracking-wide text-slate-500">Source references</h3>
+                        <ul className="mt-2 space-y-2 text-sm leading-relaxed text-slate-600">
+                          {q.references.map((reference, index) => <li key={index}>{reference}</li>)}
+                        </ul>
+                      </section>
                     )}
                     {q.source && <p className="db-explanation-reference"><span>Reference</span>{q.source}</p>}
                   </>

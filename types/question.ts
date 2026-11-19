@@ -24,6 +24,7 @@ export interface Question {
   correctAnswer: string | null;
   correctAnswerText: string | null;
   explanation: string | null;
+  references?: string[];
   source: string | null;
   category: string;
   images?: string[];

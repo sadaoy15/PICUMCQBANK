@@ -24,6 +24,7 @@ const studyGuide = loadModule("data/studyguide-figures.ts");
 const picuMcqVisuals = loadModule("data/picumcq-figures.ts");
 const enrichments = loadModule("data/question-enrichments.ts");
 const mcckap2023 = loadModule("data/mcckap-2023-questions.ts");
+const mcckap2022 = loadModule("data/mcckap-2022-questions.ts");
 const questionSource = readFileSync(resolve(projectRoot, "data/questions.ts"), "utf8");
 const questionJavascript = ts.transpileModule(questionSource, {
   compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
@@ -38,6 +39,7 @@ const questionContext = {
     if (moduleName === "./picumcq-figures") return picuMcqVisuals;
     if (moduleName === "./question-enrichments") return enrichments;
     if (moduleName === "./mcckap-2023-questions") return mcckap2023;
+    if (moduleName === "./mcckap-2022-questions") return mcckap2022;
     return require(moduleName);
   },
 };

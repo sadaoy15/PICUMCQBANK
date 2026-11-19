@@ -21,6 +21,11 @@ function loadQuestions() {
   }).outputText;
   const mcckap2023Context = { exports: {}, require };
   vm.runInNewContext(mcckap2023JavaScript, mcckap2023Context, { filename: "mcckap-2023-questions.ts" });
+  const mcckap2022Source = readFileSync(resolve(projectRoot, "data/mcckap-2022-questions.ts"), "utf8");
+  const mcckap2022Context = { exports: {}, require };
+  vm.runInNewContext(ts.transpileModule(mcckap2022Source, {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText, mcckap2022Context, { filename: "mcckap-2022-questions.ts" });
 
   const prep2021VisualSource = readFileSync(resolve(projectRoot, "data/prep-2021-figures.ts"), "utf8");
   const prep2021VisualJavaScript = ts.transpileModule(prep2021VisualSource, {
@@ -66,6 +71,7 @@ function loadQuestions() {
     require: (module) => {
       if (module === "./question-enrichments") return enrichmentContext.exports;
       if (module === "./mcckap-2023-questions") return mcckap2023Context.exports;
+      if (module === "./mcckap-2022-questions") return mcckap2022Context.exports;
       if (module === "./pass-machine-questions") return passMachineContext.exports;
       if (module === "./studyguide-figures") return studyGuideVisualContext.exports;
       if (module === "./picumcq-figures") return picuMcqVisualContext.exports;
