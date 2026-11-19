@@ -152,15 +152,15 @@ for (const question of questions) {
   }
 
   const choiceEntries = Object.entries(question.choices ?? {});
-  if (choiceEntries.length < 2 || choiceEntries.some(([letter, text]) => !/^[A-Z]$/.test(letter) || !String(text ?? "").trim())) {
+  if ((!question.answerOnly && choiceEntries.length < 2) || choiceEntries.some(([letter, text]) => !/^[A-Z]$/.test(letter) || !String(text ?? "").trim())) {
     report.invalidChoiceCounts.push({ id: question.id, category: question.category, choices: choiceEntries.map(([letter]) => letter) });
   }
 
-  if (!question.correctAnswer) {
+  if (!question.correctAnswer && !question.answerOnly) {
     report.questionsWithoutSourceAnswerKey.push({ id: question.id, category: question.category });
-  } else if (!question.choices?.[question.correctAnswer]) {
+  } else if (question.correctAnswer && !question.choices?.[question.correctAnswer]) {
     report.invalidAnswers.push({ id: question.id, category: question.category, correctAnswer: question.correctAnswer });
-  } else if (question.correctAnswerText && normalize(question.correctAnswerText) !== normalize(question.choices[question.correctAnswer])) {
+  } else if (question.correctAnswer && question.correctAnswerText && normalize(question.correctAnswerText) !== normalize(question.choices[question.correctAnswer])) {
     report.answerTextMismatches.push({
       id: question.id,
       category: question.category,

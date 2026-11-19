@@ -28066,9 +28066,9 @@ export const importedQuestions: Question[] = [
     ],
     source: "PICU MCQ Review",
   },
-  // Only publish items whose answer appears explicitly in the course answer key.
-  // The remaining extracted prompts are retained in the source data for later review.
-  ...passMachineQuestions.filter((question) => Boolean(question.correctAnswer)),
+  // Include every item from the supplied question/answer deck, including its
+  // explicitly identified answer-only review item without printed choices.
+  ...passMachineQuestions,
   ...mcckap2023Questions,
   ...mcckap2022Questions,
 ];
@@ -28136,11 +28136,11 @@ const normalizedQuestions = importedQuestions.map((question) => {
 const seenQuestionFingerprints = new Set<string>();
 
 const deduplicatedQuestions = normalizedQuestions.filter((question) => {
-  const sourceScope = /^Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 202[23]$/.test(question.source ?? "")
+  const sourceScope = /^Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 202[23]$/.test(question.source ?? "") || question.source === "American Physician Institute 2012-2020"
     ? `${question.source}|`
     : "";
   // Identical graph questions can have different answers because their figures differ.
-  const figureScope = question.category.startsWith("Study Guide")
+  const figureScope = question.category.startsWith("Study Guide") || question.source === "American Physician Institute 2012-2020"
     ? `|${(question.visuals?.question ?? []).map(figure => figure.src).join("|")}`
     : "";
   const fingerprint = `${sourceScope}${question.scenario.toLowerCase()}|${Object.entries(question.choices).map(([key, value]) => `${key}:${value}`).join("|")}${figureScope}`;

@@ -25,6 +25,8 @@ export interface Question {
   correctAnswerText: string | null;
   explanation: string | null;
   references?: string[];
+  sourceNotes?: string[];
+  answerOnly?: boolean;
   source: string | null;
   category: string;
   images?: string[];

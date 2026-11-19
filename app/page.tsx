@@ -72,7 +72,7 @@ const picumcqExamGroups: ExamGroup[] = [
 ];
 
 const passMachineExamGroups: ExamGroup[] = [
-  { id: "passmachine-pediatrics", label: "American Physician Institute 2012-2020", description: "Clinical review questions arranged by source chapter", accent: "blue", match: (q) => q.category.startsWith("American Physician Institute 2012-2020"), subCategoryPrefix: "American Physician Institute 2012-2020" },
+  { id: "passmachine-pediatrics", label: "American Physician Institute 2012-2020", description: "283 source items across 31 chapters, with explanations and 73 figures", accent: "blue", match: (q) => q.category.startsWith("American Physician Institute 2012-2020"), subCategoryPrefix: "American Physician Institute 2012-2020" },
 ];
 
 const mcckapExamGroups: ExamGroup[] = [
@@ -889,7 +889,9 @@ export default function QuizPage() {
 
   const q = quizQuestions[current];
   const savedState = progress[q.id];
-  const choiceLetters = Object.keys(q.choices).sort();
+  const choiceLetters = q.source === "American Physician Institute 2012-2020"
+    ? Object.keys(q.choices)
+    : Object.keys(q.choices).sort();
   const clinicalPresentation = inlineClinicalData(q);
   const questionText = clinicalPresentation.text;
   const questionCategoryLabel = selectedExam.subCategoryPrefix
@@ -1065,7 +1067,11 @@ export default function QuizPage() {
             </div>
           )}
 
-          <div className="db-choice-heading"><p>Select one answer</p><span>{choiceLetters.length} options</span></div>
+          {q.answerOnly ? (
+            <p className="my-4 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm leading-relaxed text-sky-800">
+              The source provides an answer without printed choices. Use Show answer to review this item; it is excluded from scoring.
+            </p>
+          ) : <div className="db-choice-heading"><p>Select one answer</p><span>{choiceLetters.length} options</span></div>}
                   <div className={`${s.choiceSpace} db-choice-grid`}>
             {choiceLetters.map((letter) => {
               const isSelected = selected === letter;
@@ -1127,8 +1133,8 @@ export default function QuizPage() {
 
           {!revealed ? (
             <div className="db-answer-actions">
-              <button onClick={handleSubmit} disabled={!selected} className={s.submitBtn}>Check answer</button>
-              {viewMode === "study" && <button onClick={handleReveal} className={`${s.revealBtn} db-reveal-action`}>{q.correctAnswer ? "Show answer" : "Review course notes"}</button>}
+              {!q.answerOnly && <button onClick={handleSubmit} disabled={!selected} className={s.submitBtn}>Check answer</button>}
+              {(viewMode === "study" || q.answerOnly) && <button onClick={handleReveal} className={`${s.revealBtn} db-reveal-action`}>{q.correctAnswer || q.answerOnly ? "Show answer" : "Review course notes"}</button>}
             </div>
           ) : (
             <div className={s.navGrid}>
@@ -1163,7 +1169,7 @@ export default function QuizPage() {
             </div>
           ) : (
             <>
-              {q.category.startsWith("Study Guide") && (
+              {(q.category.startsWith("Study Guide") || q.source === "American Physician Institute 2012-2020") && (
                 <FigureGallery figures={q.visuals?.question} title="Question figures and tables" />
               )}
               <FigureGallery figures={q.visuals?.explanation} title="Explanation figures and tables" />
@@ -1189,9 +1195,9 @@ export default function QuizPage() {
                   </span>
                   <div className="db-feedback-copy">
                     <p className="db-feedback-eyebrow">
-                      {savedState?.state === "correct" ? "Correct response" : savedState?.state === "revealed" ? "Answer revealed" : savedState?.state === "unkeyed" ? "Unscored question" : "Review your response"}
+                      {q.answerOnly ? "Source answer · unscored" : savedState?.state === "correct" ? "Correct response" : savedState?.state === "revealed" ? "Answer revealed" : savedState?.state === "unkeyed" ? "Unscored question" : "Review your response"}
                     </p>
-                    {q.correctAnswer ? (
+                    {q.answerOnly ? <p className="db-feedback-answer">{q.correctAnswerText}</p> : q.correctAnswer ? (
                       <p className="db-feedback-answer">
                         <span className="db-feedback-key">{q.correctAnswer}</span>
                         <span>{q.correctAnswerText}</span>
@@ -1201,6 +1207,12 @@ export default function QuizPage() {
                     )}
                   </div>
                 </header>
+                {!!q.sourceNotes?.length && (
+                  <aside className="my-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-relaxed text-amber-900" aria-label="Source notes">
+                    <p className="mb-2 font-bold">Source notes</p>
+                    {q.sourceNotes.map((note, index) => <p key={index} className="mt-1">{note}</p>)}
+                  </aside>
+                )}
                 {viewMode === "study" && (
                   <>
                     {q.explanation && (() => {
@@ -1269,7 +1281,7 @@ export default function QuizPage() {
                 {viewMode === "test" && savedState?.state === "incorrect" && (
                   <p className="text-xs text-slate-500 mt-1">Switch to Study mode to see the explanation.</p>
                 )}
-                {viewMode === "test" && savedState?.state === "unkeyed" && (
+                {viewMode === "test" && savedState?.state === "unkeyed" && !q.answerOnly && (
                   <p className="text-xs text-sky-700 mt-1">This item has no answer key and is excluded from scoring.</p>
                 )}
               </div>
