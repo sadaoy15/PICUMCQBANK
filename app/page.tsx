@@ -72,6 +72,10 @@ const picumcqExamGroups: ExamGroup[] = [
   { id: "picumcq-book", label: "PICU MCQ Review", description: "Complete question set with explanations and figures (PICU MCQ Review)", accent: "indigo", match: (q) => q.category === "PICU MCQ Review" },
 ];
 
+const criticalThinkingExamGroups: ExamGroup[] = [
+  { id: "critical-thinking-quiz", label: "PICU Critical Thinking Quiz", description: "342 questions in 31 quiz sets, with source explanations, figures and tables", accent: "blue", match: (q) => q.source === "PICU Critical Thinking Quiz", subCategoryPrefix: "PICU Critical Thinking Quiz" },
+];
+
 const passMachineExamGroups: ExamGroup[] = [
   { id: "passmachine-pediatrics", label: "American Physician Institute 2012-2020", description: "283 source items across 31 chapters, with explanations and 73 figures", accent: "blue", match: (q) => q.category.startsWith("American Physician Institute 2012-2020"), subCategoryPrefix: "American Physician Institute 2012-2020" },
 ];
@@ -86,7 +90,7 @@ const specialExamGroups: ExamGroup[] = [
   { id: "study-all",  label: "Study Everything", description: "All questions from all sources combined", accent: "slate",  match: () => true },
 ];
 
-const examGroups: ExamGroup[] = [...prepExamGroups, ...mcckapExamGroups, ...sccmExamGroups, ...zimmermanExamGroups, ...studyGuideExamGroups, ...picumcqExamGroups, ...passMachineExamGroups, ...specialExamGroups];
+const examGroups: ExamGroup[] = [...prepExamGroups, ...mcckapExamGroups, ...sccmExamGroups, ...zimmermanExamGroups, ...studyGuideExamGroups, ...picumcqExamGroups, ...criticalThinkingExamGroups, ...passMachineExamGroups, ...specialExamGroups];
 
 const accentClasses: Record<string, { card: string; badge: string; btn: string }> = {
   blue:    { card: "border-slate-200 hover:border-teal-300 hover:bg-teal-50/60",       badge: "bg-teal-50 text-teal-700 border border-teal-100",       btn: "bg-teal-700 hover:bg-teal-800" },
@@ -835,6 +839,7 @@ export default function QuizPage() {
                 {zimmermanExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
                 {studyGuideExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
                 {picumcqExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
+                {criticalThinkingExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
                 {passMachineExamGroups.map((exam) => <ExamCard key={exam.id} exam={exam} />)}
               </div>
             </section>
@@ -979,24 +984,25 @@ export default function QuizPage() {
         const isSccm = selectedExam.id.startsWith("sccm");
         const isZimm = selectedExam.id.startsWith("zimmerman");
         const isPassMachine = selectedExam.id.startsWith("passmachine");
+        const isCriticalThinking = selectedExam.id === "critical-thinking-quiz";
         const isPrepBlock = selectedExam?.id === "prep-2026";
         const filterLabel = isSccm ? "Filter chapters" : isZimm ? "Filter parts" : isPrepBlock ? "Filter blocks" : "Filter months";
         const allLabel    = isSccm ? "All chapters"   : isZimm ? "All parts"    : isPrepBlock ? "All blocks" : "All months";
-        if (isPassMachine) {
+        if (isPassMachine || isCriticalThinking) {
           const chapterCount = (chapter: string) => allQuestions.filter((question) => question.category === chapter).length;
           return (
             <section className="border-b border-slate-100 bg-white px-5 py-3">
               <label className="flex items-center gap-3 text-sm font-semibold text-slate-600">
                 <span className="inline-flex items-center gap-2 whitespace-nowrap text-teal-800">
-                  <span className="h-2 w-2 rounded-full bg-teal-500" /> Navigate by chapter
+                  <span className="h-2 w-2 rounded-full bg-teal-500" /> {isCriticalThinking ? "Navigate by quiz" : "Navigate by chapter"}
                 </span>
                 <select
-                  aria-label="Navigate by chapter"
+                  aria-label={isCriticalThinking ? "Navigate by quiz" : "Navigate by chapter"}
                   value={activeSubCat}
                   onChange={(event) => handleChangeSubCat(event.target.value)}
                   className="min-w-0 flex-1 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700 outline-none transition-colors focus:border-teal-500"
                 >
-                  <option value="all">All chapters</option>
+                  <option value="all">{isCriticalThinking ? "All quizzes" : "All chapters"}</option>
                   {subCats.map((cat) => (
                     <option key={cat} value={cat}>
                       {cat.replace(selectedExam.subCategoryPrefix! + " - ", "")} ({chapterCount(cat)})
@@ -1171,7 +1177,7 @@ export default function QuizPage() {
             </div>
           ) : (
             <>
-              {(q.category.startsWith("Study Guide") || q.category.startsWith("PREP 2026") || q.source === "American Physician Institute 2012-2020") && (
+              {(q.category.startsWith("Study Guide") || q.category.startsWith("PREP 2026") || q.source === "American Physician Institute 2012-2020" || q.source === "PICU Critical Thinking Quiz") && (
                 <FigureGallery figures={q.visuals?.question} title="Question figures and tables" />
               )}
               <FigureGallery figures={q.visuals?.explanation} title="Explanation figures and tables" />

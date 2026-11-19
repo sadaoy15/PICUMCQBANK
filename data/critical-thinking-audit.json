@@ -1,0 +1,8202 @@
+{
+  "name": "PICU Critical Thinking Quiz",
+  "sourceFile": "PICU_MCQ_quiz.pptx",
+  "sourceSha256": "4f2a169d6d0136b8f868c078bbbba7edbce9f83ad7df1cefb7d61430b1591d49",
+  "slides": 720,
+  "questions": 342,
+  "quizSets": 31,
+  "withExplanations": 342,
+  "figures": 17,
+  "tables": 2,
+  "itemsWithSourceNotes": 98,
+  "provenance": "Native text, marked answers, explanations (including supplied standard summaries), caveats, tables and all available figures are copied from the supplied compilation. No clinical answers or missing images are reconstructed.",
+  "quizSetsMetadata": {
+    "1": {
+      "title": "Quiz 1",
+      "citation": "Sharma & Khilnani, JPCC 2020;7(1)\n10 questions",
+      "slide": 3
+    },
+    "2": {
+      "title": "Quiz 2",
+      "citation": "Sharma & Khilnani, JPCC 2020;7:99-101\n10 questions",
+      "slide": 24
+    },
+    "3": {
+      "title": "Quiz 3",
+      "citation": "Sharma & Khilnani, JPCC 2020;7:153-6\n10 questions",
+      "slide": 45
+    },
+    "4": {
+      "title": "Quiz 4",
+      "citation": "Sharma, JPCC 2020;7:221-5 (Neuro-critical care)\n10 questions",
+      "slide": 66
+    },
+    "5": {
+      "title": "Quiz 5",
+      "citation": "Sharma, JPCC 2020;7:298-301 (Respiratory)\n10 questions",
+      "slide": 88
+    },
+    "6": {
+      "title": "Quiz 6",
+      "citation": "Sharma, JPCC 2020;7:366-9 (Neurology)\n10 questions",
+      "slide": 109
+    },
+    "7": {
+      "title": "Quiz 7",
+      "citation": "Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)\n10 questions",
+      "slide": 130
+    },
+    "8": {
+      "title": "Quiz 8",
+      "citation": "Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)\n10 questions",
+      "slide": 151
+    },
+    "9": {
+      "title": "Quiz 9",
+      "citation": "Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)\n10 questions",
+      "slide": 172
+    },
+    "10": {
+      "title": "Quiz 10",
+      "citation": "Jangam & Patki, JPCC 2019;6(4):71-75\n10 questions",
+      "slide": 193
+    },
+    "11": {
+      "title": "Quiz 11",
+      "citation": "Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)\n10 questions",
+      "slide": 214
+    },
+    "12": {
+      "title": "Quiz 12",
+      "citation": "Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)\n10 questions",
+      "slide": 236
+    },
+    "13": {
+      "title": "Quiz 13",
+      "citation": "Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)\n10 questions",
+      "slide": 257
+    },
+    "14": {
+      "title": "Quiz 14",
+      "citation": "Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)\n10 questions",
+      "slide": 278
+    },
+    "15": {
+      "title": "Quiz 15",
+      "citation": "Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)\n10 questions",
+      "slide": 299
+    },
+    "16": {
+      "title": "Quiz 16",
+      "citation": "Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)\n10 questions",
+      "slide": 320
+    },
+    "17": {
+      "title": "Quiz 17",
+      "citation": "Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)\n10 questions",
+      "slide": 342
+    },
+    "18": {
+      "title": "Quiz 18",
+      "citation": "Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)\n10 questions",
+      "slide": 363
+    },
+    "19": {
+      "title": "Quiz 19",
+      "citation": "Khilnani, JPCC 2017;4(2):106-107 (ECMO)\n20 questions",
+      "slide": 384
+    },
+    "20": {
+      "title": "Quiz 20",
+      "citation": "Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)\n15 questions",
+      "slide": 425
+    },
+    "21": {
+      "title": "Quiz 21",
+      "citation": "JPCC 2017;4(4):121-128 (Critical care endocrinology)\n20 questions",
+      "slide": 456
+    },
+    "22": {
+      "title": "Quiz 22",
+      "citation": "Khilnani, JPCC 2016;3(1):65-66 (Physiology)\n10 questions",
+      "slide": 497
+    },
+    "23": {
+      "title": "Quiz 23",
+      "citation": "Khilnani, JPCC 2016;3(2):74-76\n10 questions",
+      "slide": 518
+    },
+    "24": {
+      "title": "Quiz 24",
+      "citation": "Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)\n10 questions",
+      "slide": 539
+    },
+    "25": {
+      "title": "Quiz 25",
+      "citation": "Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)\n10 questions",
+      "slide": 560
+    },
+    "26": {
+      "title": "Quiz 26",
+      "citation": "Jerath, JPCC 2015;2(2):78-80\n10 questions",
+      "slide": 581
+    },
+    "27": {
+      "title": "Quiz 27",
+      "citation": "Khilnani, JPCC 2015;2(3):88-90\n14 questions",
+      "slide": 602
+    },
+    "28": {
+      "title": "Quiz 28",
+      "citation": "Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)\n13 questions",
+      "slide": 631
+    },
+    "29": {
+      "title": "Quiz 29",
+      "citation": "Jerath, JPCC 2014;1(2):86-87\n10 questions",
+      "slide": 658
+    },
+    "30": {
+      "title": "Quiz 30",
+      "citation": "Jerath, JPCC 2014;1(3):214-216\n10 questions",
+      "slide": 679
+    },
+    "31": {
+      "title": "Quiz 31",
+      "citation": "Khilnani, JPCC 2014;1(4):324-328\n10 questions",
+      "slide": 700
+    }
+  },
+  "items": [
+    {
+      "quiz": 1,
+      "questionNumber": 1,
+      "id": 10101,
+      "sourceSlides": [
+        4,
+        5
+      ],
+      "citation": "Quiz 1 — Sharma & Khilnani, JPCC 2020;7(1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 159,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 1,
+      "questionNumber": 2,
+      "id": 10102,
+      "sourceSlides": [
+        6,
+        7
+      ],
+      "citation": "Quiz 1 — Sharma & Khilnani, JPCC 2020;7(1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 377,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 1,
+      "questionNumber": 3,
+      "id": 10103,
+      "sourceSlides": [
+        8,
+        9
+      ],
+      "citation": "Quiz 1 — Sharma & Khilnani, JPCC 2020;7(1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 245,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 1,
+      "questionNumber": 4,
+      "id": 10104,
+      "sourceSlides": [
+        10,
+        11
+      ],
+      "citation": "Quiz 1 — Sharma & Khilnani, JPCC 2020;7(1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 193,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 1,
+      "questionNumber": 5,
+      "id": 10105,
+      "sourceSlides": [
+        12,
+        13
+      ],
+      "citation": "Quiz 1 — Sharma & Khilnani, JPCC 2020;7(1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 107,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 1,
+      "questionNumber": 6,
+      "id": 10106,
+      "sourceSlides": [
+        14,
+        15
+      ],
+      "citation": "Quiz 1 — Sharma & Khilnani, JPCC 2020;7(1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 305,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 1,
+      "questionNumber": 7,
+      "id": 10107,
+      "sourceSlides": [
+        16,
+        17
+      ],
+      "citation": "Quiz 1 — Sharma & Khilnani, JPCC 2020;7(1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "answer": "D",
+      "explanationCharacters": 161,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 1,
+      "questionNumber": 8,
+      "id": 10108,
+      "sourceSlides": [
+        18,
+        19
+      ],
+      "citation": "Quiz 1 — Sharma & Khilnani, JPCC 2020;7(1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 155,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 1
+    },
+    {
+      "quiz": 1,
+      "questionNumber": 9,
+      "id": 10109,
+      "sourceSlides": [
+        20,
+        21
+      ],
+      "citation": "Quiz 1 — Sharma & Khilnani, JPCC 2020;7(1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "answer": "A",
+      "explanationCharacters": 258,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 1,
+      "questionNumber": 10,
+      "id": 10110,
+      "sourceSlides": [
+        22,
+        23
+      ],
+      "citation": "Quiz 1 — Sharma & Khilnani, JPCC 2020;7(1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 261,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 2,
+      "questionNumber": 1,
+      "id": 10201,
+      "sourceSlides": [
+        25,
+        26
+      ],
+      "citation": "Quiz 2 — Sharma & Khilnani, JPCC 2020;7:99-101",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 359,
+      "sourceNotes": [
+        "Many algorithms give dantrolene as soon as possible alongside hyperventilation with 100% O2; the quiz key places O2 washout first."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 2,
+      "questionNumber": 2,
+      "id": 10202,
+      "sourceSlides": [
+        27,
+        28
+      ],
+      "citation": "Quiz 2 — Sharma & Khilnani, JPCC 2020;7:99-101",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 219,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 2,
+      "questionNumber": 3,
+      "id": 10203,
+      "sourceSlides": [
+        29,
+        30
+      ],
+      "citation": "Quiz 2 — Sharma & Khilnani, JPCC 2020;7:99-101",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 297,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 2,
+      "questionNumber": 4,
+      "id": 10204,
+      "sourceSlides": [
+        31,
+        32
+      ],
+      "citation": "Quiz 2 — Sharma & Khilnani, JPCC 2020;7:99-101",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 129,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 2,
+      "questionNumber": 5,
+      "id": 10205,
+      "sourceSlides": [
+        33,
+        34
+      ],
+      "citation": "Quiz 2 — Sharma & Khilnani, JPCC 2020;7:99-101",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 188,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 2,
+      "questionNumber": 6,
+      "id": 10206,
+      "sourceSlides": [
+        35,
+        36
+      ],
+      "citation": "Quiz 2 — Sharma & Khilnani, JPCC 2020;7:99-101",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 242,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 2,
+      "questionNumber": 7,
+      "id": 10207,
+      "sourceSlides": [
+        37,
+        38
+      ],
+      "citation": "Quiz 2 — Sharma & Khilnani, JPCC 2020;7:99-101",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 196,
+      "sourceNotes": [
+        "This quiz's printed key gave 'excessive sensitivity to PTH'. The same question appears in Quiz 22 of this file, keyed to the parathyroid answer, which matches the physiology and is shown here."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 2,
+      "questionNumber": 8,
+      "id": 10208,
+      "sourceSlides": [
+        39,
+        40
+      ],
+      "citation": "Quiz 2 — Sharma & Khilnani, JPCC 2020;7:99-101",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 237,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 2,
+      "questionNumber": 9,
+      "id": 10209,
+      "sourceSlides": [
+        41,
+        42
+      ],
+      "citation": "Quiz 2 — Sharma & Khilnani, JPCC 2020;7:99-101",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 218,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 2,
+      "questionNumber": 10,
+      "id": 10210,
+      "sourceSlides": [
+        43,
+        44
+      ],
+      "citation": "Quiz 2 — Sharma & Khilnani, JPCC 2020;7:99-101",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 225,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 3,
+      "questionNumber": 1,
+      "id": 10301,
+      "sourceSlides": [
+        46,
+        47
+      ],
+      "citation": "Quiz 3 — Sharma & Khilnani, JPCC 2020;7:153-6",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 170,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 3,
+      "questionNumber": 2,
+      "id": 10302,
+      "sourceSlides": [
+        48,
+        49
+      ],
+      "citation": "Quiz 3 — Sharma & Khilnani, JPCC 2020;7:153-6",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 198,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 3,
+      "questionNumber": 3,
+      "id": 10303,
+      "sourceSlides": [
+        50,
+        51
+      ],
+      "citation": "Quiz 3 — Sharma & Khilnani, JPCC 2020;7:153-6",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 257,
+      "sourceNotes": [
+        "Options for Q3, Q4 and Q6 were misprinted in the original layout; they are re-assigned here to match the answer key."
+      ],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 3,
+      "questionNumber": 4,
+      "id": 10304,
+      "sourceSlides": [
+        52,
+        53
+      ],
+      "citation": "Quiz 3 — Sharma & Khilnani, JPCC 2020;7:153-6",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 224,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 3,
+      "questionNumber": 5,
+      "id": 10305,
+      "sourceSlides": [
+        54,
+        55
+      ],
+      "citation": "Quiz 3 — Sharma & Khilnani, JPCC 2020;7:153-6",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 216,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 3,
+      "questionNumber": 6,
+      "id": 10306,
+      "sourceSlides": [
+        56,
+        57
+      ],
+      "citation": "Quiz 3 — Sharma & Khilnani, JPCC 2020;7:153-6",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 145,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 3,
+      "questionNumber": 7,
+      "id": 10307,
+      "sourceSlides": [
+        58,
+        59
+      ],
+      "citation": "Quiz 3 — Sharma & Khilnani, JPCC 2020;7:153-6",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 255,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 3,
+      "questionNumber": 8,
+      "id": 10308,
+      "sourceSlides": [
+        60,
+        61
+      ],
+      "citation": "Quiz 3 — Sharma & Khilnani, JPCC 2020;7:153-6",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 257,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 3,
+      "questionNumber": 9,
+      "id": 10309,
+      "sourceSlides": [
+        62,
+        63
+      ],
+      "citation": "Quiz 3 — Sharma & Khilnani, JPCC 2020;7:153-6",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 179,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 3,
+      "questionNumber": 10,
+      "id": 10310,
+      "sourceSlides": [
+        64,
+        65
+      ],
+      "citation": "Quiz 3 — Sharma & Khilnani, JPCC 2020;7:153-6",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 286,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 4,
+      "questionNumber": 1,
+      "id": 10401,
+      "sourceSlides": [
+        67,
+        68,
+        69
+      ],
+      "citation": "Quiz 4 — Sharma, JPCC 2020;7:221-5 (Neuro-critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 278,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 1,
+      "tables": 0
+    },
+    {
+      "quiz": 4,
+      "questionNumber": 2,
+      "id": 10402,
+      "sourceSlides": [
+        70,
+        71
+      ],
+      "citation": "Quiz 4 — Sharma, JPCC 2020;7:221-5 (Neuro-critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 209,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0,
+      "contextQuestion": [
+        4,
+        1
+      ]
+    },
+    {
+      "quiz": 4,
+      "questionNumber": 3,
+      "id": 10403,
+      "sourceSlides": [
+        72,
+        73
+      ],
+      "citation": "Quiz 4 — Sharma, JPCC 2020;7:221-5 (Neuro-critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 153,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0,
+      "contextQuestion": [
+        4,
+        1
+      ]
+    },
+    {
+      "quiz": 4,
+      "questionNumber": 4,
+      "id": 10404,
+      "sourceSlides": [
+        74,
+        75
+      ],
+      "citation": "Quiz 4 — Sharma, JPCC 2020;7:221-5 (Neuro-critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 181,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 4,
+      "questionNumber": 5,
+      "id": 10405,
+      "sourceSlides": [
+        76,
+        77
+      ],
+      "citation": "Quiz 4 — Sharma, JPCC 2020;7:221-5 (Neuro-critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 421,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 4,
+      "questionNumber": 6,
+      "id": 10406,
+      "sourceSlides": [
+        78,
+        79
+      ],
+      "citation": "Quiz 4 — Sharma, JPCC 2020;7:221-5 (Neuro-critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 258,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 4,
+      "questionNumber": 7,
+      "id": 10407,
+      "sourceSlides": [
+        80,
+        81
+      ],
+      "citation": "Quiz 4 — Sharma, JPCC 2020;7:221-5 (Neuro-critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 158,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 4,
+      "questionNumber": 8,
+      "id": 10408,
+      "sourceSlides": [
+        82,
+        83
+      ],
+      "citation": "Quiz 4 — Sharma, JPCC 2020;7:221-5 (Neuro-critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 211,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 4,
+      "questionNumber": 9,
+      "id": 10409,
+      "sourceSlides": [
+        84,
+        85
+      ],
+      "citation": "Quiz 4 — Sharma, JPCC 2020;7:221-5 (Neuro-critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 221,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 4,
+      "questionNumber": 10,
+      "id": 10410,
+      "sourceSlides": [
+        86,
+        87
+      ],
+      "citation": "Quiz 4 — Sharma, JPCC 2020;7:221-5 (Neuro-critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 197,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 5,
+      "questionNumber": 1,
+      "id": 10501,
+      "sourceSlides": [
+        89,
+        90
+      ],
+      "citation": "Quiz 5 — Sharma, JPCC 2020;7:298-301 (Respiratory)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 367,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 5,
+      "questionNumber": 2,
+      "id": 10502,
+      "sourceSlides": [
+        91,
+        92
+      ],
+      "citation": "Quiz 5 — Sharma, JPCC 2020;7:298-301 (Respiratory)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 446,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 5,
+      "questionNumber": 3,
+      "id": 10503,
+      "sourceSlides": [
+        93,
+        94
+      ],
+      "citation": "Quiz 5 — Sharma, JPCC 2020;7:298-301 (Respiratory)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 265,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 5,
+      "questionNumber": 4,
+      "id": 10504,
+      "sourceSlides": [
+        95,
+        96
+      ],
+      "citation": "Quiz 5 — Sharma, JPCC 2020;7:298-301 (Respiratory)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 232,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 5,
+      "questionNumber": 5,
+      "id": 10505,
+      "sourceSlides": [
+        97,
+        98
+      ],
+      "citation": "Quiz 5 — Sharma, JPCC 2020;7:298-301 (Respiratory)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 162,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 5,
+      "questionNumber": 6,
+      "id": 10506,
+      "sourceSlides": [
+        99,
+        100
+      ],
+      "citation": "Quiz 5 — Sharma, JPCC 2020;7:298-301 (Respiratory)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 113,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 5,
+      "questionNumber": 7,
+      "id": 10507,
+      "sourceSlides": [
+        101,
+        102
+      ],
+      "citation": "Quiz 5 — Sharma, JPCC 2020;7:298-301 (Respiratory)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 207,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 5,
+      "questionNumber": 8,
+      "id": 10508,
+      "sourceSlides": [
+        103,
+        104
+      ],
+      "citation": "Quiz 5 — Sharma, JPCC 2020;7:298-301 (Respiratory)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 240,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 5,
+      "questionNumber": 9,
+      "id": 10509,
+      "sourceSlides": [
+        105,
+        106
+      ],
+      "citation": "Quiz 5 — Sharma, JPCC 2020;7:298-301 (Respiratory)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 204,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 5,
+      "questionNumber": 10,
+      "id": 10510,
+      "sourceSlides": [
+        107,
+        108
+      ],
+      "citation": "Quiz 5 — Sharma, JPCC 2020;7:298-301 (Respiratory)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 191,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 6,
+      "questionNumber": 1,
+      "id": 10601,
+      "sourceSlides": [
+        110,
+        111
+      ],
+      "citation": "Quiz 6 — Sharma, JPCC 2020;7:366-9 (Neurology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 154,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 6,
+      "questionNumber": 2,
+      "id": 10602,
+      "sourceSlides": [
+        112,
+        113
+      ],
+      "citation": "Quiz 6 — Sharma, JPCC 2020;7:366-9 (Neurology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 118,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 6,
+      "questionNumber": 3,
+      "id": 10603,
+      "sourceSlides": [
+        114,
+        115
+      ],
+      "citation": "Quiz 6 — Sharma, JPCC 2020;7:366-9 (Neurology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 217,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 6,
+      "questionNumber": 4,
+      "id": 10604,
+      "sourceSlides": [
+        116,
+        117
+      ],
+      "citation": "Quiz 6 — Sharma, JPCC 2020;7:366-9 (Neurology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 211,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 6,
+      "questionNumber": 5,
+      "id": 10605,
+      "sourceSlides": [
+        118,
+        119
+      ],
+      "citation": "Quiz 6 — Sharma, JPCC 2020;7:366-9 (Neurology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 284,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 6,
+      "questionNumber": 6,
+      "id": 10606,
+      "sourceSlides": [
+        120,
+        121
+      ],
+      "citation": "Quiz 6 — Sharma, JPCC 2020;7:366-9 (Neurology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 244,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 6,
+      "questionNumber": 7,
+      "id": 10607,
+      "sourceSlides": [
+        122,
+        123
+      ],
+      "citation": "Quiz 6 — Sharma, JPCC 2020;7:366-9 (Neurology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 210,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 6,
+      "questionNumber": 8,
+      "id": 10608,
+      "sourceSlides": [
+        124,
+        125
+      ],
+      "citation": "Quiz 6 — Sharma, JPCC 2020;7:366-9 (Neurology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 292,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 6,
+      "questionNumber": 9,
+      "id": 10609,
+      "sourceSlides": [
+        126,
+        127
+      ],
+      "citation": "Quiz 6 — Sharma, JPCC 2020;7:366-9 (Neurology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 241,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 6,
+      "questionNumber": 10,
+      "id": 10610,
+      "sourceSlides": [
+        128,
+        129
+      ],
+      "citation": "Quiz 6 — Sharma, JPCC 2020;7:366-9 (Neurology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 238,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 7,
+      "questionNumber": 1,
+      "id": 10701,
+      "sourceSlides": [
+        131,
+        132
+      ],
+      "citation": "Quiz 7 — Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 208,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 7,
+      "questionNumber": 2,
+      "id": 10702,
+      "sourceSlides": [
+        133,
+        134
+      ],
+      "citation": "Quiz 7 — Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 291,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 7,
+      "questionNumber": 3,
+      "id": 10703,
+      "sourceSlides": [
+        135,
+        136
+      ],
+      "citation": "Quiz 7 — Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 317,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 7,
+      "questionNumber": 4,
+      "id": 10704,
+      "sourceSlides": [
+        137,
+        138
+      ],
+      "citation": "Quiz 7 — Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 118,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 7,
+      "questionNumber": 5,
+      "id": 10705,
+      "sourceSlides": [
+        139,
+        140
+      ],
+      "citation": "Quiz 7 — Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 216,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 7,
+      "questionNumber": 6,
+      "id": 10706,
+      "sourceSlides": [
+        141,
+        142
+      ],
+      "citation": "Quiz 7 — Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 373,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 7,
+      "questionNumber": 7,
+      "id": 10707,
+      "sourceSlides": [
+        143,
+        144
+      ],
+      "citation": "Quiz 7 — Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 320,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 7,
+      "questionNumber": 8,
+      "id": 10708,
+      "sourceSlides": [
+        145,
+        146
+      ],
+      "citation": "Quiz 7 — Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 188,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 7,
+      "questionNumber": 9,
+      "id": 10709,
+      "sourceSlides": [
+        147,
+        148
+      ],
+      "citation": "Quiz 7 — Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 133,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 7,
+      "questionNumber": 10,
+      "id": 10710,
+      "sourceSlides": [
+        149,
+        150
+      ],
+      "citation": "Quiz 7 — Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 232,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 8,
+      "questionNumber": 1,
+      "id": 10801,
+      "sourceSlides": [
+        152,
+        153
+      ],
+      "citation": "Quiz 8 — Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 112,
+      "sourceNotes": [
+        "Later trials (ProCESS, ARISE, ProMISe) found no mortality benefit from protocolised EGDT; ScvO2 remains one of several resuscitation markers."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 8,
+      "questionNumber": 2,
+      "id": 10802,
+      "sourceSlides": [
+        154,
+        155
+      ],
+      "citation": "Quiz 8 — Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 321,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 8,
+      "questionNumber": 3,
+      "id": 10803,
+      "sourceSlides": [
+        156,
+        157
+      ],
+      "citation": "Quiz 8 — Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 175,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 8,
+      "questionNumber": 4,
+      "id": 10804,
+      "sourceSlides": [
+        158,
+        159
+      ],
+      "citation": "Quiz 8 — Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 157,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 8,
+      "questionNumber": 5,
+      "id": 10805,
+      "sourceSlides": [
+        160,
+        161
+      ],
+      "citation": "Quiz 8 — Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 219,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 8,
+      "questionNumber": 6,
+      "id": 10806,
+      "sourceSlides": [
+        162,
+        163
+      ],
+      "citation": "Quiz 8 — Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 158,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 8,
+      "questionNumber": 7,
+      "id": 10807,
+      "sourceSlides": [
+        164,
+        165
+      ],
+      "citation": "Quiz 8 — Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 226,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 8,
+      "questionNumber": 8,
+      "id": 10808,
+      "sourceSlides": [
+        166,
+        167
+      ],
+      "citation": "Quiz 8 — Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 235,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 8,
+      "questionNumber": 9,
+      "id": 10809,
+      "sourceSlides": [
+        168,
+        169
+      ],
+      "citation": "Quiz 8 — Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 190,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 8,
+      "questionNumber": 10,
+      "id": 10810,
+      "sourceSlides": [
+        170,
+        171
+      ],
+      "citation": "Quiz 8 — Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 272,
+      "sourceNotes": [
+        "Hypercalcaemia also increases digoxin toxicity, but hypokalaemia is the classic keyed answer."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 9,
+      "questionNumber": 1,
+      "id": 10901,
+      "sourceSlides": [
+        173,
+        174
+      ],
+      "citation": "Quiz 9 — Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 450,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 9,
+      "questionNumber": 2,
+      "id": 10902,
+      "sourceSlides": [
+        175,
+        176
+      ],
+      "citation": "Quiz 9 — Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 338,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 9,
+      "questionNumber": 3,
+      "id": 10903,
+      "sourceSlides": [
+        177,
+        178
+      ],
+      "citation": "Quiz 9 — Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 229,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 9,
+      "questionNumber": 4,
+      "id": 10904,
+      "sourceSlides": [
+        179,
+        180
+      ],
+      "citation": "Quiz 9 — Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 134,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 9,
+      "questionNumber": 5,
+      "id": 10905,
+      "sourceSlides": [
+        181,
+        182
+      ],
+      "citation": "Quiz 9 — Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 311,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 9,
+      "questionNumber": 6,
+      "id": 10906,
+      "sourceSlides": [
+        183,
+        184
+      ],
+      "citation": "Quiz 9 — Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 213,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 9,
+      "questionNumber": 7,
+      "id": 10907,
+      "sourceSlides": [
+        185,
+        186
+      ],
+      "citation": "Quiz 9 — Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 262,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 9,
+      "questionNumber": 8,
+      "id": 10908,
+      "sourceSlides": [
+        187,
+        188
+      ],
+      "citation": "Quiz 9 — Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 121,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 9,
+      "questionNumber": 9,
+      "id": 10909,
+      "sourceSlides": [
+        189,
+        190
+      ],
+      "citation": "Quiz 9 — Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 145,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 9,
+      "questionNumber": 10,
+      "id": 10910,
+      "sourceSlides": [
+        191,
+        192
+      ],
+      "citation": "Quiz 9 — Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 373,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 10,
+      "questionNumber": 1,
+      "id": 11001,
+      "sourceSlides": [
+        194,
+        195
+      ],
+      "citation": "Quiz 10 — Jangam & Patki, JPCC 2019;6(4):71-75",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 311,
+      "sourceNotes": [
+        "The printed key says 'E', but its own rationale states DTRs are compatible with brain death and posturing is not — the answer shown follows the rationale (B)."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 10,
+      "questionNumber": 2,
+      "id": 11002,
+      "sourceSlides": [
+        196,
+        197
+      ],
+      "citation": "Quiz 10 — Jangam & Patki, JPCC 2019;6(4):71-75",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 330,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 10,
+      "questionNumber": 3,
+      "id": 11003,
+      "sourceSlides": [
+        198,
+        199
+      ],
+      "citation": "Quiz 10 — Jangam & Patki, JPCC 2019;6(4):71-75",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 295,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 10,
+      "questionNumber": 4,
+      "id": 11004,
+      "sourceSlides": [
+        200,
+        201
+      ],
+      "citation": "Quiz 10 — Jangam & Patki, JPCC 2019;6(4):71-75",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 211,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 10,
+      "questionNumber": 5,
+      "id": 11005,
+      "sourceSlides": [
+        202,
+        203
+      ],
+      "citation": "Quiz 10 — Jangam & Patki, JPCC 2019;6(4):71-75",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 265,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 10,
+      "questionNumber": 6,
+      "id": 11006,
+      "sourceSlides": [
+        204,
+        205
+      ],
+      "citation": "Quiz 10 — Jangam & Patki, JPCC 2019;6(4):71-75",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 136,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 10,
+      "questionNumber": 7,
+      "id": 11007,
+      "sourceSlides": [
+        206,
+        207
+      ],
+      "citation": "Quiz 10 — Jangam & Patki, JPCC 2019;6(4):71-75",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 75,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 10,
+      "questionNumber": 8,
+      "id": 11008,
+      "sourceSlides": [
+        208,
+        209
+      ],
+      "citation": "Quiz 10 — Jangam & Patki, JPCC 2019;6(4):71-75",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 149,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 10,
+      "questionNumber": 9,
+      "id": 11009,
+      "sourceSlides": [
+        210,
+        211
+      ],
+      "citation": "Quiz 10 — Jangam & Patki, JPCC 2019;6(4):71-75",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 147,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 10,
+      "questionNumber": 10,
+      "id": 11010,
+      "sourceSlides": [
+        212,
+        213
+      ],
+      "citation": "Quiz 10 — Jangam & Patki, JPCC 2019;6(4):71-75",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 132,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 11,
+      "questionNumber": 1,
+      "id": 11101,
+      "sourceSlides": [
+        215,
+        216
+      ],
+      "citation": "Quiz 11 — Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 273,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 11,
+      "questionNumber": 2,
+      "id": 11102,
+      "sourceSlides": [
+        217,
+        218
+      ],
+      "citation": "Quiz 11 — Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 233,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0,
+      "contextQuestion": [
+        11,
+        1
+      ]
+    },
+    {
+      "quiz": 11,
+      "questionNumber": 3,
+      "id": 11103,
+      "sourceSlides": [
+        219,
+        220
+      ],
+      "citation": "Quiz 11 — Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 262,
+      "sourceNotes": [
+        "Many classifications (e.g., PALICC/Berlin) list near-drowning as a direct insult; the answer follows the source key."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 11,
+      "questionNumber": 4,
+      "id": 11104,
+      "sourceSlides": [
+        221,
+        222
+      ],
+      "citation": "Quiz 11 — Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 183,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 11,
+      "questionNumber": 5,
+      "id": 11105,
+      "sourceSlides": [
+        223,
+        224
+      ],
+      "citation": "Quiz 11 — Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 164,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 11,
+      "questionNumber": 6,
+      "id": 11106,
+      "sourceSlides": [
+        225,
+        226
+      ],
+      "citation": "Quiz 11 — Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 220,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 11,
+      "questionNumber": 7,
+      "id": 11107,
+      "sourceSlides": [
+        227,
+        228,
+        229
+      ],
+      "citation": "Quiz 11 — Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 324,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 1,
+      "tables": 0
+    },
+    {
+      "quiz": 11,
+      "questionNumber": 8,
+      "id": 11108,
+      "sourceSlides": [
+        230,
+        231
+      ],
+      "citation": "Quiz 11 — Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 338,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 11,
+      "questionNumber": 9,
+      "id": 11109,
+      "sourceSlides": [
+        232,
+        233
+      ],
+      "citation": "Quiz 11 — Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 165,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 11,
+      "questionNumber": 10,
+      "id": 11110,
+      "sourceSlides": [
+        234,
+        235
+      ],
+      "citation": "Quiz 11 — Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 176,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 12,
+      "questionNumber": 1,
+      "id": 11201,
+      "sourceSlides": [
+        237,
+        238
+      ],
+      "citation": "Quiz 12 — Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 206,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 12,
+      "questionNumber": 2,
+      "id": 11202,
+      "sourceSlides": [
+        239,
+        240
+      ],
+      "citation": "Quiz 12 — Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 290,
+      "sourceNotes": [
+        "The stem is incomplete in the original; the bracketed wording reflects the answer rationale."
+      ],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 12,
+      "questionNumber": 3,
+      "id": 11203,
+      "sourceSlides": [
+        241,
+        242
+      ],
+      "citation": "Quiz 12 — Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 291,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 12,
+      "questionNumber": 4,
+      "id": 11204,
+      "sourceSlides": [
+        243,
+        244
+      ],
+      "citation": "Quiz 12 — Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 160,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 12,
+      "questionNumber": 5,
+      "id": 11205,
+      "sourceSlides": [
+        245,
+        246
+      ],
+      "citation": "Quiz 12 — Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 194,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 12,
+      "questionNumber": 6,
+      "id": 11206,
+      "sourceSlides": [
+        247,
+        248
+      ],
+      "citation": "Quiz 12 — Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 314,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 12,
+      "questionNumber": 7,
+      "id": 11207,
+      "sourceSlides": [
+        249,
+        250
+      ],
+      "citation": "Quiz 12 — Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 360,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 12,
+      "questionNumber": 8,
+      "id": 11208,
+      "sourceSlides": [
+        251,
+        252
+      ],
+      "citation": "Quiz 12 — Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 289,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 12,
+      "questionNumber": 9,
+      "id": 11209,
+      "sourceSlides": [
+        253,
+        254
+      ],
+      "citation": "Quiz 12 — Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 320,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 12,
+      "questionNumber": 10,
+      "id": 11210,
+      "sourceSlides": [
+        255,
+        256
+      ],
+      "citation": "Quiz 12 — Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 310,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 13,
+      "questionNumber": 1,
+      "id": 11301,
+      "sourceSlides": [
+        258,
+        259
+      ],
+      "citation": "Quiz 13 — Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 253,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 13,
+      "questionNumber": 2,
+      "id": 11302,
+      "sourceSlides": [
+        260,
+        261
+      ],
+      "citation": "Quiz 13 — Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 97,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 13,
+      "questionNumber": 3,
+      "id": 11303,
+      "sourceSlides": [
+        262,
+        263
+      ],
+      "citation": "Quiz 13 — Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 145,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 13,
+      "questionNumber": 4,
+      "id": 11304,
+      "sourceSlides": [
+        264,
+        265
+      ],
+      "citation": "Quiz 13 — Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 172,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 13,
+      "questionNumber": 5,
+      "id": 11305,
+      "sourceSlides": [
+        266,
+        267
+      ],
+      "citation": "Quiz 13 — Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 111,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 13,
+      "questionNumber": 6,
+      "id": 11306,
+      "sourceSlides": [
+        268,
+        269
+      ],
+      "citation": "Quiz 13 — Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 234,
+      "sourceNotes": [
+        "Later studies show pulse oximetry can overestimate SaO2 in darker skin; the keyed answer (jaundice) remains correct."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 13,
+      "questionNumber": 7,
+      "id": 11307,
+      "sourceSlides": [
+        270,
+        271
+      ],
+      "citation": "Quiz 13 — Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 181,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 13,
+      "questionNumber": 8,
+      "id": 11308,
+      "sourceSlides": [
+        272,
+        273
+      ],
+      "citation": "Quiz 13 — Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 204,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 13,
+      "questionNumber": 9,
+      "id": 11309,
+      "sourceSlides": [
+        274,
+        275
+      ],
+      "citation": "Quiz 13 — Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 176,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 13,
+      "questionNumber": 10,
+      "id": 11310,
+      "sourceSlides": [
+        276,
+        277
+      ],
+      "citation": "Quiz 13 — Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 204,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 14,
+      "questionNumber": 1,
+      "id": 11401,
+      "sourceSlides": [
+        279,
+        280
+      ],
+      "citation": "Quiz 14 — Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 295,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 14,
+      "questionNumber": 2,
+      "id": 11402,
+      "sourceSlides": [
+        281,
+        282
+      ],
+      "citation": "Quiz 14 — Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 217,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 14,
+      "questionNumber": 3,
+      "id": 11403,
+      "sourceSlides": [
+        283,
+        284
+      ],
+      "citation": "Quiz 14 — Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 272,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 14,
+      "questionNumber": 4,
+      "id": 11404,
+      "sourceSlides": [
+        285,
+        286
+      ],
+      "citation": "Quiz 14 — Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 240,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 14,
+      "questionNumber": 5,
+      "id": 11405,
+      "sourceSlides": [
+        287,
+        288
+      ],
+      "citation": "Quiz 14 — Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 162,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 14,
+      "questionNumber": 6,
+      "id": 11406,
+      "sourceSlides": [
+        289,
+        290
+      ],
+      "citation": "Quiz 14 — Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 241,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 14,
+      "questionNumber": 7,
+      "id": 11407,
+      "sourceSlides": [
+        291,
+        292
+      ],
+      "citation": "Quiz 14 — Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 248,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 14,
+      "questionNumber": 8,
+      "id": 11408,
+      "sourceSlides": [
+        293,
+        294
+      ],
+      "citation": "Quiz 14 — Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 170,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 14,
+      "questionNumber": 9,
+      "id": 11409,
+      "sourceSlides": [
+        295,
+        296
+      ],
+      "citation": "Quiz 14 — Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 239,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 14,
+      "questionNumber": 10,
+      "id": 11410,
+      "sourceSlides": [
+        297,
+        298
+      ],
+      "citation": "Quiz 14 — Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 302,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 15,
+      "questionNumber": 1,
+      "id": 11501,
+      "sourceSlides": [
+        300,
+        301
+      ],
+      "citation": "Quiz 15 — Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 137,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 15,
+      "questionNumber": 2,
+      "id": 11502,
+      "sourceSlides": [
+        302,
+        303
+      ],
+      "citation": "Quiz 15 — Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 212,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 15,
+      "questionNumber": 3,
+      "id": 11503,
+      "sourceSlides": [
+        304,
+        305
+      ],
+      "citation": "Quiz 15 — Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 212,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 15,
+      "questionNumber": 4,
+      "id": 11504,
+      "sourceSlides": [
+        306,
+        307
+      ],
+      "citation": "Quiz 15 — Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 173,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 15,
+      "questionNumber": 5,
+      "id": 11505,
+      "sourceSlides": [
+        308,
+        309
+      ],
+      "citation": "Quiz 15 — Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 254,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 15,
+      "questionNumber": 6,
+      "id": 11506,
+      "sourceSlides": [
+        310,
+        311
+      ],
+      "citation": "Quiz 15 — Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 202,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 15,
+      "questionNumber": 7,
+      "id": 11507,
+      "sourceSlides": [
+        312,
+        313
+      ],
+      "citation": "Quiz 15 — Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 227,
+      "sourceNotes": [
+        "The printed key reads 'A', but its rationale describes ciclosporin (option B)."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 15,
+      "questionNumber": 8,
+      "id": 11508,
+      "sourceSlides": [
+        314,
+        315
+      ],
+      "citation": "Quiz 15 — Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 184,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 15,
+      "questionNumber": 9,
+      "id": 11509,
+      "sourceSlides": [
+        316,
+        317
+      ],
+      "citation": "Quiz 15 — Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 169,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 15,
+      "questionNumber": 10,
+      "id": 11510,
+      "sourceSlides": [
+        318,
+        319
+      ],
+      "citation": "Quiz 15 — Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 253,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 16,
+      "questionNumber": 1,
+      "id": 11601,
+      "sourceSlides": [
+        321,
+        322
+      ],
+      "citation": "Quiz 16 — Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 152,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 16,
+      "questionNumber": 2,
+      "id": 11602,
+      "sourceSlides": [
+        323,
+        324
+      ],
+      "citation": "Quiz 16 — Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 184,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 16,
+      "questionNumber": 3,
+      "id": 11603,
+      "sourceSlides": [
+        325,
+        326
+      ],
+      "citation": "Quiz 16 — Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 171,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 16,
+      "questionNumber": 4,
+      "id": 11604,
+      "sourceSlides": [
+        327,
+        328
+      ],
+      "citation": "Quiz 16 — Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 227,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 16,
+      "questionNumber": 5,
+      "id": 11605,
+      "sourceSlides": [
+        329,
+        330
+      ],
+      "citation": "Quiz 16 — Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 139,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 16,
+      "questionNumber": 6,
+      "id": 11606,
+      "sourceSlides": [
+        331,
+        332
+      ],
+      "citation": "Quiz 16 — Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 217,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 16,
+      "questionNumber": 7,
+      "id": 11607,
+      "sourceSlides": [
+        333,
+        334,
+        335
+      ],
+      "citation": "Quiz 16 — Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 245,
+      "sourceNotes": [
+        "qSOFA was derived in adults; it is not validated for paediatric sepsis (Phoenix criteria, 2024)."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 1,
+      "tables": 0
+    },
+    {
+      "quiz": 16,
+      "questionNumber": 8,
+      "id": 11608,
+      "sourceSlides": [
+        336,
+        337
+      ],
+      "citation": "Quiz 16 — Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 220,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 16,
+      "questionNumber": 9,
+      "id": 11609,
+      "sourceSlides": [
+        338,
+        339
+      ],
+      "citation": "Quiz 16 — Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 216,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 16,
+      "questionNumber": 10,
+      "id": 11610,
+      "sourceSlides": [
+        340,
+        341
+      ],
+      "citation": "Quiz 16 — Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 161,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 17,
+      "questionNumber": 1,
+      "id": 11701,
+      "sourceSlides": [
+        343,
+        344
+      ],
+      "citation": "Quiz 17 — Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 267,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 17,
+      "questionNumber": 2,
+      "id": 11702,
+      "sourceSlides": [
+        345,
+        346
+      ],
+      "citation": "Quiz 17 — Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 229,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 17,
+      "questionNumber": 3,
+      "id": 11703,
+      "sourceSlides": [
+        347,
+        348
+      ],
+      "citation": "Quiz 17 — Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 265,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 17,
+      "questionNumber": 4,
+      "id": 11704,
+      "sourceSlides": [
+        349,
+        350
+      ],
+      "citation": "Quiz 17 — Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 154,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 17,
+      "questionNumber": 5,
+      "id": 11705,
+      "sourceSlides": [
+        351,
+        352
+      ],
+      "citation": "Quiz 17 — Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 268,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 17,
+      "questionNumber": 6,
+      "id": 11706,
+      "sourceSlides": [
+        353,
+        354
+      ],
+      "citation": "Quiz 17 — Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 294,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 17,
+      "questionNumber": 7,
+      "id": 11707,
+      "sourceSlides": [
+        355,
+        356
+      ],
+      "citation": "Quiz 17 — Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 238,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 17,
+      "questionNumber": 8,
+      "id": 11708,
+      "sourceSlides": [
+        357,
+        358
+      ],
+      "citation": "Quiz 17 — Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 293,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 17,
+      "questionNumber": 9,
+      "id": 11709,
+      "sourceSlides": [
+        359,
+        360
+      ],
+      "citation": "Quiz 17 — Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 227,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 17,
+      "questionNumber": 10,
+      "id": 11710,
+      "sourceSlides": [
+        361,
+        362
+      ],
+      "citation": "Quiz 17 — Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 244,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 18,
+      "questionNumber": 1,
+      "id": 11801,
+      "sourceSlides": [
+        364,
+        365
+      ],
+      "citation": "Quiz 18 — Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 280,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 18,
+      "questionNumber": 2,
+      "id": 11802,
+      "sourceSlides": [
+        366,
+        367
+      ],
+      "citation": "Quiz 18 — Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 376,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 18,
+      "questionNumber": 3,
+      "id": 11803,
+      "sourceSlides": [
+        368,
+        369
+      ],
+      "citation": "Quiz 18 — Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 90,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 18,
+      "questionNumber": 4,
+      "id": 11804,
+      "sourceSlides": [
+        370,
+        371
+      ],
+      "citation": "Quiz 18 — Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 236,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 18,
+      "questionNumber": 5,
+      "id": 11805,
+      "sourceSlides": [
+        372,
+        373
+      ],
+      "citation": "Quiz 18 — Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 308,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 18,
+      "questionNumber": 6,
+      "id": 11806,
+      "sourceSlides": [
+        374,
+        375
+      ],
+      "citation": "Quiz 18 — Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 303,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 18,
+      "questionNumber": 7,
+      "id": 11807,
+      "sourceSlides": [
+        376,
+        377
+      ],
+      "citation": "Quiz 18 — Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 323,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 18,
+      "questionNumber": 8,
+      "id": 11808,
+      "sourceSlides": [
+        378,
+        379
+      ],
+      "citation": "Quiz 18 — Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 233,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 18,
+      "questionNumber": 9,
+      "id": 11809,
+      "sourceSlides": [
+        380,
+        381
+      ],
+      "citation": "Quiz 18 — Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 133,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 18,
+      "questionNumber": 10,
+      "id": 11810,
+      "sourceSlides": [
+        382,
+        383
+      ],
+      "citation": "Quiz 18 — Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 325,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 1,
+      "id": 11901,
+      "sourceSlides": [
+        385,
+        386
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 165,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 2,
+      "id": 11902,
+      "sourceSlides": [
+        387,
+        388
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 100,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 3,
+      "id": 11903,
+      "sourceSlides": [
+        389,
+        390
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B"
+      ],
+      "answer": "B",
+      "explanationCharacters": 148,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 4,
+      "id": 11904,
+      "sourceSlides": [
+        391,
+        392
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 160,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Adult respiratory ECMO has grown substantially since this quiz (2017)."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 5,
+      "id": 11905,
+      "sourceSlides": [
+        393,
+        394
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 132,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 6,
+      "id": 11906,
+      "sourceSlides": [
+        395,
+        396
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 85,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 7,
+      "id": 11907,
+      "sourceSlides": [
+        397,
+        398
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 240,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 8,
+      "id": 11908,
+      "sourceSlides": [
+        399,
+        400
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 139,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 9,
+      "id": 11909,
+      "sourceSlides": [
+        401,
+        402
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 155,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 10,
+      "id": 11910,
+      "sourceSlides": [
+        403,
+        404
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B"
+      ],
+      "answer": "A",
+      "explanationCharacters": 36,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Some studies (e.g., Rich et al., 1998) found femoro-atrial flow (drain IVC, return to RA) gave less recirculation; check local practice."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 11,
+      "id": 11911,
+      "sourceSlides": [
+        405,
+        406
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 150,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 12,
+      "id": 11912,
+      "sourceSlides": [
+        407,
+        408
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 159,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 13,
+      "id": 11913,
+      "sourceSlides": [
+        409,
+        410
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 197,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 14,
+      "id": 11914,
+      "sourceSlides": [
+        411,
+        412
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 137,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 15,
+      "id": 11915,
+      "sourceSlides": [
+        413,
+        414
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 93,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 16,
+      "id": 11916,
+      "sourceSlides": [
+        415,
+        416
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 148,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 17,
+      "id": 11917,
+      "sourceSlides": [
+        417,
+        418
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 137,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 18,
+      "id": 11918,
+      "sourceSlides": [
+        419,
+        420
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 139,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 19,
+      "id": 11919,
+      "sourceSlides": [
+        421,
+        422
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 136,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 19,
+      "questionNumber": 20,
+      "id": 11920,
+      "sourceSlides": [
+        423,
+        424
+      ],
+      "citation": "Quiz 19 — Khilnani, JPCC 2017;4(2):106-107 (ECMO)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 170,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 1,
+      "id": 12001,
+      "sourceSlides": [
+        426,
+        427
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 332,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 2,
+      "id": 12002,
+      "sourceSlides": [
+        428,
+        429
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 324,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 3,
+      "id": 12003,
+      "sourceSlides": [
+        430,
+        431
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 245,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 4,
+      "id": 12004,
+      "sourceSlides": [
+        432,
+        433
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 241,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 5,
+      "id": 12005,
+      "sourceSlides": [
+        434,
+        435
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 243,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 6,
+      "id": 12006,
+      "sourceSlides": [
+        436,
+        437
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 234,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 7,
+      "id": 12007,
+      "sourceSlides": [
+        438,
+        439
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 260,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 8,
+      "id": 12008,
+      "sourceSlides": [
+        440,
+        441
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 205,
+      "sourceNotes": [
+        "Option D is also factually true (M protein is a GAS virulence factor); the keyed best answer is A."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 9,
+      "id": 12009,
+      "sourceSlides": [
+        442,
+        443
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 308,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 10,
+      "id": 12010,
+      "sourceSlides": [
+        444,
+        445
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 293,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 11,
+      "id": 12011,
+      "sourceSlides": [
+        446,
+        447
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 231,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 12,
+      "id": 12012,
+      "sourceSlides": [
+        448,
+        449
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 306,
+      "sourceNotes": [
+        "In practice, IV acyclovir should be started immediately in an immunocompromised child with varicella pneumonitis alongside PCR confirmation."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 13,
+      "id": 12013,
+      "sourceSlides": [
+        450,
+        451
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 325,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 14,
+      "id": 12014,
+      "sourceSlides": [
+        452,
+        453
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 303,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 20,
+      "questionNumber": 15,
+      "id": 12015,
+      "sourceSlides": [
+        454,
+        455
+      ],
+      "citation": "Quiz 20 — Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 249,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 1,
+      "id": 12101,
+      "sourceSlides": [
+        457,
+        458
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 271,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 2,
+      "id": 12102,
+      "sourceSlides": [
+        459,
+        460
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 311,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 3,
+      "id": 12103,
+      "sourceSlides": [
+        461,
+        462
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 201,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 4,
+      "id": 12104,
+      "sourceSlides": [
+        463,
+        464
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 145,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 5,
+      "id": 12105,
+      "sourceSlides": [
+        465,
+        466
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 85,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 6,
+      "id": 12106,
+      "sourceSlides": [
+        467,
+        468
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 281,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 7,
+      "id": 12107,
+      "sourceSlides": [
+        469,
+        470
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 179,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 8,
+      "id": 12108,
+      "sourceSlides": [
+        471,
+        472
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 218,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 9,
+      "id": 12109,
+      "sourceSlides": [
+        473,
+        474
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 233,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 10,
+      "id": 12110,
+      "sourceSlides": [
+        475,
+        476
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 299,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 11,
+      "id": 12111,
+      "sourceSlides": [
+        477,
+        478
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 255,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 12,
+      "id": 12112,
+      "sourceSlides": [
+        479,
+        480
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 197,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 13,
+      "id": 12113,
+      "sourceSlides": [
+        481,
+        482
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 190,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 14,
+      "id": 12114,
+      "sourceSlides": [
+        483,
+        484
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 176,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 15,
+      "id": 12115,
+      "sourceSlides": [
+        485,
+        486
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 115,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 16,
+      "id": 12116,
+      "sourceSlides": [
+        487,
+        488
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 204,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 17,
+      "id": 12117,
+      "sourceSlides": [
+        489,
+        490
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 184,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 18,
+      "id": 12118,
+      "sourceSlides": [
+        491,
+        492
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 200,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 19,
+      "id": 12119,
+      "sourceSlides": [
+        493,
+        494
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 222,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 21,
+      "questionNumber": 20,
+      "id": 12120,
+      "sourceSlides": [
+        495,
+        496
+      ],
+      "citation": "Quiz 21 — JPCC 2017;4(4):121-128 (Critical care endocrinology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 153,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 22,
+      "questionNumber": 1,
+      "id": 12201,
+      "sourceSlides": [
+        498,
+        499
+      ],
+      "citation": "Quiz 22 — Khilnani, JPCC 2016;3(1):65-66 (Physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 215,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 22,
+      "questionNumber": 2,
+      "id": 12202,
+      "sourceSlides": [
+        500,
+        501
+      ],
+      "citation": "Quiz 22 — Khilnani, JPCC 2016;3(1):65-66 (Physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 156,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 22,
+      "questionNumber": 3,
+      "id": 12203,
+      "sourceSlides": [
+        502,
+        503
+      ],
+      "citation": "Quiz 22 — Khilnani, JPCC 2016;3(1):65-66 (Physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 129,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Current evidence emphasises the podocyte slit diaphragm (nephrin) as a key size barrier."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 22,
+      "questionNumber": 4,
+      "id": 12204,
+      "sourceSlides": [
+        504,
+        505
+      ],
+      "citation": "Quiz 22 — Khilnani, JPCC 2016;3(1):65-66 (Physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 234,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 22,
+      "questionNumber": 5,
+      "id": 12205,
+      "sourceSlides": [
+        506,
+        507
+      ],
+      "citation": "Quiz 22 — Khilnani, JPCC 2016;3(1):65-66 (Physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 271,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 22,
+      "questionNumber": 6,
+      "id": 12206,
+      "sourceSlides": [
+        508,
+        509
+      ],
+      "citation": "Quiz 22 — Khilnani, JPCC 2016;3(1):65-66 (Physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 199,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 22,
+      "questionNumber": 7,
+      "id": 12207,
+      "sourceSlides": [
+        510,
+        511
+      ],
+      "citation": "Quiz 22 — Khilnani, JPCC 2016;3(1):65-66 (Physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 122,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 22,
+      "questionNumber": 8,
+      "id": 12208,
+      "sourceSlides": [
+        512,
+        513
+      ],
+      "citation": "Quiz 22 — Khilnani, JPCC 2016;3(1):65-66 (Physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 99,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. CCK can modestly inhibit acid via somatostatin; the keyed answer treats it as non-regulatory."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 22,
+      "questionNumber": 9,
+      "id": 12209,
+      "sourceSlides": [
+        514,
+        515
+      ],
+      "citation": "Quiz 22 — Khilnani, JPCC 2016;3(1):65-66 (Physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 142,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 22,
+      "questionNumber": 10,
+      "id": 12210,
+      "sourceSlides": [
+        516,
+        517
+      ],
+      "citation": "Quiz 22 — Khilnani, JPCC 2016;3(1):65-66 (Physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 108,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 23,
+      "questionNumber": 1,
+      "id": 12301,
+      "sourceSlides": [
+        519,
+        520
+      ],
+      "citation": "Quiz 23 — Khilnani, JPCC 2016;3(2):74-76",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 262,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 23,
+      "questionNumber": 2,
+      "id": 12302,
+      "sourceSlides": [
+        521,
+        522
+      ],
+      "citation": "Quiz 23 — Khilnani, JPCC 2016;3(2):74-76",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 203,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 23,
+      "questionNumber": 3,
+      "id": 12303,
+      "sourceSlides": [
+        523,
+        524
+      ],
+      "citation": "Quiz 23 — Khilnani, JPCC 2016;3(2):74-76",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 255,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 23,
+      "questionNumber": 4,
+      "id": 12304,
+      "sourceSlides": [
+        525,
+        526
+      ],
+      "citation": "Quiz 23 — Khilnani, JPCC 2016;3(2):74-76",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 135,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Current evidence suggests ketamine does not raise ICP in ventilated patients and preserves BP; many now favour it or etomidate in haemodynamically unstable TBI."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 23,
+      "questionNumber": 5,
+      "id": 12305,
+      "sourceSlides": [
+        527,
+        528
+      ],
+      "citation": "Quiz 23 — Khilnani, JPCC 2016;3(2):74-76",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 184,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 23,
+      "questionNumber": 6,
+      "id": 12306,
+      "sourceSlides": [
+        529,
+        530
+      ],
+      "citation": "Quiz 23 — Khilnani, JPCC 2016;3(2):74-76",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 140,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Cannon a waves classically indicate AV dissociation (e.g., JET, complete heart block) — the atrium contracts against a closed tricuspid valve; TR produces large v waves."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 23,
+      "questionNumber": 7,
+      "id": 12307,
+      "sourceSlides": [
+        531,
+        532
+      ],
+      "citation": "Quiz 23 — Khilnani, JPCC 2016;3(2):74-76",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 179,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 23,
+      "questionNumber": 8,
+      "id": 12308,
+      "sourceSlides": [
+        533,
+        534
+      ],
+      "citation": "Quiz 23 — Khilnani, JPCC 2016;3(2):74-76",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 173,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 23,
+      "questionNumber": 9,
+      "id": 12309,
+      "sourceSlides": [
+        535,
+        536
+      ],
+      "citation": "Quiz 23 — Khilnani, JPCC 2016;3(2):74-76",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 312,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 23,
+      "questionNumber": 10,
+      "id": 12310,
+      "sourceSlides": [
+        537,
+        538
+      ],
+      "citation": "Quiz 23 — Khilnani, JPCC 2016;3(2):74-76",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 187,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 24,
+      "questionNumber": 1,
+      "id": 12401,
+      "sourceSlides": [
+        540,
+        541
+      ],
+      "citation": "Quiz 24 — Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 188,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 24,
+      "questionNumber": 2,
+      "id": 12402,
+      "sourceSlides": [
+        542,
+        543
+      ],
+      "citation": "Quiz 24 — Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 118,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 24,
+      "questionNumber": 3,
+      "id": 12403,
+      "sourceSlides": [
+        544,
+        545
+      ],
+      "citation": "Quiz 24 — Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 157,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 24,
+      "questionNumber": 4,
+      "id": 12404,
+      "sourceSlides": [
+        546,
+        547
+      ],
+      "citation": "Quiz 24 — Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 229,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 24,
+      "questionNumber": 5,
+      "id": 12405,
+      "sourceSlides": [
+        548,
+        549
+      ],
+      "citation": "Quiz 24 — Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 179,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 24,
+      "questionNumber": 6,
+      "id": 12406,
+      "sourceSlides": [
+        550,
+        551
+      ],
+      "citation": "Quiz 24 — Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 170,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 24,
+      "questionNumber": 7,
+      "id": 12407,
+      "sourceSlides": [
+        552,
+        553
+      ],
+      "citation": "Quiz 24 — Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 156,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 24,
+      "questionNumber": 8,
+      "id": 12408,
+      "sourceSlides": [
+        554,
+        555
+      ],
+      "citation": "Quiz 24 — Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 207,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 24,
+      "questionNumber": 9,
+      "id": 12409,
+      "sourceSlides": [
+        556,
+        557
+      ],
+      "citation": "Quiz 24 — Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 150,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 24,
+      "questionNumber": 10,
+      "id": 12410,
+      "sourceSlides": [
+        558,
+        559
+      ],
+      "citation": "Quiz 24 — Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 160,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 25,
+      "questionNumber": 1,
+      "id": 12501,
+      "sourceSlides": [
+        561,
+        562
+      ],
+      "citation": "Quiz 25 — Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 271,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 25,
+      "questionNumber": 2,
+      "id": 12502,
+      "sourceSlides": [
+        563,
+        564
+      ],
+      "citation": "Quiz 25 — Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 142,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 25,
+      "questionNumber": 3,
+      "id": 12503,
+      "sourceSlides": [
+        565,
+        566
+      ],
+      "citation": "Quiz 25 — Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 130,
+      "sourceNotes": [
+        "Option B is also true per the same rationale; the keyed best answer is E."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 25,
+      "questionNumber": 4,
+      "id": 12504,
+      "sourceSlides": [
+        567,
+        568
+      ],
+      "citation": "Quiz 25 — Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 185,
+      "sourceNotes": [
+        "The source also says haemofiltration prolongs the half-life (option B); age dependence is the keyed answer."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 25,
+      "questionNumber": 5,
+      "id": 12505,
+      "sourceSlides": [
+        569,
+        570
+      ],
+      "citation": "Quiz 25 — Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 217,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 25,
+      "questionNumber": 6,
+      "id": 12506,
+      "sourceSlides": [
+        571,
+        572
+      ],
+      "citation": "Quiz 25 — Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 218,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 25,
+      "questionNumber": 7,
+      "id": 12507,
+      "sourceSlides": [
+        573,
+        574
+      ],
+      "citation": "Quiz 25 — Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 151,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 25,
+      "questionNumber": 8,
+      "id": 12508,
+      "sourceSlides": [
+        575,
+        576
+      ],
+      "citation": "Quiz 25 — Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 304,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 25,
+      "questionNumber": 9,
+      "id": 12509,
+      "sourceSlides": [
+        577,
+        578
+      ],
+      "citation": "Quiz 25 — Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 267,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 25,
+      "questionNumber": 10,
+      "id": 12510,
+      "sourceSlides": [
+        579,
+        580
+      ],
+      "citation": "Quiz 25 — Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 254,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 26,
+      "questionNumber": 1,
+      "id": 12601,
+      "sourceSlides": [
+        582,
+        583
+      ],
+      "citation": "Quiz 26 — Jerath, JPCC 2015;2(2):78-80",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 253,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 26,
+      "questionNumber": 2,
+      "id": 12602,
+      "sourceSlides": [
+        584,
+        585
+      ],
+      "citation": "Quiz 26 — Jerath, JPCC 2015;2(2):78-80",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 230,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 26,
+      "questionNumber": 3,
+      "id": 12603,
+      "sourceSlides": [
+        586,
+        587
+      ],
+      "citation": "Quiz 26 — Jerath, JPCC 2015;2(2):78-80",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 121,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 26,
+      "questionNumber": 4,
+      "id": 12604,
+      "sourceSlides": [
+        588,
+        589
+      ],
+      "citation": "Quiz 26 — Jerath, JPCC 2015;2(2):78-80",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 144,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 26,
+      "questionNumber": 5,
+      "id": 12605,
+      "sourceSlides": [
+        590,
+        591
+      ],
+      "citation": "Quiz 26 — Jerath, JPCC 2015;2(2):78-80",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 160,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 26,
+      "questionNumber": 6,
+      "id": 12606,
+      "sourceSlides": [
+        592,
+        593
+      ],
+      "citation": "Quiz 26 — Jerath, JPCC 2015;2(2):78-80",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 186,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 26,
+      "questionNumber": 7,
+      "id": 12607,
+      "sourceSlides": [
+        594,
+        595
+      ],
+      "citation": "Quiz 26 — Jerath, JPCC 2015;2(2):78-80",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 152,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 26,
+      "questionNumber": 8,
+      "id": 12608,
+      "sourceSlides": [
+        596,
+        597
+      ],
+      "citation": "Quiz 26 — Jerath, JPCC 2015;2(2):78-80",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 174,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 26,
+      "questionNumber": 9,
+      "id": 12609,
+      "sourceSlides": [
+        598,
+        599
+      ],
+      "citation": "Quiz 26 — Jerath, JPCC 2015;2(2):78-80",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 154,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 26,
+      "questionNumber": 10,
+      "id": 12610,
+      "sourceSlides": [
+        600,
+        601
+      ],
+      "citation": "Quiz 26 — Jerath, JPCC 2015;2(2):78-80",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 204,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 1,
+      "id": 12701,
+      "sourceSlides": [
+        603,
+        604
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 191,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 2,
+      "id": 12702,
+      "sourceSlides": [
+        605,
+        606
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 157,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 3,
+      "id": 12703,
+      "sourceSlides": [
+        607,
+        608
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 158,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 4,
+      "id": 12704,
+      "sourceSlides": [
+        609,
+        610
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 210,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 5,
+      "id": 12705,
+      "sourceSlides": [
+        611,
+        612
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 181,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 6,
+      "id": 12706,
+      "sourceSlides": [
+        613,
+        614
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 183,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 7,
+      "id": 12707,
+      "sourceSlides": [
+        615,
+        616
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 223,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 8,
+      "id": 12708,
+      "sourceSlides": [
+        617,
+        618
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 126,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 1
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 9,
+      "id": 12709,
+      "sourceSlides": [
+        619,
+        620
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 121,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 10,
+      "id": 12710,
+      "sourceSlides": [
+        621,
+        622
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 142,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 11,
+      "id": 12711,
+      "sourceSlides": [
+        623,
+        624
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 186,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 12,
+      "id": 12712,
+      "sourceSlides": [
+        625,
+        626
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 119,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 13,
+      "id": 12713,
+      "sourceSlides": [
+        627,
+        628
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 170,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 27,
+      "questionNumber": 14,
+      "id": 12714,
+      "sourceSlides": [
+        629,
+        630
+      ],
+      "citation": "Quiz 27 — Khilnani, JPCC 2015;2(3):88-90",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 137,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 1,
+      "id": 12801,
+      "sourceSlides": [
+        632,
+        633
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 222,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 2,
+      "id": 12802,
+      "sourceSlides": [
+        634,
+        635
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 191,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 3,
+      "id": 12803,
+      "sourceSlides": [
+        636,
+        637
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "B",
+      "explanationCharacters": 166,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 4,
+      "id": 12804,
+      "sourceSlides": [
+        638,
+        639
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 170,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 5,
+      "id": 12805,
+      "sourceSlides": [
+        640,
+        641
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 123,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 6,
+      "id": 12806,
+      "sourceSlides": [
+        642,
+        643
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 37,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Statement A is generally true (PGE2/PGI2, dopamine via D1 and bradykinin are vasodilators), so this key appears flawed."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 7,
+      "id": 12807,
+      "sourceSlides": [
+        644,
+        645
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 131,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 8,
+      "id": 12808,
+      "sourceSlides": [
+        646,
+        647
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 173,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 9,
+      "id": 12809,
+      "sourceSlides": [
+        648,
+        649
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 189,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 10,
+      "id": 12810,
+      "sourceSlides": [
+        650,
+        651
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 128,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 11,
+      "id": 12811,
+      "sourceSlides": [
+        652,
+        653
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 117,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 12,
+      "id": 12812,
+      "sourceSlides": [
+        654,
+        655
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 86,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 28,
+      "questionNumber": 13,
+      "id": 12813,
+      "sourceSlides": [
+        656,
+        657
+      ],
+      "citation": "Quiz 28 — Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 172,
+      "sourceNotes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 29,
+      "questionNumber": 1,
+      "id": 12901,
+      "sourceSlides": [
+        659,
+        660
+      ],
+      "citation": "Quiz 29 — Jerath, JPCC 2014;1(2):86-87",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 240,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 29,
+      "questionNumber": 2,
+      "id": 12902,
+      "sourceSlides": [
+        661,
+        662
+      ],
+      "citation": "Quiz 29 — Jerath, JPCC 2014;1(2):86-87",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "D",
+      "explanationCharacters": 122,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 29,
+      "questionNumber": 3,
+      "id": 12903,
+      "sourceSlides": [
+        663,
+        664
+      ],
+      "citation": "Quiz 29 — Jerath, JPCC 2014;1(2):86-87",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 214,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 29,
+      "questionNumber": 4,
+      "id": 12904,
+      "sourceSlides": [
+        665,
+        666
+      ],
+      "citation": "Quiz 29 — Jerath, JPCC 2014;1(2):86-87",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 168,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 29,
+      "questionNumber": 5,
+      "id": 12905,
+      "sourceSlides": [
+        667,
+        668
+      ],
+      "citation": "Quiz 29 — Jerath, JPCC 2014;1(2):86-87",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 214,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 29,
+      "questionNumber": 6,
+      "id": 12906,
+      "sourceSlides": [
+        669,
+        670
+      ],
+      "citation": "Quiz 29 — Jerath, JPCC 2014;1(2):86-87",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 79,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 29,
+      "questionNumber": 7,
+      "id": 12907,
+      "sourceSlides": [
+        671,
+        672
+      ],
+      "citation": "Quiz 29 — Jerath, JPCC 2014;1(2):86-87",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 172,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 29,
+      "questionNumber": 8,
+      "id": 12908,
+      "sourceSlides": [
+        673,
+        674
+      ],
+      "citation": "Quiz 29 — Jerath, JPCC 2014;1(2):86-87",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 208,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 29,
+      "questionNumber": 9,
+      "id": 12909,
+      "sourceSlides": [
+        675,
+        676
+      ],
+      "citation": "Quiz 29 — Jerath, JPCC 2014;1(2):86-87",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 244,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 29,
+      "questionNumber": 10,
+      "id": 12910,
+      "sourceSlides": [
+        677,
+        678
+      ],
+      "citation": "Quiz 29 — Jerath, JPCC 2014;1(2):86-87",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 223,
+      "sourceNotes": [],
+      "questionFigures": 1,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 30,
+      "questionNumber": 1,
+      "id": 13001,
+      "sourceSlides": [
+        680,
+        681
+      ],
+      "citation": "Quiz 30 — Jerath, JPCC 2014;1(3):214-216",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 250,
+      "sourceNotes": [
+        "Option A is also good practice (recurrent/atypical croup warrants airway evaluation), but the keyed answer is C."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 30,
+      "questionNumber": 2,
+      "id": 13002,
+      "sourceSlides": [
+        682,
+        683
+      ],
+      "citation": "Quiz 30 — Jerath, JPCC 2014;1(3):214-216",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 221,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 30,
+      "questionNumber": 3,
+      "id": 13003,
+      "sourceSlides": [
+        684,
+        685
+      ],
+      "citation": "Quiz 30 — Jerath, JPCC 2014;1(3):214-216",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 230,
+      "sourceNotes": [
+        "The printed key is 'E', but the source's own rationale contradicts every statement — treat this item as flawed."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 30,
+      "questionNumber": 4,
+      "id": 13004,
+      "sourceSlides": [
+        686,
+        687
+      ],
+      "citation": "Quiz 30 — Jerath, JPCC 2014;1(3):214-216",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 201,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 30,
+      "questionNumber": 5,
+      "id": 13005,
+      "sourceSlides": [
+        688,
+        689
+      ],
+      "citation": "Quiz 30 — Jerath, JPCC 2014;1(3):214-216",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 219,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 30,
+      "questionNumber": 6,
+      "id": 13006,
+      "sourceSlides": [
+        690,
+        691
+      ],
+      "citation": "Quiz 30 — Jerath, JPCC 2014;1(3):214-216",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 166,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 30,
+      "questionNumber": 7,
+      "id": 13007,
+      "sourceSlides": [
+        692,
+        693
+      ],
+      "citation": "Quiz 30 — Jerath, JPCC 2014;1(3):214-216",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 201,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 30,
+      "questionNumber": 8,
+      "id": 13008,
+      "sourceSlides": [
+        694,
+        695
+      ],
+      "citation": "Quiz 30 — Jerath, JPCC 2014;1(3):214-216",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 245,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 30,
+      "questionNumber": 9,
+      "id": 13009,
+      "sourceSlides": [
+        696,
+        697
+      ],
+      "citation": "Quiz 30 — Jerath, JPCC 2014;1(3):214-216",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 170,
+      "sourceNotes": [
+        "A later Cochrane update suggests steroids may also reduce reintubation in high-risk adults."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 30,
+      "questionNumber": 10,
+      "id": 13010,
+      "sourceSlides": [
+        698,
+        699
+      ],
+      "citation": "Quiz 30 — Jerath, JPCC 2014;1(3):214-216",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "D",
+      "explanationCharacters": 182,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 31,
+      "questionNumber": 1,
+      "id": 13101,
+      "sourceSlides": [
+        701,
+        702
+      ],
+      "citation": "Quiz 31 — Khilnani, JPCC 2014;1(4):324-328",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 178,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 31,
+      "questionNumber": 2,
+      "id": 13102,
+      "sourceSlides": [
+        703,
+        704
+      ],
+      "citation": "Quiz 31 — Khilnani, JPCC 2014;1(4):324-328",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 193,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 31,
+      "questionNumber": 3,
+      "id": 13103,
+      "sourceSlides": [
+        705,
+        706
+      ],
+      "citation": "Quiz 31 — Khilnani, JPCC 2014;1(4):324-328",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanationCharacters": 222,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 31,
+      "questionNumber": 4,
+      "id": 13104,
+      "sourceSlides": [
+        707,
+        708
+      ],
+      "citation": "Quiz 31 — Khilnani, JPCC 2014;1(4):324-328",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "A",
+      "explanationCharacters": 114,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 31,
+      "questionNumber": 5,
+      "id": 13105,
+      "sourceSlides": [
+        709,
+        710
+      ],
+      "citation": "Quiz 31 — Khilnani, JPCC 2014;1(4):324-328",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 245,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 31,
+      "questionNumber": 6,
+      "id": 13106,
+      "sourceSlides": [
+        711,
+        712
+      ],
+      "citation": "Quiz 31 — Khilnani, JPCC 2014;1(4):324-328",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 232,
+      "sourceNotes": [
+        "Cross-reactivity between sulfonamide antibiotics and non-antibiotic sulfonamides such as furosemide is now considered uncommon."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 31,
+      "questionNumber": 7,
+      "id": 13107,
+      "sourceSlides": [
+        713,
+        714
+      ],
+      "citation": "Quiz 31 — Khilnani, JPCC 2014;1(4):324-328",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "E",
+      "explanationCharacters": 246,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 31,
+      "questionNumber": 8,
+      "id": 13108,
+      "sourceSlides": [
+        715,
+        716
+      ],
+      "citation": "Quiz 31 — Khilnani, JPCC 2014;1(4):324-328",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "A",
+      "explanationCharacters": 233,
+      "sourceNotes": [
+        "Current practice for ESBL meningitis is a carbapenem (e.g., meropenem); aminoglycosides penetrate CSF poorly as monotherapy."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 31,
+      "questionNumber": 9,
+      "id": 13109,
+      "sourceSlides": [
+        717,
+        718
+      ],
+      "citation": "Quiz 31 — Khilnani, JPCC 2014;1(4):324-328",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "C",
+      "explanationCharacters": 251,
+      "sourceNotes": [
+        "The original clinical photograph is not included in the source PDF."
+      ],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    },
+    {
+      "quiz": 31,
+      "questionNumber": 10,
+      "id": 13110,
+      "sourceSlides": [
+        719,
+        720
+      ],
+      "citation": "Quiz 31 — Khilnani, JPCC 2014;1(4):324-328",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": "B",
+      "explanationCharacters": 98,
+      "sourceNotes": [],
+      "questionFigures": 0,
+      "explanationFigures": 0,
+      "tables": 0
+    }
+  ],
+  "assets": [
+    {
+      "filename": "quiz01-q09-question-s020-1.png",
+      "sha256": "17a07a1f8cf2d2d755924277bef5cf19c8b3168c820f76015ab5b9192a6210d5",
+      "quiz": 1,
+      "questionNumber": 9,
+      "slide": 20,
+      "role": "question"
+    },
+    {
+      "filename": "quiz02-q04-question-s031-1.png",
+      "sha256": "f8df57bf8a8e09445799e96d90a96d866727ccaecc57d5d4b262cf06f99317b3",
+      "quiz": 2,
+      "questionNumber": 4,
+      "slide": 31,
+      "role": "question"
+    },
+    {
+      "filename": "quiz03-q03-question-s050-1.png",
+      "sha256": "a95009d1402ef92d6078cc4db8cc927b2956c94f0227830320e05dc19b725c3f",
+      "quiz": 3,
+      "questionNumber": 3,
+      "slide": 50,
+      "role": "question"
+    },
+    {
+      "filename": "quiz03-q04-question-s052-1.png",
+      "sha256": "62787ff21568c7b83151d1c840b5978a25eb9fd423d111244aa4ffb761a58ea8",
+      "quiz": 3,
+      "questionNumber": 4,
+      "slide": 52,
+      "role": "question"
+    },
+    {
+      "filename": "quiz03-q06-question-s056-1.png",
+      "sha256": "fa4d7b269abe00166c1a5a477fbe2af512266befb3fa8b7be2ea82877dacd792",
+      "quiz": 3,
+      "questionNumber": 6,
+      "slide": 56,
+      "role": "question"
+    },
+    {
+      "filename": "quiz03-q07-question-s058-1.png",
+      "sha256": "677b9db8ecb87ae6c07436126a263eab32588acca0e62ce9c8cdd7750f5f4c43",
+      "quiz": 3,
+      "questionNumber": 7,
+      "slide": 58,
+      "role": "question"
+    },
+    {
+      "filename": "quiz04-q01-explanation-s069-1.png",
+      "sha256": "869629546b6dea266f10a773d71f260c5d0bd0d3b2315787439a7d41f7eea690",
+      "quiz": 4,
+      "questionNumber": 1,
+      "slide": 69,
+      "role": "explanation"
+    },
+    {
+      "filename": "quiz04-q02-question-s070-1.png",
+      "sha256": "24f922cd7b4e1564b44d4545a9310c5a531a2c657ea8d75971a9cac3170bbd03",
+      "quiz": 4,
+      "questionNumber": 2,
+      "slide": 70,
+      "role": "question"
+    },
+    {
+      "filename": "quiz11-q07-question-s227-1.png",
+      "sha256": "2cf814f7377fd52eaf54f5d5e44bc934823c33e5a2513bc112110df094eb445a",
+      "quiz": 11,
+      "questionNumber": 7,
+      "slide": 227,
+      "role": "question"
+    },
+    {
+      "filename": "quiz11-q07-explanation-s229-1.png",
+      "sha256": "dbf50239e1659ec1611649de9bb8222a274d8907e15a5f0f34eb8767464a71b5",
+      "quiz": 11,
+      "questionNumber": 7,
+      "slide": 229,
+      "role": "explanation"
+    },
+    {
+      "filename": "quiz12-q01-question-s237-1.png",
+      "sha256": "dba4643682b1991a1a5fe57a371a6a51e85ab4b0f13f2361c0cefd514d5eb421",
+      "quiz": 12,
+      "questionNumber": 1,
+      "slide": 237,
+      "role": "question"
+    },
+    {
+      "filename": "quiz12-q02-question-s239-1.png",
+      "sha256": "7d24f7664643148da5bb02ad121d7fbeaa463e73c5bfa6d64c6a42a4026819e5",
+      "quiz": 12,
+      "questionNumber": 2,
+      "slide": 239,
+      "role": "question"
+    },
+    {
+      "filename": "quiz12-q03-question-s241-1.png",
+      "sha256": "eda886046481d01b4ba6cd29384807745dfbca2cc682c979c1cd64d2d3cb09f1",
+      "quiz": 12,
+      "questionNumber": 3,
+      "slide": 241,
+      "role": "question"
+    },
+    {
+      "filename": "quiz12-q10-question-s255-1.png",
+      "sha256": "53ea1d76c1e92f06c33432cca52655f3947205aad813e2ff7082c7d34addef90",
+      "quiz": 12,
+      "questionNumber": 10,
+      "slide": 255,
+      "role": "question"
+    },
+    {
+      "filename": "quiz16-q07-explanation-s335-1.png",
+      "sha256": "d16c05db529ca19f159000268f215099c68fb0f7abca608d7be19698ccd38f4d",
+      "quiz": 16,
+      "questionNumber": 7,
+      "slide": 335,
+      "role": "explanation"
+    },
+    {
+      "filename": "quiz29-q09-question-s675-1.png",
+      "sha256": "2f2abfe567c59ae31a3e8eadc8b7182573d398c029e505b36f6a0d9b337ed36b",
+      "quiz": 29,
+      "questionNumber": 9,
+      "slide": 675,
+      "role": "question"
+    },
+    {
+      "filename": "quiz29-q10-question-s677-1.png",
+      "sha256": "671173b7d129c07eb02ff18b85cdd5512add8e668e821686900c10be247de0c6",
+      "quiz": 29,
+      "questionNumber": 10,
+      "slide": 677,
+      "role": "question"
+    }
+  ]
+}
