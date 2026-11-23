@@ -1,0 +1,2702 @@
+{
+  "name": "Self Assessment 2024",
+  "source": "Advanced Knowledge Assessment in Pediatric Critical Care 2024",
+  "sourceFile": "Self Assessment 2024 .pdf",
+  "sourceSha256": "f1e3fbb8114ad448abf0ae79e06b717860c01aa0f25869811359b62922d21300",
+  "pages": 79,
+  "questions": 100,
+  "withSourceAnswerKeys": 100,
+  "withExplanations": 100,
+  "figuresAndTables": 17,
+  "questionVisuals": 15,
+  "explanationVisuals": 2,
+  "provenance": "Native question text and complete commentaries; keyed choices taken from red option labels; 16 original image files and one source-rendered CT figure preserving its separately drawn yellow pointer. No clinical answers or explanations generated.",
+  "excludedNonContentImages": {
+    "backgroundTiles": 316,
+    "fullPageMarkupDuplicates": 2
+  },
+  "excludedPrintingArtifacts": [
+    {
+      "page": 38,
+      "text": "zz",
+      "bbox": [
+        72.0250015258789,
+        245.92022705078125,
+        80.62039947509766,
+        256.92022705078125
+      ],
+      "red": false
+    }
+  ],
+  "items": [
+    {
+      "number": 1,
+      "id": 14001,
+      "pages": [
+        2
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 207,
+      "explanationCharacters": 456,
+      "sourceTextLines": 19,
+      "figures": []
+    },
+    {
+      "number": 2,
+      "id": 14002,
+      "pages": [
+        2,
+        3
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 244,
+      "explanationCharacters": 487,
+      "sourceTextLines": 22,
+      "figures": []
+    },
+    {
+      "number": 3,
+      "id": 14003,
+      "pages": [
+        3
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 839,
+      "explanationCharacters": 1334,
+      "sourceTextLines": 31,
+      "figures": []
+    },
+    {
+      "number": 4,
+      "id": 14004,
+      "pages": [
+        4
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 581,
+      "explanationCharacters": 1562,
+      "sourceTextLines": 33,
+      "figures": []
+    },
+    {
+      "number": 5,
+      "id": 14005,
+      "pages": [
+        4,
+        5
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 817,
+      "explanationCharacters": 1024,
+      "sourceTextLines": 32,
+      "figures": []
+    },
+    {
+      "number": 6,
+      "id": 14006,
+      "pages": [
+        5,
+        6
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 397,
+      "explanationCharacters": 1333,
+      "sourceTextLines": 31,
+      "figures": []
+    },
+    {
+      "number": 7,
+      "id": 14007,
+      "pages": [
+        6
+      ],
+      "answer": "E",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 380,
+      "explanationCharacters": 284,
+      "sourceTextLines": 19,
+      "figures": []
+    },
+    {
+      "number": 8,
+      "id": 14008,
+      "pages": [
+        7
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 224,
+      "explanationCharacters": 799,
+      "sourceTextLines": 21,
+      "figures": []
+    },
+    {
+      "number": 9,
+      "id": 14009,
+      "pages": [
+        7,
+        8
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 473,
+      "explanationCharacters": 1130,
+      "sourceTextLines": 32,
+      "figures": [
+        {
+          "filename": "q009-explanation-p008-1.jpeg",
+          "questionNumber": 9,
+          "page": 8,
+          "role": "explanation",
+          "xref": 53,
+          "sha256": "34c8bd319b5286f349ffdfa109d84e551d162f5ed58002b4b8cb30cf914d059b",
+          "sourceImageSha256": "34c8bd319b5286f349ffdfa109d84e551d162f5ed58002b4b8cb30cf914d059b",
+          "extraction": "Original embedded image bytes",
+          "width": 1247,
+          "height": 582,
+          "sourceBounds": [
+            72.0,
+            307.58026123046875,
+            540.0,
+            526.1302490234375
+          ]
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": 14010,
+      "pages": [
+        8,
+        9
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 899,
+      "explanationCharacters": 774,
+      "sourceTextLines": 30,
+      "figures": []
+    },
+    {
+      "number": 11,
+      "id": 14011,
+      "pages": [
+        9
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 360,
+      "explanationCharacters": 299,
+      "sourceTextLines": 20,
+      "figures": []
+    },
+    {
+      "number": 12,
+      "id": 14012,
+      "pages": [
+        10
+      ],
+      "answer": "E",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 253,
+      "explanationCharacters": 588,
+      "sourceTextLines": 21,
+      "figures": [
+        {
+          "filename": "q012-question-p010-1.png",
+          "questionNumber": 12,
+          "page": 10,
+          "role": "question",
+          "xref": 63,
+          "sha256": "0aef42ba891fad6a859e80471a943ff45bb5eb7430699457397290789b3deb45",
+          "sourceImageSha256": "4701974e550980e5330a0e5a35016fe341213dfb43aebb9d53a0670cd5d84799",
+          "extraction": "Rendered source figure bounds at 144 dpi, including the supplied yellow pointer",
+          "width": 511,
+          "height": 510,
+          "sourceBounds": [
+            90.0,
+            123.13018798828125,
+            533.5,
+            425.3302001953125
+          ]
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "id": 14013,
+      "pages": [
+        11
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 338,
+      "explanationCharacters": 855,
+      "sourceTextLines": 25,
+      "figures": []
+    },
+    {
+      "number": 14,
+      "id": 14014,
+      "pages": [
+        11,
+        12
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 111,
+      "explanationCharacters": 364,
+      "sourceTextLines": 17,
+      "figures": []
+    },
+    {
+      "number": 15,
+      "id": 14015,
+      "pages": [
+        12
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 770,
+      "explanationCharacters": 324,
+      "sourceTextLines": 24,
+      "figures": []
+    },
+    {
+      "number": 16,
+      "id": 14016,
+      "pages": [
+        12,
+        13,
+        14
+      ],
+      "answer": "E",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 465,
+      "explanationCharacters": 1674,
+      "sourceTextLines": 30,
+      "figures": [
+        {
+          "filename": "q016-question-p013-1.jpeg",
+          "questionNumber": 16,
+          "page": 13,
+          "role": "question",
+          "xref": 76,
+          "sha256": "62f1513f77e6d3ef395f366cfb538dcacbafc1f52bdb973f57f2f84d9aca113a",
+          "sourceImageSha256": "62f1513f77e6d3ef395f366cfb538dcacbafc1f52bdb973f57f2f84d9aca113a",
+          "extraction": "Original embedded image bytes",
+          "width": 1111,
+          "height": 645,
+          "sourceBounds": [
+            90.0,
+            72.5902099609375,
+            506.7300109863281,
+            314.8402099609375
+          ]
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "id": 14017,
+      "pages": [
+        14
+      ],
+      "answer": "E",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 735,
+      "explanationCharacters": 1114,
+      "sourceTextLines": 32,
+      "figures": []
+    },
+    {
+      "number": 18,
+      "id": 14018,
+      "pages": [
+        15
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 905,
+      "explanationCharacters": 1779,
+      "sourceTextLines": 41,
+      "figures": []
+    },
+    {
+      "number": 19,
+      "id": 14019,
+      "pages": [
+        16
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 488,
+      "explanationCharacters": 1964,
+      "sourceTextLines": 33,
+      "figures": []
+    },
+    {
+      "number": 20,
+      "id": 14020,
+      "pages": [
+        17
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 419,
+      "explanationCharacters": 288,
+      "sourceTextLines": 18,
+      "figures": []
+    },
+    {
+      "number": 21,
+      "id": 14021,
+      "pages": [
+        17,
+        18
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 1000,
+      "explanationCharacters": 614,
+      "sourceTextLines": 30,
+      "figures": [
+        {
+          "filename": "q021-question-p017-1.jpeg",
+          "questionNumber": 21,
+          "page": 17,
+          "role": "question",
+          "xref": 95,
+          "sha256": "b8b72e0d37d047d011a24d1f9bef25743b06d24fea19bd9a9740a62323cbe5f4",
+          "sourceImageSha256": "b8b72e0d37d047d011a24d1f9bef25743b06d24fea19bd9a9740a62323cbe5f4",
+          "extraction": "Original embedded image bytes",
+          "width": 913,
+          "height": 240,
+          "sourceBounds": [
+            72.0,
+            584.270263671875,
+            539.719970703125,
+            699.1202392578125
+          ]
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "id": 14022,
+      "pages": [
+        18,
+        19
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 568,
+      "explanationCharacters": 1555,
+      "sourceTextLines": 35,
+      "figures": []
+    },
+    {
+      "number": 23,
+      "id": 14023,
+      "pages": [
+        19,
+        20
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 756,
+      "explanationCharacters": 1117,
+      "sourceTextLines": 32,
+      "figures": []
+    },
+    {
+      "number": 24,
+      "id": 14024,
+      "pages": [
+        20
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 858,
+      "explanationCharacters": 463,
+      "sourceTextLines": 27,
+      "figures": []
+    },
+    {
+      "number": 25,
+      "id": 14025,
+      "pages": [
+        20,
+        21
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 93,
+      "explanationCharacters": 650,
+      "sourceTextLines": 18,
+      "figures": [
+        {
+          "filename": "q025-question-p020-1.png",
+          "questionNumber": 25,
+          "page": 20,
+          "role": "question",
+          "xref": 108,
+          "sha256": "b06fe67f832882d17ba810b22c670a6b563c4d4c30925dbc50ece2d3c48cf291",
+          "sourceImageSha256": "b06fe67f832882d17ba810b22c670a6b563c4d4c30925dbc50ece2d3c48cf291",
+          "extraction": "Original embedded image bytes",
+          "width": 978,
+          "height": 217,
+          "sourceBounds": [
+            72.0,
+            633.961181640625,
+            539.7999877929688,
+            715.4111938476562
+          ]
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "id": 14026,
+      "pages": [
+        21,
+        22
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 691,
+      "explanationCharacters": 701,
+      "sourceTextLines": 27,
+      "figures": []
+    },
+    {
+      "number": 27,
+      "id": 14027,
+      "pages": [
+        22
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 823,
+      "explanationCharacters": 1091,
+      "sourceTextLines": 33,
+      "figures": []
+    },
+    {
+      "number": 28,
+      "id": 14028,
+      "pages": [
+        23,
+        24
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 538,
+      "explanationCharacters": 693,
+      "sourceTextLines": 21,
+      "figures": [
+        {
+          "filename": "q028-question-p023-1.jpeg",
+          "questionNumber": 28,
+          "page": 23,
+          "role": "question",
+          "xref": 121,
+          "sha256": "d20c63c989feffb41b67e879f12fd58a5afbb2a249e1eb63508934762e1757a3",
+          "sourceImageSha256": "d20c63c989feffb41b67e879f12fd58a5afbb2a249e1eb63508934762e1757a3",
+          "extraction": "Original embedded image bytes",
+          "width": 616,
+          "height": 671,
+          "sourceBounds": [
+            90.0,
+            207.36016845703125,
+            526.6500244140625,
+            463.8601989746094
+          ]
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "id": 14029,
+      "pages": [
+        24
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 452,
+      "explanationCharacters": 629,
+      "sourceTextLines": 21,
+      "figures": []
+    },
+    {
+      "number": 30,
+      "id": 14030,
+      "pages": [
+        24,
+        25
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 102,
+      "explanationCharacters": 947,
+      "sourceTextLines": 18,
+      "figures": []
+    },
+    {
+      "number": 31,
+      "id": 14031,
+      "pages": [
+        25
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 316,
+      "explanationCharacters": 783,
+      "sourceTextLines": 18,
+      "figures": []
+    },
+    {
+      "number": 32,
+      "id": 14032,
+      "pages": [
+        26
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 252,
+      "explanationCharacters": 607,
+      "sourceTextLines": 17,
+      "figures": [
+        {
+          "filename": "q032-question-p026-1.jpeg",
+          "questionNumber": 32,
+          "page": 26,
+          "role": "question",
+          "xref": 135,
+          "sha256": "d6ab143d1cf832da8c302ba6b0628673e62f2ad55a4bfd7dc7c7a3275693077c",
+          "sourceImageSha256": "d6ab143d1cf832da8c302ba6b0628673e62f2ad55a4bfd7dc7c7a3275693077c",
+          "extraction": "Original embedded image bytes",
+          "width": 759,
+          "height": 467,
+          "sourceBounds": [
+            165.4499969482422,
+            175.1302032470703,
+            464.52996826171875,
+            350.5802001953125
+          ]
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "id": 14033,
+      "pages": [
+        27
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 92,
+      "explanationCharacters": 928,
+      "sourceTextLines": 23,
+      "figures": []
+    },
+    {
+      "number": 34,
+      "id": 14034,
+      "pages": [
+        27,
+        28
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 502,
+      "explanationCharacters": 695,
+      "sourceTextLines": 26,
+      "figures": []
+    },
+    {
+      "number": 35,
+      "id": 14035,
+      "pages": [
+        28
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 438,
+      "explanationCharacters": 581,
+      "sourceTextLines": 21,
+      "figures": []
+    },
+    {
+      "number": 36,
+      "id": 14036,
+      "pages": [
+        28,
+        29
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 659,
+      "explanationCharacters": 1067,
+      "sourceTextLines": 31,
+      "figures": []
+    },
+    {
+      "number": 37,
+      "id": 14037,
+      "pages": [
+        29,
+        30
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 1118,
+      "explanationCharacters": 631,
+      "sourceTextLines": 31,
+      "figures": []
+    },
+    {
+      "number": 38,
+      "id": 14038,
+      "pages": [
+        30,
+        31
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 435,
+      "explanationCharacters": 1539,
+      "sourceTextLines": 34,
+      "figures": [
+        {
+          "filename": "q038-question-p030-1.jpeg",
+          "questionNumber": 38,
+          "page": 30,
+          "role": "question",
+          "xref": 152,
+          "sha256": "5d5b3a6c162251ab5a300543b92248c9735408b65876a539a8308f8bfffd01cc",
+          "sourceImageSha256": "5d5b3a6c162251ab5a300543b92248c9735408b65876a539a8308f8bfffd01cc",
+          "extraction": "Original embedded image bytes",
+          "width": 329,
+          "height": 458,
+          "sourceBounds": [
+            170.6300048828125,
+            378.3302001953125,
+            441.33001708984375,
+            560.0802001953125
+          ]
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "id": 14039,
+      "pages": [
+        31,
+        32
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 648,
+      "explanationCharacters": 958,
+      "sourceTextLines": 30,
+      "figures": []
+    },
+    {
+      "number": 40,
+      "id": 14040,
+      "pages": [
+        32
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 165,
+      "explanationCharacters": 1342,
+      "sourceTextLines": 27,
+      "figures": []
+    },
+    {
+      "number": 41,
+      "id": 14041,
+      "pages": [
+        33
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 312,
+      "explanationCharacters": 1012,
+      "sourceTextLines": 26,
+      "figures": []
+    },
+    {
+      "number": 42,
+      "id": 14042,
+      "pages": [
+        33,
+        34
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 490,
+      "explanationCharacters": 1463,
+      "sourceTextLines": 33,
+      "figures": []
+    },
+    {
+      "number": 43,
+      "id": 14043,
+      "pages": [
+        34,
+        35
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 643,
+      "explanationCharacters": 907,
+      "sourceTextLines": 29,
+      "figures": []
+    },
+    {
+      "number": 44,
+      "id": 14044,
+      "pages": [
+        35,
+        36
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 278,
+      "explanationCharacters": 1861,
+      "sourceTextLines": 33,
+      "figures": []
+    },
+    {
+      "number": 45,
+      "id": 14045,
+      "pages": [
+        36,
+        37
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 892,
+      "explanationCharacters": 1508,
+      "sourceTextLines": 39,
+      "figures": []
+    },
+    {
+      "number": 46,
+      "id": 14046,
+      "pages": [
+        37,
+        38
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 1045,
+      "explanationCharacters": 235,
+      "sourceTextLines": 27,
+      "figures": [
+        {
+          "filename": "q046-question-p037-1.jpeg",
+          "questionNumber": 46,
+          "page": 37,
+          "role": "question",
+          "xref": 184,
+          "sha256": "2548de1ee09f55fdf4afd20f9bf20fe5947fd5e11f5bd3a629b1fbc18e879202",
+          "sourceImageSha256": "2548de1ee09f55fdf4afd20f9bf20fe5947fd5e11f5bd3a629b1fbc18e879202",
+          "extraction": "Original embedded image bytes",
+          "width": 722,
+          "height": 631,
+          "sourceBounds": [
+            179.25,
+            358.12017822265625,
+            450.05999755859375,
+            607.5701904296875
+          ]
+        },
+        {
+          "filename": "q046-question-p038-2.jpeg",
+          "questionNumber": 46,
+          "page": 38,
+          "role": "question",
+          "xref": 189,
+          "sha256": "77654fac20c92b97f34334b39885d0ea807f13fdaa9225d73b03fa135aacb730",
+          "sourceImageSha256": "77654fac20c92b97f34334b39885d0ea807f13fdaa9225d73b03fa135aacb730",
+          "extraction": "Original embedded image bytes",
+          "width": 1128,
+          "height": 482,
+          "sourceBounds": [
+            80.69000244140625,
+            72.59017944335938,
+            538.7099609375,
+            253.690185546875
+          ]
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "id": 14047,
+      "pages": [
+        38,
+        39
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 399,
+      "explanationCharacters": 303,
+      "sourceTextLines": 20,
+      "figures": []
+    },
+    {
+      "number": 48,
+      "id": 14048,
+      "pages": [
+        39
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 131,
+      "explanationCharacters": 428,
+      "sourceTextLines": 18,
+      "figures": []
+    },
+    {
+      "number": 49,
+      "id": 14049,
+      "pages": [
+        39,
+        40
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 492,
+      "explanationCharacters": 514,
+      "sourceTextLines": 21,
+      "figures": []
+    },
+    {
+      "number": 50,
+      "id": 14050,
+      "pages": [
+        40,
+        41
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 906,
+      "explanationCharacters": 1102,
+      "sourceTextLines": 34,
+      "figures": []
+    },
+    {
+      "number": 51,
+      "id": 14051,
+      "pages": [
+        41
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 82,
+      "explanationCharacters": 355,
+      "sourceTextLines": 16,
+      "figures": []
+    },
+    {
+      "number": 52,
+      "id": 14052,
+      "pages": [
+        41,
+        42
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 538,
+      "explanationCharacters": 868,
+      "sourceTextLines": 28,
+      "figures": []
+    },
+    {
+      "number": 53,
+      "id": 14053,
+      "pages": [
+        42
+      ],
+      "answer": "E",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 365,
+      "explanationCharacters": 455,
+      "sourceTextLines": 23,
+      "figures": []
+    },
+    {
+      "number": 54,
+      "id": 14054,
+      "pages": [
+        42,
+        43
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 482,
+      "explanationCharacters": 1405,
+      "sourceTextLines": 39,
+      "figures": []
+    },
+    {
+      "number": 55,
+      "id": 14055,
+      "pages": [
+        43,
+        44
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 365,
+      "explanationCharacters": 2246,
+      "sourceTextLines": 42,
+      "figures": []
+    },
+    {
+      "number": 56,
+      "id": 14056,
+      "pages": [
+        44,
+        45
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 630,
+      "explanationCharacters": 708,
+      "sourceTextLines": 27,
+      "figures": []
+    },
+    {
+      "number": 57,
+      "id": 14057,
+      "pages": [
+        45,
+        46
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 552,
+      "explanationCharacters": 1316,
+      "sourceTextLines": 32,
+      "figures": []
+    },
+    {
+      "number": 58,
+      "id": 14058,
+      "pages": [
+        46
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 540,
+      "explanationCharacters": 236,
+      "sourceTextLines": 21,
+      "figures": [
+        {
+          "filename": "q058-explanation-p047-1.jpeg",
+          "questionNumber": 58,
+          "page": 47,
+          "role": "explanation",
+          "xref": 227,
+          "sha256": "2a47313cc2cd340baef183eb7469dd07e6fff9831377f3d683904a6eb819090f",
+          "sourceImageSha256": "2a47313cc2cd340baef183eb7469dd07e6fff9831377f3d683904a6eb819090f",
+          "extraction": "Original embedded image bytes",
+          "width": 648,
+          "height": 639,
+          "sourceBounds": [
+            135.0,
+            72.5902099609375,
+            476.5899963378906,
+            342.2402038574219
+          ]
+        }
+      ]
+    },
+    {
+      "number": 59,
+      "id": 14059,
+      "pages": [
+        47,
+        48
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 323,
+      "explanationCharacters": 455,
+      "sourceTextLines": 20,
+      "figures": [
+        {
+          "filename": "q059-question-p047-1.jpeg",
+          "questionNumber": 59,
+          "page": 47,
+          "role": "question",
+          "xref": 228,
+          "sha256": "a8cd7d022d6735e60359203d526907daedc488ac62792b99c8f7dba7367d348b",
+          "sourceImageSha256": "a8cd7d022d6735e60359203d526907daedc488ac62792b99c8f7dba7367d348b",
+          "extraction": "Original embedded image bytes",
+          "width": 588,
+          "height": 520,
+          "sourceBounds": [
+            204.64999389648438,
+            444.8302001953125,
+            425.32000732421875,
+            685.8801879882812
+          ]
+        },
+        {
+          "filename": "q059-question-p048-2.jpeg",
+          "questionNumber": 59,
+          "page": 48,
+          "role": "question",
+          "xref": 233,
+          "sha256": "cd976abc8650898aa44aaefd717e5c49a04e6145b8df7907c3e6dd5f5e786e68",
+          "sourceImageSha256": "cd976abc8650898aa44aaefd717e5c49a04e6145b8df7907c3e6dd5f5e786e68",
+          "extraction": "Original embedded image bytes",
+          "width": 534,
+          "height": 475,
+          "sourceBounds": [
+            205.5,
+            72.59022521972656,
+            405.8999938964844,
+            251.04022216796875
+          ]
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "id": 14060,
+      "pages": [
+        48,
+        49
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 462,
+      "explanationCharacters": 680,
+      "sourceTextLines": 27,
+      "figures": []
+    },
+    {
+      "number": 61,
+      "id": 14061,
+      "pages": [
+        49,
+        50
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 688,
+      "explanationCharacters": 360,
+      "sourceTextLines": 23,
+      "figures": [
+        {
+          "filename": "q061-question-p049-1.jpeg",
+          "questionNumber": 61,
+          "page": 49,
+          "role": "question",
+          "xref": 239,
+          "sha256": "35ee6043b54c6a7f40d1aab9ae27d6a301d4351f4c0c2d1ac6b7748314ad54f4",
+          "sourceImageSha256": "35ee6043b54c6a7f40d1aab9ae27d6a301d4351f4c0c2d1ac6b7748314ad54f4",
+          "extraction": "Original embedded image bytes",
+          "width": 774,
+          "height": 552,
+          "sourceBounds": [
+            169.5,
+            467.2002258300781,
+            460.0899963378906,
+            692.0502319335938
+          ]
+        }
+      ]
+    },
+    {
+      "number": 62,
+      "id": 14062,
+      "pages": [
+        50,
+        51
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 303,
+      "explanationCharacters": 1141,
+      "sourceTextLines": 28,
+      "figures": []
+    },
+    {
+      "number": 63,
+      "id": 14063,
+      "pages": [
+        51
+      ],
+      "answer": "E",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 590,
+      "explanationCharacters": 504,
+      "sourceTextLines": 24,
+      "figures": []
+    },
+    {
+      "number": 64,
+      "id": 14064,
+      "pages": [
+        51,
+        52
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 138,
+      "explanationCharacters": 76,
+      "sourceTextLines": 14,
+      "figures": [
+        {
+          "filename": "q064-question-p051-1.jpeg",
+          "questionNumber": 64,
+          "page": 51,
+          "role": "question",
+          "xref": 248,
+          "sha256": "1cdbbda70530b5e3fe451e698aecffda66603a47c242d5dde7bf6bb1b9a76d0f",
+          "sourceImageSha256": "1cdbbda70530b5e3fe451e698aecffda66603a47c242d5dde7bf6bb1b9a76d0f",
+          "extraction": "Original embedded image bytes",
+          "width": 911,
+          "height": 276,
+          "sourceBounds": [
+            144.0,
+            609.959228515625,
+            485.6499938964844,
+            713.4992065429688
+          ]
+        }
+      ]
+    },
+    {
+      "number": 65,
+      "id": 14065,
+      "pages": [
+        52,
+        53
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 497,
+      "explanationCharacters": 1393,
+      "sourceTextLines": 32,
+      "figures": []
+    },
+    {
+      "number": 66,
+      "id": 14066,
+      "pages": [
+        53
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 121,
+      "explanationCharacters": 1002,
+      "sourceTextLines": 24,
+      "figures": []
+    },
+    {
+      "number": 67,
+      "id": 14067,
+      "pages": [
+        53,
+        54
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 723,
+      "explanationCharacters": 637,
+      "sourceTextLines": 25,
+      "figures": []
+    },
+    {
+      "number": 68,
+      "id": 14068,
+      "pages": [
+        54,
+        55
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 410,
+      "explanationCharacters": 1162,
+      "sourceTextLines": 29,
+      "figures": []
+    },
+    {
+      "number": 69,
+      "id": 14069,
+      "pages": [
+        55
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 543,
+      "explanationCharacters": 967,
+      "sourceTextLines": 29,
+      "figures": []
+    },
+    {
+      "number": 70,
+      "id": 14070,
+      "pages": [
+        56
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 392,
+      "explanationCharacters": 753,
+      "sourceTextLines": 24,
+      "figures": []
+    },
+    {
+      "number": 71,
+      "id": 14071,
+      "pages": [
+        56,
+        57
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 1009,
+      "explanationCharacters": 1379,
+      "sourceTextLines": 38,
+      "figures": []
+    },
+    {
+      "number": 72,
+      "id": 14072,
+      "pages": [
+        57,
+        58
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 394,
+      "explanationCharacters": 854,
+      "sourceTextLines": 25,
+      "figures": []
+    },
+    {
+      "number": 73,
+      "id": 14073,
+      "pages": [
+        58
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 399,
+      "explanationCharacters": 806,
+      "sourceTextLines": 23,
+      "figures": []
+    },
+    {
+      "number": 74,
+      "id": 14074,
+      "pages": [
+        59
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 768,
+      "explanationCharacters": 699,
+      "sourceTextLines": 28,
+      "figures": []
+    },
+    {
+      "number": 75,
+      "id": 14075,
+      "pages": [
+        59,
+        60
+      ],
+      "answer": "E",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 737,
+      "explanationCharacters": 625,
+      "sourceTextLines": 27,
+      "figures": []
+    },
+    {
+      "number": 76,
+      "id": 14076,
+      "pages": [
+        60
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 79,
+      "explanationCharacters": 904,
+      "sourceTextLines": 20,
+      "figures": []
+    },
+    {
+      "number": 77,
+      "id": 14077,
+      "pages": [
+        61,
+        62
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 717,
+      "explanationCharacters": 993,
+      "sourceTextLines": 31,
+      "figures": [
+        {
+          "filename": "q077-question-p061-1.jpeg",
+          "questionNumber": 77,
+          "page": 61,
+          "role": "question",
+          "xref": 292,
+          "sha256": "f30c197bb8697d9b41bdeda44b9c77e66942dc54b6f114528f1c4f6df6fdeef2",
+          "sourceImageSha256": "f30c197bb8697d9b41bdeda44b9c77e66942dc54b6f114528f1c4f6df6fdeef2",
+          "extraction": "Original embedded image bytes",
+          "width": 753,
+          "height": 524,
+          "sourceBounds": [
+            108.5,
+            224.20021057128906,
+            521.5,
+            430.2402038574219
+          ]
+        }
+      ]
+    },
+    {
+      "number": 78,
+      "id": 14078,
+      "pages": [
+        62
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 267,
+      "explanationCharacters": 1387,
+      "sourceTextLines": 30,
+      "figures": []
+    },
+    {
+      "number": 79,
+      "id": 14079,
+      "pages": [
+        63
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 95,
+      "explanationCharacters": 374,
+      "sourceTextLines": 18,
+      "figures": []
+    },
+    {
+      "number": 80,
+      "id": 14080,
+      "pages": [
+        63,
+        64
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 355,
+      "explanationCharacters": 799,
+      "sourceTextLines": 28,
+      "figures": []
+    },
+    {
+      "number": 81,
+      "id": 14081,
+      "pages": [
+        64
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 90,
+      "explanationCharacters": 315,
+      "sourceTextLines": 17,
+      "figures": []
+    },
+    {
+      "number": 82,
+      "id": 14082,
+      "pages": [
+        64,
+        65
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 424,
+      "explanationCharacters": 1355,
+      "sourceTextLines": 36,
+      "figures": []
+    },
+    {
+      "number": 83,
+      "id": 14083,
+      "pages": [
+        65
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 460,
+      "explanationCharacters": 193,
+      "sourceTextLines": 18,
+      "figures": []
+    },
+    {
+      "number": 84,
+      "id": 14084,
+      "pages": [
+        66
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 625,
+      "explanationCharacters": 917,
+      "sourceTextLines": 29,
+      "figures": []
+    },
+    {
+      "number": 85,
+      "id": 14085,
+      "pages": [
+        66,
+        67
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 900,
+      "explanationCharacters": 567,
+      "sourceTextLines": 28,
+      "figures": []
+    },
+    {
+      "number": 86,
+      "id": 14086,
+      "pages": [
+        67,
+        68
+      ],
+      "answer": "E",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 1082,
+      "explanationCharacters": 898,
+      "sourceTextLines": 34,
+      "figures": []
+    },
+    {
+      "number": 87,
+      "id": 14087,
+      "pages": [
+        68,
+        69
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 1068,
+      "explanationCharacters": 1267,
+      "sourceTextLines": 38,
+      "figures": []
+    },
+    {
+      "number": 88,
+      "id": 14088,
+      "pages": [
+        69,
+        70
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 775,
+      "explanationCharacters": 1581,
+      "sourceTextLines": 52,
+      "figures": []
+    },
+    {
+      "number": 89,
+      "id": 14089,
+      "pages": [
+        70
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 206,
+      "explanationCharacters": 658,
+      "sourceTextLines": 25,
+      "figures": []
+    },
+    {
+      "number": 90,
+      "id": 14090,
+      "pages": [
+        71
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 968,
+      "explanationCharacters": 1118,
+      "sourceTextLines": 34,
+      "figures": []
+    },
+    {
+      "number": 91,
+      "id": 14091,
+      "pages": [
+        71,
+        72
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 613,
+      "explanationCharacters": 1196,
+      "sourceTextLines": 31,
+      "figures": []
+    },
+    {
+      "number": 92,
+      "id": 14092,
+      "pages": [
+        72,
+        73
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 736,
+      "explanationCharacters": 400,
+      "sourceTextLines": 23,
+      "figures": []
+    },
+    {
+      "number": 93,
+      "id": 14093,
+      "pages": [
+        73,
+        74
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 539,
+      "explanationCharacters": 1608,
+      "sourceTextLines": 34,
+      "figures": []
+    },
+    {
+      "number": 94,
+      "id": 14094,
+      "pages": [
+        74
+      ],
+      "answer": "A",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 862,
+      "explanationCharacters": 638,
+      "sourceTextLines": 28,
+      "figures": []
+    },
+    {
+      "number": 95,
+      "id": 14095,
+      "pages": [
+        75
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 212,
+      "explanationCharacters": 1468,
+      "sourceTextLines": 34,
+      "figures": []
+    },
+    {
+      "number": 96,
+      "id": 14096,
+      "pages": [
+        75,
+        76
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 223,
+      "explanationCharacters": 542,
+      "sourceTextLines": 20,
+      "figures": []
+    },
+    {
+      "number": 97,
+      "id": 14097,
+      "pages": [
+        76,
+        77
+      ],
+      "answer": "C",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 717,
+      "explanationCharacters": 870,
+      "sourceTextLines": 30,
+      "figures": []
+    },
+    {
+      "number": 98,
+      "id": 14098,
+      "pages": [
+        77
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 516,
+      "explanationCharacters": 811,
+      "sourceTextLines": 24,
+      "figures": []
+    },
+    {
+      "number": 99,
+      "id": 14099,
+      "pages": [
+        77,
+        78
+      ],
+      "answer": "B",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "scenarioCharacters": 563,
+      "explanationCharacters": 779,
+      "sourceTextLines": 27,
+      "figures": [
+        {
+          "filename": "q099-question-p078-1.jpeg",
+          "questionNumber": 99,
+          "page": 78,
+          "role": "question",
+          "xref": 363,
+          "sha256": "ebd6fd6b989e0960400bbf94d74160ab541f4ea1239417dfd626a37217aeae2d",
+          "sourceImageSha256": "ebd6fd6b989e0960400bbf94d74160ab541f4ea1239417dfd626a37217aeae2d",
+          "extraction": "Original embedded image bytes",
+          "width": 782,
+          "height": 528,
+          "sourceBounds": [
+            72.0,
+            139.1302032470703,
+            539.9400024414062,
+            337.4302062988281
+          ]
+        }
+      ]
+    },
+    {
+      "number": 100,
+      "id": 14100,
+      "pages": [
+        79
+      ],
+      "answer": "D",
+      "answerEvidence": "Red option label in the supplied PDF",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "scenarioCharacters": 737,
+      "explanationCharacters": 1535,
+      "sourceTextLines": 35,
+      "figures": []
+    }
+  ],
+  "assets": [
+    {
+      "filename": "q009-explanation-p008-1.jpeg",
+      "questionNumber": 9,
+      "page": 8,
+      "role": "explanation",
+      "xref": 53,
+      "sha256": "34c8bd319b5286f349ffdfa109d84e551d162f5ed58002b4b8cb30cf914d059b",
+      "sourceImageSha256": "34c8bd319b5286f349ffdfa109d84e551d162f5ed58002b4b8cb30cf914d059b",
+      "extraction": "Original embedded image bytes",
+      "width": 1247,
+      "height": 582,
+      "sourceBounds": [
+        72.0,
+        307.58026123046875,
+        540.0,
+        526.1302490234375
+      ]
+    },
+    {
+      "filename": "q012-question-p010-1.png",
+      "questionNumber": 12,
+      "page": 10,
+      "role": "question",
+      "xref": 63,
+      "sha256": "0aef42ba891fad6a859e80471a943ff45bb5eb7430699457397290789b3deb45",
+      "sourceImageSha256": "4701974e550980e5330a0e5a35016fe341213dfb43aebb9d53a0670cd5d84799",
+      "extraction": "Rendered source figure bounds at 144 dpi, including the supplied yellow pointer",
+      "width": 511,
+      "height": 510,
+      "sourceBounds": [
+        90.0,
+        123.13018798828125,
+        533.5,
+        425.3302001953125
+      ]
+    },
+    {
+      "filename": "q016-question-p013-1.jpeg",
+      "questionNumber": 16,
+      "page": 13,
+      "role": "question",
+      "xref": 76,
+      "sha256": "62f1513f77e6d3ef395f366cfb538dcacbafc1f52bdb973f57f2f84d9aca113a",
+      "sourceImageSha256": "62f1513f77e6d3ef395f366cfb538dcacbafc1f52bdb973f57f2f84d9aca113a",
+      "extraction": "Original embedded image bytes",
+      "width": 1111,
+      "height": 645,
+      "sourceBounds": [
+        90.0,
+        72.5902099609375,
+        506.7300109863281,
+        314.8402099609375
+      ]
+    },
+    {
+      "filename": "q021-question-p017-1.jpeg",
+      "questionNumber": 21,
+      "page": 17,
+      "role": "question",
+      "xref": 95,
+      "sha256": "b8b72e0d37d047d011a24d1f9bef25743b06d24fea19bd9a9740a62323cbe5f4",
+      "sourceImageSha256": "b8b72e0d37d047d011a24d1f9bef25743b06d24fea19bd9a9740a62323cbe5f4",
+      "extraction": "Original embedded image bytes",
+      "width": 913,
+      "height": 240,
+      "sourceBounds": [
+        72.0,
+        584.270263671875,
+        539.719970703125,
+        699.1202392578125
+      ]
+    },
+    {
+      "filename": "q025-question-p020-1.png",
+      "questionNumber": 25,
+      "page": 20,
+      "role": "question",
+      "xref": 108,
+      "sha256": "b06fe67f832882d17ba810b22c670a6b563c4d4c30925dbc50ece2d3c48cf291",
+      "sourceImageSha256": "b06fe67f832882d17ba810b22c670a6b563c4d4c30925dbc50ece2d3c48cf291",
+      "extraction": "Original embedded image bytes",
+      "width": 978,
+      "height": 217,
+      "sourceBounds": [
+        72.0,
+        633.961181640625,
+        539.7999877929688,
+        715.4111938476562
+      ]
+    },
+    {
+      "filename": "q028-question-p023-1.jpeg",
+      "questionNumber": 28,
+      "page": 23,
+      "role": "question",
+      "xref": 121,
+      "sha256": "d20c63c989feffb41b67e879f12fd58a5afbb2a249e1eb63508934762e1757a3",
+      "sourceImageSha256": "d20c63c989feffb41b67e879f12fd58a5afbb2a249e1eb63508934762e1757a3",
+      "extraction": "Original embedded image bytes",
+      "width": 616,
+      "height": 671,
+      "sourceBounds": [
+        90.0,
+        207.36016845703125,
+        526.6500244140625,
+        463.8601989746094
+      ]
+    },
+    {
+      "filename": "q032-question-p026-1.jpeg",
+      "questionNumber": 32,
+      "page": 26,
+      "role": "question",
+      "xref": 135,
+      "sha256": "d6ab143d1cf832da8c302ba6b0628673e62f2ad55a4bfd7dc7c7a3275693077c",
+      "sourceImageSha256": "d6ab143d1cf832da8c302ba6b0628673e62f2ad55a4bfd7dc7c7a3275693077c",
+      "extraction": "Original embedded image bytes",
+      "width": 759,
+      "height": 467,
+      "sourceBounds": [
+        165.4499969482422,
+        175.1302032470703,
+        464.52996826171875,
+        350.5802001953125
+      ]
+    },
+    {
+      "filename": "q038-question-p030-1.jpeg",
+      "questionNumber": 38,
+      "page": 30,
+      "role": "question",
+      "xref": 152,
+      "sha256": "5d5b3a6c162251ab5a300543b92248c9735408b65876a539a8308f8bfffd01cc",
+      "sourceImageSha256": "5d5b3a6c162251ab5a300543b92248c9735408b65876a539a8308f8bfffd01cc",
+      "extraction": "Original embedded image bytes",
+      "width": 329,
+      "height": 458,
+      "sourceBounds": [
+        170.6300048828125,
+        378.3302001953125,
+        441.33001708984375,
+        560.0802001953125
+      ]
+    },
+    {
+      "filename": "q046-question-p037-1.jpeg",
+      "questionNumber": 46,
+      "page": 37,
+      "role": "question",
+      "xref": 184,
+      "sha256": "2548de1ee09f55fdf4afd20f9bf20fe5947fd5e11f5bd3a629b1fbc18e879202",
+      "sourceImageSha256": "2548de1ee09f55fdf4afd20f9bf20fe5947fd5e11f5bd3a629b1fbc18e879202",
+      "extraction": "Original embedded image bytes",
+      "width": 722,
+      "height": 631,
+      "sourceBounds": [
+        179.25,
+        358.12017822265625,
+        450.05999755859375,
+        607.5701904296875
+      ]
+    },
+    {
+      "filename": "q046-question-p038-2.jpeg",
+      "questionNumber": 46,
+      "page": 38,
+      "role": "question",
+      "xref": 189,
+      "sha256": "77654fac20c92b97f34334b39885d0ea807f13fdaa9225d73b03fa135aacb730",
+      "sourceImageSha256": "77654fac20c92b97f34334b39885d0ea807f13fdaa9225d73b03fa135aacb730",
+      "extraction": "Original embedded image bytes",
+      "width": 1128,
+      "height": 482,
+      "sourceBounds": [
+        80.69000244140625,
+        72.59017944335938,
+        538.7099609375,
+        253.690185546875
+      ]
+    },
+    {
+      "filename": "q058-explanation-p047-1.jpeg",
+      "questionNumber": 58,
+      "page": 47,
+      "role": "explanation",
+      "xref": 227,
+      "sha256": "2a47313cc2cd340baef183eb7469dd07e6fff9831377f3d683904a6eb819090f",
+      "sourceImageSha256": "2a47313cc2cd340baef183eb7469dd07e6fff9831377f3d683904a6eb819090f",
+      "extraction": "Original embedded image bytes",
+      "width": 648,
+      "height": 639,
+      "sourceBounds": [
+        135.0,
+        72.5902099609375,
+        476.5899963378906,
+        342.2402038574219
+      ]
+    },
+    {
+      "filename": "q059-question-p047-1.jpeg",
+      "questionNumber": 59,
+      "page": 47,
+      "role": "question",
+      "xref": 228,
+      "sha256": "a8cd7d022d6735e60359203d526907daedc488ac62792b99c8f7dba7367d348b",
+      "sourceImageSha256": "a8cd7d022d6735e60359203d526907daedc488ac62792b99c8f7dba7367d348b",
+      "extraction": "Original embedded image bytes",
+      "width": 588,
+      "height": 520,
+      "sourceBounds": [
+        204.64999389648438,
+        444.8302001953125,
+        425.32000732421875,
+        685.8801879882812
+      ]
+    },
+    {
+      "filename": "q059-question-p048-2.jpeg",
+      "questionNumber": 59,
+      "page": 48,
+      "role": "question",
+      "xref": 233,
+      "sha256": "cd976abc8650898aa44aaefd717e5c49a04e6145b8df7907c3e6dd5f5e786e68",
+      "sourceImageSha256": "cd976abc8650898aa44aaefd717e5c49a04e6145b8df7907c3e6dd5f5e786e68",
+      "extraction": "Original embedded image bytes",
+      "width": 534,
+      "height": 475,
+      "sourceBounds": [
+        205.5,
+        72.59022521972656,
+        405.8999938964844,
+        251.04022216796875
+      ]
+    },
+    {
+      "filename": "q061-question-p049-1.jpeg",
+      "questionNumber": 61,
+      "page": 49,
+      "role": "question",
+      "xref": 239,
+      "sha256": "35ee6043b54c6a7f40d1aab9ae27d6a301d4351f4c0c2d1ac6b7748314ad54f4",
+      "sourceImageSha256": "35ee6043b54c6a7f40d1aab9ae27d6a301d4351f4c0c2d1ac6b7748314ad54f4",
+      "extraction": "Original embedded image bytes",
+      "width": 774,
+      "height": 552,
+      "sourceBounds": [
+        169.5,
+        467.2002258300781,
+        460.0899963378906,
+        692.0502319335938
+      ]
+    },
+    {
+      "filename": "q064-question-p051-1.jpeg",
+      "questionNumber": 64,
+      "page": 51,
+      "role": "question",
+      "xref": 248,
+      "sha256": "1cdbbda70530b5e3fe451e698aecffda66603a47c242d5dde7bf6bb1b9a76d0f",
+      "sourceImageSha256": "1cdbbda70530b5e3fe451e698aecffda66603a47c242d5dde7bf6bb1b9a76d0f",
+      "extraction": "Original embedded image bytes",
+      "width": 911,
+      "height": 276,
+      "sourceBounds": [
+        144.0,
+        609.959228515625,
+        485.6499938964844,
+        713.4992065429688
+      ]
+    },
+    {
+      "filename": "q077-question-p061-1.jpeg",
+      "questionNumber": 77,
+      "page": 61,
+      "role": "question",
+      "xref": 292,
+      "sha256": "f30c197bb8697d9b41bdeda44b9c77e66942dc54b6f114528f1c4f6df6fdeef2",
+      "sourceImageSha256": "f30c197bb8697d9b41bdeda44b9c77e66942dc54b6f114528f1c4f6df6fdeef2",
+      "extraction": "Original embedded image bytes",
+      "width": 753,
+      "height": 524,
+      "sourceBounds": [
+        108.5,
+        224.20021057128906,
+        521.5,
+        430.2402038574219
+      ]
+    },
+    {
+      "filename": "q099-question-p078-1.jpeg",
+      "questionNumber": 99,
+      "page": 78,
+      "role": "question",
+      "xref": 363,
+      "sha256": "ebd6fd6b989e0960400bbf94d74160ab541f4ea1239417dfd626a37217aeae2d",
+      "sourceImageSha256": "ebd6fd6b989e0960400bbf94d74160ab541f4ea1239417dfd626a37217aeae2d",
+      "extraction": "Original embedded image bytes",
+      "width": 782,
+      "height": 528,
+      "sourceBounds": [
+        72.0,
+        139.1302032470703,
+        539.9400024414062,
+        337.4302062988281
+      ]
+    }
+  ]
+}

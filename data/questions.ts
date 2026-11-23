@@ -6,6 +6,7 @@ import { mcckap2022Questions } from "./mcckap-2022-questions";
 import { passMachineQuestions } from "./pass-machine-questions";
 import { prep2026Questions } from "./prep-2026-questions";
 import { criticalThinkingQuestions } from "./critical-thinking-questions";
+import { selfAssessment2024Questions } from "./self-assessment-2024-questions";
 import { picuMcqVisualAssets } from "./picumcq-figures";
 import { prep2021VisualAssets } from "./prep-2021-figures";
 import { prep2022VisualAssets } from "./prep-2022-figures";
@@ -28075,6 +28076,7 @@ export const importedQuestions: Question[] = [
   ...mcckap2022Questions,
   ...prep2026Questions,
   ...criticalThinkingQuestions,
+  ...selfAssessment2024Questions,
 ];
 
 const cleanImportedText = (value: string | null | undefined, repairPdfWrapping = false) => {
@@ -28142,11 +28144,11 @@ const seenQuestionFingerprints = new Set<string>();
 const deduplicatedQuestions = normalizedQuestions.filter((question) => {
   const sourceScope = question.source === "PICU Critical Thinking Quiz"
     ? `${question.source}|${question.category}|`
-    : /^Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 202[23]$/.test(question.source ?? "") || question.source === "American Physician Institute 2012-2020" || question.category.startsWith("PREP 2026")
+    : /^Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 202[23]$/.test(question.source ?? "") || question.source === "American Physician Institute 2012-2020" || question.category.startsWith("PREP 2026") || question.source === "Advanced Knowledge Assessment in Pediatric Critical Care 2024"
     ? `${question.source}|`
     : "";
   // Identical graph questions can have different answers because their figures differ.
-  const figureScope = question.category.startsWith("Study Guide") || question.source === "American Physician Institute 2012-2020" || question.category.startsWith("PREP 2026") || question.source === "PICU Critical Thinking Quiz"
+  const figureScope = question.category.startsWith("Study Guide") || question.source === "American Physician Institute 2012-2020" || question.category.startsWith("PREP 2026") || question.source === "PICU Critical Thinking Quiz" || question.source === "Advanced Knowledge Assessment in Pediatric Critical Care 2024"
     ? `|${(question.visuals?.question ?? []).map(figure => figure.src).join("|")}`
     : "";
   const fingerprint = `${sourceScope}${question.scenario.toLowerCase()}|${Object.entries(question.choices).map(([key, value]) => `${key}:${value}`).join("|")}${figureScope}`;

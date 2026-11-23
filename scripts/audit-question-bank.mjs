@@ -34,6 +34,10 @@ function loadQuestions() {
   vm.runInNewContext(ts.transpileModule(readFileSync(resolve(projectRoot, "data/critical-thinking-questions.ts"), "utf8"), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
   }).outputText, criticalThinkingContext, { filename: "critical-thinking-questions.ts" });
+  const selfAssessment2024Context = { exports: {}, require };
+  vm.runInNewContext(ts.transpileModule(readFileSync(resolve(projectRoot, "data/self-assessment-2024-questions.ts"), "utf8"), {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText, selfAssessment2024Context, { filename: "self-assessment-2024-questions.ts" });
 
   const prep2021VisualSource = readFileSync(resolve(projectRoot, "data/prep-2021-figures.ts"), "utf8");
   const prep2021VisualJavaScript = ts.transpileModule(prep2021VisualSource, {
@@ -82,6 +86,7 @@ function loadQuestions() {
       if (module === "./mcckap-2022-questions") return mcckap2022Context.exports;
       if (module === "./prep-2026-questions") return prep2026Context.exports;
       if (module === "./critical-thinking-questions") return criticalThinkingContext.exports;
+      if (module === "./self-assessment-2024-questions") return selfAssessment2024Context.exports;
       if (module === "./pass-machine-questions") return passMachineContext.exports;
       if (module === "./studyguide-figures") return studyGuideVisualContext.exports;
       if (module === "./picumcq-figures") return picuMcqVisualContext.exports;

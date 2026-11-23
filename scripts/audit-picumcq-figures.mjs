@@ -27,6 +27,7 @@ const mcckap2023 = loadModule("data/mcckap-2023-questions.ts");
 const mcckap2022 = loadModule("data/mcckap-2022-questions.ts");
 const prep2026 = loadModule("data/prep-2026-questions.ts");
 const criticalThinking = loadModule("data/critical-thinking-questions.ts");
+const selfAssessment2024 = loadModule("data/self-assessment-2024-questions.ts");
 const questionSource = readFileSync(resolve(projectRoot, "data/questions.ts"), "utf8");
 const questionJavascript = ts.transpileModule(questionSource, {
   compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
@@ -44,6 +45,7 @@ const questionContext = {
     if (moduleName === "./mcckap-2022-questions") return mcckap2022;
     if (moduleName === "./prep-2026-questions") return prep2026;
     if (moduleName === "./critical-thinking-questions") return criticalThinking;
+    if (moduleName === "./self-assessment-2024-questions") return selfAssessment2024;
     return require(moduleName);
   },
 };

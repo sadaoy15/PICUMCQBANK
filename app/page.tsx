@@ -58,6 +58,7 @@ const prepExamGroups: ExamGroup[] = [
 
 const sccmExamGroups: ExamGroup[] = [
   { id: "sccm-book", label: "SCCM Self-Assessment", description: "243 questions across 11 chapters (Dalton et al., 2010)", accent: "blue", match: (q) => q.category.startsWith("SCCM Self-Assessment"), subCategoryPrefix: "SCCM Self-Assessment" },
+  { id: "self-assessment-2024", label: "Self Assessment 2024", description: "100 questions with complete source commentaries and 17 figures and tables", accent: "blue", match: (q) => q.source === "Advanced Knowledge Assessment in Pediatric Critical Care 2024" },
 ];
 
 const zimmermanExamGroups: ExamGroup[] = [
@@ -1177,7 +1178,7 @@ export default function QuizPage() {
             </div>
           ) : (
             <>
-              {(q.category.startsWith("Study Guide") || q.category.startsWith("PREP 2026") || q.source === "American Physician Institute 2012-2020" || q.source === "PICU Critical Thinking Quiz") && (
+              {(q.category.startsWith("Study Guide") || q.category.startsWith("PREP 2026") || q.source === "American Physician Institute 2012-2020" || q.source === "PICU Critical Thinking Quiz" || q.source === "Advanced Knowledge Assessment in Pediatric Critical Care 2024") && (
                 <FigureGallery figures={q.visuals?.question} title="Question figures and tables" />
               )}
               <FigureGallery figures={q.visuals?.explanation} title="Explanation figures and tables" />
