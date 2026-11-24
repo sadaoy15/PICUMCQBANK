@@ -8198,5 +8198,7 @@
       "slide": 677,
       "role": "question"
     }
-  ]
+  ],
+  "status": "Historical audit of the supplied PowerPoint; original PDF reconciliation is authoritative.",
+  "supersededBy": "critical-thinking-original-audit.json"
 }

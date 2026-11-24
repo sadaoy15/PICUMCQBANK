@@ -74,7 +74,7 @@ const picumcqExamGroups: ExamGroup[] = [
 ];
 
 const criticalThinkingExamGroups: ExamGroup[] = [
-  { id: "critical-thinking-quiz", label: "PICU Critical Thinking Quiz", description: "342 questions in 31 quiz sets, with source explanations, figures and tables", accent: "blue", match: (q) => q.source === "PICU Critical Thinking Quiz", subCategoryPrefix: "PICU Critical Thinking Quiz" },
+  { id: "critical-thinking-quiz", label: "PICU Critical Thinking Quiz", description: "342 questions in 31 quiz sets, with complete original cases, source explanations, figures and tables", accent: "blue", match: (q) => q.source === "PICU Critical Thinking Quiz", subCategoryPrefix: "PICU Critical Thinking Quiz" },
 ];
 
 const passMachineExamGroups: ExamGroup[] = [

@@ -1,4 +1,9 @@
-"""Import native text, keyed answers, notes, figures, and tables from PICU_MCQ_quiz.pptx."""
+"""Import the historical PowerPoint compilation.
+
+The original PDF now supplies the canonical collection. Run
+import-critical-thinking-original.py after this importer to restore the full
+journal text and preserve its documented source-key and option-layout errata.
+"""
 import argparse
 import collections
 import hashlib

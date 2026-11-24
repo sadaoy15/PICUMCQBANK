@@ -1,0 +1,8747 @@
+{
+  "sourceSha256": "97a640d57fb889f673c096ca5fbe202d565099adbd23992e43a1db8ebb97262e",
+  "ocrEngine": "Tesseract.js, English, 216 dpi column crops; text checked against all nine scanned pages",
+  "reviewedScanPages": [
+    132,
+    135,
+    138,
+    140,
+    143,
+    144,
+    146,
+    147,
+    151
+  ],
+  "scanLines": [
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        234.33333333333334,
+        62.33333333333333,
+        306.0,
+        76.66666666666667
+      ],
+      "text": "Critical’"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        268.33333333333337,
+        96.33333333333334,
+        306.0,
+        107.0
+      ],
+      "text": "PICU"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        265.33333333333337,
+        117.0,
+        306.0,
+        124.0
+      ],
+      "text": "Dr Name"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        127.33333333333333,
+        131.0,
+        306.0,
+        138.0
+      ],
+      "text": "Senior Consultant Pediatric Intensivist and P"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        184.66666666666666,
+        143.33333333333331,
+        306.0,
+        151.66666666666669
+      ],
+      "text": "Received:1-May-2015/Accepted:8-Ma"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        196.0,
+        121.0,
+        205.66666666666666
+      ],
+      "text": "Question 1:"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        209.0,
+        299.0,
+        219.66666666666666
+      ],
+      "text": "A 10-day-old child presents with respiratory distress"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        222.0,
+        299.33333333333337,
+        232.66666666666666
+      ],
+      "text": "and cyanosis. The CXR shows extensive bilateral"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        235.33333333333334,
+        299.33333333333337,
+        246.0
+      ],
+      "text": "infiltrates and the SpO2 with O2 through non-"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        248.33333333333334,
+        299.33333333333337,
+        256.66666666666663
+      ],
+      "text": "rebreather mask is around 80%. You decide to do a"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        261.33333333333337,
+        299.0,
+        272.0
+      ],
+      "text": "hyperoxia test, where you measure the SpO2(PaO2)"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        275.0,
+        299.33333333333337,
+        285.66666666666663
+      ],
+      "text": "before and after breathing 100% O2. What is NOT"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        288.0,
+        163.66666666666669,
+        298.66666666666663
+      ],
+      "text": "true of hyperoxia test:"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        301.3333333333333,
+        299.33333333333337,
+        312.0
+      ],
+      "text": "a. Rules out significant intra-cardiac and extra"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        81.0,
+        314.3333333333333,
+        201.0,
+        325.0
+      ],
+      "text": "cardiac (pulmonary) shunts"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        327.3333333333333,
+        299.33333333333337,
+        338.0
+      ],
+      "text": "b. V/Q abnormalities may not show improvement"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        81.0,
+        341.0,
+        247.66666666666666,
+        351.6666666666667
+      ],
+      "text": "until 100% O2 is provided for the test"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        354.0,
+        299.0,
+        364.6666666666667
+      ],
+      "text": "c. Failed test (no improvement in SpO2) in a"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        81.0,
+        367.3333333333333,
+        278.33333333333337,
+        378.0
+      ],
+      "text": "newborn confirms a congenital heart disease."
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        380.3333333333333,
+        299.66666666666663,
+        391.0
+      ],
+      "text": "d. Intra-pulmonary shunts of > 50% are remarkably"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        81.0,
+        393.3333333333333,
+        173.0,
+        401.6666666666667
+      ],
+      "text": "resistant to 100% O2"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        418.3333333333333,
+        121.0,
+        428.0
+      ],
+      "text": "Question 2:"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        431.3333333333333,
+        299.33333333333337,
+        442.0
+      ],
+      "text": "Which of the following is NOT TRUE regarding"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        444.3333333333333,
+        179.33333333333334,
+        455.0
+      ],
+      "text": "oxygen delivery devices?"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        457.3333333333333,
+        299.33333333333337,
+        465.6666666666667
+      ],
+      "text": "a. O2 masks should never have flows less than 3-4"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        81.0,
+        471.0,
+        108.0,
+        479.0
+      ],
+      "text": "L/min"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        484.0,
+        300.66666666666663,
+        494.6666666666667
+      ],
+      "text": "b. Partial rebreathing masks allow rebreathing of"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        81.0,
+        497.3333333333333,
+        236.0,
+        505.6666666666667
+      ],
+      "text": "exhaled air but donot increase CO2"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        510.3333333333333,
+        299.66666666666663,
+        521.0
+      ],
+      "text": "c. Non-rebreathing masks allow very high FiO2 even"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        81.0,
+        523.3333333333333,
+        153.66666666666669,
+        531.6666666666667
+      ],
+      "text": "at low flow rates"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        537.0,
+        299.33333333333337,
+        547.6666666666667
+      ],
+      "text": "d. Venturi mask allows a set F102 inspite of changing"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        81.0,
+        550.0,
+        156.0,
+        560.6666666666666
+      ],
+      "text": "breathing pattern"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        563.3333333333334,
+        299.0,
+        574.0
+      ],
+      "text": "e. Nasal cannula O2 in newborns may provide"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        80.66666666666666,
+        576.3333333333334,
+        187.66666666666666,
+        587.0
+      ],
+      "text": "positive airway pressure"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        601.3333333333334,
+        121.0,
+        611.0
+      ],
+      "text": "Question 3:"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        614.0,
+        299.66666666666663,
+        624.6666666666666
+      ],
+      "text": "Which of the following is an advantage of LMW"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        627.0,
+        258.66666666666663,
+        637.6666666666666
+      ],
+      "text": "Heparin over unfractionated (UF) Heparin?"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        640.3333333333334,
+        299.66666666666663,
+        651.0
+      ],
+      "text": "a. LMW Heparin has predictable effects as an"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        81.0,
+        653.3333333333334,
+        117.0,
+        661.6666666666666
+      ],
+      "text": "infusion"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        665.6666666666666,
+        299.66666666666663,
+        679.0
+      ],
+      "text": "b. LMW Heparin does not need very strict monitoring"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        680.0,
+        299.66666666666663,
+        690.6666666666666
+      ],
+      "text": "c. UF Heparin effect can be reversed"
+    },
+    {
+      "page": 132,
+      "col": 0,
+      "bbox": [
+        80.66666666666666,
+        693.0,
+        163.0,
+        703.6666666666666
+      ],
+      "text": "pharmacologically"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        306.0,
+        61.66666666666667,
+        379.0,
+        81.66666666666666
+      ],
+      "text": "[hinking"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        306.0,
+        96.33333333333334,
+        344.0,
+        109.66666666666667
+      ],
+      "text": "‘Quiz"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        306.0,
+        117.0,
+        346.3333333333333,
+        124.0
+      ],
+      "text": "et Jerath"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        306.0,
+        129.66666666666669,
+        487.33333333333337,
+        141.33333333333331
+      ],
+      "text": "ulmonologist, IP Apollo Hospital, New Delhi"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        306.0,
+        143.33333333333331,
+        430.0,
+        151.66666666666669
+      ],
+      "text": "y-2015/Published online:15-May-2015"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        195.33333333333334,
+        544.6666666666666,
+        206.0
+      ],
+      "text": "d. LMW Heparin is preferred immediately after"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        211.33333333333334,
+        359.3333333333333,
+        219.66666666666666
+      ],
+      "text": "surgery"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        222.0,
+        545.0,
+        232.66666666666666
+      ],
+      "text": "e. LMW Heparin can be easily titrated by a PTTk"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        235.33333333333334,
+        351.6666666666667,
+        243.66666666666666
+      ],
+      "text": "levels"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        313.0,
+        260.0,
+        366.0,
+        269.66666666666663
+      ],
+      "text": "Question 4:"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        273.0,
+        544.6666666666666,
+        281.0
+      ],
+      "text": "Part of the rationale for intubation and mechanical"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        286.0,
+        544.3333333333334,
+        296.66666666666663
+      ],
+      "text": "ventilation in a child with cardiogenic shock is to"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        299.33333333333337,
+        544.6666666666666,
+        310.0
+      ],
+      "text": "decrease cardiac demand. The presence of respiratory"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        312.3333333333333,
+        544.6666666666666,
+        323.0
+      ],
+      "text": "distress and increased work of breathing can result"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        325.3333333333333,
+        544.6666666666666,
+        336.0
+      ],
+      "text": "in what percentage of cardiac output being required"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        313.0,
+        339.0,
+        502.33333333333337,
+        349.6666666666667
+      ],
+      "text": "simply to supply the respiratory apparatus?"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        352.3333333333333,
+        340.6666666666667,
+        360.0
+      ],
+      "text": "a. 0%"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        365.3333333333333,
+        340.6666666666667,
+        373.6666666666667
+      ],
+      "text": "b. 5%"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        379.0,
+        346.3333333333333,
+        386.6666666666667
+      ],
+      "text": "c. 10%"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        391.3333333333333,
+        346.3333333333333,
+        399.6666666666667
+      ],
+      "text": "d. 40%"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        405.3333333333333,
+        346.3333333333333,
+        413.0
+      ],
+      "text": "e. 90%"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        313.0,
+        429.3333333333333,
+        366.0,
+        439.0
+      ],
+      "text": "Question 5:"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        442.3333333333333,
+        544.6666666666666,
+        453.0
+      ],
+      "text": "A 6-year old child with meningococcemia is on"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        455.3333333333333,
+        544.3333333333334,
+        466.0
+      ],
+      "text": "ventilator for 5 days and improving gradually. He is"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        469.0,
+        544.3333333333334,
+        479.6666666666667
+      ],
+      "text": "on Dopamine @ 10 mcg/kg/min, Adrenaline @ 0.09"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        482.0,
+        544.0,
+        492.6666666666667
+      ],
+      "text": "mcg/kg/min and Noradrenaline @ 0.2 mcg/kg/min."
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        495.0,
+        544.3333333333334,
+        505.6666666666667
+      ],
+      "text": "His peripheries are cold and the vitals show: HR 178,"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        507.0,
+        544.3333333333334,
+        520.6666666666667
+      ],
+      "text": "BP 110/70. SpO2 97%. The CVP is 11 and SCVO2 is"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        313.0,
+        521.3333333333333,
+        500.33333333333337,
+        532.0
+      ],
+      "text": "75%. What is the best option at this stage?"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        535.0,
+        492.66666666666663,
+        545.6666666666667
+      ],
+      "text": "a. Increase Dopamine to 20 mcg/kg/min"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        548.0,
+        432.0,
+        556.0
+      ],
+      "text": "b. Wean off Noradrenaline"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        561.0,
+        498.0,
+        571.6666666666666
+      ],
+      "text": "c. Increase Adrenaline to 0.2 mcg/kg/min"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        574.3333333333334,
+        457.0,
+        585.0
+      ],
+      "text": "d. Give a fluid bolus of 20 cc/kg"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        587.3333333333334,
+        483.0,
+        598.0
+      ],
+      "text": "e. Add Milrinone @ 1.25 meg/kg/min"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        313.0,
+        612.3333333333334,
+        366.0,
+        622.0
+      ],
+      "text": "Question 6:"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        625.0,
+        544.6666666666666,
+        635.6666666666666
+      ],
+      "text": "A 10 year old child, road traffic accident victim"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        638.3333333333334,
+        543.6666666666666,
+        649.0
+      ],
+      "text": "presents to the hospital unresponsive. CPR is started."
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        651.3333333333334,
+        544.6666666666666,
+        662.0
+      ],
+      "text": "Monitor when attached shows normal QRS complex"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        665.0,
+        544.6666666666666,
+        675.6666666666666
+      ],
+      "text": "but no associated pulse except palpable pulse with"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        678.0,
+        544.6666666666666,
+        688.6666666666666
+      ],
+      "text": "each cardiac compression. This child should be"
+    },
+    {
+      "page": 132,
+      "col": 1,
+      "bbox": [
+        313.0,
+        691.0,
+        340.6666666666667,
+        701.6666666666666
+      ],
+      "text": "given-"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        234.0,
+        62.33333333333333,
+        306.0,
+        76.66666666666667
+      ],
+      "text": "Critical”"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        269.33333333333337,
+        96.33333333333334,
+        306.0,
+        107.0
+      ],
+      "text": "PICU"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        245.66666666666666,
+        117.0,
+        306.0,
+        124.0
+      ],
+      "text": "Praveen Khil"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        127.0,
+        130.33333333333331,
+        306.0,
+        139.66666666666669
+      ],
+      "text": "Director Pediatric critical care and pulmonol"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        187.0,
+        142.33333333333331,
+        306.0,
+        150.66666666666669
+      ],
+      "text": "Received:23-Jul-2015/Accepted:30-Ju"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        68.66666666666667,
+        179.33333333333334,
+        299.0,
+        190.0
+      ],
+      "text": "1. A 3-year-old girl is admitted to the pediatric"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        192.33333333333334,
+        299.0,
+        203.0
+      ],
+      "text": "intensive care unit because of respiratory distress"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        205.0,
+        300.66666666666663,
+        215.66666666666666
+      ],
+      "text": "and bilateral pulmonary infiltrates on x-ray of"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        217.33333333333334,
+        299.0,
+        228.0
+      ],
+      "text": "the chest. Following evaluation, intubation,"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        230.0,
+        299.66666666666663,
+        239.33333333333334
+      ],
+      "text": "and initiation of mechanical ventilation. her"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        243.0,
+        299.33333333333337,
+        253.66666666666666
+      ],
+      "text": "condition is stable with the following arterial"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        255.33333333333334,
+        299.0,
+        266.0
+      ],
+      "text": "blood gas values (FIO2 = 0.45): pH 7.34, PCO2"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        268.0,
+        299.66666666666663,
+        278.66666666666663
+      ],
+      "text": "36 mm Hg, PO2 92 mm Hg. Arterial hemoglobin"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        281.0,
+        299.0,
+        291.66666666666663
+      ],
+      "text": "oxygen saturation (SpO2) is 100% via pulse"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        293.33333333333337,
+        299.33333333333337,
+        304.0
+      ],
+      "text": "oximetry. The central venous pressure is 4 mm"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        306.0,
+        286.0,
+        316.6666666666667
+      ],
+      "text": "Hg. Cardiac examination findings are normal."
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        323.3333333333333,
+        299.0,
+        334.0
+      ],
+      "text": "Based on American-European Consensus"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        336.0,
+        299.33333333333337,
+        345.3333333333333
+      ],
+      "text": "Conference definition, this child’s illness would"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        348.3333333333333,
+        259.66666666666663,
+        359.0
+      ],
+      "text": "be classified as which of the following?"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        361.0,
+        193.66666666666666,
+        371.6666666666667
+      ],
+      "text": "A. Acute respiratory failure"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        374.0,
+        163.33333333333331,
+        384.6666666666667
+      ],
+      "text": "B. Acute lung injury"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        386.3333333333333,
+        299.0,
+        397.0
+      ],
+      "text": "C. Mild acute respiratory distress syndrome (ARDS)"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        399.0,
+        158.66666666666669,
+        407.0
+      ],
+      "text": "D. Moderate ARDS"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        412.3333333333333,
+        146.66666666666669,
+        420.0
+      ],
+      "text": "E. Severe ARDS"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        435.3333333333333,
+        299.33333333333337,
+        446.0
+      ],
+      "text": "2. A clinician is considering therapeutic options for"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        448.3333333333333,
+        199.0,
+        459.0
+      ],
+      "text": "a patient with hypoxemia."
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        465.3333333333333,
+        300.66666666666663,
+        476.0
+      ],
+      "text": "Which of the following potential causes of"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        478.0,
+        299.66666666666663,
+        488.6666666666667
+      ],
+      "text": "hypoxemia fails to respond to an increase in"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        490.3333333333333,
+        243.0,
+        501.0
+      ],
+      "text": "fraction of inspired oxygen (F102)?"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        503.3333333333333,
+        213.66666666666666,
+        514.0
+      ],
+      "text": "A. Reduced barometric pressure"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        516.0,
+        157.0,
+        526.6666666666667
+      ],
+      "text": "B. Hypoventilation"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        528.3333333333333,
+        224.66666666666666,
+        539.0
+      ],
+      "text": "C. Ventilation-perfusion mismatch"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        541.3333333333333,
+        167.0,
+        552.0
+      ],
+      "text": "D. Right-to-left shunt"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        554.0,
+        173.0,
+        562.0
+      ],
+      "text": "E. Diffusion limitation"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        578.0,
+        299.0,
+        588.6666666666666
+      ],
+      "text": "3. A 5-month-old boy with trisomy 21 is in the"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.0,
+        590.3333333333334,
+        299.33333333333337,
+        601.0
+      ],
+      "text": "pediatric intensive care unit (PICU) following"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        603.0,
+        299.33333333333337,
+        613.6666666666666
+      ],
+      "text": "repair of a ventricular septal defect. He is still"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        616.0,
+        299.33333333333337,
+        625.0
+      ],
+      "text": "intubated, but his condition is stable with low"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        628.3333333333334,
+        299.0,
+        639.0
+      ],
+      "text": "doses of dopamine and an infusion of 5% dextrose"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        641.0,
+        299.33333333333337,
+        650.0
+      ],
+      "text": "with 0.45% saline, 20 mL/hr. After 30 minutes in"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        653.3333333333334,
+        299.33333333333337,
+        664.0
+      ],
+      "text": "the PICU, his blood glucose concentration is 250"
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        666.3333333333334,
+        117.0,
+        677.0
+      ],
+      "text": "mg/dL."
+    },
+    {
+      "page": 135,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        683.3333333333334,
+        299.0,
+        694.0
+      ],
+      "text": "Which of the following statements regarding this"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        306.0,
+        61.66666666666667,
+        378.6666666666667,
+        81.66666666666666
+      ],
+      "text": "[hinking"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        311.3333333333333,
+        96.33333333333334,
+        342.6666666666667,
+        109.66666666666667
+      ],
+      "text": "Quiz"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        306.0,
+        115.66666666666667,
+        366.6666666666667,
+        127.0
+      ],
+      "text": "nani, MD FCCM"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        306.0,
+        129.0,
+        487.66666666666663,
+        141.0
+      ],
+      "text": "ogy BLK Superspeciality hospital. New Delhi"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        306.0,
+        142.33333333333331,
+        427.6666666666667,
+        150.66666666666669
+      ],
+      "text": "1-2015/Published online:15-Aug-2015"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        179.33333333333334,
+        448.33333333333337,
+        190.0
+      ],
+      "text": "infant is most appropriate?"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        192.33333333333334,
+        544.3333333333334,
+        203.0
+      ],
+      "text": "A. His blood glucose concentration will decrease"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        205.0,
+        545.6666666666666,
+        215.66666666666666
+      ],
+      "text": "to < 110 mg/dL within 6 hours regardless of"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        217.33333333333334,
+        486.66666666666663,
+        228.0
+      ],
+      "text": "whether he receives insulin therapy"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        230.0,
+        544.6666666666666,
+        238.0
+      ],
+      "text": "B. He should be switched to an isotonic saline"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        243.0,
+        544.6666666666666,
+        253.66666666666666
+      ],
+      "text": "infusion without dextrose until his blood glucose"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        255.33333333333334,
+        506.66666666666663,
+        266.0
+      ],
+      "text": "concentration decreases to < 110 mg/dL"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        268.0,
+        544.6666666666666,
+        278.66666666666663
+      ],
+      "text": "C. Instituting a tight glycemic control regimen"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        281.0,
+        545.6666666666666,
+        289.0
+      ],
+      "text": "will be associated with an increased risk of"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        293.33333333333337,
+        516.0,
+        304.0
+      ],
+      "text": "hypoglycemia relative to standard therapy"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        306.0,
+        544.6666666666666,
+        316.6666666666667
+      ],
+      "text": "D. Instituting a tight glycemic control regimen will"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        319.0,
+        544.6666666666666,
+        327.0
+      ],
+      "text": "be associated with a reduced risk of bloodstream"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        331.3333333333333,
+        493.0,
+        342.0
+      ],
+      "text": "infection relative to standard therapy"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        344.0,
+        544.6666666666666,
+        354.6666666666667
+      ],
+      "text": "E. Continuous monitoring of his blood glucose"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        356.3333333333333,
+        544.3333333333334,
+        367.0
+      ],
+      "text": "concentration is imperative because of his age"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        369.3333333333333,
+        450.0,
+        380.0
+      ],
+      "text": "and chromosomal anomaly"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        393.0,
+        544.3333333333334,
+        403.6666666666667
+      ],
+      "text": "4. An 18-year-old patient has been injured in a"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        406.0,
+        544.3333333333334,
+        416.6666666666667
+      ],
+      "text": "motorcycle collision. Initial examination shows"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        418.3333333333333,
+        544.3333333333334,
+        429.0
+      ],
+      "text": "normal vital signs. PaCO2 is 52 mm Hg while"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        431.0,
+        544.6666666666666,
+        441.6666666666667
+      ],
+      "text": "the patient is receiving approximately 70%"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        444.0,
+        529.3333333333334,
+        454.6666666666667
+      ],
+      "text": "oxygen. The Glasgow Coma Scale score is 4."
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        461.0,
+        544.6666666666666,
+        471.6666666666667
+      ],
+      "text": "which of the following would NOT be an"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        473.3333333333333,
+        544.3333333333334,
+        484.0
+      ],
+      "text": "appropriate part of initial management in this"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        486.3333333333333,
+        365.3333333333333,
+        497.0
+      ],
+      "text": "patient?"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        499.0,
+        438.33333333333337,
+        507.0
+      ],
+      "text": "A. Intubation of the trachea"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        511.3333333333333,
+        465.33333333333337,
+        519.6666666666667
+      ],
+      "text": "B. Insertion of a ventricular drain"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        524.0,
+        456.0,
+        534.6666666666667
+      ],
+      "text": "C. Decompressive craniectomy"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        537.0,
+        457.66666666666663,
+        547.6666666666667
+      ],
+      "text": "D. Infusion of hypertonic saline"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        549.3333333333333,
+        460.0,
+        560.0
+      ],
+      "text": "E. Maintenance of normocapnia"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        313.0,
+        573.3333333333334,
+        545.0,
+        584.0
+      ],
+      "text": "5. One study on traumatic brain injury and ICP"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        586.0,
+        544.6666666666666,
+        596.6666666666666
+      ],
+      "text": "monitoring it was found that decompressive"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        598.3333333333334,
+        544.6666666666666,
+        609.0
+      ],
+      "text": "craniectomy ameliorates increased intracranial"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        611.3333333333334,
+        544.6666666666666,
+        622.0
+      ],
+      "text": "pressure (ICP) following diffuse traumatic injury"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        331.0,
+        624.0,
+        544.6666666666666,
+        634.6666666666666
+      ],
+      "text": "(DTI) but does not improve outcome as assessed"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        636.3333333333334,
+        543.6666666666666,
+        647.0
+      ],
+      "text": "by the extended Glasgow Outcome Scale score."
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        649.0,
+        544.3333333333334,
+        659.6666666666666
+      ],
+      "text": "What could be the best explanation for such a"
+    },
+    {
+      "page": 135,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        662.0,
+        362.0,
+        672.6666666666666
+      ],
+      "text": "finding"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        234.0,
+        62.33333333333333,
+        306.0,
+        76.66666666666667
+      ],
+      "text": "Critical”"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        269.33333333333337,
+        96.33333333333334,
+        306.0,
+        107.0
+      ],
+      "text": "PICU"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        266.66666666666663,
+        117.0,
+        303.0,
+        124.0
+      ],
+      "text": "Praveen"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        154.66666666666669,
+        129.0,
+        306.0,
+        138.66666666666669
+      ],
+      "text": "BLK Superspeciality Hospital, New De"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        179.0,
+        137.0,
+        305.6666666666667,
+        150.66666666666669
+      ],
+      "text": "Received:22-Oct-2015 /Accepted:29-Oc"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        68.66666666666667,
+        158.33333333333331,
+        299.0,
+        169.0
+      ],
+      "text": "1. A patient ingests antifreeze and needs to eliminate"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        171.33333333333331,
+        299.0,
+        182.0
+      ],
+      "text": "the ingested acid. Renal elimination of the protons"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        184.0,
+        299.66666666666663,
+        194.66666666666666
+      ],
+      "text": "in this excess acid is primarily accomplished by"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        196.33333333333334,
+        245.33333333333334,
+        207.0
+      ],
+      "text": "which of the following mechanisms."
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        214.0,
+        259.0,
+        224.66666666666666
+      ],
+      "text": "A. Increased urinary ammonium excretion"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        226.33333333333334,
+        269.33333333333337,
+        237.0
+      ],
+      "text": "B. Increased urinary excretion of phosphates"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        239.0,
+        160.0,
+        249.66666666666666
+      ],
+      "text": "C. Hyperventilation"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        250.66666666666666,
+        299.66666666666663,
+        264.0
+      ],
+      "text": "D. Increased urinary free hydrogenion concentration"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        264.33333333333337,
+        238.0,
+        275.0
+      ],
+      "text": "E. Increased urinary sulfate excretion"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        288.0,
+        299.0,
+        298.66666666666663
+      ],
+      "text": "2. Which one of the following statements is true"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        301.0,
+        201.0,
+        311.6666666666667
+      ],
+      "text": "about the proximal tubule."
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        318.3333333333333,
+        299.33333333333337,
+        326.6666666666667
+      ],
+      "text": "A. The Na+/K+ ATPase drives sodium into the cell"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        332.0,
+        227.0,
+        340.0
+      ],
+      "text": "from the urine side of the tubule"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        345.0,
+        299.66666666666663,
+        355.6666666666667
+      ],
+      "text": "B. Na+/H+ exchange is largely the mechanism by"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        358.0,
+        247.33333333333334,
+        368.6666666666667
+      ],
+      "text": "which hydrogen ion secretion occurs"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        371.3333333333333,
+        300.66666666666663,
+        382.0
+      ],
+      "text": "C. Bicarbonate reabsorption is independent of"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        384.3333333333333,
+        206.66666666666666,
+        395.0
+      ],
+      "text": "carbonic anhydrase activity"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        398.0,
+        299.66666666666663,
+        408.6666666666667
+      ],
+      "text": "D. The pH in the lumen of the proximal tubule can"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        411.0,
+        196.0,
+        419.0
+      ],
+      "text": "reach as low as about 5.0"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        435.3333333333333,
+        299.0,
+        446.0
+      ],
+      "text": "3. A patient takes a drug overdose and becomes"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        448.3333333333333,
+        299.66666666666663,
+        459.0
+      ],
+      "text": "comatose. His blood pCO2 was 40 mmHg ten"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        461.3333333333333,
+        299.33333333333337,
+        472.0
+      ],
+      "text": "minutes ago. but you discover it is now 80"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        475.0,
+        299.0,
+        485.6666666666667
+      ],
+      "text": "mmHg. Which one of the following statements"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        488.0,
+        206.66666666666666,
+        498.6666666666667
+      ],
+      "text": "about this patient is correct."
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        506.0,
+        299.66666666666663,
+        516.6666666666667
+      ],
+      "text": "A. The pH of his CSF is likely to fall more slowly"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        519.0,
+        192.33333333333334,
+        529.6666666666667
+      ],
+      "text": "than the pH of his blood"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        532.0,
+        299.66666666666663,
+        542.6666666666667
+      ],
+      "text": "B. The pH of his blood is likely to fall more slowly"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        545.3333333333333,
+        186.66666666666666,
+        556.0
+      ],
+      "text": "than the pH of his CSF"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        558.3333333333334,
+        299.0,
+        569.0
+      ],
+      "text": "C. The pH of the blood and CSF will not change"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        572.0,
+        299.66666666666663,
+        582.6666666666666
+      ],
+      "text": "because he will rapidly eliminate bicarbonate in"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        585.0,
+        263.0,
+        595.6666666666666
+      ],
+      "text": "the urine in response to the rise in pCO2"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        598.0,
+        299.0,
+        608.6666666666666
+      ],
+      "text": "D. The pH of the blood and CSF will change to a"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        611.3333333333334,
+        231.33333333333334,
+        622.0
+      ],
+      "text": "similar degree in this time period"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        636.0,
+        194.0,
+        646.6666666666666
+      ],
+      "text": "4. Atrial natriuretic peptide"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        653.3333333333334,
+        208.66666666666666,
+        664.0
+      ],
+      "text": "A. Increases H20 reabsorption"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        666.3333333333334,
+        223.0,
+        677.0
+      ],
+      "text": "B. Decreases sodium reabsorption"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        680.0,
+        194.66666666666666,
+        688.0
+      ],
+      "text": "C. Increases serum chloride"
+    },
+    {
+      "page": 138,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        693.0,
+        219.66666666666666,
+        703.6666666666666
+      ],
+      "text": "D. Increases sodium reabsorption"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        306.0,
+        96.33333333333334,
+        342.6666666666667,
+        109.66666666666667
+      ],
+      "text": "Quiz"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        306.0,
+        117.0,
+        345.6666666666667,
+        124.0
+      ],
+      "text": "Khilnani"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        306.0,
+        129.0,
+        457.33333333333337,
+        138.66666666666669
+      ],
+      "text": "lhi & Mediclinic City Hospital, Dubai"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        306.0,
+        137.0,
+        428.3333333333333,
+        150.66666666666669
+      ],
+      "text": "t-2015/Published online:15-Nov-2015"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        158.33333333333331,
+        480.66666666666663,
+        169.0
+      ],
+      "text": "E. Decreases phosphate reabsorption"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        313.0,
+        183.0,
+        544.3333333333334,
+        191.0
+      ],
+      "text": "5. Intravenous administration of 2 fluid boluses"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        331.0,
+        196.33333333333334,
+        544.3333333333334,
+        207.0
+      ],
+      "text": "(20ml/Kg)of isotonic Ringer's solution to a"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        209.33333333333334,
+        435.33333333333337,
+        220.0
+      ],
+      "text": "healthy child can cause:"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        226.33333333333334,
+        532.0,
+        237.0
+      ],
+      "text": "A. Increased cardiac output and renal blood flow"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        239.33333333333334,
+        397.3333333333333,
+        247.66666666666666
+      ],
+      "text": "B. Increased GFR"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        252.0,
+        544.6666666666666,
+        262.66666666666663
+      ],
+      "text": "C. Increased atrial natriuretic peptide and decreased"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        264.33333333333337,
+        398.3333333333333,
+        275.0
+      ],
+      "text": "renin in plasma"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        277.0,
+        416.3333333333333,
+        285.0
+      ],
+      "text": "D. A and C are correct"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        290.0,
+        391.3333333333333,
+        298.0
+      ],
+      "text": "E. all are correct"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        313.0,
+        314.3333333333333,
+        532.6666666666666,
+        325.0
+      ],
+      "text": "6. Concerning arterial blood pressure regulation:"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        331.3333333333333,
+        544.3333333333334,
+        342.0
+      ],
+      "text": "A. Prostaglandins and dopamine and bradykinin are"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        344.0,
+        383.6666666666667,
+        352.0
+      ],
+      "text": "vasodilators"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        356.3333333333333,
+        544.3333333333334,
+        367.0
+      ],
+      "text": "B. Angiotensin II and norepinephrine are"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        369.3333333333333,
+        383.6666666666667,
+        377.6666666666667
+      ],
+      "text": "vasodilators"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        382.0,
+        544.6666666666666,
+        392.6666666666667
+      ],
+      "text": "C. Heart rate is a strong determinant of blood"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        397.0,
+        367.3333333333333,
+        405.0
+      ],
+      "text": "pressure"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        407.3333333333333,
+        394.3333333333333,
+        415.6666666666667
+      ],
+      "text": "D. All are correct"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        420.3333333333333,
+        404.0,
+        428.0
+      ],
+      "text": "E. None are correct"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        313.0,
+        444.3333333333333,
+        544.6666666666666,
+        455.0
+      ],
+      "text": "7. Within an hour following intravenous angiotensin"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        457.3333333333333,
+        544.6666666666666,
+        468.0
+      ],
+      "text": "II infusion, the following is(are) clinically"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        470.3333333333333,
+        365.3333333333333,
+        478.6666666666667
+      ],
+      "text": "evident:"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        488.0,
+        544.6666666666666,
+        498.6666666666667
+      ],
+      "text": "A. Increased sodium uptake in the proximal tubular"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        500.3333333333333,
+        378.0,
+        511.0
+      ],
+      "text": "epithelium"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        513.0,
+        446.0,
+        523.6666666666667
+      ],
+      "text": "B. Systemic vasoconstriction"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        526.0,
+        460.0,
+        536.6666666666667
+      ],
+      "text": "C. Increased plasma aldosterone"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        538.3333333333333,
+        416.3333333333333,
+        546.6666666666667
+      ],
+      "text": "D. A and C are correct"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        551.0,
+        394.3333333333333,
+        559.0
+      ],
+      "text": "E. All are correct"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        313.0,
+        575.3333333333334,
+        544.6666666666666,
+        586.0
+      ],
+      "text": "8. Concerning water reabsorption by the proximal"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        588.3333333333334,
+        360.3333333333333,
+        596.6666666666666
+      ],
+      "text": "tubule:"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        606.0,
+        544.6666666666666,
+        616.6666666666666
+      ],
+      "text": "A. Main driving forces for water reabsorption in the"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        618.3333333333334,
+        544.3333333333334,
+        629.0
+      ],
+      "text": "proximal tubule are solute uptake and oncotic"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        631.0,
+        477.66666666666663,
+        641.6666666666666
+      ],
+      "text": "pressure in peritubular capillaries"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        644.0,
+        544.6666666666666,
+        654.6666666666666
+      ],
+      "text": "B. A significant amount of water uptake in the"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        656.3333333333334,
+        544.6666666666666,
+        667.0
+      ],
+      "text": "proximal tubule is dependent on sodium uptake"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        669.0,
+        544.6666666666666,
+        679.6666666666666
+      ],
+      "text": "by the Na/H antiports present in their luminal"
+    },
+    {
+      "page": 138,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        681.3333333333334,
+        377.0,
+        689.6666666666666
+      ],
+      "text": "membrane"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        245.66666666666666,
+        93.0,
+        306.0,
+        98.0
+      ],
+      "text": "eo 0 r"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        217.0,
+        93.0,
+        306.0,
+        110.0
+      ],
+      "text": "Critical”"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        260.0,
+        151.33333333333331,
+        306.0,
+        158.33333333333331
+      ],
+      "text": "Dr. Namee"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        177.0,
+        164.0,
+        306.0,
+        171.33333333333331
+      ],
+      "text": "Sr Consultant Pediatric Intensivi"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        181.66666666666666,
+        176.33333333333334,
+        306.0,
+        184.66666666666666
+      ],
+      "text": "Received:1-May-2014 /Accepted:8-Ma"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        70.33333333333333,
+        192.66666666666666,
+        294.33333333333337,
+        203.0
+      ],
+      "text": "1. Which of the following statements is true about"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.0,
+        205.66666666666666,
+        251.33333333333334,
+        216.0
+      ],
+      "text": "blood pressure measurements in the PICU:"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        86.66666666666666,
+        237.33333333333334,
+        294.0,
+        245.33333333333334
+      ],
+      "text": "a. Oscillometric measurements are more"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        105.33333333333334,
+        250.33333333333334,
+        294.0,
+        260.66666666666663
+      ],
+      "text": "likely to overestimate the systolic and"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        105.0,
+        262.66666666666663,
+        288.33333333333337,
+        273.0
+      ],
+      "text": "underestimate the diastolic blood pressure."
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        86.66666666666666,
+        278.66666666666663,
+        294.0,
+        289.0
+      ],
+      "text": "b. Arterial pressure waveforms show"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        105.33333333333334,
+        291.66666666666663,
+        294.0,
+        302.0
+      ],
+      "text": "increased systolic pressure moving from"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        105.0,
+        304.3333333333333,
+        295.66666666666663,
+        314.6666666666667
+      ],
+      "text": "central to peripheral artery because of"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        105.0,
+        316.0,
+        192.66666666666666,
+        329.0
+      ],
+      "text": "reduced dampening."
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        86.66666666666666,
+        333.3333333333333,
+        294.66666666666663,
+        341.3333333333333
+      ],
+      "text": "c. Pressure wave travels about 10 times faster"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        105.0,
+        345.6666666666667,
+        221.66666666666666,
+        356.0
+      ],
+      "text": "than flow wave in an artery."
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        86.33333333333334,
+        361.6666666666667,
+        294.0,
+        372.0
+      ],
+      "text": "d. The phenomenon of systolic amplification"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        105.33333333333334,
+        374.3333333333333,
+        294.0,
+        384.6666666666667
+      ],
+      "text": "is augmented in states of vasodilatory"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        105.33333333333334,
+        387.3333333333333,
+        133.33333333333331,
+        395.3333333333333
+      ],
+      "text": "shock."
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.0,
+        434.6666666666667,
+        294.0,
+        445.0
+      ],
+      "text": "2. A 2-year-old child, known case of Spinal"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.0,
+        447.6666666666667,
+        294.0,
+        458.0
+      ],
+      "text": "Muscular Atrophy presents with altered sensorium"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.0,
+        460.3333333333333,
+        294.66666666666663,
+        470.6666666666667
+      ],
+      "text": "over last week. An arterial blood gas in room air"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.33333333333333,
+        473.3333333333333,
+        294.0,
+        483.6666666666667
+      ],
+      "text": "shows PaO2 40 mmHg, PaCO2 80 mmHg, and pH"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.0,
+        485.6666666666667,
+        294.66666666666663,
+        496.0
+      ],
+      "text": "of 7.29. Which of the following would explain her"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.0,
+        498.6666666666667,
+        122.66666666666667,
+        509.0
+      ],
+      "text": "hypoxemia?"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        87.0,
+        529.0,
+        244.33333333333334,
+        542.0
+      ],
+      "text": "a. Ventilation—perfusion mismatch"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        87.0,
+        546.3333333333333,
+        197.0,
+        556.6666666666667
+      ],
+      "text": "b. Intracardiac shunting"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        87.0,
+        562.3333333333334,
+        213.0,
+        572.6666666666666
+      ],
+      "text": "c. Intrapulmonary shunting"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        87.0,
+        577.6666666666666,
+        214.0,
+        588.0
+      ],
+      "text": "d. Alveolar hypoventilation"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.33333333333333,
+        625.3333333333334,
+        294.0,
+        635.6666666666666
+      ],
+      "text": "3. A 15-year-old girl presents to the emergency"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.0,
+        638.3333333333334,
+        294.0,
+        648.6666666666666
+      ],
+      "text": "department 1 h after alleged ingestion of many"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.0,
+        651.3333333333334,
+        294.0,
+        661.6666666666666
+      ],
+      "text": "phenobarbitone tablets and is found to have SpO2-"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.33333333333333,
+        663.6666666666666,
+        293.66666666666663,
+        673.3333333333334
+      ],
+      "text": "82%. An ABG taken in room air shows PaO2 - 58,"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.0,
+        676.6666666666666,
+        294.0,
+        687.0
+      ],
+      "text": "PaCO2 -48, and pH -7.32. The patient is placed on a"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        70.33333333333333,
+        689.3333333333334,
+        293.66666666666663,
+        699.6666666666666
+      ],
+      "text": "100% face mask and some time later the SpO2 is"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.33333333333333,
+        702.3333333333334,
+        294.66666666666663,
+        712.6666666666666
+      ],
+      "text": "88%. Which of the following would explain her"
+    },
+    {
+      "page": 140,
+      "col": 0,
+      "bbox": [
+        69.0,
+        714.6666666666666,
+        122.66666666666667,
+        725.0
+      ],
+      "text": "hypoxemia?"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        331.6666666666667,
+        93.0,
+        369.0,
+        97.0
+      ],
+      "text": ". ."
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        306.0,
+        93.33333333333334,
+        395.6666666666667,
+        115.0
+      ],
+      "text": "['hinking"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        306.0,
+        128.33333333333331,
+        356.3333333333333,
+        145.66666666666669
+      ],
+      "text": "| Quiz"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        306.0,
+        151.33333333333331,
+        357.6666666666667,
+        158.33333333333331
+      ],
+      "text": "t Jerath MD"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        306.0,
+        162.66666666666669,
+        441.0,
+        174.66666666666666
+      ],
+      "text": "st, IP Apollo Hospital, New Delhi"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        306.0,
+        176.33333333333334,
+        428.6666666666667,
+        184.66666666666666
+      ],
+      "text": "y-2014/Published online:15-May-2014"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.0,
+        207.33333333333334,
+        497.0,
+        220.66666666666666
+      ],
+      "text": "a. Ventilation—perfusion mismatch"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.0,
+        224.66666666666666,
+        449.66666666666663,
+        235.0
+      ],
+      "text": "b. Intracardiac shunting"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.0,
+        240.66666666666666,
+        465.0,
+        251.0
+      ],
+      "text": "c. Intrapulmonary shunting"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.0,
+        256.33333333333337,
+        466.33333333333337,
+        266.66666666666663
+      ],
+      "text": "d. Alveolar hypoventilation"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        321.0,
+        303.6666666666667,
+        546.0,
+        314.0
+      ],
+      "text": "4. A man has a pulmonary embolism that completely"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        321.0,
+        316.6666666666667,
+        546.0,
+        327.0
+      ],
+      "text": "blocks blood flow to his left lung. As a result, which"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        321.0,
+        328.3333333333333,
+        439.33333333333337,
+        341.6666666666667
+      ],
+      "text": "of the following will occur?"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.6666666666667,
+        361.3333333333333,
+        546.0,
+        371.6666666666667
+      ],
+      "text": "a. Ventilation/perfusion (V/Q) ratio in the left"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        358.0,
+        372.3333333333333,
+        428.3333333333333,
+        385.6666666666667
+      ],
+      "text": "lung will be zero"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.6666666666667,
+        389.6666666666667,
+        520.6666666666666,
+        400.0
+      ],
+      "text": "b. Systemic arterial PO2 will be elevated"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.6666666666667,
+        405.6666666666667,
+        546.0,
+        416.0
+      ],
+      "text": "c. V/Q ratio in the left lung will be lower than"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        357.6666666666667,
+        418.3333333333333,
+        424.6666666666667,
+        428.6666666666667
+      ],
+      "text": "in the right lung"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.3333333333333,
+        434.3333333333333,
+        546.3333333333334,
+        444.6666666666667
+      ],
+      "text": "d. Alveolar PO2 in the left lung will be"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        357.6666666666667,
+        447.3333333333333,
+        546.3333333333334,
+        457.6666666666667
+      ],
+      "text": "approximately equal to the PO2 in inspired"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        357.6666666666667,
+        459.6666666666667,
+        369.6666666666667,
+        467.6666666666667
+      ],
+      "text": "air"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.6666666666667,
+        475.6666666666667,
+        546.3333333333334,
+        486.0
+      ],
+      "text": "e. Alveolar PO2 in the right lung will be"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        357.6666666666667,
+        488.3333333333333,
+        546.3333333333334,
+        498.6666666666667
+      ],
+      "text": "approximately equal to the PO2 in venous"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        357.3333333333333,
+        501.3333333333333,
+        382.3333333333333,
+        509.3333333333333
+      ],
+      "text": "blood"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        321.3333333333333,
+        548.6666666666667,
+        546.0,
+        559.0
+      ],
+      "text": "5. A 12-year-old boy has a severe asthmatic attack"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        321.0,
+        561.6666666666666,
+        545.6666666666666,
+        572.0
+      ],
+      "text": "with wheezing. He worsens and becomes cyanotic."
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        321.0,
+        574.3333333333334,
+        485.33333333333337,
+        584.0
+      ],
+      "text": "His ABG PO2 - 60, and his PCO2 - 30."
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        321.0,
+        590.3333333333334,
+        546.0,
+        600.6666666666666
+      ],
+      "text": "Which of the following statements is most likely to"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        321.0,
+        603.0,
+        355.3333333333333,
+        611.0
+      ],
+      "text": "be true?"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.0,
+        634.6666666666666,
+        546.0,
+        645.0
+      ],
+      "text": "a. Forced expiratory volume/forced vital"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        357.0,
+        647.3333333333334,
+        505.66666666666663,
+        657.6666666666666
+      ],
+      "text": "capacity (FEV1/FVC) is increased"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.0,
+        663.3333333333334,
+        546.3333333333334,
+        673.6666666666666
+      ],
+      "text": "b. Ventilation/perfusion (V/Q) ratio is"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        357.3333333333333,
+        675.0,
+        535.6666666666666,
+        688.0
+      ],
+      "text": "increased in the affected areas of his lungs"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.0,
+        691.6666666666666,
+        546.0,
+        702.0
+      ],
+      "text": "c. His arterial PCO2 is higher than normal"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        357.0,
+        704.6666666666666,
+        511.33333333333337,
+        715.0
+      ],
+      "text": "because of inadequate gas exchange"
+    },
+    {
+      "page": 140,
+      "col": 1,
+      "bbox": [
+        339.0,
+        720.6666666666666,
+        546.0,
+        729.0
+      ],
+      "text": "d. His arterial PCO2 is lower than normal"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.66666666666667,
+        89.0,
+        145.66666666666669,
+        95.33333333333334
+      ],
+      "text": "CRITICAL THINKING"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.33333333333333,
+        190.66666666666666,
+        294.66666666666663,
+        201.0
+      ],
+      "text": "causes of wide A-a gradient are shunts-"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        203.66666666666666,
+        293.66666666666663,
+        214.0
+      ],
+      "text": "intrapulmonary or intracardiac and V/Q mismatch."
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        68.66666666666667,
+        216.33333333333334,
+        294.66666666666663,
+        226.66666666666666
+      ],
+      "text": "Failure of improvement of hypoxemia to 100%"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        229.33333333333334,
+        295.0,
+        239.66666666666666
+      ],
+      "text": "oxygen makes V/Q mismatch unlikely. In an acute"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        68.66666666666667,
+        242.33333333333334,
+        293.66666666666663,
+        252.66666666666666
+      ],
+      "text": "setting with no prior history of cardiac disease,"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        254.66666666666666,
+        294.66666666666663,
+        265.0
+      ],
+      "text": "intrapulmonary shunting (aspiration, pneumonia) is"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        267.66666666666663,
+        131.66666666666669,
+        278.0
+      ],
+      "text": "the most likely."
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        315.3333333333333,
+        123.66666666666667,
+        323.3333333333333
+      ],
+      "text": "4. Answer: d"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        68.66666666666667,
+        331.3333333333333,
+        294.33333333333337,
+        341.6666666666667
+      ],
+      "text": "Explanation: The V/Q in left lung with no perfusion"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        346.3333333333333,
+        294.66666666666663,
+        356.6666666666667
+      ],
+      "text": "would be ∞, with lowering of PO2. Alveolar PO2"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        361.6666666666667,
+        295.0,
+        372.0
+      ],
+      "text": "would equilibrate with alveolar PO2 without any"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        374.3333333333333,
+        297.0,
+        384.6666666666667
+      ],
+      "text": "improvement in systemic PO2 because of absence of"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        387.3333333333333,
+        130.33333333333331,
+        397.6666666666667
+      ],
+      "text": "any perfusion."
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.33333333333333,
+        434.6666666666667,
+        123.66666666666667,
+        443.0
+      ],
+      "text": "5. Answer: d"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        68.66666666666667,
+        450.6666666666667,
+        295.0,
+        461.0
+      ],
+      "text": "Explanation: Hypoxia induces a strong respiratory"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        463.3333333333333,
+        295.0,
+        473.6666666666667
+      ],
+      "text": "drive mediated by the carotid and aortic body"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        476.3333333333333,
+        294.66666666666663,
+        486.6666666666667
+      ],
+      "text": "chemoreceptors. This induces respiratory alkalosis"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        488.6666666666667,
+        226.66666666666666,
+        499.0
+      ],
+      "text": "untill the drive is able to compensate."
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        536.3333333333333,
+        123.0,
+        544.3333333333333
+      ],
+      "text": "6. Answer: b"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        68.66666666666667,
+        552.3333333333333,
+        297.0,
+        562.6666666666666
+      ],
+      "text": "Explanation: Elastance is the reciprocal of"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        565.3333333333334,
+        295.0,
+        575.6666666666666
+      ],
+      "text": "compliance. Compliance can be calculated from the"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        68.33333333333333,
+        577.6666666666666,
+        294.66666666666663,
+        588.0
+      ],
+      "text": "given data, C= dV/ dP, 100/20=5 ml/cmH20. The"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        590.6666666666666,
+        294.66666666666663,
+        601.0
+      ],
+      "text": "elastance of the respiratory system is 1/C= 0.2"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        603.3333333333334,
+        116.66666666666667,
+        611.3333333333334
+      ],
+      "text": "cmH20/ml."
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        651.0,
+        122.66666666666667,
+        659.0
+      ],
+      "text": "7. Answer: c"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        68.66666666666667,
+        666.6666666666666,
+        295.0,
+        677.0
+      ],
+      "text": "Explanation: The child is hemodynamically stable"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        679.6666666666666,
+        295.0,
+        690.0
+      ],
+      "text": "without any active bleed in the PICU. Platelet"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        692.3333333333334,
+        294.33333333333337,
+        702.6666666666666
+      ],
+      "text": "counts and coagulation profile are reasonable for a"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        705.3333333333334,
+        294.33333333333337,
+        715.6666666666666
+      ],
+      "text": "child with no active bleed. Hypothermia along with"
+    },
+    {
+      "page": 143,
+      "col": 0,
+      "bbox": [
+        69.0,
+        717.6666666666666,
+        294.33333333333337,
+        728.0
+      ],
+      "text": "acidosis and tissue hypoperfusion can worsen"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        508.66666666666663,
+        89.0,
+        546.6666666666666,
+        95.66666666666666
+      ],
+      "text": "PICU Quiz"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        191.66666666666666,
+        544.3333333333334,
+        202.0
+      ],
+      "text": "coagulopathy in a post-traumatic bleeding child."
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        320.6666666666667,
+        204.66666666666666,
+        486.33333333333337,
+        215.0
+      ],
+      "text": "Hypothermia should be corrected now."
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.3333333333333,
+        252.33333333333334,
+        375.6666666666667,
+        260.33333333333337
+      ],
+      "text": "8. Answer: d"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        320.6666666666667,
+        268.33333333333337,
+        545.6666666666666,
+        278.66666666666663
+      ],
+      "text": "Explanation: The situation of withdrawal after"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        319.6666666666667,
+        280.66666666666663,
+        545.3333333333334,
+        291.0
+      ],
+      "text": "prolonged opioid and/or benzodiazepine use in"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        320.6666666666667,
+        293.66666666666663,
+        545.6666666666666,
+        302.0
+      ],
+      "text": "ICUs is neither unknown nor uncommon. There are"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        306.3333333333333,
+        545.6666666666666,
+        316.6666666666667
+      ],
+      "text": "many ways of dealing with withdrawal mostly"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        319.3333333333333,
+        546.0,
+        329.6666666666667
+      ],
+      "text": "including restarting of opioid with very gradual"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        332.3333333333333,
+        546.0,
+        342.6666666666667
+      ],
+      "text": "tapering. Clonidine with its central alpha2 agonist"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        344.6666666666667,
+        545.6666666666666,
+        355.0
+      ],
+      "text": "activity is often added to this regime. Oral morphine"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        357.6666666666667,
+        545.6666666666666,
+        366.0
+      ],
+      "text": "when started needs to be about 4-5 times the"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        370.3333333333333,
+        545.6666666666666,
+        380.6666666666667
+      ],
+      "text": "intravenous dose. Switching from Morphine to"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        320.6666666666667,
+        383.3333333333333,
+        545.3333333333334,
+        393.6666666666667
+      ],
+      "text": "Fentanyl offers no advantage. Amongst the options"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        319.6666666666667,
+        395.6666666666667,
+        459.66666666666663,
+        406.0
+      ],
+      "text": "provided “d” is the most logical."
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        443.3333333333333,
+        375.0,
+        451.3333333333333
+      ],
+      "text": "9. Answer: b"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        320.6666666666667,
+        459.3333333333333,
+        545.6666666666666,
+        469.6666666666667
+      ],
+      "text": "Explanation: The graphic is representative of APRV,"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        320.3333333333333,
+        472.3333333333333,
+        545.3333333333334,
+        482.6666666666667
+      ],
+      "text": "Airway Pressure Release Ventilation. This is an"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        484.6666666666667,
+        545.3333333333334,
+        495.0
+      ],
+      "text": "extreme form of inverse ratio ventilation and allows"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        319.6666666666667,
+        497.6666666666667,
+        546.0,
+        508.0
+      ],
+      "text": "patient to breathe spontaneously while delivering"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        510.6666666666667,
+        546.0,
+        521.0
+      ],
+      "text": "mandated “release” breaths. The release is kept"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        320.6666666666667,
+        523.3333333333333,
+        545.6666666666666,
+        532.6666666666667
+      ],
+      "text": "short, a low Tlow. The Plow can be set at zero"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        536.3333333333333,
+        546.0,
+        546.6666666666667
+      ],
+      "text": "ensuring the flow doesnot go down to zero, by using"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        548.6666666666667,
+        548.0,
+        559.0
+      ],
+      "text": "a shorter Tlow. Patients can contribute upto 40% of"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        320.6666666666667,
+        562.0,
+        338.0,
+        569.6666666666666
+      ],
+      "text": "MV."
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        322.3333333333333,
+        609.3333333333334,
+        381.0,
+        617.3333333333334
+      ],
+      "text": "10. Answer: d"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        320.6666666666667,
+        625.3333333333334,
+        545.6666666666666,
+        635.6666666666666
+      ],
+      "text": "Explanation: The graph is of PaO2 vs CaO2 the"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        636.3333333333334,
+        544.3333333333334,
+        649.3333333333334
+      ],
+      "text": "oxygen content (1.34 x Hb x Sa02 + 0.003 x Pa02)."
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        320.3333333333333,
+        650.6666666666666,
+        545.6666666666666,
+        661.0
+      ],
+      "text": "A drop on content from A to B can be easily"
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        321.0,
+        663.3333333333334,
+        512.6666666666666,
+        673.6666666666666
+      ],
+      "text": "explained by a drop in hemoglobin, bleeding."
+    },
+    {
+      "page": 143,
+      "col": 1,
+      "bbox": [
+        323.0,
+        699.0,
+        543.0,
+        708.6666666666666
+      ],
+      "text": "Conflict of Interest: None Source of Funding: None"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        234.0,
+        62.33333333333333,
+        306.0,
+        76.66666666666667
+      ],
+      "text": "Critical”"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        269.33333333333337,
+        96.33333333333334,
+        306.0,
+        107.0
+      ],
+      "text": "PICU"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        264.0,
+        117.0,
+        306.0,
+        124.0
+      ],
+      "text": "Nameet J"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        197.66666666666666,
+        129.0,
+        306.0,
+        137.0
+      ],
+      "text": "Senior Consultant, Pediatri"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        243.0,
+        139.66666666666669,
+        306.0,
+        151.33333333333331
+      ],
+      "text": "IP Apollo Hosp"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        187.33333333333334,
+        152.33333333333331,
+        306.0,
+        160.66666666666669
+      ],
+      "text": "Received:1-Aug-2014/Accepted:8-Au"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        68.66666666666667,
+        181.0,
+        299.33333333333337,
+        191.66666666666666
+      ],
+      "text": "1. A 9-month-old boy presents with difficulty"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        193.33333333333334,
+        299.66666666666663,
+        204.0
+      ],
+      "text": "breathing. His mother states that he has been"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        206.0,
+        299.33333333333337,
+        216.66666666666666
+      ],
+      "text": "treated for croup twice already in the last 4"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        219.0,
+        299.0,
+        229.66666666666666
+      ],
+      "text": "months with similar symptoms. He has had 2 days"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        231.33333333333334,
+        299.66666666666663,
+        242.0
+      ],
+      "text": "of upper respiratory tract infection symptoms and"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        244.0,
+        299.66666666666663,
+        254.66666666666666
+      ],
+      "text": "now has expiratory stridor on examination. Which"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        257.0,
+        200.0,
+        267.66666666666663
+      ],
+      "text": "of the following is correct?"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        269.33333333333337,
+        299.0,
+        280.0
+      ],
+      "text": "a. Recurrent acute laryngotracheobronchitis"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        94.66666666666666,
+        282.0,
+        299.66666666666663,
+        292.66666666666663
+      ],
+      "text": "(croup) needs further investigation and should"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        94.33333333333334,
+        294.33333333333337,
+        158.33333333333331,
+        305.0
+      ],
+      "text": "not be ignored"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        307.3333333333333,
+        299.66666666666663,
+        318.0
+      ],
+      "text": "b. Intrathoracic airway obstruction is typically"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        94.33333333333334,
+        320.0,
+        202.0,
+        330.6666666666667
+      ],
+      "text": "worse during inspiration"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        332.3333333333333,
+        299.66666666666663,
+        343.0
+      ],
+      "text": "c. Extrathoracic airway obstruction is typically"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        94.33333333333334,
+        345.3333333333333,
+        202.0,
+        356.0
+      ],
+      "text": "worse during inspiration"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        358.0,
+        275.0,
+        368.6666666666667
+      ],
+      "text": "d. Croup (viral laryngotracheobronchitis) is"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        94.33333333333334,
+        370.3333333333333,
+        299.33333333333337,
+        381.0
+      ],
+      "text": "typically characterized by intrathoracic airway"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        94.33333333333334,
+        383.3333333333333,
+        144.0,
+        391.6666666666667
+      ],
+      "text": "obstruction"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        396.0,
+        144.66666666666669,
+        404.0
+      ],
+      "text": "e. All are true"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        417.3333333333333,
+        299.0,
+        428.0
+      ],
+      "text": "2. A patient with acute respiratory distress syndrome"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        430.0,
+        299.66666666666663,
+        440.6666666666667
+      ],
+      "text": "has been managed with high-frequency oscillatory"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        443.0,
+        299.66666666666663,
+        453.6666666666667
+      ],
+      "text": "ventilation for the past 2 hours. A blood gas study"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.33333333333334,
+        455.3333333333333,
+        299.0,
+        466.0
+      ],
+      "text": "shows pH of 7.48, PaCO2 of 30 mm Hg, PaO2"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        468.0,
+        299.0,
+        478.6666666666667
+      ],
+      "text": "of 70 mm Hg, bicarbonate level of 22 mEq/L."
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        481.0,
+        298.66666666666663,
+        491.6666666666667
+      ],
+      "text": "and oxygen saturation of 97% on a FIO2 of 0.6."
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        493.3333333333333,
+        299.0,
+        504.0
+      ],
+      "text": "Which of the following is the most appropriate"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        506.0,
+        139.0,
+        514.0
+      ],
+      "text": "intervention?"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        518.3333333333333,
+        236.33333333333334,
+        529.0
+      ],
+      "text": "a. Wean the mean airway pressure."
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        531.3333333333333,
+        181.33333333333334,
+        539.6666666666667
+      ],
+      "text": "b. Increase the delta P."
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        544.0,
+        199.0,
+        554.6666666666667
+      ],
+      "text": "c. Decrease the frequency."
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        556.3333333333333,
+        248.0,
+        567.0
+      ],
+      "text": "d. Increase the mean airway pressure."
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        569.3333333333334,
+        195.33333333333334,
+        580.0
+      ],
+      "text": "e. Increase the frequency."
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        591.0,
+        299.66666666666663,
+        601.6666666666666
+      ],
+      "text": "3. A 2 year old child is ventilated for 3 days with"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        603.3333333333334,
+        299.33333333333337,
+        614.0
+      ],
+      "text": "bronchiolitis. You extubate him today and almost"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        616.3333333333334,
+        300.66666666666663,
+        627.0
+      ],
+      "text": "immediately notice a significant stridor. Which of"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        629.0,
+        249.66666666666666,
+        639.6666666666666
+      ],
+      "text": "the following is true of this condition?"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        641.3333333333334,
+        199.33333333333334,
+        649.6666666666666
+      ],
+      "text": "a. Occurs in 50% of children."
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        654.0,
+        299.0,
+        664.6666666666666
+      ],
+      "text": "b. Begins within 18 hours, peaks at 48 hours,"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.0,
+        667.0,
+        180.0,
+        677.6666666666666
+      ],
+      "text": "and resolves by 5 days."
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        679.3333333333334,
+        299.33333333333337,
+        690.0
+      ],
+      "text": "c. Patients with active coughing and very light"
+    },
+    {
+      "page": 144,
+      "col": 0,
+      "bbox": [
+        81.33333333333334,
+        692.0,
+        248.33333333333334,
+        702.6666666666666
+      ],
+      "text": "sedation are less likely to develop this"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        306.0,
+        61.66666666666667,
+        378.6666666666667,
+        81.66666666666666
+      ],
+      "text": "[hinking"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        311.3333333333333,
+        96.33333333333334,
+        342.6666666666667,
+        109.66666666666667
+      ],
+      "text": "Quiz"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        306.0,
+        115.66666666666667,
+        349.6666666666667,
+        127.0
+      ],
+      "text": "erath, MD"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        306.0,
+        129.0,
+        415.0,
+        138.0
+      ],
+      "text": "c Intensivist Pulmonologist"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        306.3333333333333,
+        141.0,
+        367.6666666666667,
+        149.33333333333331
+      ],
+      "text": "ital. New Delhi"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        306.0,
+        152.33333333333331,
+        432.0,
+        160.66666666666669
+      ],
+      "text": "g-2014 /Published online:15-Aug-2014"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        181.0,
+        545.6666666666666,
+        191.66666666666666
+      ],
+      "text": "d. More prevalent in children above 5 years of"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        339.6666666666667,
+        193.33333333333334,
+        507.0,
+        204.0
+      ],
+      "text": "age who have undergone neck surgery."
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        206.0,
+        413.0,
+        214.0
+      ],
+      "text": "e. All of the above."
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        228.0,
+        544.6666666666666,
+        238.66666666666666
+      ],
+      "text": "4. A 12 year 48 kg boy with deep burns to about"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        240.33333333333334,
+        545.0,
+        251.0
+      ],
+      "text": "85% body surface area involving most of trunk"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        253.0,
+        544.3333333333334,
+        263.66666666666663
+      ],
+      "text": "and lower extremities is admitted to your ICU,"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        266.0,
+        544.6666666666666,
+        276.66666666666663
+      ],
+      "text": "intubated and ventilated. His ventilatory parameters"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        278.33333333333337,
+        545.0,
+        289.0
+      ],
+      "text": "are: Synchronized intermittent mandatory"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.0,
+        291.0,
+        544.3333333333334,
+        301.6666666666667
+      ],
+      "text": "ventilation+Pressure  Control/Pressure Support,"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.0,
+        303.3333333333333,
+        544.6666666666666,
+        314.0
+      ],
+      "text": "rate 25, pressures (Peak inspiratory pressure over"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        316.3333333333333,
+        545.0,
+        327.0
+      ],
+      "text": "PEEP/PEEP) 32+6/6, (Tidal volume generated"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        327.3333333333333,
+        329.0,
+        544.6666666666666,
+        339.6666666666667
+      ],
+      "text": "160ml) Inspiratory time 0.9 sec, FiO2 1. ABG"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        341.3333333333333,
+        516.3333333333334,
+        352.0
+      ],
+      "text": "shows pH 7.2, pCO2 82, pO2 52, HCO3 18."
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        354.3333333333333,
+        461.33333333333337,
+        365.0
+      ],
+      "text": "Chest Radiograph: clear fields."
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        367.0,
+        500.0,
+        377.6666666666667
+      ],
+      "text": "What is the most appropriate measure?"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        379.3333333333333,
+        544.3333333333334,
+        390.0
+      ],
+      "text": "a. Acceptable parameters, continue on same"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        340.0,
+        392.3333333333333,
+        514.0,
+        403.0
+      ],
+      "text": "settings avoiding further injury to lungs"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.0,
+        405.0,
+        468.0,
+        415.6666666666667
+      ],
+      "text": "b. Escharotomy of chest wound"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        417.3333333333333,
+        544.3333333333334,
+        428.0
+      ],
+      "text": "c. Increase PEEP. likely developing ALI (Acute"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        339.6666666666667,
+        430.0,
+        391.6666666666667,
+        440.6666666666667
+      ],
+      "text": "lung injury)"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        443.0,
+        544.6666666666666,
+        453.6666666666667
+      ],
+      "text": "d. Switch to High Frequency Oscillatory"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        339.3333333333333,
+        455.3333333333333,
+        544.6666666666666,
+        466.0
+      ],
+      "text": "Ventilation (HFOV). needs higher Mean"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        339.3333333333333,
+        468.0,
+        412.6666666666667,
+        478.6666666666667
+      ],
+      "text": "Airway Pressure"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        481.0,
+        469.66666666666663,
+        491.6666666666667
+      ],
+      "text": "e. Bronchoscopic toilet of lungs"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        313.3333333333333,
+        507.0,
+        544.6666666666666,
+        517.6666666666667
+      ],
+      "text": "5. A 15-day-old child is brought in respiratory"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        519.3333333333333,
+        544.3333333333334,
+        530.0
+      ],
+      "text": "distress. A Chest radiograph done shows"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        532.0,
+        544.0,
+        542.6666666666667
+      ],
+      "text": "markedly increased pulmonary vascularity."
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        545.0,
+        544.6666666666666,
+        555.6666666666667
+      ],
+      "text": "The echocardiogram shows Double Inlet"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        557.3333333333334,
+        544.6666666666666,
+        568.0
+      ],
+      "text": "Right Ventricle(DIRV) and confirms torrential"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.0,
+        570.0,
+        544.3333333333334,
+        580.6666666666666
+      ],
+      "text": "pulmonary flows. The vitals: HR 178, BP 50/28,"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        583.3333333333334,
+        544.0,
+        593.6666666666666
+      ],
+      "text": "RR 90, SPO2-98%.ABG: pH 7.25, pCO2 35, pO2"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        595.3333333333334,
+        418.6666666666667,
+        604.3333333333334
+      ],
+      "text": "90, BE -13. lactate 6."
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        608.0,
+        544.6666666666666,
+        616.0
+      ],
+      "text": "The child is intubated and initiated on mechanical"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.0,
+        621.0,
+        544.6666666666666,
+        631.6666666666666
+      ],
+      "text": "ventilation. The cardiologist and surgeons plan"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.6666666666667,
+        633.3333333333334,
+        544.6666666666666,
+        644.0
+      ],
+      "text": "for pulmonary artery banding which can only"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        646.0,
+        544.3333333333334,
+        656.6666666666666
+      ],
+      "text": "happen the next morning. Over the next few hours"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        658.3333333333334,
+        544.6666666666666,
+        669.0
+      ],
+      "text": "the child has drop in urine output and the ABG on"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.0,
+        671.3333333333334,
+        544.3333333333334,
+        682.0
+      ],
+      "text": "room air shows- pH 7.20, pCO2 40, pO2 84. BE"
+    },
+    {
+      "page": 144,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        684.0,
+        385.3333333333333,
+        693.0
+      ],
+      "text": "-17, lactate 9."
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        56.666666666666664,
+        145.33333333333331,
+        67.33333333333333
+      ],
+      "text": "CRITICAL THINKING"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        90.0,
+        125.33333333333333,
+        97.66666666666666
+      ],
+      "text": "2. Answer: e"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        80.33333333333334,
+        102.33333333333334,
+        299.33333333333337,
+        113.0
+      ],
+      "text": "A child with ARDS is hyperventilated on the"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        80.33333333333334,
+        115.0,
+        299.0,
+        125.66666666666667
+      ],
+      "text": "HFOV as suggested by the pH and the PaCO2"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        127.33333333333333,
+        299.0,
+        138.0
+      ],
+      "text": "levels. The SpO2 is reasonable on 60% FiO2"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        140.0,
+        299.33333333333337,
+        150.66666666666669
+      ],
+      "text": "and attempts to wean mean airway pressure"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        153.0,
+        299.0,
+        163.66666666666669
+      ],
+      "text": "would be a little premature. Ventilation (CO2"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        165.33333333333331,
+        299.66666666666663,
+        176.0
+      ],
+      "text": "washout) is a function of tidal volume (read"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        178.0,
+        299.66666666666663,
+        188.66666666666666
+      ],
+      "text": "delta P) and frequency on the HFOV. Increasing"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        191.0,
+        299.33333333333337,
+        201.66666666666666
+      ],
+      "text": "delta P would washout CO2 even further by"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        203.33333333333334,
+        299.66666666666663,
+        214.0
+      ],
+      "text": "increasing the swing of the piston and the tidal"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        216.0,
+        298.33333333333337,
+        226.66666666666666
+      ],
+      "text": "volume. Contrary to conventional ventilation,"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        78.66666666666666,
+        229.0,
+        299.66666666666663,
+        239.66666666666666
+      ],
+      "text": "frequency has an inverse relationship to CO2 and"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        241.33333333333334,
+        299.33333333333337,
+        252.0
+      ],
+      "text": "increasing the frequency (hertz) would increase"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.33333333333334,
+        254.0,
+        132.66666666666669,
+        262.0
+      ],
+      "text": "the PaCO2."
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        276.0,
+        125.33333333333333,
+        283.66666666666663
+      ],
+      "text": "3. Answer: e"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.66666666666666,
+        288.33333333333337,
+        298.0,
+        299.0
+      ],
+      "text": "This is the condition of postextubation croup."
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        80.33333333333334,
+        301.0,
+        300.0,
+        311.6666666666667
+      ],
+      "text": "It occurs in approximately 5% of intubated"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        313.3333333333333,
+        299.0,
+        324.0
+      ],
+      "text": "children and usually resolves in 24 hours. It is"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        326.3333333333333,
+        299.66666666666663,
+        337.0
+      ],
+      "text": "more common in patients with frequent coughing"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        339.0,
+        300.0,
+        349.6666666666667
+      ],
+      "text": "episodes and in patients who are more agitated"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        351.3333333333333,
+        299.0,
+        362.0
+      ],
+      "text": "and moving frequently while intubated. It has"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        364.3333333333333,
+        299.33333333333337,
+        375.0
+      ],
+      "text": "been shown to be more prevalent in children 1-4"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        80.0,
+        377.0,
+        299.33333333333337,
+        387.6666666666667
+      ],
+      "text": "years or age, particularly in association with any"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        389.3333333333333,
+        245.66666666666666,
+        400.0
+      ],
+      "text": "type of surgery in the head/neck area."
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        411.0,
+        126.0,
+        419.0
+      ],
+      "text": "4. Answer: b"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.33333333333334,
+        424.0,
+        299.66666666666663,
+        434.6666666666667
+      ],
+      "text": "The scenario is of extrinsic restriction of lung"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        436.3333333333333,
+        299.0,
+        447.0
+      ],
+      "text": "expansion most likely due to eschar formations on"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.33333333333334,
+        449.0,
+        299.0,
+        459.6666666666667
+      ],
+      "text": "trunk. Escharotomy of all circumferential burns"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        80.66666666666666,
+        462.0,
+        299.33333333333337,
+        472.6666666666667
+      ],
+      "text": "should be undertaken as an emergency. Some"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        474.3333333333333,
+        299.33333333333337,
+        485.0
+      ],
+      "text": "incomplete eschars may need excision too to help"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        487.0,
+        152.66666666666669,
+        497.6666666666667
+      ],
+      "text": "chest expansion."
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        509.0,
+        126.0,
+        517.0
+      ],
+      "text": "5. Answer: b"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.66666666666666,
+        521.3333333333333,
+        298.0,
+        532.0
+      ],
+      "text": "This is a situation of single ventricle physiology."
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        82.0,
+        534.0,
+        299.66666666666663,
+        544.6666666666667
+      ],
+      "text": "Unrestricted pulmonary blood flows is causing"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        80.66666666666666,
+        546.3333333333333,
+        299.33333333333337,
+        557.0
+      ],
+      "text": "systemic hypoperfusion and shock.Pulmonary"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        559.3333333333334,
+        299.33333333333337,
+        570.0
+      ],
+      "text": "artery(PA) banding is the emergency procedure"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        572.0,
+        299.33333333333337,
+        582.6666666666666
+      ],
+      "text": "of choice but in a situation that it cannot be"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        79.33333333333334,
+        584.3333333333334,
+        299.66666666666663,
+        595.0
+      ],
+      "text": "performed immediately inhaled nitrogen or"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        597.3333333333334,
+        299.33333333333337,
+        608.0
+      ],
+      "text": "carbon dioxide can be used to induce hypoxemic"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        79.66666666666666,
+        610.0,
+        299.33333333333337,
+        620.6666666666666
+      ],
+      "text": "pulmonary vasoconstriction to improve systemic"
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        81.0,
+        622.3333333333334,
+        128.0,
+        633.0
+      ],
+      "text": "blood flow."
+    },
+    {
+      "page": 146,
+      "col": 0,
+      "bbox": [
+        77.33333333333334,
+        645.0,
+        297.0,
+        654.6666666666666
+      ],
+      "text": "Conflict of Interest: None Source of Funding: None"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        507.0,
+        58.0,
+        544.6666666666666,
+        64.33333333333333
+      ],
+      "text": "PICU Quiz"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        313.0,
+        90.0,
+        370.6666666666667,
+        97.66666666666666
+      ],
+      "text": "6. Answer: e"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        102.33333333333334,
+        544.3333333333334,
+        113.0
+      ],
+      "text": "Subglottic stenosis is an uncommon complication"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        115.0,
+        544.6666666666666,
+        125.66666666666667
+      ],
+      "text": "of tracheal intubation. A larger than adequate"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        127.33333333333333,
+        543.3333333333334,
+        138.0
+      ],
+      "text": "tube is the most common association but sepsis,"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.6666666666667,
+        140.0,
+        544.3333333333334,
+        150.66666666666669
+      ],
+      "text": "GER and eosinophilic esophagitis have all been"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        153.0,
+        543.0,
+        163.66666666666669
+      ],
+      "text": "implicated in the formation of subglottic stenosis."
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        313.6666666666667,
+        175.0,
+        371.0,
+        182.66666666666666
+      ],
+      "text": "7. Answer: a"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        325.6666666666667,
+        187.0,
+        544.3333333333334,
+        197.66666666666666
+      ],
+      "text": "Lung infection and positive pressure ventilation"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        200.0,
+        545.0,
+        210.66666666666666
+      ],
+      "text": "both cause an inappropriate increase of ADH and"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        212.33333333333334,
+        544.3333333333334,
+        223.0
+      ],
+      "text": "cause the body to hold on to free water: Extubation"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        225.0,
+        543.3333333333334,
+        235.66666666666666
+      ],
+      "text": "would reverse this and cause spontaneous diuresis."
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        325.6666666666667,
+        238.0,
+        544.6666666666666,
+        248.66666666666666
+      ],
+      "text": "For a child who has improved, use of Frusemide"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        250.33333333333334,
+        469.66666666666663,
+        261.0
+      ],
+      "text": "or Dopamine cannot be justified."
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        272.33333333333337,
+        370.6666666666667,
+        280.0
+      ],
+      "text": "8. Answer: c"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.6666666666667,
+        284.33333333333337,
+        544.6666666666666,
+        295.0
+      ],
+      "text": "The child has fulminant hepatic failure. Control"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        297.33333333333337,
+        544.6666666666666,
+        308.0
+      ],
+      "text": "of airways in a comatose child, hemodynamic"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        310.0,
+        544.3333333333334,
+        320.6666666666667
+      ],
+      "text": "support, prophylactic antibiotics and antiedema"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        322.3333333333333,
+        544.3333333333334,
+        333.0
+      ],
+      "text": "measures are all accepted treatment modalities"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        324.0,
+        335.3333333333333,
+        547.0,
+        346.0
+      ],
+      "text": "for the child. Lactulose is not preferred because of"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        348.0,
+        544.6666666666666,
+        358.6666666666667
+      ],
+      "text": "the risks of aspiration, ileus and lack of outcome"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        360.3333333333333,
+        500.0,
+        371.0
+      ],
+      "text": "benefits and is no longer recommended."
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        382.3333333333333,
+        371.6666666666667,
+        390.6666666666667
+      ],
+      "text": "9. Answer: d"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        327.0,
+        395.0,
+        544.3333333333334,
+        405.6666666666667
+      ],
+      "text": "The Cochrane metanalysis and review on this"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        407.3333333333333,
+        543.6666666666666,
+        418.0
+      ],
+      "text": "topic (Khemani RG, Randolph A, Markovitz B."
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.6666666666667,
+        420.0,
+        547.0,
+        430.6666666666667
+      ],
+      "text": "Corticosteroids for the prevention and treatment of"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        325.0,
+        433.0,
+        545.0,
+        443.6666666666667
+      ],
+      "text": "post-extubation stridor in neonates, children and"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        445.3333333333333,
+        544.3333333333334,
+        456.0
+      ],
+      "text": "adults. Cochrane Database of Systematic Reviews"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        458.0,
+        544.0,
+        468.6666666666667
+      ],
+      "text": "2009) shows that steroids may be of benefit in"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        471.0,
+        544.0,
+        481.6666666666667
+      ],
+      "text": "infants and children with airway abnormalities in"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        483.3333333333333,
+        544.0,
+        494.0
+      ],
+      "text": "reducing post extubation stridor. Steroids begun"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        325.0,
+        496.0,
+        544.6666666666666,
+        506.6666666666667
+      ],
+      "text": "pre-extubation in adults does reduce the incidence"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        509.0,
+        465.0,
+        519.6666666666667
+      ],
+      "text": "of stridor but not of reintubation."
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        313.3333333333333,
+        530.3333333333333,
+        374.6666666666667,
+        538.6666666666667
+      ],
+      "text": "10. Answer: d"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        325.3333333333333,
+        543.0,
+        544.6666666666666,
+        553.6666666666667
+      ],
+      "text": "An adequate ratio of nitrogenous to total"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        555.3333333333333,
+        544.3333333333334,
+        566.0
+      ],
+      "text": "calories is justified to ensure proper utilization"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        568.3333333333334,
+        544.0,
+        579.0
+      ],
+      "text": "of exogenous proteins. The desired ratio of N:"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        325.6666666666667,
+        581.0,
+        544.6666666666666,
+        591.6666666666666
+      ],
+      "text": "NonNitrogen calorie of 1: 250-350 is generally"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.0,
+        593.3333333333334,
+        544.3333333333334,
+        604.0
+      ],
+      "text": "recommended. This is the same as having a"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        324.6666666666667,
+        606.3333333333334,
+        543.6666666666666,
+        617.0
+      ],
+      "text": "protein: non-protein calorie ratio of 1: 25-35."
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.6666666666667,
+        619.0,
+        544.3333333333334,
+        629.6666666666666
+      ],
+      "text": "This calorie concentration can be safely given"
+    },
+    {
+      "page": 146,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        631.3333333333334,
+        431.6666666666667,
+        642.0
+      ],
+      "text": "through the central line."
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        234.0,
+        62.33333333333333,
+        306.0,
+        76.66666666666667
+      ],
+      "text": "Critical”"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        269.33333333333337,
+        96.33333333333334,
+        306.0,
+        107.0
+      ],
+      "text": "PICU"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        245.66666666666666,
+        116.0,
+        306.0,
+        123.0
+      ],
+      "text": "Praveen Khil"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        127.0,
+        130.0,
+        306.0,
+        139.0
+      ],
+      "text": "Director Pediatric critical care and pulmonol"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        183.66666666666666,
+        140.66666666666669,
+        305.6666666666667,
+        151.66666666666669
+      ],
+      "text": "Received: 1-Nov-2014/Accepted:8-No"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        181.0,
+        121.0,
+        190.66666666666666
+      ],
+      "text": "Question 1:"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        193.33333333333334,
+        299.0,
+        204.0
+      ],
+      "text": "Which of the following effects is least likely to be"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        206.0,
+        299.0,
+        216.66666666666666
+      ],
+      "text": "mediated by atrial natriuretic peptide on the kidneys?"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        221.0,
+        299.0,
+        231.0
+      ],
+      "text": "A) A direct increase in efferent arteriolar resistance"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        233.33333333333334,
+        271.0,
+        244.0
+      ],
+      "text": "with a net increase in glomerular filtration"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        248.0,
+        300.66666666666663,
+        258.66666666666663
+      ],
+      "text": "B) Direct natriuresis resulting from inhibition of"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        261.0,
+        299.33333333333337,
+        271.66666666666663
+      ],
+      "text": "sodium transport in the medullary collecting duct"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        275.33333333333337,
+        300.66666666666663,
+        286.0
+      ],
+      "text": "C) Indirect natriuresis resulting from inhibition of"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        288.33333333333337,
+        300.66666666666663,
+        299.0
+      ],
+      "text": "aldosterone release from the zona glomerulosa of"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        301.0,
+        161.66666666666669,
+        311.6666666666667
+      ],
+      "text": "the adrenal gland"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        316.0,
+        299.0,
+        326.0
+      ],
+      "text": "D) A direct decrease in afferent arteriolar resistance"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        328.3333333333333,
+        273.66666666666663,
+        339.0
+      ],
+      "text": "resulting in an increase in renal blood flow"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        343.3333333333333,
+        299.66666666666663,
+        353.3333333333333
+      ],
+      "text": "E) An indirect increase in efferent arteriolar"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        85.33333333333334,
+        356.0,
+        299.66666666666663,
+        366.6666666666667
+      ],
+      "text": "resistance via activation of the renin-angiotensin"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        85.66666666666666,
+        369.6666666666667,
+        116.33333333333333,
+        379.0
+      ],
+      "text": "system"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        393.0,
+        121.0,
+        402.6666666666667
+      ],
+      "text": "Question 2:"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        405.0,
+        299.33333333333337,
+        415.6666666666667
+      ],
+      "text": "A 14-year-old boy sustains significant blunt"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        417.3333333333333,
+        299.0,
+        428.0
+      ],
+      "text": "abdominal trauma when hit by a motor vehicle while"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        430.3333333333333,
+        299.66666666666663,
+        441.0
+      ],
+      "text": "riding his bicycle. Following adequate resuscitation"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        443.0,
+        299.0,
+        453.6666666666667
+      ],
+      "text": "with multiple blood products and crystalloid, he has"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        455.3333333333333,
+        299.66666666666663,
+        466.0
+      ],
+      "text": "significant abdominal distension and oliguria with"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        468.3333333333333,
+        298.66666666666663,
+        479.0
+      ],
+      "text": "increasing serum potassium on serial measurements."
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        481.0,
+        299.0,
+        491.6666666666667
+      ],
+      "text": "Which of the following is the least likely to be a"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        493.3333333333333,
+        171.33333333333331,
+        504.0
+      ],
+      "text": "cause of hyperkalemia?"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        508.3333333333333,
+        299.0,
+        519.0
+      ],
+      "text": "A) Decreased glomerular filtering of potassium due"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        521.0,
+        299.0,
+        531.6666666666667
+      ],
+      "text": "to an overall decrease in the glomerular filtration rate"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        536.0,
+        299.66666666666663,
+        546.6666666666667
+      ],
+      "text": "B) Hypoxemic injury to the renal tubule and impaired"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.0,
+        548.3333333333333,
+        156.0,
+        559.0
+      ],
+      "text": "potassium excretion"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        563.3333333333334,
+        299.0,
+        574.0
+      ],
+      "text": "C) Activation of the renin-angiotensin-aldosterone"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        576.0,
+        299.33333333333337,
+        586.6666666666666
+      ],
+      "text": "axis with increased tubular reabsorption of potassium"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        590.3333333333334,
+        300.66666666666663,
+        601.0
+      ],
+      "text": "D) Metabolic acidosis with cellular exchange of"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        603.3333333333334,
+        245.0,
+        614.0
+      ],
+      "text": "intracellular potassium for hydrogen ion"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        618.0,
+        294.33333333333337,
+        628.6666666666666
+      ],
+      "text": "E) Increased potassium load from tissue catabolism"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        642.3333333333334,
+        121.0,
+        652.0
+      ],
+      "text": "Question 3:"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        654.3333333333334,
+        298.66666666666663,
+        665.0
+      ],
+      "text": "A 9-month-old boy presents with difficulty breathing."
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        667.3333333333334,
+        299.33333333333337,
+        678.0
+      ],
+      "text": "His mother states that he has been treated for croup"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        680.0,
+        299.0,
+        690.6666666666666
+      ],
+      "text": "twice already with similar symptoms. He has had 2"
+    },
+    {
+      "page": 147,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        692.3333333333334,
+        299.0,
+        703.0
+      ],
+      "text": "days of upper respiratory tract infection symptoms"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        306.0,
+        61.66666666666667,
+        378.6666666666667,
+        81.66666666666666
+      ],
+      "text": "[hinking"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        311.3333333333333,
+        96.33333333333334,
+        342.6666666666667,
+        109.66666666666667
+      ],
+      "text": "Quiz"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        306.0,
+        116.0,
+        366.6666666666667,
+        124.66666666666667
+      ],
+      "text": "nani, MD FCCM"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        306.0,
+        128.66666666666669,
+        487.66666666666663,
+        140.33333333333331
+      ],
+      "text": "ogy BLK Superspeciality hospital. New Delhi"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        306.0,
+        142.0,
+        430.0,
+        148.33333333333331
+      ],
+      "text": "v-2014 /Published online:15-Nov-2014"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        181.0,
+        544.0,
+        191.66666666666666
+      ],
+      "text": "and now has expiratory stridor on examination."
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        193.33333333333334,
+        463.66666666666663,
+        204.0
+      ],
+      "text": "Which of the following is correct?"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        208.33333333333334,
+        544.3333333333334,
+        219.0
+      ],
+      "text": "A) Croup (viral laryngotracheobronchitis) is"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        330.6666666666667,
+        221.0,
+        524.0,
+        231.66666666666666
+      ],
+      "text": "typically characterized by expiratory stridor"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        235.33333333333334,
+        544.6666666666666,
+        246.0
+      ],
+      "text": "B) Intrathoracic airway obstruction is typically"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        248.33333333333334,
+        438.66666666666663,
+        259.0
+      ],
+      "text": "worse during inspiration"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        263.0,
+        544.6666666666666,
+        273.66666666666663
+      ],
+      "text": "C) Extrathoracic airway obstruction is typically"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        330.3333333333333,
+        276.0,
+        438.66666666666663,
+        286.66666666666663
+      ],
+      "text": "worse during inspiration"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        290.33333333333337,
+        545.0,
+        301.0
+      ],
+      "text": "D) Croup (viral laryngotracheobronchitis) is typically"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        331.0,
+        303.3333333333333,
+        542.3333333333334,
+        314.0
+      ],
+      "text": "characterized by intrathoracic airway obstruction"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        327.3333333333333,
+        366.0,
+        337.0
+      ],
+      "text": "Question 4:"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        340.0,
+        544.3333333333334,
+        350.6666666666667
+      ],
+      "text": "A 12-year-old boy with acute respiratory distress"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        352.3333333333333,
+        544.6666666666666,
+        363.0
+      ],
+      "text": "syndrome is being mechanically ventilated"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        365.0,
+        544.6666666666666,
+        375.6666666666667
+      ],
+      "text": "in synchronized intermittent mandatory ventilation"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        378.0,
+        545.0,
+        388.6666666666667
+      ],
+      "text": "pressure control/pressure support mode with peak"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        390.3333333333333,
+        544.3333333333334,
+        401.0
+      ],
+      "text": "inspiratory pressures of 28 mm Hg, positive end-"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        403.0,
+        544.6666666666666,
+        413.6666666666667
+      ],
+      "text": "expiratory pressure of 12 mm Hg, FIO2 of 0.60, and"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        415.3333333333333,
+        544.3333333333334,
+        426.0
+      ],
+      "text": "rate of 15/min. Arterial blood gas analysis shows"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        428.3333333333333,
+        544.3333333333334,
+        439.0
+      ],
+      "text": "PaCO2 of 60 mm Hg. and PaO2 of 60 mm Hg. His"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        441.0,
+        544.3333333333334,
+        451.6666666666667
+      ],
+      "text": "respiratory quotient is 0.8, core body temperature is"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        453.3333333333333,
+        544.6666666666666,
+        464.0
+      ],
+      "text": "37°C (98.5°F), and barometric pressure is 747 mm"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        466.3333333333333,
+        533.3333333333334,
+        477.0
+      ],
+      "text": "Hg. What is this patient’s PAO2-PaO2 difference?"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        481.0,
+        383.3333333333333,
+        491.6666666666667
+      ],
+      "text": "A) 285mm Hg"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        496.0,
+        383.3333333333333,
+        506.6666666666667
+      ],
+      "text": "B) 300 mm Hg"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        510.6666666666667,
+        383.3333333333333,
+        521.0
+      ],
+      "text": "C) 345mm Hg"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        525.6666666666667,
+        383.3333333333333,
+        536.0
+      ],
+      "text": "D) 360 mm Hg"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        540.3333333333333,
+        428.0,
+        550.3333333333333
+      ],
+      "text": "E) Cannot be determined"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        564.3333333333334,
+        366.0,
+        574.0
+      ],
+      "text": "Question 5:"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        577.0,
+        544.6666666666666,
+        587.6666666666666
+      ],
+      "text": "A patient with acute respiratory distress syndrome"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        589.3333333333334,
+        544.6666666666666,
+        600.0
+      ],
+      "text": "has been managed with high-frequency oscillatory"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        602.0,
+        544.6666666666666,
+        612.6666666666666
+      ],
+      "text": "ventilation for the past 2 hours. A blood gas study"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        614.3333333333334,
+        544.3333333333334,
+        625.0
+      ],
+      "text": "shows pH of 7.48. PaCO2 of 30 mm Hg, PaO2 of 70"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        627.3333333333334,
+        544.6666666666666,
+        638.0
+      ],
+      "text": "mm Hg, bicarbonate level of 22 mEq/L, and oxygen"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        640.0,
+        544.6666666666666,
+        648.0
+      ],
+      "text": "saturation of 97% on a FIO2 of 60%. Which of the"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        652.3333333333334,
+        519.3333333333334,
+        663.0
+      ],
+      "text": "following is the most appropriate intervention?"
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        667.3333333333334,
+        472.33333333333337,
+        678.0
+      ],
+      "text": "A) Wean the mean airway pressure."
+    },
+    {
+      "page": 147,
+      "col": 1,
+      "bbox": [
+        313.0,
+        682.3333333333334,
+        417.3333333333333,
+        692.6666666666666
+      ],
+      "text": "B) Increase the delta P."
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        58.0,
+        143.66666666666669,
+        64.0
+      ],
+      "text": "CRITICAL THINKING"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        89.33333333333334,
+        299.33333333333337,
+        100.0
+      ],
+      "text": "necessary and/or indicated, the first response should"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        102.33333333333334,
+        299.33333333333337,
+        113.0
+      ],
+      "text": "be immediate reversal of the respiratory acidosis and"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        115.0,
+        299.33333333333337,
+        125.66666666666667
+      ],
+      "text": "provision of 100% oxygen, which can be achieved"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        127.33333333333333,
+        156.0,
+        138.0
+      ],
+      "text": "almost immediately."
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        152.0,
+        124.0,
+        159.66666666666669
+      ],
+      "text": "8. Answer A"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        164.33333333333331,
+        115.66666666666667,
+        172.0
+      ],
+      "text": "Rationale:"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        176.33333333333334,
+        299.0,
+        187.0
+      ],
+      "text": "Appropriate antibiotic coverage is critical to"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        68.0,
+        189.33333333333334,
+        298.66666666666663,
+        200.0
+      ],
+      "text": "successful treatment of acute bacterial meningitis."
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        202.0,
+        299.0,
+        212.66666666666666
+      ],
+      "text": "Gram-negative meningitis may require an antibiotic"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        214.33333333333334,
+        299.0,
+        225.0
+      ],
+      "text": "course as long as 3 weeks. Antibiotic resistance has"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        227.33333333333334,
+        299.33333333333337,
+        238.0
+      ],
+      "text": "become a real issue in both community and hospital"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        240.0,
+        299.33333333333337,
+        250.66666666666666
+      ],
+      "text": "clinical settings. The Klebsiella strain described in"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        252.33333333333334,
+        299.0,
+        263.0
+      ],
+      "text": "this scenario is noted to be extended-spectrum beta-"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        265.0,
+        299.0,
+        275.66666666666663
+      ],
+      "text": "lactamase positive. Although its antibiogram shows"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        68.0,
+        278.0,
+        299.66666666666663,
+        288.66666666666663
+      ],
+      "text": "sensitivity to beta-lactam antibiotics, it is at high risk"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        289.0,
+        299.0,
+        302.3333333333333
+      ],
+      "text": "for becoming a resistant strain. Aminoglycosides are"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.33333333333333,
+        303.0,
+        299.33333333333337,
+        313.6666666666667
+      ],
+      "text": "not affected by beta-lactamases. Clindamycin is not"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        67.66666666666667,
+        316.0,
+        247.66666666666666,
+        326.6666666666667
+      ],
+      "text": "appropriate for gram-negative infections."
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        68.33333333333333,
+        345.3333333333333,
+        288.0,
+        355.0
+      ],
+      "text": "Conflict of Interest: None Source of Funding: None"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        104.33333333333334,
+        424.6666666666667,
+        294.66666666666663,
+        434.6666666666667
+      ],
+      "text": "More than 50,000 dosages administered"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        110.0,
+        454.0,
+        287.0,
+        474.0
+      ],
+      "text": "NEQSURF x..."
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        169.33333333333331,
+        475.3333333333333,
+        288.0,
+        486.3333333333333
+      ],
+      "text": "Gives A Second Breath"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        113.0,
+        511.3333333333333,
+        290.0,
+        517.6666666666667
+      ],
+      "text": "2 Contains significantly more amount of SP-B & SP-C Protein"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        113.66666666666667,
+        530.6666666666667,
+        268.66666666666663,
+        536.6666666666667
+      ],
+      "text": "2» Supported with the trust of 99% of NICU of Canada"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        237.66666666666666,
+        569.3333333333334,
+        257.0,
+        575.0
+      ],
+      "text": "Gad"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        117.33333333333333,
+        574.6666666666666,
+        222.0,
+        587.6666666666666
+      ],
+      "text": "p— EE"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        157.0,
+        604.0,
+        221.66666666666666,
+        615.3333333333334
+      ],
+      "text": "A R="
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        157.0,
+        614.0,
+        175.0,
+        622.6666666666666
+      ],
+      "text": "="
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        115.33333333333333,
+        624.0,
+        215.0,
+        632.3333333333334
+      ],
+      "text": "h cow"
+    },
+    {
+      "page": 151,
+      "col": 0,
+      "bbox": [
+        157.0,
+        634.0,
+        167.66666666666669,
+        638.3333333333334
+      ],
+      "text": "ciple."
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        507.33333333333337,
+        58.0,
+        544.3333333333334,
+        64.33333333333333
+      ],
+      "text": "PICU Quiz"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        90.0,
+        369.0,
+        97.66666666666666
+      ],
+      "text": "9. Answer C"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        102.33333333333334,
+        361.0,
+        110.0
+      ],
+      "text": "Rationale:"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        312.3333333333333,
+        115.0,
+        544.6666666666666,
+        125.66666666666667
+      ],
+      "text": "Neisseria meningitidis sepsis can produce rapidly"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        127.33333333333333,
+        544.6666666666666,
+        138.0
+      ],
+      "text": "developing septic shock. The pictured patient had"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        140.0,
+        543.6666666666666,
+        150.66666666666669
+      ],
+      "text": "classic purpura fulminans caused by N meningitidis."
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        152.33333333333331,
+        544.6666666666666,
+        163.0
+      ],
+      "text": "This organism is usually endemic and is commonly"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        165.33333333333331,
+        544.6666666666666,
+        176.0
+      ],
+      "text": "carried in the nasopharynx. Infection is more common"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        178.0,
+        505.0,
+        188.66666666666666
+      ],
+      "text": "in males and following influenza infections."
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.3333333333333,
+        202.33333333333334,
+        371.6666666666667,
+        210.0
+      ],
+      "text": "10 Answer B"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        215.0,
+        361.0,
+        222.66666666666666
+      ],
+      "text": "Rationale:"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        227.0,
+        544.3333333333334,
+        239.0
+      ],
+      "text": "Oxygenation Index = FIO2 x mean airway pressure"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        240.0,
+        544.3333333333334,
+        251.66666666666666
+      ],
+      "text": "(MAP)/PaO2 has been used to assess risk of ventilator-"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        252.33333333333334,
+        544.6666666666666,
+        263.0
+      ],
+      "text": "associated injury associated with barotraumas and"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        265.0,
+        544.3333333333334,
+        275.66666666666663
+      ],
+      "text": "oxygen toxicity and to identify appropriate candidates"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        277.33333333333337,
+        544.6666666666666,
+        288.0
+      ],
+      "text": "for extracorporeal life support. Baseline oxygenation"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        290.33333333333337,
+        481.66666666666663,
+        300.66666666666663
+      ],
+      "text": "index above (0.5 x 20 x 100)/106=9.4"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        305.0,
+        446.33333333333337,
+        315.0
+      ],
+      "text": "a. (0.5x25x100)/106=11.8"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        312.6666666666667,
+        320.0,
+        441.0,
+        330.0
+      ],
+      "text": "b. (0.5x20x 100)/80=12.5"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        335.0,
+        441.66666666666663,
+        345.0
+      ],
+      "text": "c. (0.5x20x100)/106=9.4"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        349.3333333333333,
+        446.0,
+        359.6666666666667
+      ],
+      "text": "d. (0.6 x20x100)/106=11.3"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        313.0,
+        364.3333333333333,
+        441.66666666666663,
+        374.6666666666667
+      ],
+      "text": "e. (0.5x20x100)/106=9.4"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        483.0,
+        409.3333333333333,
+        510.0,
+        418.3333333333333
+      ],
+      "text": "Cipla"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        321.0,
+        425.0,
+        498.0,
+        433.0
+      ],
+      "text": "India’s first Caffeine Citrate available in"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        376.0,
+        438.0,
+        448.0,
+        446.0
+      ],
+      "text": "Iml/2ml oral/ IV"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        369.6666666666667,
+        455.0,
+        458.0,
+        475.0
+      ],
+      "text": "Capneg="
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        386.0,
+        470.0,
+        459.0,
+        480.3333333333333
+      ],
+      "text": "Nn, For Ora use"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        368.3333333333333,
+        477.6666666666667,
+        423.0,
+        487.0
+      ],
+      "text": "Caffeine Citrate 20mg/ml"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        365.0,
+        488.3333333333333,
+        471.66666666666663,
+        496.6666666666667
+      ],
+      "text": "Breathing Uninterrupted..."
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        511.0,
+        430.3333333333333,
+        516.0
+      ],
+      "text": "© A first line for treatment of AOP'"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        326.3333333333333,
+        530.6666666666667,
+        418.3333333333333,
+        536.6666666666667
+      ],
+      "text": "© Right strength with economy"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        355.3333333333333,
+        545.3333333333333,
+        483.66666666666663,
+        574.6666666666666
+      ],
+      "text": "ee @ = ——"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        343.0,
+        556.6666666666667,
+        482.0,
+        576.0
+      ],
+      "text": "LE ~-, Ee"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        341.0,
+        570.6666666666666,
+        479.0,
+        588.3333333333334
+      ],
+      "text": "ETT = or"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        344.3333333333333,
+        577.0,
+        484.0,
+        604.6666666666666
+      ],
+      "text": "ue (RY a » ..- ®4 g one d"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        344.0,
+        591.3333333333334,
+        468.33333333333337,
+        612.6666666666666
+      ],
+      "text": "=) = a 4 oy"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        382.3333333333333,
+        632.6666666666666,
+        483.66666666666663,
+        686.3333333333334
+      ],
+      "text": "yp 1 t"
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        335.3333333333333,
+        666.6666666666666,
+        497.33333333333337,
+        688.3333333333334
+      ],
+      "text": "FET 8 ="
+    },
+    {
+      "page": 151,
+      "col": 1,
+      "bbox": [
+        306.0,
+        693.3333333333334,
+        520.0,
+        704.3333333333334
+      ],
+      "text": "BE — i"
+    }
+  ],
+  "quizMetadata": {
+    "1": {
+      "title": "Quiz 1",
+      "citation": "Sharma & Khilnani, JPCC 2020;7(1)\n10 questions",
+      "slide": 3
+    },
+    "2": {
+      "title": "Quiz 2",
+      "citation": "Sharma & Khilnani, JPCC 2020;7:99-101\n10 questions",
+      "slide": 24
+    },
+    "3": {
+      "title": "Quiz 3",
+      "citation": "Sharma & Khilnani, JPCC 2020;7:153-6\n10 questions",
+      "slide": 45
+    },
+    "4": {
+      "title": "Quiz 4",
+      "citation": "Sharma, JPCC 2020;7:221-5 (Neuro-critical care)\n10 questions",
+      "slide": 66
+    },
+    "5": {
+      "title": "Quiz 5",
+      "citation": "Sharma, JPCC 2020;7:298-301 (Respiratory)\n10 questions",
+      "slide": 88
+    },
+    "6": {
+      "title": "Quiz 6",
+      "citation": "Sharma, JPCC 2020;7:366-9 (Neurology)\n10 questions",
+      "slide": 109
+    },
+    "7": {
+      "title": "Quiz 7",
+      "citation": "Patki, JPCC 2018;5(6):60-63 (Hospital-acquired infection)\n10 questions",
+      "slide": 130
+    },
+    "8": {
+      "title": "Quiz 8",
+      "citation": "Patki, JPCC 2019;6(1):79-82 (Cardiovascular & vasoactive drugs)\n10 questions",
+      "slide": 151
+    },
+    "9": {
+      "title": "Quiz 9",
+      "citation": "Vinayak & Sharma, JPCC 2019;6(3):81-84 (Haematology-oncology)\n10 questions",
+      "slide": 172
+    },
+    "10": {
+      "title": "Quiz 10",
+      "citation": "Jangam & Patki, JPCC 2019;6(4):71-75\n10 questions",
+      "slide": 193
+    },
+    "11": {
+      "title": "Quiz 11",
+      "citation": "Patki, JPCC 2019;6(5):88-92 (PARDS & asthma)\n10 questions",
+      "slide": 214
+    },
+    "12": {
+      "title": "Quiz 12",
+      "citation": "Patki, JPCC 2019;6(6):75-81 (Ventilation & ECMO)\n10 questions",
+      "slide": 236
+    },
+    "13": {
+      "title": "Quiz 13",
+      "citation": "Patki, JPCC 2018;5(1):46-48 (Resuscitation & respiratory physiology)\n10 questions",
+      "slide": 257
+    },
+    "14": {
+      "title": "Quiz 14",
+      "citation": "Patki, JPCC 2018;5(2):89-93 (Critical care nephrology)\n10 questions",
+      "slide": 278
+    },
+    "15": {
+      "title": "Quiz 15",
+      "citation": "Patki, JPCC 2018;5(3):114-117 (Paediatric transplant)\n10 questions",
+      "slide": 299
+    },
+    "16": {
+      "title": "Quiz 16",
+      "citation": "Patki & Mittal, JPCC 2018;5(4):91-93 (Sepsis I)\n10 questions",
+      "slide": 320
+    },
+    "17": {
+      "title": "Quiz 17",
+      "citation": "Patki & Mittal, JPCC 2018;5(5):122-126 (Sepsis II)\n10 questions",
+      "slide": 342
+    },
+    "18": {
+      "title": "Quiz 18",
+      "citation": "Khilnani, JPCC 2017;4(1):113-118 (Renal, electrolytes, acid–base)\n10 questions",
+      "slide": 363
+    },
+    "19": {
+      "title": "Quiz 19",
+      "citation": "Khilnani, JPCC 2017;4(2):106-107 (ECMO)\n20 questions",
+      "slide": 384
+    },
+    "20": {
+      "title": "Quiz 20",
+      "citation": "Khilnani, JPCC 2017;4(3):132-141 (Infection & immunology)\n15 questions",
+      "slide": 425
+    },
+    "21": {
+      "title": "Quiz 21",
+      "citation": "JPCC 2017;4(4):121-128 (Critical care endocrinology)\n20 questions",
+      "slide": 456
+    },
+    "22": {
+      "title": "Quiz 22",
+      "citation": "Khilnani, JPCC 2016;3(1):65-66 (Physiology)\n10 questions",
+      "slide": 497
+    },
+    "23": {
+      "title": "Quiz 23",
+      "citation": "Khilnani, JPCC 2016;3(2):74-76\n10 questions",
+      "slide": 518
+    },
+    "24": {
+      "title": "Quiz 24",
+      "citation": "Khilnani, JPCC 2016;3(3):85-86 (Respiratory physiology)\n10 questions",
+      "slide": 539
+    },
+    "25": {
+      "title": "Quiz 25",
+      "citation": "Khilnani, JPCC 2016;3(4):127-131 (Cardiac critical care)\n10 questions",
+      "slide": 560
+    },
+    "26": {
+      "title": "Quiz 26",
+      "citation": "Jerath, JPCC 2015;2(2):78-80\n10 questions",
+      "slide": 581
+    },
+    "27": {
+      "title": "Quiz 27",
+      "citation": "Khilnani, JPCC 2015;2(3):88-90\n14 questions",
+      "slide": 602
+    },
+    "28": {
+      "title": "Quiz 28",
+      "citation": "Khilnani, JPCC 2015;2(4):61-62 (Renal & cardiovascular physiology)\n13 questions",
+      "slide": 631
+    },
+    "29": {
+      "title": "Quiz 29",
+      "citation": "Jerath, JPCC 2014;1(2):86-87\n10 questions",
+      "slide": 658
+    },
+    "30": {
+      "title": "Quiz 30",
+      "citation": "Jerath, JPCC 2014;1(3):214-216\n10 questions",
+      "slide": 679
+    },
+    "31": {
+      "title": "Quiz 31",
+      "citation": "Khilnani, JPCC 2014;1(4):324-328\n10 questions",
+      "slide": 700
+    }
+  },
+  "supplements": {
+    "10201": {
+      "notes": [
+        "Many algorithms give dantrolene as soon as possible alongside hyperventilation with 100% O2; the quiz key places O2 washout first."
+      ]
+    },
+    "10207": {
+      "notes": [
+        "This quiz's printed key gave 'excessive sensitivity to PTH'. The same question appears in Quiz 22 of this file, keyed to the parathyroid answer, which matches the physiology and is shown here."
+      ],
+      "explanation": "Raised calcium should suppress PTH via the calcium-sensing receptor. A 'normal' PTH in hypercalcaemia is inappropriately high, so the problem is parathyroid autonomy (primary hyperparathyroidism)."
+    },
+    "10303": {
+      "notes": [
+        "Options for Q3, Q4 and Q6 were misprinted in the original layout; they are re-assigned here to match the answer key."
+      ]
+    },
+    "10801": {
+      "notes": [
+        "Later trials (ProCESS, ARISE, ProMISe) found no mortality benefit from protocolised EGDT; ScvO2 remains one of several resuscitation markers."
+      ]
+    },
+    "10810": {
+      "notes": [
+        "Hypercalcaemia also increases digoxin toxicity, but hypokalaemia is the classic keyed answer."
+      ]
+    },
+    "11001": {
+      "notes": [
+        "The printed key says 'E', but its own rationale states DTRs are compatible with brain death and posturing is not — the answer shown follows the rationale (B)."
+      ]
+    },
+    "11103": {
+      "notes": [
+        "Many classifications (e.g., PALICC/Berlin) list near-drowning as a direct insult; the answer follows the source key."
+      ]
+    },
+    "11202": {
+      "notes": [
+        "The stem is incomplete in the original; the bracketed wording reflects the answer rationale."
+      ]
+    },
+    "11306": {
+      "notes": [
+        "Later studies show pulse oximetry can overestimate SaO2 in darker skin; the keyed answer (jaundice) remains correct."
+      ]
+    },
+    "11507": {
+      "notes": [
+        "The printed key reads 'A', but its rationale describes ciclosporin (option B)."
+      ]
+    },
+    "11607": {
+      "notes": [
+        "qSOFA was derived in adults; it is not validated for paediatric sepsis (Phoenix criteria, 2024)."
+      ]
+    },
+    "11901": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Post-cardiotomy support after congenital heart surgery (failure to wean from bypass or low cardiac output) is the largest paediatric cardiac ECMO group in ELSO data."
+    },
+    "11902": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Answer as keyed: hydrocephalus is the abnormality not reported at >5% in respiratory ECMO survivors."
+    },
+    "11903": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Neurological injury patterns (haemorrhage, infarction, seizures, developmental delay) are broadly similar in cardiac and respiratory ECMO survivors."
+    },
+    "11904": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Adult respiratory ECMO has grown substantially since this quiz (2017)."
+      ],
+      "explanation": "Cardiac failure needs VA support; neonatal respiratory ECMO has declined (surfactant, iNO, HFOV); E-CPR is established. Answer as keyed: none of the statements."
+    },
+    "11905": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Answer as keyed: renal failure alters heparin clearance, so requirements change when CRRT is added; monitor anticoagulation closely."
+    },
+    "11906": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Cardiac arrest needs circulatory as well as respiratory support → veno-arterial ECMO."
+    },
+    "11907": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "E-CPR is reasonable for in-hospital arrest when the cause is reversible (or bridge to transplant), CPR is high quality with minimal no-flow, and the team can cannulate rapidly — typically in cardiac patients in settings with ECMO protocols."
+    },
+    "11908": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "A non-ejecting LV on VA ECMO distends and raises LA pressure; decompress the left heart with an LA vent or balloon/blade atrial septostomy."
+    },
+    "11909": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Anticoagulated ECMO patients risk major bleeding from chest drains; small, haemodynamically insignificant pneumothoraces are observed while the lungs rest."
+    },
+    "11910": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Some studies (e.g., Rich et al., 1998) found femoro-atrial flow (drain IVC, return to RA) gave less recirculation; check local practice."
+      ],
+      "explanation": "Answer as keyed: atrio-femoral flow."
+    },
+    "11911": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "On VV ECMO, oxygenated return mixes with native venous blood, so SaO2 of ~80–85% is acceptable if Hb and cardiac output keep oxygen delivery adequate."
+    },
+    "11912": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Blood leaving the lungs (arterial) has the same saturation as blood entering them (PA): the native lungs add no oxygen; all oxygenation comes from the circuit."
+    },
+    "11913": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Bleeding is managed by raising platelet/fibrinogen targets, antifibrinolytics and surgical exploration while continuing (perhaps reduced) anticoagulation; stopping heparin risks circuit thrombosis."
+    },
+    "11914": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Oxygenation depends mainly on ECMO blood flow (fraction of cardiac output passing the oxygenator); CO2 removal depends on sweep gas flow."
+    },
+    "11915": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "SvO2 ~70–75% indicates adequate oxygen delivery relative to consumption during the trial off."
+    },
+    "11916": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Platelets adhere to and are activated by the circuit surface and are consumed continuously; platelet transfusion is the most frequent product given."
+    },
+    "11917": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Intracranial haemorrhage is the most consequential bleeding complication (major cause of death and disability), particularly in neonates."
+    },
+    "11918": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Heparin binds antithrombin, accelerating its inactivation of thrombin and factor Xa ~1000-fold; low antithrombin causes heparin resistance."
+    },
+    "11919": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "On VA ECMO the pre-membrane (venous drainage) saturation reflects mixed venous O2 and therefore the balance of delivery and consumption."
+    },
+    "11920": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Recirculation (reinfused oxygenated blood drained straight back) rises with high pump flow, cannula tips positioned close together, small RA size, and low cardiac output."
+    },
+    "12008": {
+      "notes": [
+        "Option D is also factually true (M protein is a GAS virulence factor); the keyed best answer is A."
+      ]
+    },
+    "12012": {
+      "notes": [
+        "In practice, IV acyclovir should be started immediately in an immunocompromised child with varicella pneumonitis alongside PCR confirmation."
+      ]
+    },
+    "12201": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "PTH inhibits proximal-tubular phosphate reabsorption (phosphaturia), increases distal calcium reabsorption, stimulates 1α-hydroxylation of vitamin D and mobilises bone calcium — it raises, not lowers, serum calcium."
+    },
+    "12202": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Aldosterone increases ENaC-mediated sodium reabsorption and K+/H+ secretion in the collecting duct → sodium retention, hypokalaemia and metabolic alkalosis."
+    },
+    "12203": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Current evidence emphasises the podocyte slit diaphragm (nephrin) as a key size barrier."
+      ],
+      "explanation": "Answer as keyed: negatively charged heparan-sulphate proteoglycans of the GBM provide a charge barrier repelling anionic albumin."
+    },
+    "12204": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Repolarisation occurs when outward K+ current exceeds inward current. Hyperkalaemia depolarises (less negative) the membrane; cardioplegia uses HIGH K+ to arrest the heart; the upstroke is via voltage-gated Na+ channels, not the pump."
+    },
+    "12205": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Iodotyrosine deiodinase (dehalogenase) in the thyrocyte recycles iodide from mono- and diiodotyrosine. T4 is the predominant product; iodination/coupling occurs on thyroglobulin at the apical (luminal) surface; proteolysis occurs in thyrocyte lysosomes after endocytosis."
+    },
+    "12206": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Glucagon acts via a G-protein-coupled receptor (cAMP) in the liver to rapidly increase glycogenolysis and gluconeogenesis; it stimulates lipolysis. GLUT4 is insulin-dependent (muscle/fat), not brain."
+    },
+    "12207": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Hypercalcaemia should suppress PTH; a normal (high-normal) PTH is inappropriate and indicates primary hyperparathyroidism."
+    },
+    "12208": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. CCK can modestly inhibit acid via somatostatin; the keyed answer treats it as non-regulatory."
+      ],
+      "explanation": "Answer as keyed: acid secretion is stimulated by acetylcholine (vagus), gastrin and histamine (H2)."
+    },
+    "12209": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "NO inhibits smooth-muscle proliferation and platelet aggregation; endothelin is a vasoconstrictor and mitogen with positive inotropic effects."
+    },
+    "12210": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Poiseuille's law: flow ∝ r⁴, so halving the radius reduces flow to (1/2)⁴ = 1/16 (resistance rises 16-fold)."
+    },
+    "12301": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Atracurium/cisatracurium degrade spontaneously (Hofmann elimination and ester hydrolysis) independent of liver and kidney. Vecuronium and pancuronium have active metabolites that accumulate in renal/hepatic failure; rocuronium depends on hepatic/renal clearance."
+    },
+    "12302": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "JET is an automatic tachycardia, so cardioversion is ineffective. Management: reduce catecholamines, sedation, cooling (34–35 °C), correct electrolytes (Mg), atrial pacing above the JET rate, amiodarone."
+    },
+    "12303": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "After successful repair a large residual arm–leg gradient (40 mmHg) is uncommon. Recognised complications: paradoxical (rebound) hypertension, mesenteric arteritis (post-coarctectomy syndrome), spinal cord ischaemia, and associated berry aneurysm rupture."
+    },
+    "12304": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Current evidence suggests ketamine does not raise ICP in ventilated patients and preserves BP; many now favour it or etomidate in haemodynamically unstable TBI."
+      ],
+      "explanation": "Answer as keyed: propofol reduces CMRO2 and ICP and gives smooth induction, but it can cause hypotension, which must be avoided in TBI."
+    },
+    "12305": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "With prolonged exposure (>5–7 days), methadone weaning should begin pre-emptively as infusions are tapered, not after withdrawal appears; monitor with a withdrawal score (e.g., WAT-1)."
+    },
+    "12306": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Cannon a waves classically indicate AV dissociation (e.g., JET, complete heart block) — the atrium contracts against a closed tricuspid valve; TR produces large v waves."
+      ],
+      "explanation": "Answer as keyed (Ebstein anomaly — large a waves from atrial contraction against a poorly compliant atrialised RV/abnormal tricuspid valve)."
+    },
+    "12307": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "On HFOV, CO2 clearance ∝ f × VT²; raising frequency shortens each cycle and reduces delivered VT, so ventilation worsens. A cuff leak, higher ΔP or longer IT increase CO2 removal."
+    },
+    "12308": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Heliox is not a bronchodilator and has no anti-inflammatory effect; it only lowers gas density to reduce turbulent flow and work of breathing while definitive therapy works."
+    },
+    "12309": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Hypothermia is a confounder: core temperature must be normalised (>35 °C) before brain-death examination. 'Doll's eye positive' (eyes fixed in the orbit as the head turns) actually means absent oculocephalic reflex; spinal reflexes (e.g., Lazarus-type arm movements) can occur; ancillary tests are not mandatory."
+    },
+    "12310": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Hyponatraemia + high urine output + hypovolaemia (low CVP, poor perfusion) after brain injury = cerebral salt wasting. SIADH is euvolaemic with low urine output; DI causes hypernatraemia."
+    },
+    "12401": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "PaO2 50 → SaO2 ~85%; PaO2 100 → ~98%. CaO2 = 1.34 × 10 × SaO2 + 0.003 × PaO2 rises from ≈11.5 to ≈13.4 mL/dL (≈15%) — more than 10% because saturation rises on the steep part of the curve."
+    },
+    "12402": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "~70–90% of CO2 is carried as bicarbonate (via carbonic anhydrase), ~5–10% dissolved and ~5–10% as carbamino compounds."
+    },
+    "12403": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "TRALI: acute hypoxaemia with BILATERAL infiltrates within 6 h of transfusion, non-cardiogenic (often donor anti-HLA/HNA antibodies) — fluid overload is TACO."
+    },
+    "12404": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "PTLD is mostly B-cell, EBV-driven; risk factors include EBV-seronegative recipient of a seropositive organ, young age and intense T-cell immunosuppression. Lymphadenopathy, tonsillar enlargement, fever and GI symptoms are common."
+    },
+    "12405": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Low rate, long expiratory time and permissive hypercapnia limit dynamic hyperinflation, barotrauma and haemodynamic compromise; avoid prolonged paralysis (myopathy with steroids)."
+    },
+    "12406": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "ARDS is fundamentally increased permeability of the alveolar–capillary membrane, causing protein-rich oedema; atelectasis, surfactant dysfunction and V/Q mismatch follow."
+    },
+    "12407": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Hypoventilation (and low inspired PO2) lowers PAO2 and PaO2 equally, so the A–a gradient stays normal. Diffusion limit, V/Q mismatch and shunt all widen it."
+    },
+    "12408": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "CO binds Hb ~240× more avidly than O2; pulse oximetry and calculated SaO2 read falsely normal while O2 content and delivery fall → lactic acidosis. Measure COHb by co-oximetry; consider cyanide co-poisoning."
+    },
+    "12409": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "MAP = [(Ti × PIP) + (Te × PEEP)] / (Ti + Te). Expiration occupies most of the cycle, so raising PEEP raises MAP the most (and PIP also rises in PRVC)."
+    },
+    "12410": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "At lower frequency each oscillation lasts longer, so delivered VT increases; since HFOV CO2 clearance ∝ f × VT², the gain in VT outweighs the fall in frequency."
+    },
+    "12503": {
+      "notes": [
+        "Option B is also true per the same rationale; the keyed best answer is E."
+      ]
+    },
+    "12504": {
+      "notes": [
+        "The source also says haemofiltration prolongs the half-life (option B); age dependence is the keyed answer."
+      ]
+    },
+    "12701": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "AECC (1994): acute onset, bilateral infiltrates, no left-atrial hypertension; PaO2/FiO2 ≤300 = ALI, ≤200 = ARDS. Here 92/0.45 ≈ 204 → ALI. ('Mild/moderate/severe' are Berlin 2012 categories.)"
+    },
+    "12702": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Shunted blood never contacts alveolar gas, so raising FiO2 adds little (especially with large shunts). All other mechanisms improve with supplemental oxygen."
+    },
+    "12703": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Paediatric trials of tight glycaemic control (e.g., after cardiac surgery) consistently increased hypoglycaemia without clear benefit in infection or outcome."
+    },
+    "12704": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Initial severe-TBI care: secure airway, normocapnia, avoid hypotension/hypoxia, ICP monitoring/CSF drainage, hyperosmolar therapy. Decompressive craniectomy is reserved for refractory intracranial hypertension."
+    },
+    "12705": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Outcome after diffuse TBI is driven largely by primary neuronal/axonal injury; controlling ICP prevents secondary injury but cannot reverse the primary lesion (DECRA trial context)."
+    },
+    "12706": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Answer as keyed: in paediatric in-hospital arrest studies, needing ≥4 epinephrine doses (reflecting prolonged CPR) was associated with poor functional outcome in nearly all survivors."
+    },
+    "12707": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "2011 guidelines: brain death is a clinical diagnosis — two examinations, each with an apnoea test; ancillary tests are not required; spinal reflexes (e.g., DTRs) are compatible; guidelines do not apply to infants <37 weeks."
+    },
+    "12708": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "2011 SCCM/AAP/CNS guideline: 24 h for term neonates (37 wk to 30 days) and 12 h for infants and children >30 days to 18 years."
+    },
+    "12709": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Sepsis is the factor most strongly associated with mortality in ventilated children with leukaemia (same item as Quiz 9)."
+    },
+    "12710": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Outcomes for children with low-risk ALL — even after PICU support with organ failure — are good, so full support including RRT is appropriate."
+    },
+    "12711": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Over time ECMO was increasingly offered to children with comorbidities (e.g., immunodeficiency, malignancy, chronic disease), who have lower survival — offsetting technical improvements."
+    },
+    "12712": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Answer as keyed: tidal volume (alveolar overdistension/volutrauma) was most significantly associated with pneumothorax."
+    },
+    "12713": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Hyperoxic resuscitation generates free radicals and has been linked to cerebral injury and higher mortality; guidelines start term neonates on room air (21%) and titrate."
+    },
+    "12714": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Injury severity is a major confounder: sicker brains have both more seizures and worse outcomes, so association does not prove causation."
+    },
+    "12801": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Most acid is excreted as NH4+ (ammoniagenesis rises markedly in acidosis); titratable acid (phosphate) is limited and free H+ is trivial (urine pH ≥4.5). Hyperventilation is respiratory compensation, not renal elimination."
+    },
+    "12802": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Apical NHE3 secretes most H+; basolateral Na+/K+-ATPase creates the gradient; bicarbonate reclamation needs carbonic anhydrase; proximal luminal pH falls only to ~6.7 (distal can reach ~4.5)."
+    },
+    "12803": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "CO2 crosses the blood–brain barrier freely, but CSF has little protein and haemoglobin buffering, so CSF pH falls faster than blood pH. Renal compensation takes days."
+    },
+    "12804": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "ANP (released with atrial stretch) increases GFR and inhibits sodium reabsorption in the collecting duct, and suppresses renin and aldosterone → natriuresis and diuresis."
+    },
+    "12805": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Volume expansion raises preload, cardiac output, renal blood flow and GFR, stretches the atria (↑ANP) and suppresses renin."
+    },
+    "12806": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary. Statement A is generally true (PGE2/PGI2, dopamine via D1 and bradykinin are vasodilators), so this key appears flawed."
+      ],
+      "explanation": "Answer as keyed ('none are correct')."
+    },
+    "12807": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Angiotensin II stimulates proximal NHE3 sodium reabsorption, causes arteriolar vasoconstriction and stimulates aldosterone release."
+    },
+    "12808": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Proximal water reabsorption (~65% of filtrate) is iso-osmotic, following solute (largely Na+ via NHE3) through abundant AQP1 channels, aided by peritubular oncotic pressure."
+    },
+    "12809": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Depolarisation = potential becomes less negative/more positive; more negative = hyperpolarisation. Resting potential is negative inside, measured between an inside and an outside electrode."
+    },
+    "12810": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "VT is a fast ventricular rhythm; short diastole impairs filling, so output and BP can fall dangerously. It is not a bradycardia."
+    },
+    "12811": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Systolic pressure rises with stiffer vessels and larger or faster ejection; slower ejection lowers systolic pressure."
+    },
+    "12812": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Inotropes INCREASE dP/dt max, velocity of shortening, ejection rate and stroke volume."
+    },
+    "12813": {
+      "notes": [
+        "The source gives the answer key only; the explanation is a brief standard summary."
+      ],
+      "explanation": "Answer as keyed: end-systolic volume is set by contractility and afterload (the ESPVR), largely independent of preload; preload changes EDV, SV, EF and CO (Frank–Starling)."
+    },
+    "13001": {
+      "notes": [
+        "Option A is also good practice (recurrent/atypical croup warrants airway evaluation), but the keyed answer is C."
+      ]
+    },
+    "13003": {
+      "notes": [
+        "The printed key is 'E', but the source's own rationale contradicts every statement — treat this item as flawed."
+      ]
+    },
+    "13009": {
+      "notes": [
+        "A later Cochrane update suggests steroids may also reduce reintubation in high-risk adults."
+      ]
+    },
+    "13106": {
+      "notes": [
+        "Cross-reactivity between sulfonamide antibiotics and non-antibiotic sulfonamides such as furosemide is now considered uncommon."
+      ]
+    },
+    "13108": {
+      "notes": [
+        "Current practice for ESBL meningitis is a carbapenem (e.g., meropenem); aminoglycosides penetrate CSF poorly as monotherapy."
+      ]
+    },
+    "13109": {
+      "notes": [
+        "The original clinical photograph is not included in the source PDF."
+      ]
+    },
+    "10908": {
+      "notes": [],
+      "explanation": "Answer as keyed: the presence of sepsis is associated with the worst survival (no further rationale given in the source)."
+    },
+    "10105": {
+      "explanation": "Neck flexion moves the ETT tip down toward the carina (\"the hose follows the nose\"); extension moves it up."
+    },
+    "10208": {
+      "explanation": "With a fixed Ti, the cycle time (60/rate) shortens as rate increases, so all the shortening falls on expiratory time. With an I:E ratio, Ti changes with rate; an inspiratory hold may delay expiration; normal Ti is far shorter than 3–4 s."
+    },
+    "10209": {
+      "explanation": "All raise pulmonary vascular resistance/RV afterload: PE (mechanical obstruction), protamine (acute pulmonary vasoconstriction), ARDS (hypoxic vasoconstriction, high PEEP), OSA (chronic hypoxic pulmonary hypertension)."
+    },
+    "10210": {
+      "explanation": "Proning makes ventilation distribution more homogeneous via changes in chest-wall/abdominal compliance and lung shape matching. PROSEVA showed a mortality benefit; proning aids secretion drainage; sessions of ~16 h were used."
+    }
+  },
+  "structuredTables": {
+    "10108": [
+      {
+        "title": "Source table",
+        "columns": [
+          "PEEP (cmH2O)",
+          "0",
+          "5",
+          "10",
+          "15",
+          "20"
+        ],
+        "rows": [
+          [
+            "PaO2 (mmHg)",
+            "45",
+            "50",
+            "65",
+            "85",
+            "99"
+          ],
+          [
+            "SaO2 (%)",
+            "72",
+            "78",
+            "90",
+            "95",
+            "100"
+          ],
+          [
+            "Cardiac output (L/min)",
+            "4.0",
+            "3.6",
+            "3.3",
+            "2.8",
+            "2.6"
+          ]
+        ]
+      }
+    ],
+    "12708": [
+      {
+        "title": "Source table",
+        "columns": [
+          "Set",
+          "Neonates (37 wk–30 d)",
+          "Infants (1–12 mo)",
+          "Children (≥1 y)"
+        ],
+        "rows": [
+          [
+            "Set A",
+            "48",
+            "24",
+            "12"
+          ],
+          [
+            "Set B",
+            "48",
+            "12",
+            "12"
+          ],
+          [
+            "Set C",
+            "24",
+            "24",
+            "12"
+          ],
+          [
+            "Set D",
+            "24",
+            "12",
+            "12"
+          ],
+          [
+            "Set E",
+            "12",
+            "12",
+            "6"
+          ]
+        ]
+      }
+    ]
+  },
+  "supplementSource": {
+    "file": "PICU_MCQ_quiz.pptx",
+    "sha256": "4f2a169d6d0136b8f868c078bbbba7edbce9f83ad7df1cefb7d61430b1591d49",
+    "purpose": "Existing source notes and labelled supplementary explanations where the original PDF provides no prose rationale."
+  }
+}
