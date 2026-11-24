@@ -200,6 +200,9 @@ function assetUrl(src: string) {
 
 function FigureGallery({ figures, title }: { figures?: QuestionFigure[]; title: string }) {
   if (!figures?.length) return null;
+  const hasOriginalSourceTable = figures.some((figure) =>
+    figure.src.includes("/critical-thinking-original/") && /\btable\b/i.test(figure.label),
+  );
 
   return (
     <section className="db-figure-gallery my-6" aria-label={title}>
@@ -207,7 +210,7 @@ function FigureGallery({ figures, title }: { figures?: QuestionFigure[]; title: 
         <MedicalIcon name="stethoscope" className="h-4 w-4 text-teal-700" />
         <span>{title}</span>
       </div>
-      <div className={`grid gap-4 ${figures.length > 1 ? "md:grid-cols-2" : ""}`}>
+      <div className={`grid gap-4 ${figures.length > 1 && !hasOriginalSourceTable ? "md:grid-cols-2" : ""}`}>
         {figures.map((figure) => (
           <figure key={figure.src} className="db-figure-card overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-slate-200 bg-slate-50 px-3 py-2 text-xs font-bold text-slate-700">
