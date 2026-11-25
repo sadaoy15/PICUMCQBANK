@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
+import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
 const OCR_FILE = path.join(ROOT, "tmp/pdfs/mcckap-2023/tesseract.json");
@@ -1526,3 +1527,6 @@ const summary = {
   withExplanationVisuals: questions.filter((question) => question.visuals?.explanation?.length).length,
 };
 console.log(JSON.stringify(summary, null, 2));
+// Source-disabled questions still contain usable MCQs. Preserve the reviewed
+// restoration and recovered keys whenever the original OCR importer is rerun.
+execFileSync(process.execPath, [path.join(ROOT, "scripts/restore-mcckap-disabled.mjs")], { stdio: "inherit" });

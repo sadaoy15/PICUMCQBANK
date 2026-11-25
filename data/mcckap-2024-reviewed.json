@@ -1,0 +1,837 @@
+{
+  "suppliedFile": "MCCKAP 2024.pdf",
+  "suppliedSha256": "eaa6359caafcacbde5e24e18ea4ba9bba0e85e62ffeb3f650c129be9c798c377",
+  "internalExamLabel": "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023",
+  "comparison": {
+    "pages": 229,
+    "differentPages": [
+      21,
+      28,
+      49,
+      68,
+      105,
+      106,
+      131,
+      178
+    ],
+    "sha256": "eaa6359caafcacbde5e24e18ea4ba9bba0e85e62ffeb3f650c129be9c798c377"
+  },
+  "policy": "Restore every visible question. Recover keys only from reviewed existing-bank cases or explicitly reviewed variants; preserve unmatched source-disabled items as unscored. Supplementary explanations are labeled.",
+  "questions": [
+    {
+      "questionNumber": 2,
+      "page": 2,
+      "scenario": "A patient with severe acute pancreatitis develops symptomatic hypotension and is treated with 2 L of crystalloid rapidly infused via peripheral IV lines. After the initial crystalloid resuscitation, his arterial pressure rises to 88/40 mm Hg, but he remains oliguric. A central venous line is placed. The patient's chest radiograph after central venous pressure (CVP) catheter insertion prior to planned intubation is read as pulmonary edema. His central venous pressure before intubation is 10 mm Hg. Which of the following is the most appropriate initial course of action to take for this patient?",
+      "choices": {
+        "A": "Stop IV fluids.",
+        "B": "Stop IV fluids and initiate a vasopressor medication.",
+        "C": "Start an IV diuretic.",
+        "D": "Continue plasma volume expansion with crystalloids.",
+        "E": "Obtain a CT scan of the abdomen/pelvis."
+      },
+      "originalStatus": "disabled",
+      "printedKey": null,
+      "recovery": {
+        "donorId": 3474,
+        "donorSource": "PICU MCQ Review",
+        "donorTitle": "A patient with severe acute pancreatitis develops symptomatic hypotension and is treated with 2 L of...",
+        "donorScenarioSha256": "474309b99ad1cee7f949b25013f0fb128daddd8ff64fb2b0f2ed7b7744874ded",
+        "donorAnswer": "E",
+        "donorAnswerText": "IV fluid resuscitation should be continued.",
+        "targetAnswer": "D",
+        "type": "same-case-reworded-options",
+        "review": "Same severe pancreatitis case: 2 L crystalloid, persistent 88/40 mm Hg pressure and oliguria, pulmonary edema and CVP 10 mm Hg. Donor E (continue IV fluid resuscitation) maps to target D, not E. No donor radiograph is added because this supplied version describes its findings in text."
+      }
+    },
+    {
+      "questionNumber": 20,
+      "page": 21,
+      "scenario": "A 12-year-old boy suffers a traumatic brain injury after being struck by a car. He is endotracheally intubated at the scene and transferred to the ICU for further management. Upon arrival, his vital signs are: temperature 37.2 °C, heart rate 124 beats/min, blood pressure 110/50 mm Hg, and oxygen saturation 100% on mechanical ventilation with FiO2 1.0. His pupils are 4 mm and reactive bilaterally. An initial CT scan of the head shows diffuse cerebral edema. An intracranial pressure monitor is placed at the bedside and the initial reading is 22 mm Hg. Osmotherapy and pentobarbital infusion are initiated. On postoperative day 2, the following patient data is obtained: blood pressure 120/56 mm Hg, oxygen saturation 100% on FiO2 0.4, intracranial pressure 18 mm Hg, SvO2 75%, hemoglobin 10 g/dL, jugular venous saturation 65%, cerebral blood flow 50 mL/100g/min, total bilirubin 2.0 mg/dL, AST 100 U/dL, ALT 84 U/dL, and serum lactate 1.4 mg/dL. Which of the following best estimates the patient's cerebral metabolic rate of O2 consumption?",
+      "choices": {
+        "A": "1.75 mL/100g/min",
+        "B": "2.5 mL/100g/min",
+        "C": "5 mL/100g/min",
+        "D": "12.5 mL/100g/min",
+        "E": "50 mL/100g/min"
+      },
+      "originalStatus": "disabled",
+      "printedKey": null,
+      "recovery": {
+        "donorId": 3620,
+        "donorSource": "PICU MCQ Review",
+        "donorTitle": "A 12 year old boy suffers a traumatic brain injury after being struck by a car. He is endotracheally...",
+        "donorScenarioSha256": "14c43bbd1a77e531d9cf6528610b55b13d8ff46c865c3540ad8129a7a903b59c",
+        "donorAnswer": "B",
+        "donorAnswerText": "2.5 mL/100g/min",
+        "targetAnswer": "B",
+        "type": "same-case-same-options",
+        "review": "Same age, injury, ICP, arterial/jugular saturations, hemoglobin and cerebral blood flow; extra donor platelet count does not change calculation. Answer text 2.5 mL/100g/min maps to B."
+      }
+    },
+    {
+      "questionNumber": 27,
+      "page": 28,
+      "scenario": "Which of the following effects is mediated by atrial natriuretic peptide on the kidneys?",
+      "choices": {
+        "A": "An indirect increase in efferent arteriolar resistance with a net increase in glomerular filtration",
+        "B": "Indirect natriuresis resulting from inhibition of sodium transport in the medullary collecting duct",
+        "C": "Direct natriuresis resulting from inhibition of aldosterone release from the zona glomerulosa of the adrenal gland",
+        "D": "Direct decrease in afferent arteriolar resistance resulting in an increase in renal blood flow",
+        "E": "An indirect increase in efferent arteriolar resistance via activation of the renin-angiotensin system"
+      },
+      "originalStatus": "disabled",
+      "printedKey": null,
+      "recovery": {
+        "donorId": 13101,
+        "donorSource": "PICU Critical Thinking Quiz",
+        "donorTitle": "PICU Critical Thinking Quiz — Quiz 31, Question 1",
+        "donorScenarioSha256": "23206dc1cb4688ed324faf7dec329e75e9bd533c01b0c5ab97852ab4df61f531",
+        "donorAnswer": "E",
+        "donorAnswerText": "An indirect increase in efferent arteriolar resistance via activation of the renin-angiotensin system",
+        "targetAnswer": "D",
+        "type": "related-variant-rationale",
+        "review": "Donor asks LEAST likely, with direct/indirect wording reversed in choices A-C. Its letter E must NOT be copied. Donor explanation explicitly supports direct afferent arteriolar dilation, matching target D. Other target A-C choices invert direct versus indirect effects."
+      },
+      "supplementaryExplanation": "Supplementary explanation adapted from PICU Critical Thinking Quiz, Quiz 31 Question 1: Atrial natriuretic peptide directly decreases afferent arteriolar resistance, increasing renal blood flow. Its increase in efferent arteriolar resistance is direct. Inhibition of sodium reabsorption in the medullary collecting duct is also direct, whereas inhibition of aldosterone release causes natriuresis indirectly. In this version, only D preserves the correct direct/indirect relationship. The related bank question asks for the least likely effect and uses different wording, so its answer letter cannot be transferred."
+    },
+    {
+      "questionNumber": 56,
+      "page": 68,
+      "scenario": "A 4-year-old boy undergoes a repair of Tetralogy of Fallot. His postoperative hemodynamics are initially stable. 24 hours later, he has bradycardia with associated hypotension while sleeping. His ECG is shown below. All of his serum electrolytes are within normal limits. Which of the following is the most appropriate course of action to take for this patient?",
+      "choices": {
+        "A": "IV magnesium sulfate bolus",
+        "B": "Observation and reassurance",
+        "C": "Transcutaneous cardiac pacing",
+        "D": "Isoproterenol administration",
+        "E": "Continuous infusion of low-dose norepinephrine"
+      },
+      "originalStatus": "disabled",
+      "printedKey": null,
+      "recovery": null,
+      "figure": {
+        "page": 68,
+        "displayCrop": [
+          0.236,
+          0.346,
+          0.745,
+          0.543
+        ],
+        "filename": "q056-ecg.png",
+        "label": "Question 56 ECG",
+        "caption": "Original rhythm strip supplied with question 56."
+      }
+    },
+    {
+      "questionNumber": 90,
+      "page": 105,
+      "scenario": "A 3-year-old boy is found seizing after ingesting an unknown substance. After the seizure, he is somnolent with the following vital signs: heart rate 92 beats/min, blood pressure 82/54 mm Hg, and respiratory rate 9 breaths/min. Blood glucose is 38 mg/dL. Ingestion of which of the following substances is most consistent with his toxidrome?",
+      "choices": {
+        "A": "Ethylene glycol",
+        "B": "Clonidine",
+        "C": "Lorazepam",
+        "D": "Glipizide"
+      },
+      "originalStatus": "disabled",
+      "printedKey": null,
+      "recovery": null
+    },
+    {
+      "questionNumber": 91,
+      "page": 106,
+      "scenario": "A 3.1-kg (6.8-lb), 2-day-old neonate with hypoplastic left heart syndrome is admitted to the cardiac ICU after undergoing the Norwood procedure. The patient has significant hemodynamic instability 8 hours after cardiopulmonary bypass and requires high-dose inotropy. Urine output over 24 hours is minimal. Which of the following is true regarding kidney injury after cardiac surgery?",
+      "choices": {
+        "A": "Elevation in neutrophil gelatinase-associated lipocalin is more specific to ischemic injury than nephrotoxic injury.",
+        "B": "Post-cardiopulmonary bypass urinary secretion of cystatin C is predictive of the need for renal replacement therapy.",
+        "C": "Type I cardiorenal syndrome is typically reversible and not predictive of future kidney dysfunction.",
+        "D": "Elevated central venous pressure in the absence of low cardiac output syndrome or low mean arterial pressure improves glomerular filtration rate."
+      },
+      "originalStatus": "disabled",
+      "printedKey": null,
+      "recovery": null
+    },
+    {
+      "questionNumber": 111,
+      "page": 131,
+      "scenario": "A 10-year-old boy has been undergoing chemotherapy in the oncology unit for a rhabdomyosarcoma. He had previously undergone the same chemotherapy regimen without side effects. An intensivist is called to his bedside for a rapid response. When the intensivist arrives, the patient is obtunded with a Glasgow Coma Scale score of 9. His vital signs are as follows: temperature 36.8 °C (98.4 °F), blood pressure 110/70 mm Hg, heart rate 80 beats/min, respiratory rate 20 breaths/min, and oxygen saturation 94% on room air. Which of the following drugs is most likely causing his encephalopathy?",
+      "choices": {
+        "A": "Methotrexate",
+        "B": "Etoposide",
+        "C": "Doxorubicin",
+        "D": "Asparaginase",
+        "E": "Ifosfamide"
+      },
+      "originalStatus": "disabled",
+      "printedKey": null,
+      "recovery": {
+        "donorId": 14063,
+        "donorSource": "Advanced Knowledge Assessment in Pediatric Critical Care 2024",
+        "donorTitle": "Self Assessment 2024 — Question 63",
+        "donorScenarioSha256": "235f1766794658c0e8632432642babecff7db4452e9b371644c590f933fdeaaf",
+        "donorAnswer": "E",
+        "donorAnswerText": "Ifosfamide",
+        "targetAnswer": "E",
+        "type": "same-case-same-options",
+        "review": "Same rhabdomyosarcoma/chemotherapy case, GCS 9, vital signs and all five drugs; Ifosfamide maps to E."
+      }
+    },
+    {
+      "questionNumber": 148,
+      "page": 171,
+      "scenario": "An 8-month-old boy with a history of prematurity, chronic lung disease, and pulmonary hypertension is admitted to the pediatric ICU with acute hypoxemic respiratory failure due to respiratory syncytial virus bronchiolitis. Initial echocardiogram shows tricuspid regurgitation peak jet velocity 2.8 m/sec. Over the next 7 hours, his clinical condition worsens and he requires higher FiO2 and multiple fluid boluses. Repeat echocardiogram shows tricuspid regurgitation peak jet velocity of 3.5 m/sec. Which of the following interventions is most likely to have contributed to the change in his clinical condition?",
+      "choices": {
+        "A": "Matching lung volume to functional residual capacity",
+        "B": "Packed RBC transfusion",
+        "C": "Sodium bicarbonate bolus",
+        "D": "Normal saline bolus"
+      },
+      "originalStatus": "disabled",
+      "printedKey": null,
+      "recovery": null
+    },
+    {
+      "questionNumber": 155,
+      "page": 178,
+      "scenario": "A girl is admitted with traumatic brain injury after being ejected from a car during a high-speed motor vehicle collision. She was unconscious but breathing at the scene and has not regained consciousness. Glasgow Coma Scale score is 6T after intubation and ventilation. A CT scan shows a nondisplaced left parietal skull fracture and signs of diffuse axonal injury. There is no blood in the ventricles, and the basilar cisterns appear patent. An externalized ventricular drain is placed for cerebrospinal fluid diversion and monitoring of intracranial pressure (ICP) and cerebral perfusion pressure (CPP). When interpreting this monitoring data, there is likely to be loss of the usual correlation of",
+      "choices": {
+        "A": "CPP and cerebral blood flow (CBF).",
+        "B": "ICP and CPP.",
+        "C": "ICP and CBF.",
+        "D": "blood pressure and CPP."
+      },
+      "originalStatus": "disabled",
+      "printedKey": null,
+      "recovery": null
+    }
+  ],
+  "sourcePageMap": {
+    "1": [
+      1
+    ],
+    "2": [
+      2
+    ],
+    "3": [
+      3
+    ],
+    "4": [
+      4
+    ],
+    "5": [
+      5,
+      6
+    ],
+    "6": [
+      7
+    ],
+    "7": [
+      8
+    ],
+    "8": [
+      9
+    ],
+    "9": [
+      10
+    ],
+    "10": [
+      11
+    ],
+    "11": [
+      12
+    ],
+    "12": [
+      13
+    ],
+    "13": [
+      14
+    ],
+    "14": [
+      15
+    ],
+    "15": [
+      16
+    ],
+    "16": [
+      17
+    ],
+    "17": [
+      18
+    ],
+    "18": [
+      19
+    ],
+    "19": [
+      20
+    ],
+    "20": [
+      21
+    ],
+    "21": [
+      22
+    ],
+    "22": [
+      23
+    ],
+    "23": [
+      24
+    ],
+    "24": [
+      25
+    ],
+    "25": [
+      26
+    ],
+    "26": [
+      27
+    ],
+    "27": [
+      28
+    ],
+    "28": [
+      29
+    ],
+    "29": [
+      30,
+      31
+    ],
+    "30": [
+      32
+    ],
+    "31": [
+      33
+    ],
+    "32": [
+      34
+    ],
+    "33": [
+      35
+    ],
+    "34": [
+      36
+    ],
+    "35": [
+      37
+    ],
+    "36": [
+      38
+    ],
+    "37": [
+      39,
+      40
+    ],
+    "38": [
+      41,
+      42
+    ],
+    "39": [
+      43,
+      44
+    ],
+    "40": [
+      45
+    ],
+    "41": [
+      46
+    ],
+    "42": [
+      47,
+      48
+    ],
+    "43": [
+      49
+    ],
+    "44": [
+      50,
+      51
+    ],
+    "45": [
+      52
+    ],
+    "46": [
+      53
+    ],
+    "47": [
+      54,
+      55
+    ],
+    "48": [
+      56,
+      57
+    ],
+    "49": [
+      58,
+      59
+    ],
+    "50": [
+      60,
+      61
+    ],
+    "51": [
+      62,
+      63
+    ],
+    "52": [
+      64
+    ],
+    "53": [
+      65
+    ],
+    "54": [
+      66
+    ],
+    "55": [
+      67
+    ],
+    "56": [
+      68
+    ],
+    "57": [
+      69
+    ],
+    "58": [
+      70
+    ],
+    "59": [
+      71
+    ],
+    "60": [
+      72
+    ],
+    "61": [
+      73
+    ],
+    "62": [
+      74
+    ],
+    "63": [
+      75
+    ],
+    "64": [
+      76
+    ],
+    "65": [
+      77
+    ],
+    "66": [
+      78
+    ],
+    "67": [
+      79
+    ],
+    "68": [
+      80,
+      81
+    ],
+    "69": [
+      82
+    ],
+    "70": [
+      83
+    ],
+    "71": [
+      84
+    ],
+    "72": [
+      85
+    ],
+    "73": [
+      86
+    ],
+    "74": [
+      87
+    ],
+    "75": [
+      88
+    ],
+    "76": [
+      89
+    ],
+    "77": [
+      90
+    ],
+    "78": [
+      91,
+      92
+    ],
+    "79": [
+      93
+    ],
+    "80": [
+      94
+    ],
+    "81": [
+      95
+    ],
+    "82": [
+      96
+    ],
+    "83": [
+      97
+    ],
+    "84": [
+      98
+    ],
+    "85": [
+      99
+    ],
+    "86": [
+      100,
+      101
+    ],
+    "87": [
+      102
+    ],
+    "88": [
+      103
+    ],
+    "89": [
+      104
+    ],
+    "90": [
+      105
+    ],
+    "91": [
+      106
+    ],
+    "92": [
+      107,
+      108
+    ],
+    "93": [
+      109
+    ],
+    "94": [
+      110
+    ],
+    "95": [
+      111
+    ],
+    "96": [
+      112
+    ],
+    "97": [
+      113,
+      114
+    ],
+    "98": [
+      115
+    ],
+    "99": [
+      116,
+      117
+    ],
+    "100": [
+      118
+    ],
+    "101": [
+      119
+    ],
+    "102": [
+      120
+    ],
+    "103": [
+      121
+    ],
+    "104": [
+      122
+    ],
+    "105": [
+      123
+    ],
+    "106": [
+      124
+    ],
+    "107": [
+      125,
+      126
+    ],
+    "108": [
+      127
+    ],
+    "109": [
+      128
+    ],
+    "110": [
+      129,
+      130
+    ],
+    "111": [
+      131
+    ],
+    "112": [
+      132
+    ],
+    "113": [
+      133,
+      134
+    ],
+    "114": [
+      135
+    ],
+    "115": [
+      136
+    ],
+    "116": [
+      137
+    ],
+    "117": [
+      138
+    ],
+    "118": [
+      139
+    ],
+    "119": [
+      140
+    ],
+    "120": [
+      141
+    ],
+    "121": [
+      142
+    ],
+    "122": [
+      143,
+      144
+    ],
+    "123": [
+      145
+    ],
+    "124": [
+      146
+    ],
+    "125": [
+      147
+    ],
+    "126": [
+      148
+    ],
+    "127": [
+      149
+    ],
+    "128": [
+      150
+    ],
+    "129": [
+      151
+    ],
+    "130": [
+      152,
+      153
+    ],
+    "131": [
+      154
+    ],
+    "132": [
+      155
+    ],
+    "133": [
+      156
+    ],
+    "134": [
+      157
+    ],
+    "135": [
+      158
+    ],
+    "136": [
+      159
+    ],
+    "137": [
+      160
+    ],
+    "138": [
+      161
+    ],
+    "139": [
+      162
+    ],
+    "140": [
+      163
+    ],
+    "141": [
+      164
+    ],
+    "142": [
+      165
+    ],
+    "143": [
+      166
+    ],
+    "144": [
+      167
+    ],
+    "145": [
+      168
+    ],
+    "146": [
+      169
+    ],
+    "147": [
+      170
+    ],
+    "148": [
+      171
+    ],
+    "149": [
+      172
+    ],
+    "150": [
+      173
+    ],
+    "151": [
+      174
+    ],
+    "152": [
+      175
+    ],
+    "153": [
+      176
+    ],
+    "154": [
+      177
+    ],
+    "155": [
+      178
+    ],
+    "156": [
+      179
+    ],
+    "157": [
+      180
+    ],
+    "158": [
+      181
+    ],
+    "159": [
+      182
+    ],
+    "160": [
+      183
+    ],
+    "161": [
+      184
+    ],
+    "162": [
+      185
+    ],
+    "163": [
+      186
+    ],
+    "164": [
+      187
+    ],
+    "165": [
+      188,
+      189
+    ],
+    "166": [
+      190
+    ],
+    "167": [
+      191
+    ],
+    "168": [
+      192
+    ],
+    "169": [
+      193
+    ],
+    "170": [
+      194
+    ],
+    "171": [
+      195
+    ],
+    "172": [
+      196
+    ],
+    "173": [
+      197
+    ],
+    "174": [
+      198,
+      199
+    ],
+    "175": [
+      200
+    ],
+    "176": [
+      201,
+      202
+    ],
+    "177": [
+      203
+    ],
+    "178": [
+      204
+    ],
+    "179": [
+      205
+    ],
+    "180": [
+      206
+    ],
+    "181": [
+      207
+    ],
+    "182": [
+      208
+    ],
+    "183": [
+      209
+    ],
+    "184": [
+      210,
+      211
+    ],
+    "185": [
+      212
+    ],
+    "186": [
+      213
+    ],
+    "187": [
+      214,
+      215
+    ],
+    "188": [
+      216
+    ],
+    "189": [
+      217
+    ],
+    "190": [
+      218
+    ],
+    "191": [
+      219
+    ],
+    "192": [
+      220
+    ],
+    "193": [
+      221
+    ],
+    "194": [
+      222
+    ],
+    "195": [
+      223
+    ],
+    "196": [
+      224
+    ],
+    "197": [
+      225
+    ],
+    "198": [
+      226
+    ],
+    "199": [
+      227
+    ],
+    "200": [
+      228,
+      229
+    ]
+  }
+}

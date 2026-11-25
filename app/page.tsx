@@ -83,7 +83,7 @@ const passMachineExamGroups: ExamGroup[] = [
 
 const mcckapExamGroups: ExamGroup[] = [
   { id: "mcckap-2022", label: "PMCCKAP 2022", description: "Source questions with keyed answers, references, figures and tables", accent: "emerald", match: (q) => q.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2022" },
-  { id: "mcckap-2023", label: "MCCKAP 2023", description: "191 multidisciplinary pediatric critical care questions with source commentaries and figures", accent: "emerald", match: (q) => q.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023" },
+  { id: "mcckap-2023", label: "MCCKAP 2023 / 2024 file", description: "All 200 source questions, including 9 restored items; 195 keyed and 5 unscored, with available explanations and figures", accent: "emerald", match: (q) => q.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023" },
 ];
 
 const specialExamGroups: ExamGroup[] = [

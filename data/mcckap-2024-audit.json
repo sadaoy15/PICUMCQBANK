@@ -1,0 +1,2594 @@
+{
+  "suppliedFile": "MCCKAP 2024.pdf",
+  "suppliedSha256": "eaa6359caafcacbde5e24e18ea4ba9bba0e85e62ffeb3f650c129be9c798c377",
+  "internalExamLabel": "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023",
+  "comparison": {
+    "pages": 229,
+    "differentPages": [
+      21,
+      28,
+      49,
+      68,
+      105,
+      106,
+      131,
+      178
+    ],
+    "sha256": "eaa6359caafcacbde5e24e18ea4ba9bba0e85e62ffeb3f650c129be9c798c377"
+  },
+  "total": 200,
+  "previouslyImported": 191,
+  "restored": 9,
+  "recoveredAnswers": [
+    2,
+    20,
+    27,
+    111
+  ],
+  "unscored": [
+    56,
+    90,
+    91,
+    148,
+    155
+  ],
+  "scored": 195,
+  "explanations": 193,
+  "assets": [
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q005-question.jpg",
+      "sha256": "1ff17852dbac934912005b3263c1ca46c0139b537cba901cbccf51fdc8f992ed"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q029-question.jpg",
+      "sha256": "4818e7e0d65832687fcc02b72b6232950c8b6fc3d914a6be787bf3e3982ce6b9"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q039-question.jpg",
+      "sha256": "717e82dc0a2cce4e84e7813b3554c32b40126583e4a7ff6cc69b6d26d7a427c1"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q043-question.jpg",
+      "sha256": "a354145f7c50cfebd3e1847c3acbf5f3968bad900459d3fb7f63373a5d2987f5"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q044-explanation.jpg",
+      "sha256": "b117444674f13b1146bc7afd7a697b582e25ad1431d5583c8926f6f47478a8bf"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q047-question.jpg",
+      "sha256": "8a4a0d558efd50a3233f51f765682360b41d5dacc18eb8044821b2243fffb3a1"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2024-restored/q056-ecg.png",
+      "sha256": "d506b3e77102db0b084f90f08828fdb9adeafe60e2d382cc2c087e9d27eeef68"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q073-question.jpg",
+      "sha256": "a2a18f0f2cbe0e5558362d9686ef3328314c79eff017dc141cb87e5bf546bfc3"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q080-question.jpg",
+      "sha256": "37376aa18d234aa9023a970c71302c36152aaa40f75f9660f3a4b737c18cb494"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q086-question.jpg",
+      "sha256": "cc8af209b3795df3d782f089e8089b6ba4db92c17118fa034943016c2b1dd297"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q092-question.jpg",
+      "sha256": "ea23c282473d8d10b94fb838cdb33b05fe24e6b8059e90e58327aa9be732426e"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q099-question.jpg",
+      "sha256": "ba0060326d795661993d9d1ec596d221619af99483913c40529bb7fff0ab1025"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q107-question.jpg",
+      "sha256": "054533e7600e79c02f831abd0f219da2bc75177bcb250774bff48f823e7c21a7"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q110-question.jpg",
+      "sha256": "4b1714e29e1f927707f0428e47b4594f2483b8c645e91a564bf898f0c5fa6a59"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q113-question.jpg",
+      "sha256": "c6443c8a935bf2790cb14e438343a7bde213c9cc844dfa07bba32682b56158c2"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q130-question.jpg",
+      "sha256": "034dfda0995a569157ef1a746c69ffa02cc3f3fe8a48d69b3106ff4f8b209f64"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q165-question.jpg",
+      "sha256": "ebb3fc223549a740b2fd88f131cef53175b31c4b60094645eea55282c599a7b6"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q174-question.jpg",
+      "sha256": "21eec5e988eb8313934c41164f790c10fc047ecf71a89c8bc5c44c4514da91c0"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q176-explanation.jpg",
+      "sha256": "3c523e945e7ad3846463a354420b2628895795240c1afdd0a1832ea9239dde73"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q187-explanation.jpg",
+      "sha256": "b122c44a1c921b2c6419359b8647a00b90c764a39bf8717f8d2e67dfbe12efee"
+    },
+    {
+      "src": "/PICUMCQBANK/images/mcckap-2023/q200-explanation.jpg",
+      "sha256": "e1fc8cdb5f930b86fae115ed43edcce4f6f2fc5ae68b14742f6f3fdf66125af4"
+    }
+  ],
+  "questions": [
+    {
+      "questionNumber": 1,
+      "id": 6001,
+      "pages": [
+        1
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 2,
+      "id": 6002,
+      "pages": [
+        2
+      ],
+      "status": "restored-recovered-answer",
+      "answer": "D",
+      "choices": 5,
+      "recovery": {
+        "donorId": 3474,
+        "donorSource": "PICU MCQ Review",
+        "donorTitle": "A patient with severe acute pancreatitis develops symptomatic hypotension and is treated with 2 L of...",
+        "donorScenarioSha256": "474309b99ad1cee7f949b25013f0fb128daddd8ff64fb2b0f2ed7b7744874ded",
+        "donorAnswer": "E",
+        "donorAnswerText": "IV fluid resuscitation should be continued.",
+        "targetAnswer": "D",
+        "type": "same-case-reworded-options",
+        "review": "Same severe pancreatitis case: 2 L crystalloid, persistent 88/40 mm Hg pressure and oliguria, pulmonary edema and CVP 10 mm Hg. Donor E (continue IV fluid resuscitation) maps to target D, not E. No donor radiograph is added because this supplied version describes its findings in text."
+      },
+      "explanation": true
+    },
+    {
+      "questionNumber": 3,
+      "id": 6003,
+      "pages": [
+        3
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 4,
+      "id": 6004,
+      "pages": [
+        4
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 5,
+      "id": 6005,
+      "pages": [
+        5,
+        6
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 6,
+      "id": 6006,
+      "pages": [
+        7
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 7,
+      "id": 6007,
+      "pages": [
+        8
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": false
+    },
+    {
+      "questionNumber": 8,
+      "id": 6008,
+      "pages": [
+        9
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 9,
+      "id": 6009,
+      "pages": [
+        10
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 10,
+      "id": 6010,
+      "pages": [
+        11
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 11,
+      "id": 6011,
+      "pages": [
+        12
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 12,
+      "id": 6012,
+      "pages": [
+        13
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 13,
+      "id": 6013,
+      "pages": [
+        14
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 14,
+      "id": 6014,
+      "pages": [
+        15
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 15,
+      "id": 6015,
+      "pages": [
+        16
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 16,
+      "id": 6016,
+      "pages": [
+        17
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 17,
+      "id": 6017,
+      "pages": [
+        18
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 18,
+      "id": 6018,
+      "pages": [
+        19
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 19,
+      "id": 6019,
+      "pages": [
+        20
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 20,
+      "id": 6020,
+      "pages": [
+        21
+      ],
+      "status": "restored-recovered-answer",
+      "answer": "B",
+      "choices": 5,
+      "recovery": {
+        "donorId": 3620,
+        "donorSource": "PICU MCQ Review",
+        "donorTitle": "A 12 year old boy suffers a traumatic brain injury after being struck by a car. He is endotracheally...",
+        "donorScenarioSha256": "14c43bbd1a77e531d9cf6528610b55b13d8ff46c865c3540ad8129a7a903b59c",
+        "donorAnswer": "B",
+        "donorAnswerText": "2.5 mL/100g/min",
+        "targetAnswer": "B",
+        "type": "same-case-same-options",
+        "review": "Same age, injury, ICP, arterial/jugular saturations, hemoglobin and cerebral blood flow; extra donor platelet count does not change calculation. Answer text 2.5 mL/100g/min maps to B."
+      },
+      "explanation": true
+    },
+    {
+      "questionNumber": 21,
+      "id": 6021,
+      "pages": [
+        22
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 22,
+      "id": 6022,
+      "pages": [
+        23
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 23,
+      "id": 6023,
+      "pages": [
+        24
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 24,
+      "id": 6024,
+      "pages": [
+        25
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 25,
+      "id": 6025,
+      "pages": [
+        26
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 26,
+      "id": 6026,
+      "pages": [
+        27
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 27,
+      "id": 6027,
+      "pages": [
+        28
+      ],
+      "status": "restored-recovered-answer",
+      "answer": "D",
+      "choices": 5,
+      "recovery": {
+        "donorId": 13101,
+        "donorSource": "PICU Critical Thinking Quiz",
+        "donorTitle": "PICU Critical Thinking Quiz — Quiz 31, Question 1",
+        "donorScenarioSha256": "23206dc1cb4688ed324faf7dec329e75e9bd533c01b0c5ab97852ab4df61f531",
+        "donorAnswer": "E",
+        "donorAnswerText": "An indirect increase in efferent arteriolar resistance via activation of the renin-angiotensin system",
+        "targetAnswer": "D",
+        "type": "related-variant-rationale",
+        "review": "Donor asks LEAST likely, with direct/indirect wording reversed in choices A-C. Its letter E must NOT be copied. Donor explanation explicitly supports direct afferent arteriolar dilation, matching target D. Other target A-C choices invert direct versus indirect effects."
+      },
+      "explanation": true
+    },
+    {
+      "questionNumber": 28,
+      "id": 6028,
+      "pages": [
+        29
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 29,
+      "id": 6029,
+      "pages": [
+        30,
+        31
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 30,
+      "id": 6030,
+      "pages": [
+        32
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 31,
+      "id": 6031,
+      "pages": [
+        33
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 32,
+      "id": 6032,
+      "pages": [
+        34
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 33,
+      "id": 6033,
+      "pages": [
+        35
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 34,
+      "id": 6034,
+      "pages": [
+        36
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 35,
+      "id": 6035,
+      "pages": [
+        37
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 36,
+      "id": 6036,
+      "pages": [
+        38
+      ],
+      "status": "original-keyed",
+      "answer": "E",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 37,
+      "id": 6037,
+      "pages": [
+        39,
+        40
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 38,
+      "id": 6038,
+      "pages": [
+        41,
+        42
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 39,
+      "id": 6039,
+      "pages": [
+        43,
+        44
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 40,
+      "id": 6040,
+      "pages": [
+        45
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 41,
+      "id": 6041,
+      "pages": [
+        46
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 42,
+      "id": 6042,
+      "pages": [
+        47,
+        48
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 43,
+      "id": 6043,
+      "pages": [
+        49
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": false
+    },
+    {
+      "questionNumber": 44,
+      "id": 6044,
+      "pages": [
+        50,
+        51
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 45,
+      "id": 6045,
+      "pages": [
+        52
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 46,
+      "id": 6046,
+      "pages": [
+        53
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 47,
+      "id": 6047,
+      "pages": [
+        54,
+        55
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 48,
+      "id": 6048,
+      "pages": [
+        56,
+        57
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 49,
+      "id": 6049,
+      "pages": [
+        58,
+        59
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 50,
+      "id": 6050,
+      "pages": [
+        60,
+        61
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 51,
+      "id": 6051,
+      "pages": [
+        62,
+        63
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 52,
+      "id": 6052,
+      "pages": [
+        64
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 53,
+      "id": 6053,
+      "pages": [
+        65
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 54,
+      "id": 6054,
+      "pages": [
+        66
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 55,
+      "id": 6055,
+      "pages": [
+        67
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 56,
+      "id": 6056,
+      "pages": [
+        68
+      ],
+      "status": "restored-intentionally-unscored",
+      "answer": null,
+      "choices": 5,
+      "recovery": null,
+      "explanation": false
+    },
+    {
+      "questionNumber": 57,
+      "id": 6057,
+      "pages": [
+        69
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 58,
+      "id": 6058,
+      "pages": [
+        70
+      ],
+      "status": "original-keyed",
+      "answer": "E",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 59,
+      "id": 6059,
+      "pages": [
+        71
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 60,
+      "id": 6060,
+      "pages": [
+        72
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 61,
+      "id": 6061,
+      "pages": [
+        73
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 62,
+      "id": 6062,
+      "pages": [
+        74
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 63,
+      "id": 6063,
+      "pages": [
+        75
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 64,
+      "id": 6064,
+      "pages": [
+        76
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 65,
+      "id": 6065,
+      "pages": [
+        77
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 66,
+      "id": 6066,
+      "pages": [
+        78
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 67,
+      "id": 6067,
+      "pages": [
+        79
+      ],
+      "status": "original-keyed",
+      "answer": "E",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 68,
+      "id": 6068,
+      "pages": [
+        80,
+        81
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 69,
+      "id": 6069,
+      "pages": [
+        82
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 70,
+      "id": 6070,
+      "pages": [
+        83
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 71,
+      "id": 6071,
+      "pages": [
+        84
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 72,
+      "id": 6072,
+      "pages": [
+        85
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 73,
+      "id": 6073,
+      "pages": [
+        86
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 74,
+      "id": 6074,
+      "pages": [
+        87
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 75,
+      "id": 6075,
+      "pages": [
+        88
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 76,
+      "id": 6076,
+      "pages": [
+        89
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 77,
+      "id": 6077,
+      "pages": [
+        90
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 78,
+      "id": 6078,
+      "pages": [
+        91,
+        92
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 79,
+      "id": 6079,
+      "pages": [
+        93
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 80,
+      "id": 6080,
+      "pages": [
+        94
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 81,
+      "id": 6081,
+      "pages": [
+        95
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 82,
+      "id": 6082,
+      "pages": [
+        96
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 83,
+      "id": 6083,
+      "pages": [
+        97
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 84,
+      "id": 6084,
+      "pages": [
+        98
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 85,
+      "id": 6085,
+      "pages": [
+        99
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 86,
+      "id": 6086,
+      "pages": [
+        100,
+        101
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 87,
+      "id": 6087,
+      "pages": [
+        102
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 88,
+      "id": 6088,
+      "pages": [
+        103
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 89,
+      "id": 6089,
+      "pages": [
+        104
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 90,
+      "id": 6090,
+      "pages": [
+        105
+      ],
+      "status": "restored-intentionally-unscored",
+      "answer": null,
+      "choices": 4,
+      "recovery": null,
+      "explanation": false
+    },
+    {
+      "questionNumber": 91,
+      "id": 6091,
+      "pages": [
+        106
+      ],
+      "status": "restored-intentionally-unscored",
+      "answer": null,
+      "choices": 4,
+      "recovery": null,
+      "explanation": false
+    },
+    {
+      "questionNumber": 92,
+      "id": 6092,
+      "pages": [
+        107,
+        108
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 93,
+      "id": 6093,
+      "pages": [
+        109
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 94,
+      "id": 6094,
+      "pages": [
+        110
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 95,
+      "id": 6095,
+      "pages": [
+        111
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 96,
+      "id": 6096,
+      "pages": [
+        112
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 97,
+      "id": 6097,
+      "pages": [
+        113,
+        114
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 98,
+      "id": 6098,
+      "pages": [
+        115
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 99,
+      "id": 6099,
+      "pages": [
+        116,
+        117
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 100,
+      "id": 6100,
+      "pages": [
+        118
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 101,
+      "id": 6101,
+      "pages": [
+        119
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 102,
+      "id": 6102,
+      "pages": [
+        120
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 103,
+      "id": 6103,
+      "pages": [
+        121
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 104,
+      "id": 6104,
+      "pages": [
+        122
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 105,
+      "id": 6105,
+      "pages": [
+        123
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 106,
+      "id": 6106,
+      "pages": [
+        124
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 107,
+      "id": 6107,
+      "pages": [
+        125,
+        126
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 108,
+      "id": 6108,
+      "pages": [
+        127
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 109,
+      "id": 6109,
+      "pages": [
+        128
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 110,
+      "id": 6110,
+      "pages": [
+        129,
+        130
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 111,
+      "id": 6111,
+      "pages": [
+        131
+      ],
+      "status": "restored-recovered-answer",
+      "answer": "E",
+      "choices": 5,
+      "recovery": {
+        "donorId": 14063,
+        "donorSource": "Advanced Knowledge Assessment in Pediatric Critical Care 2024",
+        "donorTitle": "Self Assessment 2024 — Question 63",
+        "donorScenarioSha256": "235f1766794658c0e8632432642babecff7db4452e9b371644c590f933fdeaaf",
+        "donorAnswer": "E",
+        "donorAnswerText": "Ifosfamide",
+        "targetAnswer": "E",
+        "type": "same-case-same-options",
+        "review": "Same rhabdomyosarcoma/chemotherapy case, GCS 9, vital signs and all five drugs; Ifosfamide maps to E."
+      },
+      "explanation": true
+    },
+    {
+      "questionNumber": 112,
+      "id": 6112,
+      "pages": [
+        132
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 113,
+      "id": 6113,
+      "pages": [
+        133,
+        134
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 3,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 114,
+      "id": 6114,
+      "pages": [
+        135
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 115,
+      "id": 6115,
+      "pages": [
+        136
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 116,
+      "id": 6116,
+      "pages": [
+        137
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 117,
+      "id": 6117,
+      "pages": [
+        138
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 118,
+      "id": 6118,
+      "pages": [
+        139
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 119,
+      "id": 6119,
+      "pages": [
+        140
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 120,
+      "id": 6120,
+      "pages": [
+        141
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 121,
+      "id": 6121,
+      "pages": [
+        142
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 122,
+      "id": 6122,
+      "pages": [
+        143,
+        144
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 123,
+      "id": 6123,
+      "pages": [
+        145
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 124,
+      "id": 6124,
+      "pages": [
+        146
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 125,
+      "id": 6125,
+      "pages": [
+        147
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 126,
+      "id": 6126,
+      "pages": [
+        148
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 127,
+      "id": 6127,
+      "pages": [
+        149
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 128,
+      "id": 6128,
+      "pages": [
+        150
+      ],
+      "status": "original-keyed",
+      "answer": "E",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 129,
+      "id": 6129,
+      "pages": [
+        151
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 130,
+      "id": 6130,
+      "pages": [
+        152,
+        153
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 131,
+      "id": 6131,
+      "pages": [
+        154
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 132,
+      "id": 6132,
+      "pages": [
+        155
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 133,
+      "id": 6133,
+      "pages": [
+        156
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 134,
+      "id": 6134,
+      "pages": [
+        157
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 135,
+      "id": 6135,
+      "pages": [
+        158
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 136,
+      "id": 6136,
+      "pages": [
+        159
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 137,
+      "id": 6137,
+      "pages": [
+        160
+      ],
+      "status": "original-keyed",
+      "answer": "E",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 138,
+      "id": 6138,
+      "pages": [
+        161
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 139,
+      "id": 6139,
+      "pages": [
+        162
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 140,
+      "id": 6140,
+      "pages": [
+        163
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 141,
+      "id": 6141,
+      "pages": [
+        164
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 142,
+      "id": 6142,
+      "pages": [
+        165
+      ],
+      "status": "original-keyed",
+      "answer": "E",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 143,
+      "id": 6143,
+      "pages": [
+        166
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 144,
+      "id": 6144,
+      "pages": [
+        167
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 145,
+      "id": 6145,
+      "pages": [
+        168
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 146,
+      "id": 6146,
+      "pages": [
+        169
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 147,
+      "id": 6147,
+      "pages": [
+        170
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 148,
+      "id": 6148,
+      "pages": [
+        171
+      ],
+      "status": "restored-intentionally-unscored",
+      "answer": null,
+      "choices": 4,
+      "recovery": null,
+      "explanation": false
+    },
+    {
+      "questionNumber": 149,
+      "id": 6149,
+      "pages": [
+        172
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 150,
+      "id": 6150,
+      "pages": [
+        173
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 151,
+      "id": 6151,
+      "pages": [
+        174
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 152,
+      "id": 6152,
+      "pages": [
+        175
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 153,
+      "id": 6153,
+      "pages": [
+        176
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 154,
+      "id": 6154,
+      "pages": [
+        177
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 155,
+      "id": 6155,
+      "pages": [
+        178
+      ],
+      "status": "restored-intentionally-unscored",
+      "answer": null,
+      "choices": 4,
+      "recovery": null,
+      "explanation": false
+    },
+    {
+      "questionNumber": 156,
+      "id": 6156,
+      "pages": [
+        179
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 157,
+      "id": 6157,
+      "pages": [
+        180
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 158,
+      "id": 6158,
+      "pages": [
+        181
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 159,
+      "id": 6159,
+      "pages": [
+        182
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 160,
+      "id": 6160,
+      "pages": [
+        183
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 161,
+      "id": 6161,
+      "pages": [
+        184
+      ],
+      "status": "original-keyed",
+      "answer": "E",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 162,
+      "id": 6162,
+      "pages": [
+        185
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 163,
+      "id": 6163,
+      "pages": [
+        186
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 164,
+      "id": 6164,
+      "pages": [
+        187
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 165,
+      "id": 6165,
+      "pages": [
+        188,
+        189
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 166,
+      "id": 6166,
+      "pages": [
+        190
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 167,
+      "id": 6167,
+      "pages": [
+        191
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 168,
+      "id": 6168,
+      "pages": [
+        192
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 169,
+      "id": 6169,
+      "pages": [
+        193
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 170,
+      "id": 6170,
+      "pages": [
+        194
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 171,
+      "id": 6171,
+      "pages": [
+        195
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 172,
+      "id": 6172,
+      "pages": [
+        196
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 173,
+      "id": 6173,
+      "pages": [
+        197
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 174,
+      "id": 6174,
+      "pages": [
+        198,
+        199
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 175,
+      "id": 6175,
+      "pages": [
+        200
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 176,
+      "id": 6176,
+      "pages": [
+        201,
+        202
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 177,
+      "id": 6177,
+      "pages": [
+        203
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 178,
+      "id": 6178,
+      "pages": [
+        204
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 179,
+      "id": 6179,
+      "pages": [
+        205
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 180,
+      "id": 6180,
+      "pages": [
+        206
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 181,
+      "id": 6181,
+      "pages": [
+        207
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 182,
+      "id": 6182,
+      "pages": [
+        208
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 183,
+      "id": 6183,
+      "pages": [
+        209
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 184,
+      "id": 6184,
+      "pages": [
+        210,
+        211
+      ],
+      "status": "original-keyed",
+      "answer": "E",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 185,
+      "id": 6185,
+      "pages": [
+        212
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 186,
+      "id": 6186,
+      "pages": [
+        213
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 187,
+      "id": 6187,
+      "pages": [
+        214,
+        215
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 188,
+      "id": 6188,
+      "pages": [
+        216
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 189,
+      "id": 6189,
+      "pages": [
+        217
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 190,
+      "id": 6190,
+      "pages": [
+        218
+      ],
+      "status": "original-keyed",
+      "answer": "E",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 191,
+      "id": 6191,
+      "pages": [
+        219
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 192,
+      "id": 6192,
+      "pages": [
+        220
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 193,
+      "id": 6193,
+      "pages": [
+        221
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 194,
+      "id": 6194,
+      "pages": [
+        222
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 195,
+      "id": 6195,
+      "pages": [
+        223
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 196,
+      "id": 6196,
+      "pages": [
+        224
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 197,
+      "id": 6197,
+      "pages": [
+        225
+      ],
+      "status": "original-keyed",
+      "answer": "B",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 198,
+      "id": 6198,
+      "pages": [
+        226
+      ],
+      "status": "original-keyed",
+      "answer": "D",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 199,
+      "id": 6199,
+      "pages": [
+        227
+      ],
+      "status": "original-keyed",
+      "answer": "A",
+      "choices": 4,
+      "recovery": null,
+      "explanation": true
+    },
+    {
+      "questionNumber": 200,
+      "id": 6200,
+      "pages": [
+        228,
+        229
+      ],
+      "status": "original-keyed",
+      "answer": "C",
+      "choices": 5,
+      "recovery": null,
+      "explanation": true
+    }
+  ]
+}
