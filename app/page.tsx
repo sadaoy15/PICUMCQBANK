@@ -34,6 +34,27 @@ interface QuizSession {
   status: "active" | "paused" | "completed";
   createdAt: string;
   updatedAt: string;
+  mcckapChoiceRevision?: number;
+}
+
+function migrateMcckapSession(session: QuizSession): QuizSession {
+  const previousLabel = "MCCKAP 2023 / 2024 file";
+  const examLabel = session.examLabel.replace(previousLabel, "MCCKAP 2023");
+  const title = session.title.replace(previousLabel, "MCCKAP 2023");
+  if (session.mcckapChoiceRevision === 1) {
+    return examLabel === session.examLabel && title === session.title ? session : { ...session, examLabel, title };
+  }
+  const progress = { ...session.progress };
+  // Preserve the selected answer text when restoring the missing source option A.
+  const restoredLetters: Record<number, Record<string, string>> = {
+    6113: { A: "B", B: "C", C: "D" },
+    6130: { A: "B", B: "C", C: "D", D: "E" },
+  };
+  for (const [id, letters] of Object.entries(restoredLetters)) {
+    const response = progress[Number(id)];
+    if (response && letters[response.selected]) progress[Number(id)] = { ...response, selected: letters[response.selected] };
+  }
+  return { ...session, examLabel, title, progress, mcckapChoiceRevision: 1 };
 }
 
 interface ExamGroup {
@@ -83,7 +104,7 @@ const passMachineExamGroups: ExamGroup[] = [
 
 const mcckapExamGroups: ExamGroup[] = [
   { id: "mcckap-2022", label: "PMCCKAP 2022", description: "Source questions with keyed answers, references, figures and tables", accent: "emerald", match: (q) => q.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2022" },
-  { id: "mcckap-2023", label: "MCCKAP 2023 / 2024 file", description: "All 200 source questions, including 9 restored items; 195 keyed and 5 unscored, with available explanations and figures", accent: "emerald", match: (q) => q.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023" },
+  { id: "mcckap-2023", label: "MCCKAP 2023", description: "All 200 source questions, including 9 restored items; 195 keyed and 5 unscored, with available explanations and figures", accent: "emerald", match: (q) => q.source === "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023" },
 ];
 
 const specialExamGroups: ExamGroup[] = [
@@ -329,7 +350,14 @@ export default function QuizPage() {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) { try { const c: Question[] = JSON.parse(stored); setAllQuestions([...builtInQuestions, ...c]); } catch {} }
     const saved = localStorage.getItem(SESSIONS_KEY);
-    if (saved) { try { setSessions(JSON.parse(saved)); } catch {} }
+    if (saved) {
+      try {
+        const restored: QuizSession[] = JSON.parse(saved);
+        const migrated = restored.map(migrateMcckapSession);
+        setSessions(migrated);
+        if (migrated.some((session, index) => session !== restored[index])) localStorage.setItem(SESSIONS_KEY, JSON.stringify(migrated));
+      } catch {}
+    }
   }, []);
 
   const s = makeStyles(deviceMode === "phone");
@@ -495,7 +523,7 @@ export default function QuizPage() {
       id: `session-${Date.now()}`, title: `${exam.label} session`,
       examId: exam.id, examLabel: exam.label, subCat: "all",
       quizMode: preferredQuizMode, viewMode: preferredViewMode,
-      questionIds: ordered.map((q) => q.id), currentIndex: 0, progress: {},
+      questionIds: ordered.map((q) => q.id), currentIndex: 0, progress: {}, mcckapChoiceRevision: 1,
       markedQuestionIds: [],
       status: "active", createdAt: now, updatedAt: now,
     };

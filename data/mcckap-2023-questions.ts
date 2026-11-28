@@ -1084,7 +1084,7 @@ export const mcckap2023Questions: Question[] = [
     "title": "MCCKAP 2023 Question 57",
     "scenario": "What is the most common cause of fulminant hepatic failure in infants?",
     "choices": {
-      "A": "Hepatitis",
+      "A": "Hepatitis A",
       "B": "Acetaminophen overdose",
       "C": "Metabolic disorders",
       "D": "Autoimmune",
@@ -1882,11 +1882,11 @@ export const mcckap2023Questions: Question[] = [
       "A": "Start broad-spectrum antibiotics.",
       "B": "Obtain an emergent head CT scan.",
       "C": "Initiate beta-blocker therapy.",
-      "D": "the Catheterize bladder.",
+      "D": "Catheterize the bladder.",
       "E": "Administer IV fluids."
     },
     "correctAnswer": "D",
-    "correctAnswerText": "the Catheterize bladder.",
+    "correctAnswerText": "Catheterize the bladder.",
     "explanation": "The correct answer is to catheterize the bladder. The patient's symptoms of hypertension and tachycardia developed as a result of severe pain secondary to acute urinary retention. Patients with neuromuscular disease, in this case a quadriplegic with spinal cord injury, are prone to develop acute urinary retention. The immediate treatment is to relieve the outflow obstruction by insertion of a bladder catheter. The patient is afebrile so urinary tract infection should not be the primary consideration. A blood culture and broad-spectrum antibiotics are not warranted because the patient is not septic. If sepsis or urosepsis were a consideration, then hypotension and tachycardia would probably be present. An emergent CT scan is not necessary because the patient is not demonstrating evidence of increased intracranial pressure. Although a fluid bolus might be needed for decreased urine output secondary to hypovolemia, this is not so in this instance.",
     "source": "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023",
     "category": "MCCKAP 2023"
@@ -2219,11 +2219,12 @@ export const mcckap2023Questions: Question[] = [
     "title": "MCCKAP 2023 Question 113",
     "scenario": "A 6-year-old boy suddenly collapsed at home. His mother performed CPR until emergency medical services (EMS) arrived. EMS confirmed that the boy was in cardiac arrest and took over CPR from the mother. The mother reports that her son had a kidney transplant 4 years ago, but his transplant kidney has been failing and he is on the transplant list again. He has felt unwell for the past few days and missed his dialysis treatment 2 days ago. He is scheduled to have dialysis today. The portable monitor shows the rhythm shown below. Which of the following is the most appropriate immediate next step?",
     "choices": {
-      "A": "Administration of IV epinephrine via vascular access",
-      "B": "Defibrillation with 40 J and resumption of chest compressions",
-      "C": "Administration of IV calcium and bicarbonate via vascular access"
+      "A": "Endotracheal intubation",
+      "B": "Administration of IV epinephrine via vascular access",
+      "C": "Defibrillation with 40 J and resumption of chest compressions",
+      "D": "Administration of IV calcium and bicarbonate via vascular access"
     },
-    "correctAnswer": "B",
+    "correctAnswer": "C",
     "correctAnswerText": "Defibrillation with 40 J and resumption of chest compressions",
     "explanation": "Early defibrillation with shockable rhythms should take precedence over treatment of other potential reversible causes. This patient had hyperkalemia-induced sudden ventricular fibrillation (VF). In children, an underlying cause of VF is more likely than the sudden coronary ischemic events that cause sudden cardiac arrest in adults. Underlying causes range from chronic cardiomyopathy and acute myocarditis to toxins or metabolic causes. VF can also develop during resuscitation of cardiac arrest, particularly in the hospital setting, where frequent administration of epinephrine can contribute to VF. It is likely that many hospitalized children who develop VF during resuscitation are predisposed to VF based on underlying heart disease. Clinicians should always think about possible reversible conditions that may require specific treatment to achieve successful outcomes. The potentially reversible causes of cardiac arrest are known asthe H'sand T's: 1. Hypovolemia 2. Hypoxia (or ventilatory problem) 3. Hydrogen ion excess (acidosis) 4. Hypokalemia 5. Hyperkalemia 6. Hypoglycemia 7. Hypothermia 8. Toxins 9. Tamponade (cardiac) 10. Tension pneumothorax 11. Thrombosis (cardiac or pulmonary, with the latter more common in children) 12. Trauma (hypovolemia, increased intracranial pressure)",
     "source": "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023",
@@ -2339,7 +2340,7 @@ export const mcckap2023Questions: Question[] = [
       "A": "Enteral nutrition should be withheld for the first 24 to 48 hours after intubation.",
       "B": "Enteral nutrition should be started.",
       "C": "Parenteral nutrition should be started.",
-      "D": "Trophicenteral nutrition should be started but feeds should not be advanced."
+      "D": "Trophic enteral nutrition should be started but feeds should not be advanced."
     },
     "correctAnswer": "B",
     "correctAnswerText": "Enteral nutrition should be started.",
@@ -2702,12 +2703,13 @@ export const mcckap2023Questions: Question[] = [
     "title": "MCCKAP 2023 Question 130",
     "scenario": "An adolescent is being treated for septic shock and undergoing continuous renal replacement therapy (CRRT) for acute kidney injury and fluid management following resuscitation. The CRRT prescription is shown below. Which component has the greatest effect on opioid clearance?",
     "choices": {
-      "A": "Dialysis rate",
-      "B": "Pre-filter fluid rate",
-      "C": "Postfilter fluid rate",
-      "D": "Ultrafiltration rate"
+      "A": "Blood flow rate",
+      "B": "Dialysis rate",
+      "C": "Pre-filter fluid rate",
+      "D": "Post-filter fluid rate",
+      "E": "Ultrafiltration rate"
     },
-    "correctAnswer": "D",
+    "correctAnswer": "E",
     "correctAnswerText": "Ultrafiltration rate",
     "explanation": "Continuous venovenous hemofiltration (CVVH) is a modality of continuous renal replacement therapy (CRRT) used for solute removal and volume management. Ultrafiltration provided by CVWH mode uses convection, rather than diffusion, to create the transmembrane gradient for the movement of solute across the semipermeable membrane. Dialysate runs countercurrent to the patient's blood to maintain a diffusion gradient and remains separated by the semipermeable membrane in the hemofilter. Titration of blood flow rate is more effective at optimizing diffusion than titration of dialysate rate. Replacement fluid either is deposited into the hemofilter before or after the patient's blood enters the chamber. Pre-filter fluid dilutes the blood entering the filter to decrease hemofilter clotting; however, this may also dilute the drug concentration, thus decreasing drug clearance. Post-filter fluid replacement is added to reverse hemoconcentration after solute and plasma water removal that occurred during the convective process within the hemofilter. Without dialysate present in CVVH, the only other factor to influence medication clearance is ultrafiltration. The other parts of the CRRT prescription factor into the solute clearance (eg, replacement fluid rate), but the ultrafiltrate removal rate exceeds that of the replacement fluid rate and is likely to contribute to further small- to medium-molecular-weight drug elimination. Additionally, physiochemical properties including molecular size, charge, hydrophilicity, volume of distribution, and protein binding influence medication elimination by CRRT. Small molecules (<500 Da) typically move across the dialysis membrane by diffusion, whereas medium molecules (500-5000 Da) typically move across the membrane with the convective forces of ultrafiltration. Larger compounds (> 5000 Da) (eg, albumin) rarely cross the semipermeable membrane. Molecular charge will limit the passage of molecules across the semipermeable membrane. Water-soluble (i. e., hydrophilic) drugs tend to move more readily across the membrane. Additionally, hydrophilic drugs tend to have smaller volumes of distribution than lipophilic drugs, meaning they are concentrated in the extracellular compartment and available in the circulation for removal. Drugs that are 80% or greater protein bound are unlikely to be removed by hemodialysis or hemofiltration.",
     "source": "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023",
@@ -3274,7 +3276,7 @@ export const mcckap2023Questions: Question[] = [
       "A": "Collecting patient-reported demographic information including race, ethnicity, and preferred language at hospital admission",
       "B": "Stratifying differences in disease outcomes (e.g., mortality), based on patient race",
       "C": "Using clinical practice guidelines that include race in risk stratification and/or treatment decisions",
-      "D": "Testing the of medical devices across people of different racial groups accuracy"
+      "D": "Testing the accuracy of medical devices across people of different racial groups"
     },
     "correctAnswer": "C",
     "correctAnswerText": "Using clinical practice guidelines that include race in risk stratification and/or treatment decisions",

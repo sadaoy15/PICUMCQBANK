@@ -34,6 +34,18 @@
   ],
   "scored": 195,
   "explanations": 193,
+  "choiceReview": {
+    "manifest": "data/mcckap-2023-choice-review.json",
+    "totalChoices": 899,
+    "correctedQuestions": [
+      57,
+      96,
+      113,
+      116,
+      130,
+      162
+    ]
+  },
   "assets": [
     {
       "src": "/PICUMCQBANK/images/mcckap-2023/q005-question.jpg",
@@ -1533,8 +1545,8 @@
         134
       ],
       "status": "original-keyed",
-      "answer": "B",
-      "choices": 3,
+      "answer": "C",
+      "choices": 4,
       "recovery": null,
       "explanation": true
     },
@@ -1739,8 +1751,8 @@
         153
       ],
       "status": "original-keyed",
-      "answer": "D",
-      "choices": 4,
+      "answer": "E",
+      "choices": 5,
       "recovery": null,
       "explanation": true
     },

@@ -10,6 +10,7 @@ const ASSET_DIRECTORY = path.join(ROOT, "public/images/mcckap-2023");
 const OUTPUT_FILE = path.join(ROOT, "data/mcckap-2023-questions.ts");
 const SOURCE = "Pediatric Multidisciplinary Critical Care Knowledge Assessment Program 2023";
 const CATEGORY = "MCCKAP 2023";
+const choiceReview = JSON.parse(await fs.readFile(path.join(ROOT, "data/mcckap-2023-choice-review.json"), "utf8"));
 
 const pageNumberOverrides = new Map([
   [17, 16],
@@ -502,6 +503,13 @@ const choiceOverrides = new Map([
     D: "18-hour-old boy born at 22 weeks' estimated gestational age with trisomy 18, intrauterine growth restriction, and acute respiratory failure secondary to meconium aspiration",
   }],
 ]);
+
+// Reviewed complete choice groups retain partially clipped first options and
+// preserve the printed letters rather than renumbering detected rows.
+for (const correction of choiceReview.corrections) {
+  choiceOverrides.set(correction.questionNumber, correction.choices);
+  answerOverrides.set(correction.questionNumber, correction.correctAnswer);
+}
 
 const scenarioOverrides = new Map([
   [180, "A 3-year-old boy with acute lymphoblastic leukemia was admitted to the pediatric ICU 4 days ago with neutropenic fever and Escherichia coli septic shock. He is mechanically ventilated. Heart rate is 110 beats/min and blood pressure is 80/45 mm Hg. He is warm, with normal capillary refill and normal pulses. He is receiving fentanyl and midazolam infusions, epinephrine at 0.05 mcg/kg/min, furosemide at 1 mg/kg every 12 hours, and ceftriaxone. His urine output for the past 6 hours has been less than 0.5 mL/kg/hr. Laboratory results are shown below. Which of the following is the most appropriate course of action?"],
@@ -1455,6 +1463,9 @@ for (let questionNumber = 1; questionNumber <= 200; questionNumber += 1) {
   const validCorrectAnswer = correctAnswer && correctAnswer >= "A" && choices[correctAnswer]
     ? correctAnswer
     : null;
+  if (Object.keys(choices).length !== choiceReview.expectedChoiceCounts[questionNumber]) {
+    throw new Error(`Question ${questionNumber}: choice count differs from reviewed source`);
+  }
 
   const questionVisual = await exportQuestionVisual({
     questionNumber,

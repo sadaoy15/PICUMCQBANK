@@ -9,6 +9,7 @@ import ts from "typescript";
 
 const root = path.resolve(import.meta.dirname, "..");
 const reviewed = JSON.parse(fs.readFileSync(path.join(root, "data/mcckap-2024-reviewed.json"), "utf8"));
+const choiceReview = JSON.parse(fs.readFileSync(path.join(root, "data/mcckap-2023-choice-review.json"), "utf8"));
 const output = path.join(root, "data/mcckap-2023-questions.ts");
 const sha = value => createHash("sha256").update(value).digest("hex");
 const cache = new Map();
@@ -78,9 +79,16 @@ p.get_pixmap(matrix=fitz.Matrix(3,3),clip=fitz.Rect(r.width*c[0],r.height*c[1],r
   questions.push(q);
 }
 questions.sort((a, b) => a.id - b.id);
+for (const correction of choiceReview.corrections) {
+  const question = questions.find(q => q.id === 6000 + correction.questionNumber);
+  question.choices = correction.choices;
+  question.correctAnswer = correction.correctAnswer;
+  question.correctAnswerText = question.choices[question.correctAnswer];
+}
 if (questions.length !== 200 || questions.some((q, i) => q.id !== 6001 + i)) throw new Error("Source numbering is incomplete");
 for (const q of questions) {
   if (!q.scenario || Object.keys(q.choices).length < 3 || (q.correctAnswer && q.correctAnswerText !== q.choices[q.correctAnswer])) throw new Error(`Invalid question ${q.id}`);
+  if (Object.keys(q.choices).length !== choiceReview.expectedChoiceCounts[q.id - 6000]) throw new Error(`Incomplete reviewed choices: ${q.id}`);
 }
 const assets = questions.flatMap(q => Object.values(q.visuals ?? {}).flatMap(value => Array.isArray(value) ? value : Object.values(value).flat()))
   .map(figure => {
@@ -95,6 +103,7 @@ const audit = {
   unscored: questions.filter(q => !q.correctAnswer).map(q => q.id - 6000),
   scored: questions.filter(q => q.correctAnswer).length,
   explanations: questions.filter(q => q.explanation).length,
+  choiceReview: { manifest: "data/mcckap-2023-choice-review.json", totalChoices: choiceReview.totalChoices, correctedQuestions: choiceReview.corrections.map(q => q.questionNumber) },
   assets,
   questions: questions.map(q => {
     const number = q.id - 6000;
